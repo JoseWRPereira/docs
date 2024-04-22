@@ -8,7 +8,7 @@ permissions:
   contents: write
 jobs:
   deploy:
-    runs-on: debian-latest
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-python@v4
@@ -16,7 +16,7 @@ jobs:
           python-version: 3.x
       - uses: actions/cache@v2
         with:
-          key: ${{ github.ref }}
+          key:  ${{ github.ref }}
           path: .cache
       - run: pip install mkdocs-material
       - run: mkdocs gh-deploy --force
