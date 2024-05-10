@@ -11,7 +11,10 @@ theme:
     - content.tabs.link
     - content.code.annotation
     - content.code.copy
-  language: pt
+  language: pt-BR
+  logo: assets/logo.png
+  icon:
+    repo: fontawesome/brands/github
   palette:
     - scheme: default
       toggle:
@@ -25,6 +28,9 @@ theme:
         name: Switch to light mode
       primary: teal
       accent: orange
+
+repo_url: https://github.com/josewrpereira/docs
+repo_name: josewrpereira/docs
 
 extra: 
   social:
@@ -50,8 +56,6 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
-
-
 
 
 copyright: |
