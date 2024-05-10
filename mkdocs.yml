@@ -1,4 +1,4 @@
-site_name: Curta Eletrônica
+site_name: Docs
 theme:
   name: material
   features:
@@ -56,3 +56,5 @@ markdown_extensions:
 
 copyright: |
   &copy; 2024 <a href="https://github.com/josewrpereira" target="_blank" rel="noopener">José W. R. Pereira</a>
+
+
