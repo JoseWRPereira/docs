@@ -43,7 +43,7 @@ theme:
       primary: teal
       accent: orange
   font:
-   text: Roboto
+   text: Lora
    code: Roboto Mono
 
         #plugins:

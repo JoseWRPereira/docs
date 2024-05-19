@@ -10,6 +10,7 @@ tags:
 ---
 
 
+
 # Controladores Programáveis
 
 * Contexto Histórico
@@ -17,6 +18,8 @@ tags:
 * Princípio de funcionamento
 * Norma IEC 61131
 * Ciclo de varredura
+
+
 
 ## Arquitetura
 
@@ -28,13 +31,22 @@ tags:
 * Comunicação
 
 
+
+## Equipamento: Training Box (TB131) Altus
+
+
+* [Novo Projeto ("Hello, World!")](altus_tb131/novo_projeto.md)
+
+
 ## Linguagens de Programação
+
 * Lógica Combinacional
 * Lógica Sequencial
 * Norma IEC61131-3
 * Diagrama Ladder (LD)
 * Texto Estruturado (ST)
 * Sequenciamento Gráfico de Funções (SFC)
+
 
 
 ## Situações de Aprendizagem
