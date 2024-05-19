@@ -1,4 +1,17 @@
-site_name: Docs
+site_name: Prof. José W. R. Pereira
+
+nav:
+  - Principal:
+    - index.md
+    - Indicações: indicacoes.md
+  - Notas de aula:
+    - notas_de_aula/index.md
+    - notas_de_aula/clp/index.md
+    - notas_de_aula/mcu/index.md
+
+
+
+
 theme:
   name: material
   features:
@@ -13,6 +26,7 @@ theme:
     - content.code.copy
   language: pt-BR
   logo: assets/logo.png
+  favicon: assets/favicon.png
   icon:
     repo: fontawesome/brands/github
   palette:
@@ -28,6 +42,17 @@ theme:
         name: Switch to light mode
       primary: teal
       accent: orange
+  font:
+   text: Roboto
+   code: Roboto Mono
+
+        #plugins:
+  #    - blog:
+  #        blog_dir: blog
+  #        blog_toc: true
+  #        post_date_format: full
+  #        post_url_date_format: yyyy/MM/dd
+  #        archive: false
 
 repo_url: https://github.com/josewrpereira/docs
 repo_name: josewrpereira/docs
@@ -38,6 +63,8 @@ extra:
       link: https://github.com/josewrpereira
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/in/josewrpereira/
+    - icon: fontawesome/solid/envelopes-bulk
+      link: mailto:josewrpereira@protonmail.com
 
 
 markdown_extensions:
@@ -54,8 +81,10 @@ markdown_extensions:
   - pymdownx.mark
   - attr_list
   - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+
 
 
 copyright: |
