@@ -1,6 +1,7 @@
 ---
-title: Controladores Lógicos Programáveis
-icon: fontawesome/solid/computer
+title: Controladores Programáveis
+#icon: fontawesome/solid/computer
+icon: fontawesome/solid/tachograph-digital
 author: José W. R. Pereira
 tags: 
     - CLP
@@ -36,6 +37,8 @@ tags:
 
 
 * [Novo Projeto ("Hello, World!")](altus_tb131/novo_projeto.md)
+* [Edição de Variáveis](altus_tb131/ihm_edita_var.md)
+* [Motor de Passo e Encoder](altus_tb131/saidas_entradas_rapidas.md)
 
 
 ## Linguagens de Programação
