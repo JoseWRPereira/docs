@@ -37,6 +37,10 @@ tags:
 
 
 * [Novo Projeto ("Hello, World!")](altus_tb131/novo_projeto.md)
+* [Declaração de Variáveis e Contato Auxiliar](altus_tb131/memoria.md)
+* [Função SET/RESET](altus_tb131/set_reset.md)
+* [Temporizador](altus_tb131/temporizador.md)
+* [Contador](altus_tb131/contador.md)
 * [Edição de Variáveis](altus_tb131/ihm_edita_var.md)
 * [Motor de Passo e Encoder](altus_tb131/saidas_entradas_rapidas.md)
 
