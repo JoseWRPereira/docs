@@ -14,27 +14,49 @@ tags:
 
 # Controladores Programáveis
 
-* Contexto Histórico
-* Requisitos dos controladores 
-* Princípio de funcionamento
-* Norma IEC 61131
-* Ciclo de varredura
+
+
+## Contexto histórico [slide](slides/aula01-contexto_historico.pdf)
+
+* O problema da indústria
+* O desafio da General Motors - 1968
+* Modular Digital Controller (MODICON 084)
+* Ler-Decidir-Acionar
+* Definições (ABNT, NEMA e IEC)
+* Tipos de CLPs (Compactos e Modulares)
+* Fabricantes
+* Norma IEC 61131-3
 
 
 
-## Arquitetura
+## Descrição estrutural [slide](slides/aula02-descricao_estrutural.pdf)
 
-* Arquitetura modular
 * Fonte de alimentação
-* Unidade Central de Processamento
-* Entradas e saídas digitais
-* Entradas e saídas analógicas
+* Unidade Central de Processamento - *CPU*
+* Memórias
+* Entradas Digitais
+* Saídas Digitais
 * Comunicação
+* Expansão
+* Scan-time / Tempo de varredura
+
+
+
+## Descrição funcional [slide](slides/aula03-descricao_funcional.pdf)
+
+* Sinais de Entradas e Saídas
+* Mapa de Entradas e Saídas
+* Planejar e Executar - Partida de motor 
+	* Conhecimentos
+		* Contato aberto e contato fechado;
+		* Bobina e Memória
+		* Lógica Combinacional (E, OU e NÃO)
+		* Função Set e Reset
+
 
 
 
 ## Equipamento: Training Box (TB131) Altus
-
 
 * [Novo Projeto ("Hello, World!")](altus_tb131/novo_projeto.md)
 * [Declaração de Variáveis e Contato Auxiliar](altus_tb131/memoria.md)
