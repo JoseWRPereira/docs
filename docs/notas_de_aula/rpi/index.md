@@ -13,39 +13,39 @@ tags:
 # Redes e Protocolos Industriais
 
 
-## 1. [O que são Redes Industriais? Conceito, história e evolução](slides/aula01-definicao_de_redes_industriais.pdf)
+## C1. [O que são Redes Industriais? Conceito, história e evolução](slides/aula01-definicao_de_redes_industriais.pdf)
 
-* Definição: Rede e indústria
-* Revoluções Industriais
-* Tipos de redes industriais
-* Convergência tecnológica: TI + TA
-* Arquitetura de referência para uma planta de Automação Industrial
-* Necessidades emergentes
-* Benefícios da convergência
-* Objetivos da Rede Industrial
-* Protocolos de comunicação
-	* Níveis da rede industrial
-	* Evolução das redes industriais
-	* Tipos de transmissão
-	* Finalidade dos protocolos no meio industrial
-
-
-
-## 2. [Classificação e arquiteturas de redes industriais](slides/aula02-classificacao_das_redes.pdf)
-
-* Topologia física
-* Modelos de redes
-* Método de troca de dados
-* Tipo de conexão
-* Modo de transmissão
-* Sincronização de bits
-* Modo de operação
-* Tipo de comunicação
+1. Definição: Rede e indústria;
+2. Revoluções Industriais;
+3. Tipos de redes industriais;
+4. Convergência tecnológica: TI + TA;
+5. Arquitetura de referência para uma planta de Automação Industrial;
+6. Necessidades emergentes;
+7. Benefícios da convergência;
+8. Objetivos da Rede Industrial;
+9. Protocolos de comunicação:
+	1. Níveis da rede industrial;
+	2. Evolução das redes industriais;
+	3. Tipos de transmissão;
+	4. Finalidade dos protocolos no meio industrial;
 
 
 
+## C2. [Classificação e arquiteturas de redes industriais](slides/aula02-classificacao_das_redes.pdf)
 
-## Prática orientada em laboratório
+1. Topologia física;
+2. Modelos de redes;
+3. Método de troca de dados;
+4. Tipo de conexão;
+5. Modo de transmissão;
+6. Sincronização de bits;
+7. Modo de operação;
+8. Tipo de comunicação;
+
+
+
+
+## A1. Prática orientada em laboratório
 
 1. Sinais de comunicação
 

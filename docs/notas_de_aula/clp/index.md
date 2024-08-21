@@ -43,9 +43,9 @@ tags:
 
 ## C3. [Descrição funcional](slides/aula03-descricao_funcional.pdf)
 
-1. Sinais de Entradas e Saídas
-2. Mapa de Entradas e Saídas
-3. Planejar e Executar - Partida de motor
+1. Sinais de Entradas e Saídas;
+2. Mapa de Entradas e Saídas;
+3. Planejar e Executar - Partida de motor:
 	1. Contato aberto e contato fechado;
 	2. Bobina e Memória;
 	3. Lógica Combinacional (E, OU e NÃO);
@@ -80,7 +80,7 @@ tags:
 7. Acionamento Bi-manual;
 8. Contagem de lotes;
 9. Entradas e Saídas analógicas;
-10. IHM 
+10. IHM;
 11. Acionamento de motor de passo;
 
 
