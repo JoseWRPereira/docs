@@ -7,13 +7,16 @@ author:
 tags:
  - CLP
  - MCU
+ - RPI
 ---
 
 # Notas de aulas
 
 | Sigla | Tecnologia | Disciplina |
 |:-----:|:----------:|:----------:|
-| CLP   | [Controladores Programáveis](./clp/index.md) | CLPE7, CLPT4, CLPT2 |
-| MCU   | [Microcontroladores](./mcu/index.md) | MCMP |
+| CLP   | [Controladores Programáveis](./clp/index.md) 		| CLPE7, SLTCLPR |
+| MCU   | [Microcontroladores](./mcu/index.md) 				| MCMP |
+| RPI   | [Redes e Protocolos Industriais](./rpi/index.md)	| RPIE8 |
+
 
 
