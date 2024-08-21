@@ -17,27 +17,27 @@ tags:
 
 ## C1. [Contexto histórico](slides/aula01-contexto_historico.pdf)
 
-1. O problema da indústria
-2. O desafio da General Motors - 1968
-3. Modular Digital Controller (MODICON 084)
-4. Ler-Decidir-Acionar
-5. Definições (ABNT, NEMA e IEC)
-6. Tipos de CLPs (Compactos e Modulares)
-7. Fabricantes
-8. Norma IEC 61131-3
+1. O problema da indústria;
+2. O desafio da General Motors - 1968;
+3. Modular Digital Controller (MODICON 084);
+4. Ler-Decidir-Acionar;
+5. Definições (ABNT, NEMA e IEC);
+6. Tipos de CLPs (Compactos e Modulares);
+7. Fabricantes;
+8. Norma IEC 61131-3;
 
 
 
 ## C2. [Descrição estrutural](slides/aula02-descricao_estrutural.pdf)
 
-1. Fonte de alimentação
-2. Unidade Central de Processamento - *CPU*
-3. Memórias
-4. Entradas Digitais
-5. Saídas Digitais
-6. Comunicação
-7. Expansão
-7. Scan-time / Tempo de varredura
+1. Fonte de alimentação;
+2. Unidade Central de Processamento - *CPU*;
+3. Memórias;
+4. Entradas Digitais;
+5. Saídas Digitais;
+6. Comunicação;
+7. Expansão;
+7. Scan-time / Tempo de varredura;
 
 
 
@@ -45,10 +45,10 @@ tags:
 
 1. Sinais de Entradas e Saídas
 2. Mapa de Entradas e Saídas
-3. Planejar e Executar - Partida de motor 
+3. Planejar e Executar - Partida de motor
 	3.1. Contato aberto e contato fechado;
-	3.2. Bobina e Memória
-	3.3. Lógica Combinacional (E, OU e NÃO)
+	3.2. Bobina e Memória;
+	3.3. Lógica Combinacional (E, OU e NÃO);
 	3.4. Função Set e Reset
 
 
