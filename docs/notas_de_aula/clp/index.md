@@ -1,6 +1,5 @@
 ---
 title: Controladores Programáveis
-#icon: fontawesome/solid/computer
 icon: fontawesome/solid/tachograph-digital
 author: José W. R. Pereira
 tags: 

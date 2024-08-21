@@ -1,6 +1,5 @@
 ---
 title: Redes e Protocolos Industriais
-#icon: fontawesome/solid/computer
 icon: fontawesome/solid/network-wired
 author: José W. R. Pereira
 tags: 
@@ -11,9 +10,7 @@ tags:
 ---
 
 
-
 # Redes e Protocolos Industriais
-
 
 
 ## 1. [O que são Redes Industriais? Conceito, história e evolução](slides/aula01-definicao_de_redes_industriais.pdf)

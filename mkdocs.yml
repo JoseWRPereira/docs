@@ -6,8 +6,9 @@ nav:
     - Indicações: indicacoes.md
   - Notas de aula:
     - notas_de_aula/index.md
-    - notas_de_aula/clp/index.md
     - notas_de_aula/mcu/index.md
+    - notas_de_aula/clp/index.md
+    - notas_de_aula/rpi/index.md
 
 
 
