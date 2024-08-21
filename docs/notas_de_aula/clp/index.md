@@ -46,10 +46,10 @@ tags:
 1. Sinais de Entradas e Saídas
 2. Mapa de Entradas e Saídas
 3. Planejar e Executar - Partida de motor
-	3.1. Contato aberto e contato fechado;
-	3.2. Bobina e Memória;
-	3.3. Lógica Combinacional (E, OU e NÃO);
-	3.4. Função Set e Reset
+	1. Contato aberto e contato fechado;
+	2. Bobina e Memória;
+	3. Lógica Combinacional (E, OU e NÃO);
+	4. Função Set e Reset
 
 
 
