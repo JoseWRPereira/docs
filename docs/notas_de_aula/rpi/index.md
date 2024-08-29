@@ -46,6 +46,21 @@ tags:
 
 
 ## A1. Prática orientada em laboratório
+1. [Sinal de comunicação](https://solace.com/wp-content/uploads/2021/02/baud-rate-4.png)
+	1. Baud Rate, Tbit; 
+	2. [Configurações de comunicação:](https://www.picotech.com/images/uploads/software/RS-232_diagram_1.jpg)
+		1. Bit de início de comunicação (Start bits);
+		2. Bits de Dados;
+		3. Bit de Paridade;
+		4. Bits de parada (Stop bits);
+		5. Tchar;
+	3. [Tabela](https://repositorio.ufu.br/bitstream/123456789/14443/4/SFOLima4DISSPRT.pdf) [Ascii](https://www.ime.usp.br/~pf/algoritmos/apend/ascii.html)
+		1. Códigos em hexadecimal
+		2. Códigos em binário
 
-1. Sinais de comunicação
 
+
+## A2. Ferramentas/Software
+
+* [Termite: a simple RS232 terminal](https://www.compuphase.com/software_termite.htm)
+* [Terminal](https://sites.google.com/site/terminalbpp/)
