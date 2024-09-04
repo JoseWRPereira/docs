@@ -42,6 +42,14 @@ tags:
 7. Modo de operação;
 8. Tipo de comunicação;
 
+## C3. [Critérios para dimensionamento](slides/aula03-criterios_para_dimensionamento.pdf)
+
+1. Meio físico de comunicação;
+2. Cobertura geográfica;
+3. Método de acesso;
+4. Desempenho: Velocidade x *Throughput*;
+5. Confiabilidade: Determinístico x Probabilístico;
+6. Protocolo de comunicação;
 
 
 
