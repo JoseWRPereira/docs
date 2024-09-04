@@ -57,6 +57,8 @@ tags:
 	3. [Tabela](https://repositorio.ufu.br/bitstream/123456789/14443/4/SFOLima4DISSPRT.pdf) [Ascii](https://www.ime.usp.br/~pf/algoritmos/apend/ascii.html)
 		1. Códigos em hexadecimal
 		2. Códigos em binário
+	4. [Lab. Sinais de Comunicação - ArduinoUno](slides/cofre.zip)
+	
 
 
 
