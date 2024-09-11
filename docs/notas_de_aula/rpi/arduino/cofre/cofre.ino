@@ -1,6 +1,6 @@
 // Cofre 0: 9600 8N1>   <9600 8N1
 // Cofre 1: 9600 8N1>   <19200 8N1
-# define COFRE0
+# define COFRE2
 
 
 
