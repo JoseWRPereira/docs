@@ -51,6 +51,16 @@ tags:
 5. Confiabilidade: Determinístico x Probabilístico;
 6. Protocolo de comunicação;
 
+## C4. [Modelo OSI/ISO](slides/Aula04-Modelo_OSI.pdf)
+
+1. Características do Modelo
+2. Camada 7 - Aplicação
+3. Camada 6 - Apresentação
+4. Camada 5 - Sessão
+5. Camada 4 - Transporte
+6. Camada 3 - Rede 
+7. Camada 2 - Enlace
+8. Camada 1 - Física
 
 
 ## A1. Prática orientada em laboratório
