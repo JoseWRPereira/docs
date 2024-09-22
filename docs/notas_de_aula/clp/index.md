@@ -55,7 +55,7 @@ tags:
 
 ## H1. Equipamento: Training Box (TB131) Altus
 
-1. [Novo Projeto ("Hello, World!")](altus_tb131/novo_projeto.md)
+1. [Novo Projeto ("Hello, World!")](altus_tb131/h1_1-novo_projeto.md)
 2. [Declaração de Variáveis e Contato Auxiliar](altus_tb131/memoria.md)
 3. [Função SET/RESET](altus_tb131/set_reset.md)
 4. [Detecção de Bordas](altus_tb131/borda_subida_descida.md)
