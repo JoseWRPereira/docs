@@ -47,14 +47,18 @@ ControleTelas(ENABLE_UPDW := FALSE, VISU_LIST := ListaTelas, UP := FALSE , DOWN 
 ## 4. Testando comunicação com PLC:
 
 4.1 Conecte o PLC ao computador;
+
 4.2 Abra o gerenciador de dispositivos e verifique qual porta foi alocada para a comunicação com o PLC:
+
 ![Gerenciador de dispositivos - Windows](img/h1-1_4_2-gerenciado_dispositivos_com3.png)
+
 4.3 Clique em `Comunicação` -> `Parâmetros de comunicação ...`
+
 ![Parâmetros de comunicação](img/h1-1_4_3-com3.png)
-	Para ajustar a porta, 
-	clique duplo sobre a `COM n` e use as setas para cima e para baixo 
-	para ajustar a porta correta, neste caso a `COM3`;
-	Clique em `OK`.
+
+	* Para ajustar a porta clique duplo sobre a `COM n` e use as setas para cima e para baixo para ajustar a porta correta, neste caso a `COM3`;
+	* Clique em `OK`.
+
 
 ## 5. Testando o processo de gravação:
 
