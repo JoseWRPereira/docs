@@ -58,11 +58,10 @@ tags:
 ### 2024.2 - Atualizado
 1. [Novo Projeto ("Hello, World!")](altus_tb131/h1_1-novo_projeto.md)
 2. [Projeto: Partida Estrela-Triângulo](altus_tb131/h1_2-projeto_partida_estrela_triangulo.md)
-
-2.1 Declaração de Variáveis de Entradas e Saídas físicas no programa principal;
-2.2 Criação de Bloco Funcional;
-2.3 Declaração de variáveis no bloco funcional: VAR_INPUT, VAR_OUTPUT e VAR;
-2.4 Incluindo e executando o bloco funcional.
+	1. Declaração de Variáveis de Entradas e Saídas físicas no programa principal;
+	2. Criação de Bloco Funcional;
+	3. Declaração de variáveis no bloco funcional: VAR_INPUT, VAR_OUTPUT e VAR;
+	4. Incluindo e executando o bloco funcional.
 
 
 ### 2024.1 
