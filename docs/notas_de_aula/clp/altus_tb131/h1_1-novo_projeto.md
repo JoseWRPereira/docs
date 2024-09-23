@@ -50,7 +50,7 @@ ControleTelas(ENABLE_UPDW := FALSE, VISU_LIST := ListaTelas, UP := FALSE , DOWN 
 
 4.2 Abra o gerenciador de dispositivos e verifique qual porta foi alocada para a comunicação com o PLC:
 
-![Gerenciador de dispositivos - Windows](img/h1-1_4_2-gerenciado_dispositivos_com3.png)
+![Gerenciador de dispositivos - Windows](img/h1-1_4_2-gerenciado_dispositivos_com3.jpeg)
 
 4.3 Clique em `Comunicação` -> `Parâmetros de comunicação ...`
 
