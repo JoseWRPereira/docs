@@ -86,4 +86,4 @@ tags:
 * [Termite: a simple RS232 terminal](https://www.compuphase.com/software_termite.htm)
 * [Terminal](https://sites.google.com/site/terminalbpp/)
 
-
+* T1: [Soldagem SMD](https://github.com/JoseWRPereira/docs/tree/main/docs/notas_de_aula/pci/soldagem)
