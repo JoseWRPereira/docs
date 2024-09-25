@@ -17,3 +17,4 @@ tags:
 
 ![Resistor SMD](./soldagem/1-resistor_1.gif)
 
+	
