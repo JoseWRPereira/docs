@@ -1,13 +1,15 @@
 ---
 title: Soldagem
 icon: fontawesome/solid/object-ungroup
+#icon: fontawesome/solid/folder-plus
 authors:
  - José W. R. Pereira
 tags:
  - PCI
  - Soldagem
- - SMD
 ---
+
+
 
 # Soldagem SMD
 
