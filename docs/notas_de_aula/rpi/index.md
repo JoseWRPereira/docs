@@ -85,3 +85,7 @@ tags:
 
 * [Termite: a simple RS232 terminal](https://www.compuphase.com/software_termite.htm)
 * [Terminal](https://sites.google.com/site/terminalbpp/)
+
+## T1. Montagem de PCI: CProg_uno_slt (temporário)
+
+1. [Soldagem SMD](../pci/h1_soldagem.md)
