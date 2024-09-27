@@ -59,6 +59,14 @@ tags:
 4. Maximização de contatos, Cadeia estacionária ou Passo a passo
 
 
+## C6. [Método de Programação - Minimização de contatos](slides/aula06-metodos_programacao_min.pdf)
+
+1. Circuito Eletropneumático
+2. Sequência de Acionamento
+3. Bloco funcional
+4. Minimização de contatos, Cascata, Sequência mínima
+
+
 ## H1. Equipamento: Training Box (TB131) Altus
 
 ### 2024.2 - Atualizado
