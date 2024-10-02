@@ -51,7 +51,7 @@ tags:
 5. Confiabilidade: Determinístico x Probabilístico;
 6. Protocolo de comunicação;
 
-## C4. [Modelo OSI/ISO](slides/Aula04-Modelo_OSI.pdf)
+## C4. [Modelo OSI/ISO](slides/aula04-Modelo_OSI.pdf)
 
 1. Características do Modelo
 2. Camada 7 - Aplicação
@@ -61,6 +61,23 @@ tags:
 6. Camada 3 - Rede 
 7. Camada 2 - Enlace
 8. Camada 1 - Física
+
+## C5. [Meio Físico - RS232/RS485/RS422](slides/aula05-MeioFisico-RS_232-485-422.pdf)
+
+1. RS232
+	1. Conectores e pinagem
+	2. Características elétricas
+	3. Distância e baud rate
+	4. Controle de fluxo por hardware
+	5. Transceiver - MAX232
+2. RS485
+	1. Aplicação
+	2. Topologias
+	3. Par diferencial e níveis de tensão
+	4. Resistor de terminação
+	5. Distância e velocidade de comunicação
+	6. Multiponto
+	7. Transceivers comerciais
 
 
 
@@ -78,7 +95,7 @@ tags:
 		2. Códigos em binário
 	4. [Lab. Sinais de Comunicação - ArduinoUno](slides/cofre.zip)
 	
-
+2. [Comunicação Serial via RS485](slides/lab4-comunicacao_serial_rs485.pdf)
 
 
 ## A2. Ferramentas/Software
