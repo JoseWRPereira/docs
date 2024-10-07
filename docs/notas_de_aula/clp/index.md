@@ -71,17 +71,12 @@ tags:
 
 ### 2024.2 - Atualizado
 1. [Novo Projeto ("Hello, World!")](altus_tb131/h1_1-novo_projeto.md)
-2. [Projeto: Partida Estrela-Triângulo](altus_tb131/h1_2-projeto_partida_estrela_triangulo.md)
-	1. Declaração de Variáveis de Entradas e Saídas físicas no programa principal;
-	2. Criação de Bloco Funcional;
-	3. Declaração de variáveis no bloco funcional: VAR_INPUT, VAR_OUTPUT e VAR;
-	4. Incluindo e executando o bloco funcional.
-3. [Temporizadores](altus_tb131/h1_3-temporizadores.md)
+2. [Set e Reset](altus_tb131/h1_2-setReset.md)
+3. [Detecção de de borda](altus_tb131/h1_3-setReset.md)
+4. [Temporizadores](altus_tb131/h1_4-temporizadores.md)
 
 ### 2024.1 
 2. [Declaração de Variáveis e Contato Auxiliar](altus_tb131/memoria.md)
-3. [Função SET/RESET](altus_tb131/set_reset.md)
-4. [Detecção de Bordas](altus_tb131/borda_subida_descida.md)
 6. [Display Variável](altus_tb131/ihm_display_var.md)
 7. [Contador](altus_tb131/contador.md)
 8. [Entradas e Saídas Analógicas](altus_tb131/analog_entradas_saidas.md)
@@ -97,7 +92,11 @@ tags:
 2. Partida direta com reversão;
 3. Sequência de movimentos: Maximização de contatos;
 4. Sequência de movimentos: Minimização de contatos;
-5. Partida Estrela-Triângulo;
+5. [Projeto: Partida Estrela-Triângulo](altus_tb131/A1_5-projeto_partida_estrela_triangulo.md)
+	1. Declaração de Variáveis de Entradas e Saídas físicas no programa principal;
+	2. Criação de Bloco Funcional;
+	3. Declaração de variáveis no bloco funcional: VAR_INPUT, VAR_OUTPUT e VAR;
+	4. Incluindo e executando o bloco funcional.
 6. Semáforo;
 7. Acionamento Bi-manual;
 8. Contagem de lotes;
