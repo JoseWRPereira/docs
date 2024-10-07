@@ -13,15 +13,15 @@ tags:
 
 # Temporizadores
 
-## 1. Timer ON
+## 1. ON Delay Timer 
 
 ![TON](./gif/h1-3_1-TON.gif)
 
-## 2. Timer OFF
+## 2. OFF Delay Timer
 
 ![TOF](./gif/h1-3_2-TOF.gif)
 
-## 3. Timer Pulse
+## 3. Pulse Timer 
 
 ![TP](./gif/h1-3_3-TP.gif)
 
