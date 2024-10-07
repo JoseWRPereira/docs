@@ -76,13 +76,12 @@ tags:
 	2. Criação de Bloco Funcional;
 	3. Declaração de variáveis no bloco funcional: VAR_INPUT, VAR_OUTPUT e VAR;
 	4. Incluindo e executando o bloco funcional.
-
+3. [Temporizadores](altus_tb131/h1_3-temporizadores.md)
 
 ### 2024.1 
 2. [Declaração de Variáveis e Contato Auxiliar](altus_tb131/memoria.md)
 3. [Função SET/RESET](altus_tb131/set_reset.md)
 4. [Detecção de Bordas](altus_tb131/borda_subida_descida.md)
-5. [Temporizador](altus_tb131/temporizador.md)
 6. [Display Variável](altus_tb131/ihm_display_var.md)
 7. [Contador](altus_tb131/contador.md)
 8. [Entradas e Saídas Analógicas](altus_tb131/analog_entradas_saidas.md)
