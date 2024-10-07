@@ -92,12 +92,12 @@ tags:
 2. Partida direta com reversão;
 3. Sequência de movimentos: Maximização de contatos;
 4. Sequência de movimentos: Minimização de contatos;
-5. [Projeto: Partida Estrela-Triângulo](altus_tb131/A1_5-projeto_partida_estrela_triangulo.md)
+5. [Partida Estrela-Triângulo](altus_tb131/A1_5-projeto_partida_estrela_triangulo.md)
 	1. Declaração de Variáveis de Entradas e Saídas físicas no programa principal;
 	2. Criação de Bloco Funcional;
 	3. Declaração de variáveis no bloco funcional: VAR_INPUT, VAR_OUTPUT e VAR;
 	4. Incluindo e executando o bloco funcional.
-6. Semáforo;
+6. [Semáforo](altus_tb131/A1_6-projeto_semaforo.md)
 7. Acionamento Bi-manual;
 8. Contagem de lotes;
 9. Entradas e Saídas analógicas;
