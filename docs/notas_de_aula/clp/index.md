@@ -72,7 +72,7 @@ tags:
 ### 2024.2 - Atualizado
 1. [Novo Projeto ("Hello, World!")](altus_tb131/h1_1-novo_projeto.md)
 2. [Set e Reset](altus_tb131/h1_2-setReset.md)
-3. [Detecção de de borda](altus_tb131/h1_3-setReset.md)
+3. [Detecção de de borda](altus_tb131/h1_3-borda_subida_descida.md)
 4. [Temporizadores](altus_tb131/h1_4-temporizadores.md)
 
 ### 2024.1 
