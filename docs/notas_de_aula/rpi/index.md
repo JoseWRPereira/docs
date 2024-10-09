@@ -80,6 +80,18 @@ tags:
 	7. Transceivers comerciais
 
 
+## C6. [Protocolo de comunicação - MODBUS](slides/aula06-protocolo_de_comunicacao_MODBUS.pdf)
+
+1. Introdução - Modicon, protocolo aberto
+2. Conexão e cabo de transmissão
+3. Modbus e modelo ISO/OSI
+4. Cliente-Servidor - Unicast x Broadcast
+5. Codificação da mensagem - RTU e Ascii
+6. Modelo de organização da memória
+7. Unidade de dados de protocolo (PDU)
+8. Frame e temporização em modo RTU
+9. Codificação da mensagem
+
 
 ## A1. Prática orientada em laboratório
 1. [Sinal de comunicação](https://solace.com/wp-content/uploads/2021/02/baud-rate-4.png)
