@@ -70,15 +70,14 @@ tags:
 ## H1. Equipamento: Training Box (TB131) Altus
 
 ### 2024.2 - Atualizado
-1. [Novo Projeto ("Hello, World!")](altus_tb131/h1_1-novo_projeto.md)
+1. [Novo Projeto](altus_tb131/h1_1-novo_projeto.md)
 2. [Set e Reset](altus_tb131/h1_2-setReset.md)
 3. [Detecção de de borda](altus_tb131/h1_3-borda_subida_descida.md)
 4. [Temporizadores](altus_tb131/h1_4-temporizadores.md)
+5. [Contadores](altus_tb131/h1_5-contadores.md)
 
 ### 2024.1 
-2. [Declaração de Variáveis e Contato Auxiliar](altus_tb131/memoria.md)
 6. [Display Variável](altus_tb131/ihm_display_var.md)
-7. [Contador](altus_tb131/contador.md)
 8. [Entradas e Saídas Analógicas](altus_tb131/analog_entradas_saidas.md)
 9. [Edição de Variáveis](altus_tb131/ihm_edita_var.md)
 10. [Motor de Passo e Encoder](altus_tb131/saidas_entradas_rapidas.md)
