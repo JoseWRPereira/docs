@@ -75,11 +75,10 @@ tags:
 3. [Detecção de de borda](altus_tb131/h1_3-borda_subida_descida.md)
 4. [Temporizadores](altus_tb131/h1_4-temporizadores.md)
 5. [Contadores](altus_tb131/h1_5-contadores.md)
-6. [Analogicas](altus_tb131/)h1_6-entradas_saidas_analogicas.md)
+6. [Analogicas](altus_tb131/h1_6-entradas_saidas_analogicas.md)
 
 ### 2024.1 
 6. [Display Variável](altus_tb131/ihm_display_var.md)
-8. [Entradas e Saídas Analógicas](altus_tb131/analog_entradas_saidas.md)
 9. [Edição de Variáveis](altus_tb131/ihm_edita_var.md)
 10. [Motor de Passo e Encoder](altus_tb131/saidas_entradas_rapidas.md)
 
