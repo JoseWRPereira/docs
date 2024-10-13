@@ -1,5 +1,5 @@
 ---
-title: Temporizadores
+title: Contadores
 icon: fontawesome/solid/object-ungroup
 authors:
  - José W. R. Pereira
@@ -7,24 +7,31 @@ tags:
  - CLP
  - Altus
  - TB131
- - Temporizadores
+ - Contadores
 ---
 
-# Temporizadores
+# Contadores
 
-## 1. ON Delay Timer 
+## 1. Inserir Bloco Funcional Contador
 
-![TON](./gif/h1-4_1-TON.gif)
+![Inserir](./img/h1-5_0-contador_inserir.png)
 
-## 2. OFF Delay Timer
 
-![TOF](./gif/h1-4_2-TOF.gif)
+## 2. Contador Crescente - *Counter UP*
 
-## 3. Pulse Timer 
+![CTU](./img/h1-5_1-contador_up.png)
 
-![TP](./gif/h1-4_3-TP.gif)
+![CTU](gif/h1-5_1-contador_up_sim.gif)
 
-## 4. Real Time Clock
+## 3. Contador Decrescente - *Counter DOWN*
 
-![RTC](./gif/h1-4_4-RTC.gif)
+![CTD](./img/h1-5_2-contador_down.png)
+
+![CTD](gif/h1-5_2-contador_down_sim.gif)
+
+## 4. Contador Crescente/Decrescente - *Counter UP/DOWN*
+
+![CTUD](./img/h1-5_3-contador_up_down.png)
+
+![CTUD](gif/h1-5_3-contador_up_down_sim.gif)
 
