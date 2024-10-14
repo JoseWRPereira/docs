@@ -80,7 +80,8 @@ tags:
 	1. [Comparação](altus_tb131/h1_7_1-blocos_funcionais_comparacao.md)
 	2. [Aritméticos](altus_tb131/h1_7_2-blocos_funcionais_operacao.md)
 	3. [Seleção](altus_tb131/h1_7_3-blocos_funcionais_selecao.md)
-
+8. [Função](altus_tb131/h1_8-funcao.md)
+9. [Bloco Funcional](altus_tb131/h1_9-bloco_funcional.md)
 
 ### 2024.1 
 6. [Display Variável](altus_tb131/ihm_display_var.md)
