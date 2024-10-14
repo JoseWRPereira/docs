@@ -51,20 +51,16 @@ tags:
 	3. Lógica Combinacional (E, OU e NÃO);
 	4. Função Set e Reset
 
-## C5. [Método de Programação - Maximização de contatos](slides/aula05-metodos_programacao_max.pdf)
+## C4. Métodos de Programação
+1. [Maximização de contatos](slides/aula05-metodos_programacao_max.pdf)
+	1. Maximização de contatos, Cadeia estacionária ou Passo a passo
+2. [Método de Programação - Minimização de contatos](slides/aula06-metodos_programacao_min.pdf)
+	1. Minimização de contatos, Cascata, Sequência mínima
+3. Competências
+	1. Circuito Eletropneumático
+	2. Sequência de Acionamento
+	3. Bloco funcional
 
-1. Circuito Eletropneumático
-2. Sequência de Acionamento
-3. Bloco funcional
-4. Maximização de contatos, Cadeia estacionária ou Passo a passo
-
-
-## C6. [Método de Programação - Minimização de contatos](slides/aula06-metodos_programacao_min.pdf)
-
-1. Circuito Eletropneumático
-2. Sequência de Acionamento
-3. Bloco funcional
-4. Minimização de contatos, Cascata, Sequência mínima
 
 
 ## H1. Equipamento: Training Box (TB131) Altus
