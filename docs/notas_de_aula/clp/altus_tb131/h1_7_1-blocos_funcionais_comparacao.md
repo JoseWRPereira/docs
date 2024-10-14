@@ -9,13 +9,14 @@ tags:
  - TB131
  - Blocos Funcionais Úteis
  - Comparação
- ---
+---
+ 
 
 # Inserir Blocos Funcionais de Comparação
 
-Funções: EQ, NE, LT, LE, GT, GE
-
 ![Inserir Bloco Funcional](./img/1-7_0-inserir_instrucao_EN.png)
+
+# Funções: EQ, NE, LT, LE, GT, GE
 
 ![Inserir Bloco Funcional](./img/1-7_1-bf_comparacao.png)
 

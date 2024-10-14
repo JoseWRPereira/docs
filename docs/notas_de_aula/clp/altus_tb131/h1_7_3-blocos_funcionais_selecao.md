@@ -9,14 +9,13 @@ tags:
  - TB131
  - Blocos Funcionais Úteis
  - Operações Seleção
- ---
+---
 
 # Inserir Blocos Funcionais de Seleção
 
-Funções: MOVE, MIN, MAX, LIMIT, SEL, MUX
-
 ![Inserir Bloco Funcional](./img/1-7_0-inserir_instrucao_EN.png)
 
+# Funções: MOVE, MIN, MAX, LIMIT, SEL, MUX
 
 ## 1. Função MOVE - Mover
 

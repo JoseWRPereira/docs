@@ -9,13 +9,14 @@ tags:
  - TB131
  - Blocos Funcionais Úteis
  - Operações Aritméticas
- ---
+---
 
 # Inserir Blocos Funcionais Aritméticos
 
-Funções: ADD, SUB, MUL, DIV, MOD
 
 ![Inserir Bloco Funcional](./img/1-7_0-inserir_instrucao_EN.png)
+
+# Funções: ADD, SUB, MUL, DIV, MOD
 
 ![Inserir Bloco Funcional](./img/1-7_2-bf_operacao.png)
 
