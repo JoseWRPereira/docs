@@ -76,6 +76,11 @@ tags:
 4. [Temporizadores](altus_tb131/h1_4-temporizadores.md)
 5. [Contadores](altus_tb131/h1_5-contadores.md)
 6. [Entradas e Saídas Analogicas](altus_tb131/h1_6-entradas_saidas_analogicas.md)
+7. Blocos Funcionais Úteis
+	1. [Blocos Funcionais de Comparação](altus_tb131/h1_7_1-blocos_funcionais_comparacao.md)
+	2. [Blocos Funcionais Aritméticos](altus_tb131/h1_7_2-blocos_funcionais_operacao.md)
+	3. [Blocos Funcionais de Seleção](altus_tb131/h1_7_3-blocos_funcionais_selecao.md)
+
 
 ### 2024.1 
 6. [Display Variável](altus_tb131/ihm_display_var.md)
