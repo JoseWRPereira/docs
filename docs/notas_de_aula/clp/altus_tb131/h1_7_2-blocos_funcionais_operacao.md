@@ -18,6 +18,8 @@ tags:
 
 # Funções: ADD, SUB, MUL, DIV, MOD
 
+## Tipos de dados suportados para comparação
+
 ![Inserir Bloco Funcional](./img/1-7_2-bf_operacao.png)
 
 ## 1. Função ADD - Adição
