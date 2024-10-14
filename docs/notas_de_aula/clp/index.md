@@ -52,10 +52,8 @@ tags:
 	4. Função Set e Reset
 
 ## C4. Métodos de Programação
-1. [Maximização de contatos](slides/aula05-metodos_programacao_max.pdf)
-	1. Maximização de contatos, Cadeia estacionária ou Passo a passo
-2. [Método de Programação - Minimização de contatos](slides/aula06-metodos_programacao_min.pdf)
-	1. Minimização de contatos, Cascata, Sequência mínima
+1. [Maximização de contatos](slides/aula05-metodos_programacao_max.pdf) - Cadeia estacionária ou Passo a passo
+2. [Minimização de contatos](slides/aula06-metodos_programacao_min.pdf) - Cascata, Sequência mínima
 3. Competências
 	1. Circuito Eletropneumático
 	2. Sequência de Acionamento
