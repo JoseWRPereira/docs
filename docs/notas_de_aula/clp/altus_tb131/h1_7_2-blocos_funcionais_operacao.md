@@ -18,7 +18,7 @@ tags:
 
 # Funções: ADD, SUB, MUL, DIV, MOD
 
-## Tipos de dados suportados para comparação
+## Tipos de dados suportados para as operações aritméticas
 
 ![Inserir Bloco Funcional](./img/1-7_2-bf_operacao.png)
 

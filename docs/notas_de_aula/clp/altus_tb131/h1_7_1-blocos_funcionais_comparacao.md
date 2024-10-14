@@ -18,7 +18,7 @@ tags:
 
 # Funções: EQ, NE, LT, LE, GT, GE
 
-## Tipos de dados suportados para comparação
+## Tipos de dados suportados para as comparações
 
 ![Inserir Bloco Funcional](./img/1-7_1-bf_comparacao.png)
 
