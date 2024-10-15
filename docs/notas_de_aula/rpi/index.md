@@ -92,6 +92,17 @@ tags:
 8. Frame e temporização em modo RTU
 9. Codificação da mensagem
 
+## C7. [Sistema Supervisório - SCADA](slides/aula07-sistemas_SCADA.pdf)
+1. Objetivos
+2. Aplicações
+3. Benefícios
+4. Desafios
+5. Exemplos de sistemas:
+	1. Indusoft/Aveva Edge
+	2. Elipse
+	3. BluePlant
+	4. ScadaBR
+
 
 ## A1. Prática orientada em laboratório
 1. [Sinal de comunicação](https://solace.com/wp-content/uploads/2021/02/baud-rate-4.png)
