@@ -120,6 +120,8 @@ tags:
 	
 2. [Comunicação Serial via RS485](slides/lab4-comunicacao_serial_rs485.pdf)
 
+3. [Sistema Supervisório - ScadaBR](slides/aula07lab-ScadaBR.pdf)
+
 
 ## A2. Ferramentas/Software
 
