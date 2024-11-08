@@ -63,7 +63,6 @@ tags:
 
 ## H1. Equipamento: Training Box (TB131) Altus
 
-### 2024.2 - Atualizado
 1. [Novo Projeto](altus_tb131/h1_1-novo_projeto.md)
 2. [Set e Reset](altus_tb131/h1_2-setReset.md)
 3. [Detecção de de borda](altus_tb131/h1_3-borda_subida_descida.md)
@@ -76,11 +75,10 @@ tags:
 	3. [Seleção](altus_tb131/h1_7_3-blocos_funcionais_selecao.md)
 8. [Função](altus_tb131/h1_8-funcao.md)
 9. [Bloco Funcional](altus_tb131/h1_9-bloco_funcional.md)
+10. IHM - Interface Homem-Máquina
+	1. [Exibição de variável no display](altus_tb131/h1_10_1-ihm_display_var.md)
+	2. [Edição de variável](altus_tb131/h1_10_2-ihm_edita_var.md)
 
-### 2024.1 
-6. [Display Variável](altus_tb131/ihm_display_var.md)
-9. [Edição de Variáveis](altus_tb131/ihm_edita_var.md)
-10. [Motor de Passo e Encoder](altus_tb131/saidas_entradas_rapidas.md)
 
 
 
