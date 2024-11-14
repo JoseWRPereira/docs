@@ -103,6 +103,16 @@ tags:
 	3. BluePlant
 	4. ScadaBR
 
+## C8. [Rede sem fio industrial](slides/aula08-redes_sem_fio_em_ambiente_industrial.pdf)
+1. Introdução
+2. Wi-Fi
+3. Bluetooth
+4. Redes de Sensores Sem Fio (RSSF)
+5. Fatores determinantes em redes sem fio
+6. Práticas recomendadas
+
+
+
 
 ## A1. Prática orientada em laboratório
 1. [Sinal de comunicação](https://solace.com/wp-content/uploads/2021/02/baud-rate-4.png)
@@ -121,6 +131,8 @@ tags:
 2. [Comunicação Serial via RS485](slides/lab4-comunicacao_serial_rs485.pdf)
 
 3. [Sistema Supervisório - ScadaBR](slides/aula07lab-ScadaBR.pdf)
+
+4. [Projeto Modbus+Supervisório](slides/aula08lab-supervisorio.pdf)
 
 
 ## A2. Ferramentas/Software
