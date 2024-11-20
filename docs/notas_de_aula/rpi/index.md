@@ -111,6 +111,18 @@ tags:
 5. Fatores determinantes em redes sem fio
 6. Práticas recomendadas
 
+## C9. [IIoT](slides/aula09-IIoT.pdf)
+1. Indústria 4.0
+2. Modelo hierárquico ISA95
+3. Mudança de paradigma com dados
+4. IoT x IIoT
+5. Tecnologias de IIoT
+	1. Inteligência artificial
+	2. Segurança cibernética
+	3. Computação em nuvem
+	4. Computação de borda
+	5. Mineração e Análise de Dados
+6. Desafios da IIoT
 
 
 
