@@ -1,6 +1,6 @@
 ---
 title: Sistemas Digitais
-icon: fontawesome/solid/bolt
+icon: fontawesome/solid/square-binary
 author:
  - José W. R. Pereira
 tags:
@@ -11,7 +11,7 @@ tags:
  - AVR
 ---
 
-# Sistemas Eletrônicos Digitais
+# Sistemas Digitais
 
 - [Microcontroladores](./digitais/mcu/microcontroladores.md)
 - [AVR - ATmega328P](./digitais/mcu/avr_atmega328p.md)
