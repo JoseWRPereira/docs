@@ -25,9 +25,9 @@ Se não gostar, colabore e ajude a melhorar.
 ___
 
 
-[:fontawesome-brands-github:{ style="color: #171515";}]( https://github.com/josewrpereira ) 
+[:fontawesome-brands-github:{ style="color: #979595";}]( https://github.com/josewrpereira ) 
 [:fontawesome-brands-linkedin:{ style="color: #0E76A8";}]( https://www.linkedin.com/in/josewrpereira/ ) 
-[:fontawesome-solid-envelopes-bulk:{ style="color: #555757";}]( mailto:josewrpereira@protonmail.com ) 
+[:fontawesome-solid-envelopes-bulk:{ style="color: #858787";}]( mailto:josewrpereira@protonmail.com ) 
 José W. R. Pereira
 
 ___

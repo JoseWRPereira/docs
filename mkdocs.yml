@@ -3,12 +3,19 @@ site_name: Prof. José W. R. Pereira
 nav:
   - Principal:
     - index.md
-    - Indicações: indicacoes.md
-  - Notas de aula:
-    - notas_de_aula/index.md
-    - notas_de_aula/mcu/index.md
-    - notas_de_aula/clp/index.md
-    - notas_de_aula/rpi/index.md
+    - Sistemas Eletrônicos: index_eletronica.md
+    - Automação Industrial: index_automacao.md
+  - Sistemas Eletrônicos: 
+#    - index_eletronica.md
+    - eletronica/mcu/index.md
+    - eletronica/mcu/avr_atmega328p.md
+
+
+  - Automação Industrial:
+    - index_automacao.md
+    - automacao/clp/index.md
+    - automacao/redes/index.md
+  - Indicações: indicacoes.md
 
 
 
@@ -47,13 +54,13 @@ theme:
    text: Lora
    code: Roboto Mono
 
-        #plugins:
-  #    - blog:
-  #        blog_dir: blog
-  #        blog_toc: true
-  #        post_date_format: full
-  #        post_url_date_format: yyyy/MM/dd
-  #        archive: false
+#    plugins:
+#      - blog:
+#        blog_dir: blog
+#        blog_toc: true
+#        post_date_format: full
+#        post_url_date_format: yyyy/MM/dd
+#        archive: false
 
 repo_url: https://github.com/josewrpereira/docs
 repo_name: josewrpereira/docs
@@ -89,6 +96,6 @@ markdown_extensions:
 
 
 copyright: |
-  &copy; 2024 <a href="https://github.com/josewrpereira" target="_blank" rel="noopener">José W. R. Pereira</a>
+  &copy; 2025 <a href="https://github.com/josewrpereira" target="_blank" rel="noopener">José W. R. Pereira</a>
 
 

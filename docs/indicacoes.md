@@ -19,19 +19,19 @@ tags:
 
 
  * [:fontawesome-brands-youtube:{ style="color: #EE0F0F;" } ](https://www.youtube.com/user/lrbgrundig) 
-   [:fontawesome-regular-window-maximize:{ style="color: #444444;" } ](https://luizbitencourt.wordpress.com/) 
+   [:fontawesome-regular-window-maximize:{ style="color: #888888;" } ](https://luizbitencourt.wordpress.com/) 
 Luiz Bitencourt 
 
  * [:fontawesome-brands-youtube:{ style="color: #EE0F0F;" } ]( https://www.youtube.com/@ProfessorRodrigoRech ) 
-    [:fontawesome-regular-window-maximize:{ style="color: #444444;" } ]( https://sites.google.com/view/rodrigorechifsp ) 
+    [:fontawesome-regular-window-maximize:{ style="color: #888888;" } ]( https://sites.google.com/view/rodrigorechifsp ) 
 Rodrigo Rech 
 
  * [:fontawesome-brands-youtube:{ style="color: #EE0F0F;" } ]( https://www.youtube.com/user/OProfessorLeandro ) 
-    [:fontawesome-regular-window-maximize:{ style="color: #444444;" } ]( https://oprofessorleandro.wordpress.com/ ) 
+    [:fontawesome-regular-window-maximize:{ style="color: #888888;" } ]( https://oprofessorleandro.wordpress.com/ ) 
 Leandro Poloni 
 
 * [:fontawesome-brands-linkedin:{ style="color: #0e76a8;" } ]( https://www.linkedin.com/company/includemicro/ ) 
-    [:fontawesome-regular-window-maximize:{ style="color: #444444;" } ]( https://includemicro.com/ )
+    [:fontawesome-regular-window-maximize:{ style="color: #888888;" } ]( https://includemicro.com/ )
 Eder Andrade  <includemicro\>
 
  * [:fontawesome-brands-youtube:{ style="color: #EE0F0F;" } ]( https://www.youtube.com/c/AlisooNFreitas )
