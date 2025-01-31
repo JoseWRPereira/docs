@@ -1,5 +1,5 @@
 ---
-title: Automação
+title: Automação Industrial
 icon: fontawesome/solid/industry
 author:
  - José W. R. Pereira

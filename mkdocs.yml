@@ -3,14 +3,12 @@ site_name: Prof. José W. R. Pereira
 nav:
   - Principal:
     - index.md
-    - Sistemas Eletrônicos: index_eletronica.md
+    - Sistemas Digitais:    index_digitais.md
     - Automação Industrial: index_automacao.md
-  - Sistemas Eletrônicos: 
-#    - index_eletronica.md
-    - eletronica/mcu/index.md
-    - eletronica/mcu/avr_atmega328p.md
-
-
+  - Sistemas Digitais: 
+    - index_digitais.md
+    - digitais/mcu/microcontroladores.md
+    - digitais/mcu/avr_atmega328p.md
   - Automação Industrial:
     - index_automacao.md
     - automacao/clp/index.md
