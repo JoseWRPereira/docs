@@ -14,7 +14,7 @@ tags:
 ![capa](./figuras/mcu_capa.png)
 
 
-## Aula 01 - Sistemas embarcados
+## [Aula 01 - Sistemas embarcados](slides/Aula01-SistemasEmbarcados.pdf)
 
 A terceira revolução industrial, que ocorreu após o fim da Segunda Guerra Mundial, produzida pelo desenvolvimento e utilização em larga escala da microeletrônica, possibilitou a construção dos primeiros computadores, ainda de grande porte, que evoluíram para os microcomputadores, que logo foram ligados em rede. Em seguida vieram os computadores portáteis, alcançando o que chamamos smartphones, mas que erroneamente ainda chamamos de celulares. 
 
@@ -162,11 +162,21 @@ Como é o mercado de trabalho para profissionais desta área? Para ilustrar tal 
 
 ---
 
-## Aula 02 - Microcontroladores
+## [Aula 02 - Microcontroladores](slides/Aula02-Microcontroladores.pdf)
 
-Os Microcontroladores são uma derivação dos Microprocessadores que surgiram para uso e aplicações específicas, principalmente em sistemas industriais e mais recentemente eletrodomésticos até os atuais dispositivos de Internet das coisas, ou IoT (*Internet of things*).
+Os Microcontroladores são uma derivação dos Microprocessadores que surgiram para uso e 
+aplicações específicas, principalmente em sistemas industriais e mais recentemente 
+eletrodomésticos até os atuais dispositivos de Internet das coisas, ou IoT 
+(*Internet of things*).
 
-Basicamente, tanto os microprocessadores quanto os microcontroladores são circuitos lógicos digitais que processam dados, realizam cálculos e interagem com um conjunto de outros circuitos. Nos processadores, os demais circuitos estão em um corpo distinto, formando as placas mãe como nos computadores de uso geral. No caso dos microcontroladores, há uma série de circuitos periféricos montados no mesmo encapsulamento da unidade de processamento, ou seja, no mesmo corpo do circuito de controle também estão presentes memórias, circuitos contadores, conversores, de comunicação entre outros, a combinação é extremamente ampla. 
+Basicamente, tanto os microprocessadores quanto os microcontroladores são circuitos 
+lógicos digitais que processam dados, realizam cálculos e interagem com um conjunto de 
+outros circuitos. Nos processadores, os demais circuitos estão em um corpo distinto, 
+formando as placas mãe como nos computadores de uso geral. No caso dos microcontroladores, 
+há uma série de circuitos periféricos montados no mesmo encapsulamento da unidade de 
+processamento, ou seja, no mesmo corpo do circuito de controle também estão presentes 
+memórias, circuitos contadores, conversores, de comunicação entre outros, 
+a combinação é extremamente ampla. 
 
 
 | Figura : Microcprocessador x Microcontrolador |
@@ -175,7 +185,10 @@ Basicamente, tanto os microprocessadores quanto os microcontroladores são circu
 | Fonte: Próprio autor |
 
 
-Em função principalmente do tipo de aplicação aos quais cada um desses dispositivos é empregado, algumas de suas características acabam sendo bem diferentes. A Tabela mostra algumas diferenças de características entre os microprocessadores e os microcontroladores.
+Em função principalmente do tipo de aplicação aos quais cada um desses dispositivos é 
+empregado, algumas de suas características acabam sendo bem diferentes. 
+A Tabela mostra algumas diferenças de características entre os microprocessadores e os 
+microcontroladores.
 
 Tabela: Comparação entre MPU e MCU
 
@@ -197,7 +210,12 @@ Fonte: [AWS - Qual é a diferença entre microprocessadores e microcontroladores
 
 **Mas como surgiu a ideia do primeiro processador?**
 
-No ano de 1971, Federico Faggin da Intel, respondeu a um pedido de 12 microchips personalizados para uma calculadora do fabricante de eletrônicos japonês Busicom com um único circuito de uso geral, que correspondia à solicitação, chamado de Intel 4004 foi o precursor de uma significativa evolução da computação. Operava com frequência de clock de 740 kHz e operava fluxos de 4 bits, *nibbles* e realizada até 92 mil instruções por segundo. 
+No ano de 1971, Federico Faggin da Intel, respondeu a um pedido de 12 microchips 
+personalizados para uma calculadora do fabricante de eletrônicos japonês Busicom com 
+um único circuito de uso geral, que correspondia à solicitação, chamado de Intel 4004 
+foi o precursor de uma significativa evolução da computação. Operava com frequência de 
+clock de 740 kHz e operava fluxos de 4 bits, *nibbles* e realizada até 92 mil instruções 
+por segundo. 
 
 |                                    Figura: Intel 4004: protótipo, esquemático, chip em produção e Calculadora Busicom 141-PF                                    |
 | :-------------------------------------------------------------------------------------------------------------------------------------------------------------: |
@@ -205,9 +223,19 @@ No ano de 1971, Federico Faggin da Intel, respondeu a um pedido de 12 microchips
 | Fonte: [Intel Marks 50th Anniversary of the Intel 4004](https://www.intel.com/content/www/us/en/newsroom/news/intel-marks-50th-anniversary-4004.html#gs.jyxddl) |
 
 
-Poucos meses após o lançamento do Intel 4004, foi a vez do segundo processador, desenvolvido de forma independente e com especificações distintas ao primeiro, foi a vez do [Intel 8008](https://www.intel.com/content/www/us/en/history/virtual-vault/articles/the-8008.html), primeiro processador de 8 bits, com 50 porcento mais transistores e um clock oito vezes maior, com capacidade de manipulação de dados ou caracteres, sendo o antecessor capaz apenas de manipulações aritméticas.
+Poucos meses após o lançamento do Intel 4004, foi a vez do segundo processador, 
+desenvolvido de forma independente e com especificações distintas ao primeiro, 
+foi a vez do 
+[Intel 8008](https://www.intel.com/content/www/us/en/history/virtual-vault/articles/the-8008.html), 
+primeiro processador de 8 bits, com 50 porcento mais transistores e um clock oito vezes maior, 
+com capacidade de manipulação de dados ou caracteres, sendo o antecessor capaz apenas de 
+manipulações aritméticas.
 
-Com relatos de clientes do 8008, sobre o projeto do chip estar restringindo a escala e a complexidade do software que eles queriam criar, foi desenvolvido o [Intel 8080](https://www.intel.com.br/content/www/br/pt/newsroom/news/50-years-ago-the-influential-intel-8080.html)que tornou real o que os seus antecessores criaram, segundo Federico Notebookgin, designer-chefe da Intel para o 8080 os antecessores 4004 e 8008.
+Com relatos de clientes do 8008, sobre o projeto do chip estar restringindo a 
+escala e a complexidade do software que eles queriam criar, foi desenvolvido o 
+[Intel 8080](https://www.intel.com.br/content/www/br/pt/newsroom/news/50-years-ago-the-influential-intel-8080.html)
+que tornou real o que os seus antecessores criaram, segundo Federico Notebookgin, 
+designer-chefe da Intel para o 8080 os antecessores 4004 e 8008.
 
 > O novo chip de 8 bits resultante foi mais eficiente, mais poderoso e mais flexível, capaz de 290.000 operações por segundo (10 vezes a do 8008). E com uma configuração de 40 pinos, tornou a conexão a outros componentes mais fácil do que o projeto de 18 pinos do 8008. O 8080 também integrou as funções dos chips de suporte que os 4004 e 8008 precisavam, tornando-o um verdadeiro microprocessador de chip único.
 > 
@@ -215,14 +243,23 @@ Com relatos de clientes do 8008, sobre o projeto do chip estar restringindo a es
 
 **Uma nova era**
 
-O Intel 8080 abriu as portas de um novo mundo a ser explorado por programadores do mundo inteiro de tecnologias a explorar, o que possibilitou o seu uso não só em computadores ou calculadoras, mas permitiu o seu uso no famoso Altair 8800, o primeiro computador portátil e de baixo custo, tornando mais acessível a computação comercial e científica. Ainda substituindo toda uma lógica discreta, pela primeira vez para processar um jogo, o Gun Fight, da Midway Games, foi o primeiro jogo de arcade disponível comercialmente a utilizar este processador. 
+O Intel 8080 abriu as portas de um novo mundo a ser explorado por programadores do 
+mundo inteiro de tecnologias a explorar, o que possibilitou o seu uso não só em 
+computadores ou calculadoras, mas permitiu o seu uso no famoso Altair 8800, 
+o primeiro computador portátil e de baixo custo, tornando mais acessível a computação 
+comercial e científica. Ainda substituindo toda uma lógica discreta, 
+pela primeira vez para processar um jogo, o Gun Fight, da Midway Games, 
+foi o primeiro jogo de arcade disponível comercialmente a utilizar este processador. 
 
 |                                Figura : Uso do 8080 em caixa eletrônico, computador Altair 8800 e Gun Fight, da Midway Games.                                 |
 | :-----------------------------------------------------------------------------------------------------------------------------------------------------------: |
 | ![intel8080](./figuras/intel8080.png)                                                              |
 | Fonte: [Há 50 anos: celebrando o influente Intel 8080](https://www.intel.com.br/content/www/br/pt/newsroom/news/50-years-ago-the-influential-intel-8080.html) |
 
-A evolução e o avanço tecnológico desde os primeiros passos com os processadores é notório e ultrapassa quaisquer limites até então pensados. A figura a seguir ilustra as principais características dos processadores depois de 50 anos, desde o icônico 8080. 
+A evolução e o avanço tecnológico desde os primeiros passos com os processadores é 
+notório e ultrapassa quaisquer limites até então pensados. 
+A figura a seguir ilustra as principais características dos processadores depois de 50 anos, 
+desde o icônico 8080. 
 
 |                                                Figura : Comparação de 50 anos entre o 8080 e o Core Ultra 200S                                                |
 | :-----------------------------------------------------------------------------------------------------------------------------------------------------------: |
@@ -232,9 +269,14 @@ A evolução e o avanço tecnológico desde os primeiros passos com os processad
 
 
 
-**O Pai de todos**
+**O lendário 8051**
 
-Ainda no começo dos anos 80, a Intel desenvolveu um controlador com tecnologia NMOS que logo evoluiu pela CMOS, reduzindo drasticamente o consumo de energia, possibilitando dispositivos com fontes reduzidas de energia, como baterias portáteis. Possui memória para o seu programa, temporizador, barramento de 8 bits, 32 entradas e saídas digitais, porta de comunicação serial, interrupções, entre outros. 
+Ainda no começo dos anos 80, a Intel desenvolveu um controlador com tecnologia NMOS, 
+o famoso **8051**, que logo evoluiu para tecnologia CMOS, 
+reduzindo drasticamente o consumo de energia, possibilitando dispositivos com fontes 
+reduzidas de energia, como baterias portáteis. Possui memória para o seu programa, 
+temporizador, barramento de 8 bits, 32 entradas e saídas digitais, 
+porta de comunicação serial, interrupções, entre outros. 
 
 |                                                                 Figura : Intel P8051                                                                  |
 | :---------------------------------------------------------------------------------------------------------------------------------------------------: |
@@ -346,7 +388,7 @@ A seguir estão alguns dos principais tipos de microprocessadores.
 11. [ARM's Secret Weapon (History of ARM Part 2) - LowSpecGamer](https://youtu.be/vx1-6yRAGk0?si=PRtjnqGqqbeysnj0)
 12. [The potted history of ARM - Retro Bytes](https://youtu.be/t59EtDxpYmM?si=e6WpiiISbu4CHehz)
 13. [Explaining RISC-V: An x86 & ARM Alternative - ExplainingComputers](https://youtu.be/Ps0JFsyX2fU?si=mpfbKea0VbzFJ5Ok)
-
+14. [SAP-1](https://www.ic.unicamp.br/~ducatte/mc542/2012S2/sap-1.pdf)
 
 
 
