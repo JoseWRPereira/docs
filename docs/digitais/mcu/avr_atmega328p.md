@@ -243,12 +243,13 @@ Desenvolver uma aplicação, projeto eletrônico e programa, para um dispositivo
 
   3. Planejamento do processo
     1. Criar o projeto na plataforma de versionamento;
-    2. Construir o circuito no simulador;
-    3. Criar projeto de validação do circuito no simulador;
-    4. Criar programa(firmware) da aplicação;
-    5. Montar circuito em matriz de contatos;
-    6. Testar programa(firmware) na montagem do protótipo;
-    7. Registrar resultado da atividade.
+    2. Definir mapa de entradas e saídas;
+    3. Construir o circuito no simulador;
+    4. Criar projeto de validação do circuito no simulador;
+    5. Criar programa(firmware) da aplicação;
+    6. Montar circuito em matriz de contatos;
+    7. Testar programa(firmware) na montagem do protótipo;
+    8. Registrar resultado da atividade.
 
 
 
@@ -289,9 +290,16 @@ Em seguida, adicione-o ao `stage` e realize o `commit` da nova mudança, seguind
 
 ![sim](figuras/sinaliza_garagem_03.gif)
 
+**4. Definindo mapa de entradas e saídas**
+
+| Função | Dispositivo | Descrição | Pino <br> (Arduino Uno) | Pino <br> (ATmega328P) | PORT |
+|:------:|:-----------:|:---------------------------------------:|:---:|:---:|:---:|
+| Entrada| Fim-de-curso| Acionado quando o portão estiver aberto |  8 | 14 | PB0 |
+| Saída  | LED         | Sinaleiro Amarelo                       | 12 | 18 | PB4 |
+| Saída  | LED         | Sinaleiro Vermelho                      | 13 | 19 | PB5 |
 
 
-**4. Construindo o circuito no simulador**
+**5. Construindo o circuito no simulador**
 
 ![circuito](figuras/sinaliza_garagem_04.gif)
 
@@ -302,7 +310,7 @@ arquivo de construção e alterando o conteúdo de main.c,
 bem como incluindo códigos ou outros arquivos de acordo com o desenvolvimento do projeto. 
 
 
-**5. Criando arquivos de código fonte**
+**6. Criando arquivos de código fonte**
 
 ![cpmain](figuras/sinaliza_garagem_05.gif)
 
@@ -337,12 +345,12 @@ int main(void)
 ```
 
 
-**6. Carregando arquivo executável na simulação**
+**7. Carregando arquivo executável na simulação**
 
 ![loadhex](figuras/sinaliza_garagem_06.gif)
 
 
-**7. Incluindo mudanças na plataforma de versionamento**
+**8. Incluindo mudanças na plataforma de versionamento**
 
 ![gitadd](figuras/sinaliza_garagem_07.gif)
 
