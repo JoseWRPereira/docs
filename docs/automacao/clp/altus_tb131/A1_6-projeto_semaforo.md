@@ -1,6 +1,6 @@
 ---
 title: Projeto Semaforo
-icon: fontawesome/solid/object-ungroup
+icon: fontawesome/solid/traffic-light
 authors:
  - José W. R. Pereira
 tags:

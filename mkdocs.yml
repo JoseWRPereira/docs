@@ -12,7 +12,26 @@ nav:
     - digitais/mcu/avr_atmega328p.md
   - Automação Industrial:
     - index_automacao.md
-    - automacao/clp/index.md
+    - Controladores Programáveis:
+      - Aulas:
+        - automacao/clp/index.md
+      - Altus Duo TB131:
+        - automacao\clp\altus_tb131\lab1-novo_projeto.md
+#        - automacao\clp\altus_tb131\h1_2-setReset.md
+#        - automacao\clp\altus_tb131\h1_3-borda_subida_descida.md
+#        - automacao\clp\altus_tb131\h1_4-temporizadores.md
+#        - automacao\clp\altus_tb131\h1_5-contadores.md
+#        - automacao\clp\altus_tb131\h1_6-entradas_saidas_analogicas.md
+#        - automacao\clp\altus_tb131\h1_7_1-blocos_funcionais_comparacao.md
+#        - automacao\clp\altus_tb131\h1_7_2-blocos_funcionais_operacao.md
+#        - automacao\clp\altus_tb131\h1_7_3-blocos_funcionais_selecao.md
+#        - automacao\clp\altus_tb131\h1_8-funcao.md
+#        - automacao\clp\altus_tb131\h1_9-bloco_funcional.md
+#        - automacao\clp\altus_tb131\h1_10_1-ihm_display_var.md
+#        - automacao\clp\altus_tb131\h1_10_2-ihm_edita_var.md
+      - Situações de Aprendizagem:
+        - automacao\clp\altus_tb131\A1_5-projeto_partida_estrela_triangulo.md
+        - automacao\clp\altus_tb131\A1_6-projeto_semaforo.md
     - automacao/redes/index.md
   - Ciência de Dados:
     - index_dados.md

@@ -1,6 +1,6 @@
 ---
 title: Projeto Partida Estrela Triângulo
-icon: fontawesome/solid/object-ungroup
+icon: fontawesome/solid/bars-progress
 authors:
  - José W. R. Pereira
 tags:

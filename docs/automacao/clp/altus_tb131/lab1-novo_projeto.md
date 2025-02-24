@@ -1,7 +1,6 @@
 ---
 title: Novo Projeto
-icon: fontawesome/solid/object-ungroup
-#icon: fontawesome/solid/folder-plus
+icon: fontawesome/solid/folder-plus
 authors:
  - José W. R. Pereira
 tags:
@@ -11,7 +10,7 @@ tags:
  - Novo projeto
 ---
 
-# Criando un novo projeto
+# Criando um novo projeto
 
 ## 1. Criando um novo projeto a partir de um modelo: 
 
