@@ -18,6 +18,13 @@ nav:
       - Altus Duo TB131:
         - automacao\clp\altus_tb131\lab0-ambientacao.md
         - automacao\clp\altus_tb131\lab1-novo_projeto.md
+    - automacao/redes/index.md
+  - Ciência de Dados:
+    - index_dados.md
+  - Indicações: 
+    - indicacoes.md
+
+
 #        - automacao\clp\altus_tb131\h1_2-setReset.md
 #        - automacao\clp\altus_tb131\h1_3-borda_subida_descida.md
 #        - automacao\clp\altus_tb131\h1_4-temporizadores.md
@@ -33,14 +40,6 @@ nav:
 #      - Situações de Aprendizagem:
 #        - automacao\clp\altus_tb131\A1_5-projeto_partida_estrela_triangulo.md
 #        - automacao\clp\altus_tb131\A1_6-projeto_semaforo.md
-    - automacao/redes/index.md
-  - Ciência de Dados:
-    - index_dados.md
-  - Indicações: 
-    - indicacoes.md
-
-
-
 
 theme:
   name: material
