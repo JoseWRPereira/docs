@@ -16,6 +16,7 @@ nav:
       - Aulas:
         - automacao/clp/index.md
       - Altus Duo TB131:
+        - automacao\clp\altus_tb131\lab0-ambientacao.md
         - automacao\clp\altus_tb131\lab1-novo_projeto.md
 #        - automacao\clp\altus_tb131\h1_2-setReset.md
 #        - automacao\clp\altus_tb131\h1_3-borda_subida_descida.md

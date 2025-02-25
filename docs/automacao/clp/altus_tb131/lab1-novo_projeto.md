@@ -15,7 +15,7 @@ tags:
 
 **1. Criando um novo projeto a partir de um modelo:**
 
-1.1 Clique em `Arquivo` > `Novo a partir do modelo...`
+1.1 Com o **Master Tool IEC** aberto, clique em `Arquivo` > `Novo a partir do modelo...`
 
 1.2 Selecione a segunda opção: **Modelo_DU350_DU351_v110** > Abrir 
 
