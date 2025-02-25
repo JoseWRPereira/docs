@@ -30,9 +30,9 @@ nav:
 #        - automacao\clp\altus_tb131\h1_9-bloco_funcional.md
 #        - automacao\clp\altus_tb131\h1_10_1-ihm_display_var.md
 #        - automacao\clp\altus_tb131\h1_10_2-ihm_edita_var.md
-      - Situações de Aprendizagem:
-        - automacao\clp\altus_tb131\A1_5-projeto_partida_estrela_triangulo.md
-        - automacao\clp\altus_tb131\A1_6-projeto_semaforo.md
+#      - Situações de Aprendizagem:
+#        - automacao\clp\altus_tb131\A1_5-projeto_partida_estrela_triangulo.md
+#        - automacao\clp\altus_tb131\A1_6-projeto_semaforo.md
     - automacao/redes/index.md
   - Ciência de Dados:
     - index_dados.md
