@@ -42,7 +42,7 @@ O Master Tool IEC é o ambiente de desenvolvimento para o controlador programáv
 A figura abaixo ilustra as ferramentas da sua interface padrão, destacando-se:
 
 1. Barra de ferramentas;
-2. Janela de navegação no projeto;
+2. Janela de navegação no projeto ou Organizador de objetos;
 3. Editor de declaração de variáveis;
 4. Editor de código (programa);
 5. Janela de mensagens;

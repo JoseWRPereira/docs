@@ -25,8 +25,9 @@ Uma **bobina** é uma representação do **estado lógico** de uma das **saídas
 
 ![Contatos_bobinas](img/lab2-contatos_bobina.png)
 
+---
 
-**1. Endereçamento das entradas e saídas digitais**
+# Endereçamento das entradas e saídas digitais
 
 Todas as entradas e saídas são mapeadas em regiões de memória. Assim para fazer a lógica em um programa, basta acessar o endereço correspondente à entrada que se quer ler e associá-la a um contato, que passa a representar o estado lógico da entrada física. 
 
@@ -59,4 +60,25 @@ Ou ainda, pode-se utilizar a declaração das variáveis já existente para o eq
      I00                        Q10
 |----| |------------------------( )----|
 ```
+
+--- 
+
+# Declaração de Variáveis e Identificadores
+
+A sintaxe da declaração de variáveis é:
+
+```pascal
+<Identificador> {AT <Endereço>}:<Type> {:=<inicialização>}; 
+```
+
+- Os elementos entre chaves `{ }` são opcionais.
+- O **identificador** é o nome de uma variável:
+    - não pode conter espaços ou caracteres não permitidos;
+    - ele não pode ser declarado em dobro;
+    - não pode ser idêntico a qualquer palavra-chave.
+    - a escrita de variáveis em maiúsculas/minúsculas é ignorada
+        - Ex: VAR1, Var1 e var1 não são variáveis diferentes. 
+
+
+
 
