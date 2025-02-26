@@ -32,3 +32,21 @@ Para o desenvolvimento dos programas, pode-se baixar o software [Master Tool IEC
 ![MasterToolIEC](img/lab0-master_tool_iec.png)
 
 Para a comunicação do controlador com o computador, pode ser necessária a instalação de um [driver de comunicação](driver/PL23XX_Prolific_DriverInstaller_v408.zip).
+
+---
+
+# Ambiente de Desenvolvimento
+
+O Master Tool IEC é o ambiente de desenvolvimento para o controlador programável da série Duo, da Altus. 
+
+A figura abaixo ilustra as ferramentas da sua interface padrão, destacando-se:
+
+1. Barra de ferramentas;
+2. Janela de navegação no projeto;
+3. Editor de declaração de variáveis;
+4. Editor de código (programa);
+5. Janela de mensagens;
+6. Barra de status;
+
+![IDE](img/lab0-ide_mastertool.png)
+
