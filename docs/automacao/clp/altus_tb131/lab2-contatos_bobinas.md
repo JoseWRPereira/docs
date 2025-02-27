@@ -47,7 +47,7 @@ No kit de treinamento TB131 há a seguinte relação das entradas e saídas com 
 |  I07  |  %IX0.7 |   |  Q17  |  %QX1.7 |
 
 
-Assim, para a primeira entrada acinoar a primeira saída com lógica direta, basta realizar a seguinte ligação: 
+Assim, para a primeira entrada acionar a primeira saída com lógica direta, basta realizar a seguinte ligação: 
 
 ```ld
    %IX0.0                     %QX1.0
@@ -60,6 +60,8 @@ Ou ainda, pode-se utilizar a declaração das variáveis já existente para o eq
      I00                        Q10
 |----| |------------------------( )----|
 ```
+
+
 
 --- 
 
@@ -80,5 +82,95 @@ A sintaxe da declaração de variáveis é:
         - Ex: VAR1, Var1 e var1 não são variáveis diferentes. 
 
 
+Exemplo: 
+
+```C
+(* Declaração de variáveis *)
+
+Ligar       AT %IX0.1: BOOL := 0; 
+Desligar    AT %IX0.0: BOOL := 0; 
+Motor       AT %QX1.0: BOOL := 0; 
 
 
+(* Programa em linguagem Ladder *)
+
+     Ligar     Desligar                       Motor
+|-----| |--------|/|---------------------------( )----|
+           |
+     Motor |
+|-----| |--´
+```
+
+---
+
+# Operações lógicas 
+
+As operações lógicas são regras que se baseiam em proposições iniciais para produzir um valor lógico como resultado. 
+
+As proposições iniciais e o resultado são estados lógicos booleanos, Verdadeiro e Falso, que são aqui representados com os valores 1 e 0 respectivamente.
+
+As operações lógicas mais comuns são: Negação (~), Conjunção (^), Disjunção (v) e ainda Condicional (->) e Bicondicional (<->) que estão fora do escopo deste material. 
+
+Para utilizar estes operandos, é necessário conhecer as suas regras de aplicação, que normalmente são expressas em forma de tabela verdade. 
+
+A linguagem ladder utiliza a simbologia de contatos para representar os estados lógicos: 
+
+- Contato aberto:  `---| |----`
+- Contato fechado: `---|/|----`
+
+---
+
+
+**Operação: Negação (NÃO)**
+
+| A   |\(Y = \bar{A}\) |
+|:---:|:---:|
+| 0   |  1  |
+| 1   |  0  |
+
+```
+      A                   Y
+|----|/|-----------------( )----|
+```
+
+---
+
+**Operação: Conjunção (E)**
+
+| A   | B   | Y = A.B |
+|:---:|:---:|:---:|
+| 0   | 0   |  0  |
+| 0   | 1   |  0  |
+| 1   | 0   |  0  |
+| 1   | 1   |  1  |
+
+
+```
+      A      B               Y
+|----| |----| |-------------( )----|
+```
+
+---
+
+
+**Operação: Disjunção (OU)**
+
+| A   | B   | Y = A+B |
+|:---:|:---:|:---:|
+| 0   | 0   |  0  |
+| 0   | 1   |  1  |
+| 1   | 0   |  1  |
+| 1   | 1   |  1  |
+
+
+```
+      A                      Y
+|----| |--------------------( )----|
+            |
+      B     |
+|----| |----'
+```
+
+---
+
+---

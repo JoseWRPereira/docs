@@ -97,6 +97,8 @@ extra:
     - icon: fontawesome/solid/envelopes-bulk
       link: mailto:josewrpereira@protonmail.com
 
+extra_javascript:
+  - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML
 
 markdown_extensions:
   - pymdownx.highlight:
@@ -114,7 +116,7 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
-
+  - mdx_math
 
 
 
