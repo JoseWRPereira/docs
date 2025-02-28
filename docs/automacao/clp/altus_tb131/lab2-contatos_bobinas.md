@@ -172,5 +172,4 @@ A linguagem ladder utiliza a simbologia de contatos para representar os estados 
 ```
 
 ---
-
 ---
