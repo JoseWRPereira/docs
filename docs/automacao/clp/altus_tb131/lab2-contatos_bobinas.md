@@ -84,14 +84,27 @@ A sintaxe da declaração de variáveis é:
 
 Exemplo: 
 
-```C
+```Pascal
 (* Declaração de variáveis *)
 
 Ligar       AT %IX0.1: BOOL := 0; 
 Desligar    AT %IX0.0: BOOL := 0; 
 Motor       AT %QX1.0: BOOL := 0; 
+```
+
+Obs: Nos exemplos são apresentadas apenas as declarações das variáveis, sem a seguinte estrutura: 
+
+```pascal
+PROGRAM PLC_PRG
+VAR
+
+END_VAR
+```
+
+Bem como o programa, é apresentado em forma de texto monoespaçado, para reduzir a quantidade de imagens no site, facilitando a sua renderização da página. 
 
 
+```Pascal
 (* Programa em linguagem Ladder *)
 
      Ligar     Desligar                       Motor
@@ -100,6 +113,15 @@ Motor       AT %QX1.0: BOOL := 0;
      Motor |
 |-----| |--´
 ```
+
+Obs: Este trecho não pode ser copiado, pois o editor do Master Tool IEC é gráfico e não possui interface para este tipo de notação. 
+
+
+Segue ilustração da declaração das variáveis e do programa inseridos no Master Tool IEC. 
+
+![AcionaMotor](img/lab2-aciona_motor.png)
+
+Note que **após a compilação**, deve aparecer a mensagem como na Janela de Mansagens: `0 erro(s), 0 aviso(s)`.
 
 ---
 
@@ -172,4 +194,34 @@ A linguagem ladder utiliza a simbologia de contatos para representar os estados 
 ```
 
 ---
+
+**Associação de operações**
+
+As associações de operações podem ser realizadas, como o já visto acionamento do motor.
+
+```Pascal
+     Ligar     Desligar                       Motor
+|-----| |--------|/|---------------------------( )----|
+           |
+     Motor |
+|-----| |--´
+```
+
+Este programa pode ser descrito na forma de expressão algébrica da seguinte forma:
+
+$$
+Motor = (Ligar + Motor).Desligar
+$$
+
+Lembrando que o operador `OU` é representado pelo símbolo `+` e o operador `E` é representado pelo símbolo `.`.
+
 ---
+
+
+**Como ficam os programas para as seguintes expressões?**
+
+1. \(Y_1 = A.\bar{B} + \bar{A}.B\)
+2. \(Y_2 = \bar{A}.\bar{B}+A.B\)
+3. \(Y_3 = \overline{A.B}\)
+4. \(Y_4 = \overline{A+B}\)
+

@@ -19,6 +19,8 @@ nav:
         - automacao/clp/altus_tb131/lab0-ambientacao.md
         - automacao/clp/altus_tb131/lab1-novo_projeto.md
         - automacao/clp/altus_tb131/lab2-contatos_bobinas.md
+      - Situações de Aprendizagem:
+        - automacao/clp/altus_tb131/sa1-projeto_partida_direta_motor.md
     - automacao/redes/index.md
   - Ciência de Dados:
     - index_dados.md
