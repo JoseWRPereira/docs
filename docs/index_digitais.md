@@ -11,12 +11,11 @@ tags:
  - AVR
 ---
 
-# Microcontroladores
+Os sistemas digitais são circuitos projetados para manipular dados em formato binário, podendo representar grandezas físicas de forma discreta, processar esses dados e produzir um resultado mediante um conjunto de regras de construção e/ou instruções programadas. 
+
+Sistemas digitais estão amplamente presentes no dispositivos eletrônicos que são utilizados atualmente, assumindo um papel de grande relevância em todo avanço tecnológico desde foram criados. 
+
+São muitas as tecnologias que abrangem o termo `Sistemas digitais`, em que pode-se citar as simples portas lógicas da eletrônica digital, até os atuais processadores e microcontroladores de arquitetura ARM ou Risc-V, ou ainda Dispositivos de Lógica Configurável com os FPGAs. 
 
 
-| Slides											                    			| Laboratórios - AVR ATmega328P |
-|:----------------------------------------------------------------------------------|:-------------|
-| [Aula 0 - Apresentação](digitais/mcu/slides/Aula00-Apresentacao.pdf)				|[Lab. 0 - AVR Pisca LED](digitais/mcu/avr_atmega328p.md/#lab-0-avr-pisca-led) |
-| [Aula 1 - Sistemas Embarcados](digitais/mcu/slides/Aula01-SistemasEmbarcados.pdf)	|[Lab. 1 - Projeto: Sinalizador de garagem](digitais/mcu/avr_atmega328p.md/#lab-1-projeto-sinalizador-de-garagem)|
-| [Aula 2 - Microcontroladores](digitais/mcu/slides/Aula02-Microcontroladores.pdf)	| | 
 
