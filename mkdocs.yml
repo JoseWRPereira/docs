@@ -15,6 +15,7 @@ nav:
       - AVR ATmega328P:
         - digitais/mcu/avr_atmega328p/lab0-ambientacao.md
         - digitais/mcu/avr_atmega328p/lab1-sinalizador_garagem.md
+#        - digitais/mcu/avr_atmega328p/lab2-partida_estrela_triangulo.md
   - Automação Industrial:
     - index_automacao.md
     - Controladores Programáveis:
