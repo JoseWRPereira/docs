@@ -24,15 +24,11 @@ tags:
 
 Desenvolver uma aplicação, projeto eletrônico e programa, para um dispositivo de controle de tráfego (semáforo), a ser instalado em um cruzamento de pedestre. 
 
-| Figura 1: Exemplo de semáforo                                                   |
-|:-------------------------------------------------------------------------------:|
-| ![semaforo_pedestre](img/lab3-semaforo_freepik.png)                             |
-| Fonte: [freepik](https://br.freepik.com/vetores-premium/pedestre-atravessar-a-rua-com-pessoas-da-equipe-e-semaforo-e-cidade_5589436.htm)  |
+|Figura 1a: Exemplo de cruzamento de pedestres| Figura 1b: Semáforo para veículos|
+|:-------------------------------------------:|:--------------------------------:|
+| ![semaforo_pedestre](img/lab3-semaforo_freepik.png)|![semaforo](img/lab3-semaforo.gif)|
+| Fonte: [freepik](https://br.freepik.com/vetores-premium/pedestre-atravessar-a-rua-com-pessoas-da-equipe-e-semaforo-e-cidade_5589436.htm)  | |
 
-
-| Figura 2: Semáforo para veículos |
-| :------------------------------: |
-| ![semaforo](img/lab3-semaforo.gif)    |
 
 
 **2. Requisitos da solução**
