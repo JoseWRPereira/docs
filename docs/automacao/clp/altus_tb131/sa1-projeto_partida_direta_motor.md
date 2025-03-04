@@ -1,6 +1,6 @@
 ---
 title: Partida Direta de Motor
-icon: fontawesome/solid/bars-progress
+icon: fontawesome/solid/radiation
 authors:
  - José W. R. Pereira
 tags:

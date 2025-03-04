@@ -412,8 +412,139 @@ int main(void)
 }
 ```
 
+---
+
+# Comparação entre códigos fonte: Qual é o melhor?
+
+
+> Código utilizando o *framework* Arduino.
+
+
+``` Arduino
+
+// Código .ino
+
+void setup() 
+{
+  pinMode(13, OUTPUT);
+  pinMode(12, OUTPUT);
+  pinMode( 8, INPUT);
+}
+
+void loop() 
+{
+  if( digitalRead(8) == 1 )
+  {
+    digitalWrite(12, HIGH);
+    digitalWrite(13, LOW);
+    delay(500);
+    digitalWrite(12, LOW);
+    digitalWrite(13, HIGH);
+    delay(500);
+  }
+  else
+  {
+    digitalWrite(12, LOW);
+    digitalWrite(13, LOW);
+  }
+}
+
+```
 
 ---
+
+> Código fonte em linguagem C para AVR.
+
+``` c
+
+// Código .c
+
+#define F_CPU 16000000L
+#include <avr/io.h>
+#include <util/delay.h>
+int main(void) 
+{   
+    DDRB = 0b00110000;
+    PORTB = 0;
+    while (1) 
+    {
+        if( PINB & (1<<PINB0))
+        {
+            PORTB |= (1<<PORTB4);
+            PORTB &= ~(1<<PORTB5);
+            _delay_ms(500);
+            PORTB ^= (1<<PORTB4 | 1<<PORTB5);
+            _delay_ms(500);
+        }
+        else
+        {
+            PORTB &= ~(1<<PORTB4);
+            PORTB &= ~(1<<PORTB5);
+        }
+    }
+}
+```
+
+
+
+---
+
+> Código fonte em linguagem Assembly para AVR.
+
+``` Asm
+
+; Código .asm
+
+			; Inclusão das definições de pinos fornecidas pelo fabricante
+.include "m328pdef.inc"
+
+				; Programa alocado no enderaço 0 da memória de código.
+.ORG 0X0000
+
+				; PB5, PB4: out;    PB0: in;	0b00110000 = 0x30
+	LDI	    R16,0x30
+	OUT 	DDRB,R16
+
+DESLIGA_LEDS:
+	LDI	    R16,0x00
+	OUT	    PORTB,R16
+
+INICIO:
+	IN	    R16,PINB
+	SBRS	R16,0	
+	RJMP	DESLIGA_LEDS
+	
+	RCALL	DELAY
+	SBI	    PORTB,PB5
+	CBI	    PORTB,PB4
+	RCALL	DELAY
+	CBI	    PORTB,PB5
+	SBI	    PORTB,PB4
+	RJMP	INICIO
+
+DELAY:
+	LDI	    R16,0
+	LDI	    R17,0
+	LDI	    R18,41
+DELAY_LOOP:
+	INC	    R16
+	BRNE	DELAY_LOOP
+	INC	    R17
+	BRNE	DELAY_LOOP
+	DEC	    R18
+	BRNE	DELAY_LOOP
+	RET
+
+```
+
+>[!TIP]
+> 
+> O arquivo de inclusão do projeto em Assembly [`m328pdef.inc`](https://codeberg.org/JoseWRPereira/sitap-cp/src/branch/main/11-cp-avr-atmega328p/01_5-asm-sinalizador_de_garagem/m328pdef.inc) contém a definição dos registradores e seus respectivos endereços. Este arquivo é fornecido pelo fabricante. 
+
+
+---
+
+Após a compilação dos códigos, são gerados arquivos .hex equivalentes em comportamento, porém com uma diferença absurda em termos de ocupação de memória.
 
 ![Arduino_C_Asm](img/lab1-capa_mcu.png)
 
