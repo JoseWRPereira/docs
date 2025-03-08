@@ -38,9 +38,9 @@ nav:
   - Projetos:
     - Gestão:
       - Metodologia: 
-        - humanidades/gestao/gestao_projetos.md
+        - projetos/gestao/gestao_projetos.md
       - Ferramentas:
-        - humanidades/gestao/ferramentas_qualidade.md
+        - projetos/gestao/ferramentas_qualidade.md
   - Indicações: 
     - indicacoes.md
 
