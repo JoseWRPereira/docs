@@ -17,10 +17,10 @@ nav:
         - digitais/mcu/avr_atmega328p/lab1-sinalizador_garagem.md
         - digitais/mcu/avr_atmega328p/lab2-partida_estrela_triangulo.md
         - digitais/mcu/avr_atmega328p/lab3-semaforo.md
-    - Conectividade:
-      - ESP32:
-        - digitais/iot/esp32/esp32-1-intro.md
-        - digitais/iot/esp32/lab00.md
+#    - Conectividade:
+#      - ESP32:
+#        - digitais/iot/esp32/esp32-1-intro.md
+#        - digitais/iot/esp32/lab00.md
   - Automação Industrial:
     - index_automacao.md
     - Controladores Programáveis:
@@ -35,12 +35,12 @@ nav:
     - automacao/redes/index.md
   - Ciência de Dados:
     - index_dados.md
-  - Projetos:
-    - Gestão:
-      - Metodologia: 
-        - projetos/gestao/gestao_projetos.md
-      - Ferramentas:
-        - projetos/gestao/ferramentas_qualidade.md
+#  - Projetos:
+#    - Gestão:
+#      - Metodologia: 
+#        - projetos/gestao/gestao_projetos.md
+#      - Ferramentas:
+#        - projetos/gestao/ferramentas_qualidade.md
   - Indicações: 
     - indicacoes.md
 
