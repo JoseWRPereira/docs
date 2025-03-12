@@ -62,37 +62,6 @@ Para utilizar os ESP-IDF no ESP32, instale os seguintes softwares:
 - [Iniciando um projeto no Windows](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/get-started/windows-setup.html#get-started-windows-first-steps)
 - [Iniciando um projeto no Linux/MacOS](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/get-started/linux-macos-setup.html#get-started-linux-macos-first-steps)
 
-**Resumo dos comandos para criação de um projeto**
-
-``` bash
-idf.py create-project -p . <nome do projeto>
-
-# Definindo o dispositivo alvo
-idf.py set-target esp32
-
-# Acessando o menu de configuração
-idf.py menuconfig
-
-```
-
-``` bash
-# Compilando o projeto
-idf.py build
-
-# Gravando o projeto
-idf.py -p <port> flash
-
-
-# Monitorando o projeto
-idf.py -p <port> monitor
-
-# Sair do monitoramento
-# Ctrl+[ ou Ctrl+]
-
-# Limpeza da compilação
-idf.py fullclean
-```
-
 
 ---
 
