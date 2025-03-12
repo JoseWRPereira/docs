@@ -1,5 +1,5 @@
 ---
-title: Projeto Semaforo
+title: Semaforo
 icon: fontawesome/solid/traffic-light
 authors:
  - José W. R. Pereira
@@ -10,19 +10,26 @@ tags:
  - Semaforo
 ---
 
-# Projeto: Semáforo
+# Semáforo
 
-## 1. Situação de aprendizagem: Semáforo
+---
 
-### 1.1 Objetivo
+**1. Objetivo**
 
 Desenvolver uma aplicação, programa de PLC, 
 para um dispositivo de controle de tráfego (semáforo), 
 a ser instalado em um cruzamento de pedestre.
 
-![semaforo_freepik](./img/A1-6_1-semaforo_freepik.png)
 
-### 1.2 Requisitos
+|Figura 1a: Exemplo de cruzamento de pedestres | Figura 1b: Semáforo para veículos|
+|:-------------------------------------------:|:--------------------------------:|
+| ![semaforo_pedestre](img/sa3-semaforo_freepik.png)|![semaforo](gif/sa3-semaforo.gif)|
+| Fonte: [freepik](https://br.freepik.com/vetores-premium/pedestre-atravessar-a-rua-com-pessoas-da-equipe-e-semaforo-e-cidade_5589436.htm)  | |
+
+
+---
+
+**2. Requisitos**
 
 * Intervalo de tempo para o Semáforo de Veículos(sv):
 	* Verde: 42s
@@ -38,9 +45,9 @@ a ser instalado em um cruzamento de pedestre.
 	* Se faltar mais do que 10s para o acionamento da cor amarela, reduzir para 10s.
 	* Se faltar menos do que 10s para o acionamento da cor amarela, manter o tempo restante.
 
-![semaforo](./gif/A1-6_2-semaforo.gif)
+---
 
-### 1.3 Planejamento
+**3. Planejamento**
 
 Definir como será feita a entrega: 
 simulador, montagem de protótipo, montagem de circuito em painel ou PCI, etc, 
@@ -49,7 +56,9 @@ Por fim o planejamento do processo, em que deve ficar explicito como,
 utilizando os materiais listados e manipulando da ferramentas, 
 chega-se ao produto final, com um encadeamento lógico das tarefas que compoem o processo.
 
-### 1.4 Solução
 
+**4. Solução**
 
+---
 
+Bom trabalho!

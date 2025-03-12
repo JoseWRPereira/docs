@@ -1,6 +1,6 @@
 ---
 title: Temporizadores
-icon: fontawesome/solid/object-ungroup
+icon: fontawesome/solid/hourglass-half
 authors:
  - José W. R. Pereira
 tags:
@@ -12,19 +12,28 @@ tags:
 
 # Temporizadores
 
-## 1. ON Delay Timer 
+---
+
+**1. ON Delay Timer**
 
 ![TON](./gif/h1-4_1-TON.gif)
 
-## 2. OFF Delay Timer
+---
+
+**2. OFF Delay Timer**
 
 ![TOF](./gif/h1-4_2-TOF.gif)
 
-## 3. Pulse Timer 
+---
+
+**3. Pulse Timer**
 
 ![TP](./gif/h1-4_3-TP.gif)
 
-## 4. Real Time Clock
+---
+
+**4. Real Time Clock**
 
 ![RTC](./gif/h1-4_4-RTC.gif)
 
+---

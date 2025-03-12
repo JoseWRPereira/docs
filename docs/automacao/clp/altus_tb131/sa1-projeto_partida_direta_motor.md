@@ -75,7 +75,6 @@ para realizar uma partida direta de motor trifásico.
 
 * Não há!
 
----
 
 **Planejamento do processo**
 
