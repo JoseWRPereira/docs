@@ -14,7 +14,7 @@ tags:
 
 # ESP32
 
-O [ESP32](https://www.espressif.com/en/products/socs/esp32) é um microcontrolador com conexão Wi-Fi e Bluetooth integrados, desenvolvido pela empresa Espressif, desenvolvido com robustez para aplicações industriais, baixíssimo consumo de energia, para aplicações *mobile*, *wearables* (vestíveis) ou IoT (*Internet of Things* - Internet das coisas).
+O [ESP32](https://www.espressif.com/en/products/socs/esp32) é um microcontrolador com conexão Wi-Fi e Bluetooth integrados, desenvolvido pela empresa Espressif, robusto para aplicações industriais, com baixíssimo consumo de energia para aplicações *mobile*, *wearables* (vestíveis) ou IoT (*Internet of Things* - Internet das coisas).
 
 Possui alto grau de integração, podendo atuar sozinho como controlador ou como ponte de comunicação com um microcontrolador principal, reduzindo a sua carga de processamento de comunicação, tornando-se um "periférico".
 Possui vários meios de interface com outros dispositivos, entre eles SPI, SDIO, I2C e UART.
@@ -29,15 +29,13 @@ Em todos os casos a documentação é muito completa, desde os passos para insta
 
 ---
 
-# ESP-IDF
+# Espressif IoT Development Framework (ESP-IDF)
 
 O [ESP-IDF](https://www.espressif.com/en/products/sdks/esp-idf) é o *framework* oficial da Espressif para a linha de controladores ESP32. Oferece recursos necessários para desenvolver aplicações de uso geral, em linguagem C e C++. 
 
-É um projeto *open-source* e está disponível no [GitHub](https://github.com/espressif/esp-idf). 
+É um projeto *open-source* e pode ser baixado do [GitHub](https://github.com/espressif/esp-idf). 
 
----
-
-**Componentes de software**
+Disponibiliza os seguintes **Componentes de software**:
 
 ![Componentes_de_software](img/esp32-1-componentes_sw.png)
 

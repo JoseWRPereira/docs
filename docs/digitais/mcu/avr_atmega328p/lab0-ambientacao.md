@@ -205,3 +205,6 @@ make flash
 
 ---
 
+
+## [Template para um novo projeto](https://github.com/JoseWRPereira/avr_atmega328p_template)
+
