@@ -31,6 +31,7 @@ nav:
         - automacao/clp/altus_tb131/lab01-novo_projeto.md
         - automacao/clp/altus_tb131/lab02-contatos_bobinas.md
         - automacao/clp/altus_tb131/lab03-setReset.md
+        - automacao/clp/altus_tb131/lab04-borda_subida_descida.md
       - Situações de Aprendizagem:
         - automacao/clp/altus_tb131/sa1-projeto_partida_direta_motor.md
     - automacao/redes/index.md
