@@ -123,6 +123,8 @@ Segue ilustração da declaração das variáveis e do programa inseridos no Mas
 
 Note que **após a compilação**, deve aparecer a mensagem como na Janela de Mansagens: `0 erro(s), 0 aviso(s)`.
 
+Para executar o programa clique em `Comunicação` -> `Run`.
+
 ---
 
 # Operações lógicas 
