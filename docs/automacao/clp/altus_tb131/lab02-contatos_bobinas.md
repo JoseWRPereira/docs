@@ -212,7 +212,7 @@ As associações de operações podem ser realizadas, como o já visto acionamen
 Este programa pode ser descrito na forma de expressão algébrica da seguinte forma:
 
 $$
-Motor = (Ligar + Motor).Desligar
+Motor = (Ligar + Motor).\overline{ Desligar }
 $$
 
 Lembrando que o operador `OU` é representado pelo símbolo `+` e o operador `E` é representado pelo símbolo `.`.
