@@ -222,8 +222,8 @@ Lembrando que o operador `OU` é representado pelo símbolo `+` e o operador `E`
 
 **Como ficam os programas para as seguintes expressões?**
 
-1. \(Y_1 = A.\bar{B} + \bar{A}.B\)
-2. \(Y_2 = \bar{A}.\bar{B}+A.B\)
-3. \(Y_3 = \overline{A.B}\)
+1. \(Y_1 = A \cdot \overline{B} + \overline{A} \cdot B\)
+2. \(Y_2 = \overline{A} \cdot \overline{B}+A \cdot B\)
+3. \(Y_3 = \overline{A \cdot B}\)
 4. \(Y_4 = \overline{A+B}\)
 

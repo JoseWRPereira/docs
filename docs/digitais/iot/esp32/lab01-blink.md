@@ -263,11 +263,18 @@ idf.py -p <port> flash
 > Pode ser necessário pressionar o botão `BOOT` na placa do ESP32 para realizar a conexão no processo de gravação. O botão deve ser solto apenas quando se iniciar a gravação dos blocos de memória. 
 
 
+
+| Figura 5: Gravação do programa no ESP32                              |
+|:--------------------------------------------------------------------:|
+| ![esp32_flash](img/lab01-esp32_flash.gif)                            |
+| Fonte: Autor                                                         |
+
+
 ---
 
 **12) Monitorando o projeto**
 
-O monitoramento do projeto é interessante quando o código produz mensagens de log, que podem ser visualizadas no monitoramento. 
+O monitoramento do projeto é interessante quando o código produz mensagens de log, que podem ser visualizadas no terminal. 
 
 ``` bash
 idf.py -p <port> monitor
