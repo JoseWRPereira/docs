@@ -41,12 +41,6 @@ nav:
     - automacao/redes/index.md
   - Ciência de Dados:
     - index_dados.md
-  - Projetos:
-    - Gestão:
-      - Metodologia: 
-        - projetos/gestao/gestao_projetos.md
-      - Ferramentas:
-        - projetos/gestao/ferramentas_qualidade.md
   - Indicações: 
     - indicacoes.md
 
