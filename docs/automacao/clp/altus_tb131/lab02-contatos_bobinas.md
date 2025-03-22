@@ -218,12 +218,29 @@ $$
 Lembrando que o operador `OU` é representado pelo símbolo `+` e o operador `E` é representado pelo símbolo `.`.
 
 ---
+**Exercícios**
 
-
-**Como ficam os programas para as seguintes expressões?**
+**1. Como ficam os programas para as seguintes expressões?**
 
 1. \(Y_1 = A \cdot \overline{B} + \overline{A} \cdot B\)
 2. \(Y_2 = \overline{A} \cdot \overline{B}+A \cdot B\)
 3. \(Y_3 = \overline{A \cdot B}\)
 4. \(Y_4 = \overline{A+B}\)
 
+
+**2. Elabore um programa que apresente o comportamento descrito pela seguinte tabela verdade:**
+
+- Variáveis independentes (Entrada): C, B, A
+- Variáveis dependentes (Saída): \(S_1\), \(S_0\)
+
+
+| C | B | A || \(S_1\) | \(S_0\) |
+|:-:|:-:|:-:||:-:|:-:|
+| 0 | 0 | 0 || 0 | 0 |
+| 0 | 0 | 1 || 0 | 1 |
+| 0 | 1 | 0 || 0 | 1 |
+| 0 | 1 | 1 || 1 | 0 |
+| 1 | 0 | 0 || 0 | 1 |
+| 1 | 0 | 1 || 1 | 0 |
+| 1 | 1 | 0 || 1 | 0 |
+| 1 | 1 | 1 || 1 | 1 |
