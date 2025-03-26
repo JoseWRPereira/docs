@@ -11,7 +11,7 @@ tags:
  - ATMega328P
 ---
 
-# 
+#
 
 ![atmega328](img/lab0-atmega328p.png)
 
@@ -72,14 +72,14 @@ Desenvolver uma aplicação, projeto eletrônico e programa, para um dispositivo
 
 **4. [Solução](https://codeberg.org/JoseWRPereira/avr_sinalizador_garagem)**
 
-Produto ou processo que atinge o objetivo proposto, 
+Produto ou processo que atinge o objetivo proposto,
 através da execução do seu planejamento e satisfação dos seus requisitos.
 
 
-Na etapa inicial da solução, crie um projeto em uma plataforma de versionamento, 
-seja ela [codeberg](https://codeberg.org/), 
-[gitlab](https://about.gitlab.com/), 
-[github](https://github.com/) ou qualquer outra plataforma de sua preferência. 
+Na etapa inicial da solução, crie um projeto em uma plataforma de versionamento,
+seja ela [codeberg](https://codeberg.org/),
+[gitlab](https://about.gitlab.com/),
+[github](https://github.com/) ou qualquer outra plataforma de sua preferência.
 
 
 **4.1. Criando um projeto de versionamento no codeberg**
@@ -87,8 +87,8 @@ seja ela [codeberg](https://codeberg.org/),
 ![criandoProjeto](img/lab1-sinaliza_garagem_01.gif)
 
 
-Após criar o projeto, faça o download para um repositório local, 
-que servirá para alocar e armazenar a simulação e o firmware durante o desenvolvimento. 
+Após criar o projeto, faça o download para um repositório local,
+que servirá para alocar e armazenar a simulação e o firmware durante o desenvolvimento.
 
 **4.2. Download do projeto criado em repositório local**
 
@@ -97,8 +97,8 @@ que servirá para alocar e armazenar a simulação e o firmware durante o desenv
 
 Crie um projeto no simulIDE, e salve-o em um diretório `sim` dentro do diretório do projeto.
 
-Em seguida, adicione-o ao `stage` e realize o `commit` da nova mudança, seguindo com o 
-`push` para o repositório remoto. 
+Em seguida, adicione-o ao `stage` e realize o `commit` da nova mudança, seguindo com o
+`push` para o repositório remoto.
 
 
 **4.3. Criando simulação e incluindo no repositório**
@@ -119,10 +119,10 @@ Em seguida, adicione-o ao `stage` e realize o `commit` da nova mudança, seguind
 ![circuito](img/lab1-sinaliza_garagem_04.gif)
 
 
-Copie os arquivos `main.c` e `makefile.mak` de um projeto já existente (avr_pisca_led). 
-Isso facilita a construção do projeto, editando apenas no nome do projeto no 
-arquivo de construção e alterando o conteúdo de main.c, 
-bem como incluindo códigos ou outros arquivos de acordo com o desenvolvimento do projeto. 
+Copie os arquivos `main.c` e `makefile.mak` de um projeto já existente (avr_pisca_led).
+Isso facilita a construção do projeto, editando apenas no nome do projeto no
+arquivo de construção e alterando o conteúdo de main.c,
+bem como incluindo códigos ou outros arquivos de acordo com o desenvolvimento do projeto.
 
 
 **4.6. Criando arquivos de código fonte**
@@ -135,7 +135,7 @@ bem como incluindo códigos ou outros arquivos de acordo com o desenvolvimento d
 #define F_CPU 16000000L
 #include <avr/io.h>
 #include <util/delay.h>
-int main(void) 
+int main(void)
 {   
     DDRB = 0b00110000;
     PORTB = 0;
@@ -171,7 +171,7 @@ int main(void)
 
 
 
---- 
+---
 
 
 ## Entradas e Saídas Digitais
@@ -186,7 +186,7 @@ O dispositivo responsável por acionar o LED é o microcontrolador(uC), através
 
 O pino do uC possui limitação de corrente, que pode variar a depender do modelo ou fabricante.
 
-A corrente máxima por pino é de `40 mA`, de acordo com o Datasheet (AVR ATmega328P, capítulo *28.1 Absolute maximum ratings*, pág. 258). 
+A corrente máxima por pino é de `40 mA`, de acordo com o Datasheet (AVR ATmega328P, capítulo *28.1 Absolute maximum ratings*, pág. 258).
 
 A vantagem de utilizar o pino como fonte é trabalhar com uma lógica direta, em que o estado lógico 1(verdadeiro, +5V) produz o acionamento do LED, enquanto que na configuração do pino como dreno a lógica de acionamento é invertida, pois o pino em estado lógico 0(falso, 0V) produz o acionamento do LED.
 
@@ -236,6 +236,123 @@ A configuração com o resistor de pull-down é a que proporciona uma lógica di
 
 <br>
 
+---
+
+**Configurando Entradas e Saídas**
+
+Para a configuração das entradas e saídas, é necessário que sejam definidos os pinos para cada função da interface na aplicação. Como exemplo, é usado o mesmo mapa de entradas e saídas da situação de aprendizagem do sinalizador de garagem.
+
+**Mapa de entradas e saídas**
+
+| Função | Dispositivo | Descrição | Pino <br> (Arduino Uno) | Pino <br> (ATmega328P) | PORT |
+|:------:|:-----------:|:---------------------------------------:|:---:|:---:|:---:|
+| Entrada| Fim-de-curso| Acionado quando o portão estiver aberto |  8  |  14 | PB0 |
+| Saída  | LED         | Sinaleiro Amarelo                       | 12  |  18 | PB4 |
+| Saída  | LED         | Sinaleiro Vermelho                      | 13  |  19 | PB5 |
+
+
+As colunas de pinagem, tanto da placa de desenvolvimento (Pino (Arduino Uno)) quanto do microcontrolador (Pino (ATmega328P)), facilitam a identificação dos pontos de conexão nas situações em que é realizada a montagem de circuito em matriz de contatos, para execução de protótipos ou o roteamento de trilhas em placa de circuito impresso, respectivamente.
+
+A coluna PORT nos evidencia o registrador e o bit que deve ser  configurado no programa para implementação da funcionalidade da aplicação.
+
+Sendo assim, para a configuração no programa (firmware), as colunas mais importantes inicialmente são as colunas de Função e PORT.
+
+A configuração dos pinos pode ser realizada de forma unitária ou através de uma escrita única em cada registrador, configurando todos os pinos representados por ele de uma só vez.
+
+Para a configuração individual de pinos, é necessário usar o seguinte padrão de ligar um bit ou zerá-lo:
+
+Para ligar (setar) um bit dentro de um registrador:
+```C
+  registrador |= (1<<numero_do_bit);
+```
+
+Para zerar (resetar) um bit dentro de um registrador:
+```C
+  registrador &= ~(1<<numero_do_bit);
+```
+Sendo o `numero_do_bit` um valor de `0` a `7`.
+
+Para configurar um pino como entrada, é necessário zerar o respectivo bit do registrador `DDRx` e ligar ou desligar o Resistor de Pull-up interno pelo registrador `PORTx`.
+
+No exemplo, temos que configurar o `PB0` como entrada. Assim, são utilizados os registradores `DDRB` para a direção de entrada e o `PORTB` para desabilitar o Resistor de Pull-Up interno, pois no exemplo, é utilizado um resistor de Pull-Up externo.
+```C
+    // Configuração das Entradas
+  DDRB &= ~(1<<0);      // PB0 <- 0
+  PORTB &= ~(1<<0);     // PB0 Pull-up OFF
+```
+
+Ainda no exemplo, temos que configurar e inicializar os pinos de saída: PB4 e PB5. Da mesma forma, são utilizados os registradores `DDRB` para configuração de saída e `PORTB` para acionar um nível lógico no pino do microcontrolador.
+
+```C
+    // Configuração das Saídas
+  DDRB |= (1<<4);       // PB4 <- 1
+  DDRB |= (1<<5);       // PB4 <- 1
+    // Inicialização do estado lógico dos pinos
+  PORTB &= ~(1<<4);      // PB4 <- 0
+  PORTB &= ~(1<<5);      // PB5 <- 0
+```
+
+Note que a função do registrador `PORTx` depende da configuração do registrador `DDRx`.
+
+No nosso exemplo, todos os pinos utilizados pertencem ao mesmo PORT, assim, é possível realizar a configuração dos três elementos todos de uma única vez:
+
+O bit 0 (PB0) deve ser configurado como entrada (E) e os bits 4 e 5 (PB4 e PB5) devem ser configurados como saídas (S).
+
+```C
+  // Configuração do registrador de direção de dados (Entrada / Saída)
+
+  // DDRx = 0b--SS---E;
+
+  // Onde:
+  //      0b: Notação que indica número com notação binária.
+  //      E: Entradas (0)
+  //      S: Saída (1)
+  //      -: Bit não utilizado.
+
+  // Reescrevendo com os valores adequados no Registrador dos pinos PB0, PB4 e PB5:
+
+  // DDRB = 0b--11---0;
+
+  // Os pinos não utilizados (-) devem ser configurados como entradas (0):
+
+  DDRB = 0b00110000;
+```
+
+Após a configuração do `DDRx` é a vez do `PORTx`.
+
+```C
+  // Configuração de resistor de pull-up para entradas e estado lógico para as saídas.
+
+  // PORTB = 0b--SS---E;
+  // Onde:
+  //      E: Entradas (0)
+  //      S: Saída (1)
+  //      -: Bit não utilizado.
+
+  // Como os bits não utilizados são entradas:
+
+  // PORTB = 0bEESSEEEE;
+
+  // Desligando os resistores de pull-up internos:
+
+  // PORTB = 0b00SS0000;
+
+  // Desligando o estado lógico das saídas PB4 e PB5:
+
+  PORTB = 0b00000000;
+```
+
+Os valores carregados nos registradores são costumeiramente notados com valores em hexadecimal:
+
+```C
+  DDRB  = 0x30;
+  PORTB = 0x00;
+```
+
+Qualquer forma de configuração pode ser utilizada, tanto um bit por vez quanto a escrita integral dos registradores, anotados com valores em binário, decimal ou hexadecimal.
+
+---
+
 **Resumo da configuração dos pinos no ATmega328P**
 
 ```
@@ -278,13 +395,15 @@ A configuração com o resistor de pull-down é a que proporciona uma lógica di
 
 ---
 
+---
+
 
 ## Código fonte em etapas
 
 1) Estrutura básica de um código em linguagem C.
 
   ```c
-  int main(void) 
+  int main(void)
   {   
     while (1)
     {
@@ -296,11 +415,13 @@ A configuração com o resistor de pull-down é a que proporciona uma lógica di
 <br>
 
 2) Configuração de entradas e saídas
+
+
 ```c
 
 #include <avr/io.h>
 
-int main(void) 
+int main(void)
 {   
     DDRB = 0b00110000;
     PORTB = 0;
@@ -317,15 +438,15 @@ int main(void)
 
 #include <avr/io.h>
 
-int main(void) 
+int main(void)
 {   
     DDRB = 0b00110000;
     PORTB = 0;
     while (1)
     {
-        PORTB &= ~(1<<PORTB5);  // Desliga LED
+        PORTB &= ~(1<<5);       // Desliga LED
 
-        PORTB ^= (1<<PORTB5);   // Liga LED
+        PORTB ^=  (1<<5);       // Liga LED
 
     }
 }
@@ -337,15 +458,15 @@ int main(void)
 #define F_CPU 16000000L
 #include <avr/io.h>
 #include <util/delay.h>
-int main(void) 
+int main(void)
 {   
     DDRB = 0b00110000;
     PORTB = 0;
     while (1)
     {
-        PORTB &= ~(1<<PORTB5);  // Desliga LED
+        PORTB &= ~(1<<5);       // Desliga LED
         _delay_ms(500);         // Atraso de 500ms
-        PORTB ^= (1<<PORTB5);   // Liga LED
+        PORTB ^=  (1<<5);       // Liga LED
         _delay_ms(500);         // Atraso de 500ms
     }
 }
@@ -359,22 +480,22 @@ int main(void)
 #define F_CPU 16000000L
 #include <avr/io.h>
 #include <util/delay.h>
-int main(void) 
+int main(void)
 {   
     DDRB = 0b00110000;
     PORTB = 0;
     while (1)
     {
-        if( PINB & (1<<PINB0) )     // Leitura do fim-de-curso
+        if( PINB & (1<<0) )         // Leitura do fim-de-curso
         {
-            PORTB &= ~(1<<PORTB5);  // Desliga LED
+            PORTB &= ~(1<<5);       // Desliga LED
             _delay_ms(500);         // Atraso de 500ms
-            PORTB ^= (1<<PORTB5);   // Liga LED
+            PORTB ^=  (1<<5);       // Liga LED
             _delay_ms(500);         // Atraso de 500ms
         }
         else
         {
-            PORTB &= ~(1<<PORTB5);  // Desliga LED
+            PORTB &= ~(1<<5);       // Desliga LED
         }
     }
 }
@@ -389,24 +510,24 @@ int main(void)
 #define F_CPU 16000000L
 #include <avr/io.h>
 #include <util/delay.h>
-int main(void) 
+int main(void)
 {   
     DDRB = 0b00110000;
     PORTB = 0;
     while (1)
     {
-        if( PINB & (1<<PINB0))
+        if( PINB & (1<<0))
         {
-            PORTB |= (1<<PORTB4);
-            PORTB &= ~(1<<PORTB5);
+            PORTB |= (1<<4);
+            PORTB &= ~(1<<5);
             _delay_ms(500);
-            PORTB ^= (1<<PORTB4 | 1<<PORTB5);
+            PORTB ^= (1<<4 | 1<<5);
             _delay_ms(500);
         }
         else
         {
-            PORTB &= ~(1<<PORTB4);
-            PORTB &= ~(1<<PORTB5);
+            PORTB &= ~(1<<4);
+            PORTB &= ~(1<<5);
         }
     }
 }
@@ -424,14 +545,14 @@ int main(void)
 
 // Código .ino
 
-void setup() 
+void setup()
 {
   pinMode(13, OUTPUT);
   pinMode(12, OUTPUT);
   pinMode( 8, INPUT);
 }
 
-void loop() 
+void loop()
 {
   if( digitalRead(8) == 1 )
   {
@@ -462,24 +583,24 @@ void loop()
 #define F_CPU 16000000L
 #include <avr/io.h>
 #include <util/delay.h>
-int main(void) 
+int main(void)
 {   
     DDRB = 0b00110000;
     PORTB = 0;
-    while (1) 
+    while (1)
     {
-        if( PINB & (1<<PINB0))
+        if( PINB & (1<<0))
         {
-            PORTB |= (1<<PORTB4);
-            PORTB &= ~(1<<PORTB5);
+            PORTB |= (1<<4);
+            PORTB &= ~(1<<5);
             _delay_ms(500);
-            PORTB ^= (1<<PORTB4 | 1<<PORTB5);
+            PORTB ^= (1<<4 | 1<<5);
             _delay_ms(500);
         }
         else
         {
-            PORTB &= ~(1<<PORTB4);
-            PORTB &= ~(1<<PORTB5);
+            PORTB &= ~(1<<4);
+            PORTB &= ~(1<<5);
         }
     }
 }
@@ -511,9 +632,9 @@ DESLIGA_LEDS:
 
 INICIO:
 	IN	    R16,PINB
-	SBRS	R16,0	
+	SBRS	R16,0
 	RJMP	DESLIGA_LEDS
-	
+
 	RCALL	DELAY
 	SBI	    PORTB,PB5
 	CBI	    PORTB,PB4
@@ -537,7 +658,7 @@ DELAY_LOOP:
 
 ```
 
-> O arquivo de inclusão do projeto em Assembly [`m328pdef.inc`](https://codeberg.org/JoseWRPereira/sitap-cp/src/branch/main/11-cp-avr-atmega328p/01_5-asm-sinalizador_de_garagem/m328pdef.inc) contém a definição dos registradores e seus respectivos endereços. Este arquivo é fornecido pelo fabricante. 
+> O arquivo de inclusão do projeto em Assembly [`m328pdef.inc`](https://codeberg.org/JoseWRPereira/sitap-cp/src/branch/main/11-cp-avr-atmega328p/01_5-asm-sinalizador_de_garagem/m328pdef.inc) contém a definição dos registradores e seus respectivos endereços. Este arquivo é fornecido pelo fabricante.
 
 
 ---
