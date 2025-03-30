@@ -22,6 +22,7 @@ nav:
         - digitais/iot/esp32/esp32-1-intro.md
         - digitais/iot/esp32/lab00-ambientacao.md
         - digitais/iot/esp32/lab01-blink.md
+        - digitais/iot/esp32/lab02-componente.md
   - Automação Industrial:
     - index_automacao.md
     - Controladores Programáveis:

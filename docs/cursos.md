@@ -24,6 +24,8 @@ tags:
 # MATLAB
 
 1. [MATLAB Onramp](https://matlabacademy.mathworks.com/en/details/matlab-onramp/gettingstarted)
+2. [MATLAB Plot Gallery](https://www.mathworks.com/products/matlab/plot-gallery.html)
+3. 
 
 ---
 

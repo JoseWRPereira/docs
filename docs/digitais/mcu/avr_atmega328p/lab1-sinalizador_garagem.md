@@ -270,7 +270,7 @@ Para zerar (resetar) um bit dentro de um registrador:
 ```C
   registrador &= ~(1<<numero_do_bit);
 ```
-Sendo o `numero_do_bit` um valor de `0` a `7`.
+Sendo o `numero_do_bit` um valor de `0` a `7`, ou ainda, podem-ser utilizados os `defines` declarados na biblioteca, como: `PINB0` que corresponde ao `0`, `PINB1` correpondente ao `1` e assim por diante. Da mesma forma para os PORT e o DDR: `PORTB0`, `PORTB1`,..., e `DDRB0`, `DDRB1`, ... 
 
 Para configurar um pino como entrada, é necessário zerar o respectivo bit do registrador `DDRx` e ligar ou desligar o Resistor de Pull-up interno pelo registrador `PORTx`.
 
