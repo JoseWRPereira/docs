@@ -54,6 +54,9 @@ Fernando Medeiros - Cafés e blablablás
  * [:fontawesome-solid-blog:{ style="color: #FC4F08;" } ]( https://anadelourdes.wordpress.com/ )
 Ana Teixeira
 
+## Curiosidades
+
+* [ASCII Art](https://patorjk.com/software/taag/#p=display&f=Graffiti&t=Type%20Something%20)
 
 
 

@@ -47,6 +47,7 @@ nav:
         - dados/ad/ad01-analise_de_dados.md
       - Machine Learning:
         - dados/ml/ml01-ia_ml_dl.md
+        - dados/ml/ml02-ml.md
   - Indicações: 
     - indicacoes.md
 
