@@ -48,6 +48,8 @@ nav:
       - Machine Learning:
         - dados/ml/ml01-ia_ml_dl.md
         - dados/ml/ml02-ml.md
+        - dados/ml/ml03-knn.md
+        - dados/ml/ml04-matriz_confusao.md
   - Indicações: 
     - indicacoes.md
 

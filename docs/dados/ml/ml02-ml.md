@@ -185,8 +185,8 @@ mais próximos
 
 **Referências**
 
-[Machine Learning 1959: Uma Visão Histórica do Machine Learning - Awari](https://awari.com.br/machine-learning-1959-uma-visao-historica-do-machine-learning/)
-[Introdução ao Machine Learning: Conceitos Básicos - Elaine Cecília Gatto - Portal Embarcados](https://embarcados.com.br/introducao-ao-machine-learning/)
+1. [Machine Learning 1959: Uma Visão Histórica do Machine Learning - Awari](https://awari.com.br/machine-learning-1959-uma-visao-historica-do-machine-learning/)
+2. [Introdução ao Machine Learning: Conceitos Básicos - Elaine Cecília Gatto - Portal Embarcados](https://embarcados.com.br/introducao-ao-machine-learning/)
 
 
 ---
