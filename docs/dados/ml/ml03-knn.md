@@ -67,6 +67,12 @@ Dados dois pontos \(P\) e \(Q\) localizados, respectivamente, nas coordenadas \(
 
 ---
 
+**Exemplo**
+
+- [knn-CreditCardLimitClassification](https://gitlab.com/JoseWRPereira/knn-creditcardlimitclassification/-/blob/main/knn-CreditCardLimitClassification.ipynb?ref_type=heads)
+
+---
+
 **Referências**
 
 1. [O que é: Distância de Mahalanobis - Aprenda estatística Fácil](https://estatisticafacil.org/glossario/o-que-e-distancia-de-mahalanobis/)
