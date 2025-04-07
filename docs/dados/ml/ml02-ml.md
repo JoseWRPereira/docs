@@ -13,11 +13,12 @@ tags:
 # Aprendizado de Máquina - *Machine Learning*
 
 
-O aprendizado de máquina (*machine Learning*) ou aprendizado automático, deriva da engenharia com a ciência da computação, evoluindo de estudos de reconhecimeto de padrões e da teoria do aprendizado computacional em inteligência artificial.
+O aprendizado de máquina (*machine Learning*) ou aprendizado automático, deriva da engenharia com a ciência da computação, evoluindo de estudos de **reconhecimento de padrões** e da **teoria do aprendizado computacional** em inteligência artificial.
 
-A sua definição foi definida por Arthur Samuel em 1959 como: "campo de estudo que dá aos computadores a habilidade de aprender sem serem explicitamente programados".
+A sua definição foi estabelecida por Arthur Samuel em 1959 como: 
+> "campo de estudo que dá aos computadores a habilidade de aprender sem serem explicitamente programados".
 
-O aprendizado de máquina é o estudo e a construção de algoritmos que, utilizando dados, realizam previsões e aprendem com os próprios erros. Estes algoritmos recebem amostras a partir das entradas do modelo, de modo a realizar previsões e tomadas de decisões guiadas pelos dados e não por instruções programadas. 
+**O aprendizado de máquina é o estudo e a construção de algoritmos que, utilizando dados, realizam previsões e aprendem com os próprios erros.** Estes algoritmos recebem amostras a partir das entradas do modelo, de modo a realizar previsões e tomadas de decisões guiadas pelos dados e não por instruções programadas. 
 
 
 O aprendizado de máquina, utiliza o raciocínio indutivo para produzir os seus resultados, diferenciando-se da inteligência artificial, que pode além disso, utilizar o raciocínio dedutivo.
@@ -35,14 +36,14 @@ Rótulos: Nomes das características
 
 **Modelos**
 
-Um modelo é uma representação de um objeto ou sistema. Pode ser físico (protótipo, maquete) ou abstrato (expressão matemática, diagrama, descrição).
+**Um modelo é uma representação de um objeto ou sistema**. Pode ser físico (protótipo, maquete) ou abstrato (expressão matemática, diagrama, descrição).
 
-Na engenharia ou na ciência de dados, os modelos simulam um comportamento de modo a permitir uma interferência em parâmetros de funcionamento para estudar a mudança de comportamento.
+Na engenharia ou na ciência de dados, os modelos simulam a mudança de comportamento mediante a variação de seus parâmetros de funcionamento.
 
 
 **Algoritmo**
 
-Um algoritmo é uma **sequência finita** de ações executáveis que tem como **objetivo** a **solução** de um determinado **problema**. 
+Um algoritmo é uma **sequência finita de ações executáveis** que tem como **objetivo** a **solução** de um determinado **problema**. 
 
 ---
 
