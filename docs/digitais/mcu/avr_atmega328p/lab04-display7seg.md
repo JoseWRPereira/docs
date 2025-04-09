@@ -83,3 +83,108 @@ A Figura 6 mostra uma tabela com todas as combinações para os dígitos decimai
 Estão faltando os dados dos dígitos que completam o conjunto hexadecimal, que podem te servir como exercícios. 
 
 Bom trabalho!
+
+
+
+---
+
+**Mapa de entradas e saídas**
+
+| Função | Dispositivo | Descrição | Pino <br> (Arduino Uno) | Pino <br> (ATmega328P) | PORT |
+|:------:|:-----------:|:---------:|:-----------------------:|:----------------------:|:----:|
+| Saída  | Diplay 7 segmentos | Segmento a |  0 |  2 | PD0 |
+| Saída  | Diplay 7 segmentos | Segmento b |  1 |  3 | PD1 |
+| Saída  | Diplay 7 segmentos | Segmento c |  2 |  4 | PD2 |
+| Saída  | Diplay 7 segmentos | Segmento d |  3 |  5 | PD3 |
+| Saída  | Diplay 7 segmentos | Segmento e |  4 |  6 | PD4 |
+| Saída  | Diplay 7 segmentos | Segmento f |  5 | 11 | PD5 |
+| Saída  | Diplay 7 segmentos | Segmento g |  6 | 12 | PD6 |
+| Saída  | Diplay 7 segmentos | Segmento p |  7 | 13 | PD7 |
+
+
+**Circuito de Simulação**
+
+| Figura 6: Montagem do circuito de contagem com display de 7 segmentos |
+|:---------------------------------------------------------------------:|
+| ![digitos](img/lab04-disp7seg_digitos.gif)                            |
+| Fonte: Autor                                                          |
+
+---
+
+**Código**
+
+```C
+#define F_CPU   16000000
+#include <util/delay.h>
+#include <avr/io.h>
+
+char digitos7seg[16] = {	0x3F, 0x06, 0x5B, 0x4F, 
+							0x66, 0x6D, 0x7D, 0x07, 
+							0x7F, 0x6F, 0x77, 0x7C, 
+							0x39, 0x5E, 0x79, 0x71  };
+
+void disp7seg_init( void )
+{
+	DDRD  = 0xFF;
+	PORTD = 0x00;
+}
+
+void disp7seg( unsigned char d )
+{
+	PORTD = digitos7seg[d];
+}
+
+int main(void) 
+{
+	char i = 0;
+	disp7seg_init();
+	while( 1 )
+	{
+		disp7seg( i );
+		_delay_ms(500);
+
+        // Incremento limitado: 0..15
+		++i;
+		if( i >= 16 )
+			i = 0;
+	}
+}
+```
+
+Há outras formas de realizar o incremento de forma limitada e retornar ao zero, reiniciando a contagem. 
+
+Uma dessas formas é utilizando o [operador ternário](https://www.freecodecamp.org/portuguese/news/operador-ternario-em-c/).
+
+
+```C title="Incremento limitado: 0..15"
+        i = (i>=16) ? 0: (i+1);
+```
+Outra forma de realizar um incremento limitado é utilizando o operador `mod` que em linguagem C é o símbolo: `%`.
+
+O operador `%` produz o resto da divisão. 
+
+```C title="Incremento limitado: 0..15"
+        i = ++i % 16;
+```
+
+---
+
+**Problema de memória**
+
+Dado o trecho de código destacado, o que acontece se a função for executada da seguinte forma: `disp7seg(16);`? 
+
+```C
+char digitos7seg[16] = {	0x3F, 0x06, 0x5B, 0x4F, 
+							0x66, 0x6D, 0x7D, 0x07, 
+							0x7F, 0x6F, 0x77, 0x7C, 
+							0x39, 0x5E, 0x79, 0x71  };
+
+void disp7seg( unsigned char d )
+{
+	PORTD = digitos7seg[d];
+}
+```
+
+
+
+---
