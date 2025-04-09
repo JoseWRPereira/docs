@@ -30,6 +30,9 @@ Diretório com [template para TCCs](https://github.com/JoseWRPereira/tcc_templat
 
 - [Project Management Principles](https://www.4pmti.com/learn/pmbok-guide-7th-ed/)
 - [PMBOK ou PRINCE2: concorrentes ou complementares?](https://www.gerenciandoriscosemprojetos.com/2017/07/21/pmbokouprince2-concorrentes-ou-complementares/)
+- [Como fazer uma EAP? | Estrutura Analítica do Projeto - Siteware](https://www.youtube.com/watch?v=9KSpvxoCJW4)
+- [COMO ELABORAR UMA EAP - ESTRUTURA ANALÍTICA DO PROJETO - CINCO REGRAS BÁSICAS](https://youtu.be/WcNE8p4R0-g?si=rK_GMDAqSqwoAyBq)
+- [COMO FAZER UMA EAP - ESTRUTURA ANALÍTICA DE PROJETO EM POWER POINT](https://youtu.be/laN-FG4nrVQ?si=nYOof4ExChaaisDY)
  
 ---
 
