@@ -13,10 +13,11 @@ nav:
         - digitais/mcu/mcu1-embarcados.md
         - digitais/mcu/mcu2-microcontroladores.md
       - AVR ATmega328P:
-        - digitais/mcu/avr_atmega328p/lab0-ambientacao.md
-        - digitais/mcu/avr_atmega328p/lab1-sinalizador_garagem.md
-        - digitais/mcu/avr_atmega328p/lab2-partida_estrela_triangulo.md
-        - digitais/mcu/avr_atmega328p/lab3-semaforo.md
+        - digitais/mcu/avr_atmega328p/lab00-ambientacao.md
+        - digitais/mcu/avr_atmega328p/lab01-sinalizador_garagem.md
+        - digitais/mcu/avr_atmega328p/lab02-partida_estrela_triangulo.md
+        - digitais/mcu/avr_atmega328p/lab03-semaforo.md
+        - digitais/mcu/avr_atmega328p/lab04-display7seg.md
     - Conectividade:
       - ESP32:
         - digitais/iot/esp32/esp32-1-intro.md
