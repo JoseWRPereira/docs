@@ -18,6 +18,8 @@ nav:
         - digitais/mcu/avr_atmega328p/lab02-partida_estrela_triangulo.md
         - digitais/mcu/avr_atmega328p/lab03-semaforo.md
         - digitais/mcu/avr_atmega328p/lab04-display7seg.md
+        - digitais/mcu/avr_atmega328p/lab05-2displays7seg.md
+        - digitais/mcu/avr_atmega328p/lab06-deteccao_bordas.md
     - Conectividade:
       - ESP32:
         - digitais/iot/esp32/esp32-1-intro.md
