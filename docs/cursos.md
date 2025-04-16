@@ -27,6 +27,11 @@ tags:
 2. [MATLAB Plot Gallery](https://www.mathworks.com/products/matlab/plot-gallery.html)
 3. 
 
+
+# Lógica Fuzzy
+[Aplicação da Lógica Fuzzy em sw e hw](https://doceru.com/doc/8cnnv08)
+
+
 ---
 
 

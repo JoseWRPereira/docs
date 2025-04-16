@@ -71,6 +71,26 @@ Dados dois pontos \(P\) e \(Q\) localizados, respectivamente, nas coordenadas \(
 
 - [knn-CreditCardLimitClassification](https://gitlab.com/JoseWRPereira/knn-creditcardlimitclassification/-/blob/main/knn-CreditCardLimitClassification.ipynb?ref_type=heads)
 
+
+---
+
+**Aplicação**
+
+1. Criando um ambiente virtual 
+
+```bash
+python -m venv venv_knnsimplest
+```
+
+2. Ativando o ambiente virtual 
+
+```bash
+venv_knnsimpest\Scripts\activate
+```
+
+3. 
+
+
 ---
 
 **Referências**
