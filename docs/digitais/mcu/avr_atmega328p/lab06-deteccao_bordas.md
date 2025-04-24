@@ -23,7 +23,8 @@ Raramente um único display de 7 segmentos é suficiente para exibir o valor de 
 
 **Objetivo**
 
-Acionar dois displays de 7 segmentos de forma multiplexada para exibir uma contagem de 0 a 99.
+Detectar as bordas de subida e descida em botão pulsador, gerando um incremento e decremento de uma variável de contagem.
+
 
 
 | Figura 1: Detecção de borda para incremento e decremento |

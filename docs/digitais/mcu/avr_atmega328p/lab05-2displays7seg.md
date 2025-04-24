@@ -23,7 +23,7 @@ A leitura simples de um botão implica em alguns comportamentos não desejados c
 
 **Objetivo**
 
-Detectar as bordas de subida e descida em botão pulsador, gerando um incremento e decremento de uma variável de contagem.
+Acionar dois displays de 7 segmentos de forma multiplexada para exibir uma contagem de 0 a 99.
 
 
 | Figura 1: Contagem com 2 dígitos            |
