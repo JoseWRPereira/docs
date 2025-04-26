@@ -84,40 +84,83 @@ jupyter notebook
 ```
 
 
-## Ambiente de desenvolvimento
+## Criando um Ambiente de Desenvolvimento
 
+Para a criação de um ambiente de desenvolvimento é necessário que o Python esteja instalado no computador, bem como o Jupyter Notebook.
+
+0) Criar/Acessar o diretório do projeto. 
 
 ```ps1
-# Criando o ambiente virtual
+PS C:\Users\...\projeto> 
+```
+
+1) Criando o ambiente virtual 
+
+```ps1
 python -m venv venv_projeto
 ```
+
+2) Acessando o ambiente virtual 
+
 ```ps1
-# Acessando o ambiente virtual
 venv_projeto\Scripts\activate
 ```
 
-Após os acesso ao ambiente virtual, no início do prompt aparece entre parênteses o nome da venv:
+Após o acesso ao ambiente virtual, no início do prompt aparece entre parênteses o nome da venv:
 
 ```ps1
 (venv_projeto) PS C:\Users\...\projeto> 
 ```
 
+Obs: Para sair do ambiente de desenvolvimento (venv), basta executar o comando `deactivate`:
+
 ```ps1
-# Instalando kernel para Jupyter
+(venv_projeto) PS C:\Users\...\projeto> deactivate
+PS C:\Users\...\projeto>
+```
+
+
+
+3) Instalando kernel para Jupyter Notebook 
+
+```ps1
 pip install ipykernel
 ```
 
-```ps1
-# Adicionando o ambiente virtual à lista de kernels do Jupyter
-python3 -m ipykernel install --user --name=venv_projeto
-```
+4) Adicionando o ambiente virtual à lista de kernels do Jupyter Notebook
 
 ```ps1
-# Excluindo o ambiente virtual da lista de kernels (quando necessário)
+python -m ipykernel install --user --name=venv_projeto
+```
+
+Obs: Quando o kernel não for mais necessário, pelo fim do desenvolvimento do projeto, por exemplo, pode-se excluir este kernel da lista no Jupyter Notebook:
+
+```ps1
 jupyter-kernelspec uninstall venv_projeto
 ```
 
+5) Executando o Jupyter notebook
+
+```ps1
+jupyter notebook
+```
+
+6) O Jupyter Notebook será aberto no navegador em `localhost:8888\tree`
+
+![JupyterNotebook](img/ad01-jupyter_notebook.png)
 
 
+7) Para criar um `notebook`, clique em `File`, `New` e selecione `Notebook`:
+
+![file_new_notebook](img/ad01-file_new_notebook.png)
+
+8) Selecione o kernel deste projeto, dentro da lista disponível:
+
+![select_kernel](img/ad01-select_kernel.png)
 
 
+9) Verifique no canto superior direito que o kernel selecinado foi carregado:
+
+![kernel](img/ad01-kernel.png)
+
+O ambiente está pronto para o projeto ser desenvolvido. 
