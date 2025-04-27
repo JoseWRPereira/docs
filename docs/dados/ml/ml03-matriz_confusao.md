@@ -25,7 +25,7 @@ A **Matriz de confusão** é uma ferramenta para medir a performance de uma algo
 
 | Figura 1: Matriz de Confusão            |
 |:---------------------------------------:|
-| ![matriz_confusao](img/ml04-matriz.png) |
+| ![matriz_confusao](img/ml03-matriz.png) |
 | Fonte: [Wikipedia](https://en.wikipedia.org/wiki/Confusion_matrix) |
 
 
@@ -38,7 +38,7 @@ A **Matriz de confusão** é uma ferramenta para medir a performance de uma algo
 
 | Figura 2: Classificação de elementos e matriz de confusão |
 |:---------------------------------------------------------:|
-| ![grafico](img/ml04-classifica_matriz.png)                |
+| ![grafico](img/ml03-classifica_matriz.png)                |
 | Fonte: Modificado de [Wikipedia](https://en.wikipedia.org/wiki/False_positives_and_false_negatives#False_negative_error)   |
 
 

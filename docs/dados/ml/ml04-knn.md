@@ -123,7 +123,7 @@ Neste exemplo de estudo, é criado um dataframe com 30 linhas e duas colunas (x 
 df = pd.DataFrame(index=range(30), columns=['x', 'y'])
 df
 ```
-![CriandoDataframe](img/ml03-criandoDataFrame.png)
+![CriandoDataframe](img/ml04-criandoDataFrame.png)
 
 
 
@@ -136,7 +136,7 @@ df['y'] = df.apply(lambda x: random.randint(0, 100), axis=1)
 df
 ```
 
-![dadosAleatóriosXY](img/ml03-dadosAleatoriosXY.png)
+![dadosAleatóriosXY](img/ml04-dadosAleatoriosXY.png)
 
 
 
@@ -148,7 +148,7 @@ plt.plot( df.x, df.y, 'r.' )
 plt.show()
 ```
 
-![plotDf](img/ml03-plotdf.png)
+![plotDf](img/ml04-plotdf.png)
 
 **3. Aplicar uma regra de classificação**
 
@@ -161,7 +161,7 @@ df['Categoria'] = df.apply( lambda x: "GrupoA" if x['x'] < x['y'] else "GrupoB",
 df
 ```
 
-![tabelaCategoria](img/ml03-tabCategoria.png)
+![tabelaCategoria](img/ml04-tabCategoria.png)
 
 
 
@@ -182,7 +182,7 @@ plt.plot( grB.x, grB.y, 'b.' )
 plt.show()
 ```
 
-![PlotGrupos](img/ml03-plotgrupos.png)
+![PlotGrupos](img/ml04-plotgrupos.png)
 
 Obs: Exemplo meramente ilustrativo, pois, para cada execução do passo 2, novos valores são gerados, produzindo um resultado diferente. 
 
@@ -211,14 +211,14 @@ Visualizando dados de treino.
 x_train
 ```
 
-![Features](img/ml03-dadosAleatoriosXY.png)
+![Features](img/ml04-dadosAleatoriosXY.png)
 
 
 ```py
 y_train
 ```
 
-![alt text](img/ml03-ytrain.png)
+![alt text](img/ml04-ytrain.png)
 
 
 
@@ -243,7 +243,7 @@ Inclusão de dados de predição no *dataframe* de dados.
 df['Predicao'] = y_pred
 df
 ```
-![dfClassificacao](img/ml03-dfclassificacao.png)
+![dfClassificacao](img/ml04-dfclassificacao.png)
 
 
 
@@ -254,7 +254,7 @@ Para a **Matriz Confusão**, são inseridos como parâmetros os rótulos de trei
 ```py
 mt.confusion_matrix( y_train, y_pred )
 ```
-![MatrizConfusao](img/ml03-matrizConfusaoResultadoTreino.png)
+![MatrizConfusao](img/ml04-matrizConfusaoResultadoTreino.png)
 
 
 Acurácia
@@ -301,14 +301,14 @@ dftest['y'] = dftest.apply(lambda x: random.randint(0, 100), axis=1)
 dftest
 ```
 
-![dftest_radom](img/ml03-dftest_random.png)
+![dftest_radom](img/ml04-dftest_random.png)
 
 
 ```py
 plt.plot( dftest.x, dftest.y, 'r*' )
 plt.show()
 ```
-![dadosCarregados](img/ml03-dadosCarregados.png)
+![dadosCarregados](img/ml04-dadosCarregados.png)
 
 **9. Produzir predição**
 
@@ -322,7 +322,7 @@ dftest['Predicao'] = y_pred
 dftest
 ```
 
-![dftest_pred](img/ml03-dftest_pred.png)
+![dftest_pred](img/ml04-dftest_pred.png)
 
 
 ```py
@@ -330,7 +330,7 @@ dftest['Categoria'] = dftest.apply( lambda x: "GrupoA" if x['x'] < x['y'] else "
 dftest
 ```
 
-![dftest_categoria](img/ml03-dftest_categoria.png)
+![dftest_categoria](img/ml04-dftest_categoria.png)
 
 
 **10. Produzir métricas de avaliação (Acurácia, Precisão e Recall)**
@@ -378,7 +378,7 @@ Seleção dos pontos classificados como `True Positive`.
 tp = dftest.loc[ (dftest.Categoria.values=='GrupoA') & (dftest.Predicao.values=='GrupoA') ]
 tp
 ```
-![TruePositive](img/ml03-tp.png)
+![TruePositive](img/ml04-tp.png)
 
 
 Seleção dos pontos classificados como `True Negative`.
@@ -387,7 +387,7 @@ tn = dftest.loc[ (dftest.Categoria.values=='GrupoB') & (dftest.Predicao.values==
 tn
 ```
 
-![TrueNegative](img/ml03-tn.png)
+![TrueNegative](img/ml04-tn.png)
 
 
 Seleção dos pontos classificados como `False Positive`.
@@ -396,7 +396,7 @@ fp = dftest.loc[ (dftest.Categoria.values=='GrupoB') & (dftest.Predicao.values==
 fp
 ```
 
-![FalsePositive](img/ml03-fp.png)
+![FalsePositive](img/ml04-fp.png)
 
 
 
@@ -406,7 +406,7 @@ fn = dftest.loc[ (dftest.Categoria.values=='GrupoA') & (dftest.Predicao.values==
 fn
 ```
 
-![FalseNegative](img/ml03-fn.png)
+![FalseNegative](img/ml04-fn.png)
 
 
 Plotando dados classificados de modo a destacar os pontos classificados incorretamente.
@@ -421,7 +421,7 @@ plt.show()
 ```
 
 
-![dftest](img/ml03-plot_dftest.png)
+![dftest](img/ml04-plot_dftest.png)
 
 ---
 

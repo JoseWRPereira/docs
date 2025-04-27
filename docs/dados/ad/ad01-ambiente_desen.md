@@ -164,3 +164,19 @@ jupyter notebook
 ![kernel](img/ad01-kernel.png)
 
 O ambiente está pronto para o projeto ser desenvolvido. 
+
+
+## Google Colab
+
+![BuscaGoogleColab](img/ad01-buscaGoogleColab.png)
+
+
+![GoogleColab](img/ad01-googleColab.png)
+
+
+![NovoNotebookDrive](img/ad01-novoNotebook.png)
+
+
+![ConectandoCPU](img/ad01-conectandoCPU.png)
+
+
