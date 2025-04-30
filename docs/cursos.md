@@ -32,6 +32,10 @@ tags:
 [Aplicação da Lógica Fuzzy em sw e hw](https://doceru.com/doc/8cnnv08)
 
 
+
+# Python x SQL
+![Py x SQL](img/py_x_sql.png)
+Fonte: LinkedIn Python
 ---
 
 
