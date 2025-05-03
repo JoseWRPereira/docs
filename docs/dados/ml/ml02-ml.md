@@ -188,6 +188,9 @@ mais próximos
 
 1. [Machine Learning 1959: Uma Visão Histórica do Machine Learning - Awari](https://awari.com.br/machine-learning-1959-uma-visao-historica-do-machine-learning/)
 2. [Introdução ao Machine Learning: Conceitos Básicos - Elaine Cecília Gatto - Portal Embarcados](https://embarcados.com.br/introducao-ao-machine-learning/)
+3. [O vídeo para entender Inteligência Artificial de verdade - Infinitamente](https://youtu.be/V2POyQVQuzA?si=BkNqmfHIaafRdcuO)
+4. [A ideia que causou o nascimento da Inteligência Artificial - Infinitamente](https://youtu.be/mBqfY_TX_8o?si=G06Wh2E8sNmu1fBM)
+
 
 
 ---

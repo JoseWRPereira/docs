@@ -56,6 +56,7 @@ nav:
         - dados/ml/ml02-ml.md
         - dados/ml/ml03-matriz_confusao.md
         - dados/ml/ml04-knn.md
+        - dados/ml/ml05-regressao_linear.md
   - Indicações: 
     - indicacoes.md
 
