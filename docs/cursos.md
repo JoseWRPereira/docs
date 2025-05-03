@@ -36,6 +36,11 @@ tags:
 # Python x SQL
 ![Py x SQL](img/py_x_sql.png)
 Fonte: LinkedIn Python
+
+
+![Pandas](img/pandas.jpg)
+
+
 ---
 
 

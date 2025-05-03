@@ -21,6 +21,7 @@ nav:
         - digitais/mcu/avr_atmega328p/lab05-2displays7seg.md
         - digitais/mcu/avr_atmega328p/lab06-deteccao_bordas.md
         - digitais/mcu/avr_atmega328p/lab07-bibliotecas.md
+        - digitais/mcu/avr_atmega328p/lab08-semaforo_temporizado.md
     - Conectividade:
       - ESP32:
         - digitais/iot/esp32/esp32-1-intro.md
