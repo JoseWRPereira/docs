@@ -42,7 +42,7 @@ Com isso, o objetivo é traçar uma reta que represente os pontos com o menor er
 | Fonte: Adaptado de [Regressão linear - Google](https://developers.google.com/machine-learning/crash-course/linear-regression?hl=pt-br)  |
 
 
-
+---
 
 **Equação de regressão linear**
 
@@ -67,14 +67,13 @@ $$y' = b + w_1 x_1$$
 - $x_1$ é um **recurso**, ou seja, a entrada.
 
 
-
-
-
 Para uma modelagem com um número maior de recursos, ou seja, entradas, como no exemplo, além da massa, poderíamos ter a aceleração, o número de cilindros, a potência, etc, a equação ficaria algo como:
 
 $$y' = b + w_1 x_1 + w_2 x_2 + w_3 x_3 + w_4 x_4$$
 
 Sendo os valores de `x` correspondente as grandezas de entrada e os valors de `w`, respectivos coeficiêntes gerados no treimento. 
+
+---
 
 **Atividade mediada**
 
@@ -83,16 +82,16 @@ Encontrar os coeficientes de uma reta que melhor ilustra os pontos do exemplo da
 
 Utilizando o [Google Colab](https://colab.google/), execute o código a seguir:
 
-Carregue o arquivo de dados diretamente do seu computador clicando no botão `Upload to session storage`, conforme indicado na Figura 3:
+1) Carregar o arquivo de dados ([*dataset*](../dataset/carro_eficiencia.csv)) diretamente do seu computador clicando no botão `Upload to session storage`, conforme indicado na Figura 3:
 
 | Figura 3: Carregando um arquivo para área de armazenamento em nuvem |
 |:-------------------------------------------------------------------:|
 | ![load_csv](img/ml05-load_csv.png)                                  |
 | Fonte: Autor                                                        |
 
-O dataset utilizado pode ser baixado [aqui](../dataset/carro_eficiencia.csv).
 
-
+2) Importar as bibliotecas utilizados no projeto:
+ 
 ```py
 # Biblioteca para manipulação de conjunto de dados, incluindo arquivos .csv
 import pandas as pd
@@ -108,21 +107,21 @@ import plotly.graph_objects as go
 
 ```
 
-Realizando a leitura da tabela de dados para a variável `data`.
+3) Carregar a tabela de dados para a variável `data`:
 
 ```py
 data = pd.read_csv('carro_eficiencia.csv')
 data.info()
 ```
 
-Exibindo os dados.
+4) Exibir os dados:
 
 ```py
 print(data.columns)
 data.head(10)
 ```
 
-Plotando os dados.
+5) Plotar os dados:
 
 ```py
 fig = px.scatter(x = data['kg'], y=data['km_l'])
@@ -132,7 +131,7 @@ fig.update_yaxes(showline=True, linewidth=2, linecolor='black', mirror=True)
 fig.show()
 ```
 
-Encontre valores de `b` e `w`, de forma empírica:
+6) Estimar os coeficientes de `b` e `w`, de forma empírica:
 
 ```py
 b = 0.0
@@ -141,7 +140,7 @@ w = 1.0
 print(f'Coeficientes:\n b: {b} \n w: {w} \n \n y = b + w.x')
 ```
 
-Carregando variáveis `x` e `y` para facilitar plot dos dados e calculando `y_pred` com base nos parâmetros definidos anteriormente. 
+7) Carregar as variáveis `x` e `y` para facilitar o plot dos dados e calcular `y_pred` com base nos parâmetros definidos anteriormente. 
 
 ```py
 x       = data['kg'].values.copy()
@@ -153,7 +152,7 @@ print(f'\n\ny: {y}')
 print(f'\n\ny_hat: {y_pred}')
 ```
 
-Plotando dados reais e reta de predição.
+8) Plotar dados reais e reta de predição:
 
 ```py
 fig = go.Figure()
@@ -201,6 +200,7 @@ b1 = mean_y - w1 * mean_x
 print(f'Coeficientes:\n b: {b1}  w: {w1} ')
 ``` -->
 
+---
 
 **Exercício: Conjunto de dados de seguros sueco**
 
@@ -212,8 +212,10 @@ Elabora uma equação de predição para o conjunto de dados de seguros suecos.
 
 
 ---
+
 **Referências**
 
 1. [Regressão Linear](https://developers.google.com/machine-learning/crash-course/linear-regression?hl=pt-br)
 2. Kaggle
+
 ---
