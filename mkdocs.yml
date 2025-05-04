@@ -40,6 +40,7 @@ nav:
         - automacao/clp/altus_tb131/lab03-setReset.md
         - automacao/clp/altus_tb131/lab04-borda_subida_descida.md
         - automacao/clp/altus_tb131/lab05-temporizadores.md
+        - automacao/clp/altus_tb131/lab06-contadores.md
       - Situações de Aprendizagem:
         - automacao/clp/altus_tb131/sa1-projeto_partida_direta_motor.md
         - automacao/clp/altus_tb131/sa2-projeto_partida_estrela_triangulo.md
