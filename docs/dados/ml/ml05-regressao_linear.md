@@ -16,7 +16,7 @@ A regressão linear, encontra, através de técnicas estatísticas, a relação 
 
 Como exemplo, temos a tabela a seguir com a relação simplificada entre a massa de veículos e a eficiência no consumo de combustível. 
 
-| kg  |km_l|
+| kg  |km/l|
 |:---:|:--:|
 |1588 |7.74|
 |1674 |6.45|
@@ -34,7 +34,14 @@ Ao plotarmos um gráfico utilizando os dados da tabela, obtemos o seguinte resul
 | Fonte: Adaptado de [Regressão linear - Google](https://developers.google.com/machine-learning/crash-course/linear-regression?hl=pt-br) |
 
 
-Com isso, o objetivo é traçar uma reta que represente os pontos com o menor erro possível, de modo a permitir a extrapolação de resultados mediante valores que não estão na tabela inicial. 
+Com isso, o objetivo é traçar uma reta que represente os pontos com o menor erro possível, de modo a permitir a extrapolação de resultados mediante valores que não estão na tabela inicial. A Figura 2 ilustra a reta de predição. 
+
+|Figura 2: Relação Massa x Eficiência em veículos com reta de predição |
+|:--------------------------------------------------------------------:|
+| ![plot](img/ml05-plot_pred.png)                                      |
+| Fonte: Adaptado de [Regressão linear - Google](https://developers.google.com/machine-learning/crash-course/linear-regression?hl=pt-br)  |
+
+
 
 
 **Equação de regressão linear**
@@ -60,6 +67,9 @@ $$y' = b + w_1 x_1$$
 - $x_1$ é um **recurso**, ou seja, a entrada.
 
 
+
+
+
 Para uma modelagem com um número maior de recursos, ou seja, entradas, como no exemplo, além da massa, poderíamos ter a aceleração, o número de cilindros, a potência, etc, a equação ficaria algo como:
 
 $$y' = b + w_1 x_1 + w_2 x_2 + w_3 x_3 + w_4 x_4$$
@@ -69,14 +79,13 @@ Sendo os valores de `x` correspondente as grandezas de entrada e os valors de `w
 **Atividade mediada**
 
 Objetivo: 
-
-Encontrar os coeficientes de uma reta que melhor ilustra os pontos do exemplo da Figura 1.
+Encontrar os coeficientes de uma reta que melhor ilustra os pontos do exemplo da Figura 2.
 
 Utilizando o [Google Colab](https://colab.google/), execute o código a seguir:
 
-Carregue o arquivo de dados diretamente do seu computador clicando no botão `Upload to session storage`, conforme indicado na Figura 2:
+Carregue o arquivo de dados diretamente do seu computador clicando no botão `Upload to session storage`, conforme indicado na Figura 3:
 
-| Figura 2: Carregando um arquivo para área de armazenamento em nuvem |
+| Figura 3: Carregando um arquivo para área de armazenamento em nuvem |
 |:-------------------------------------------------------------------:|
 | ![load_csv](img/ml05-load_csv.png)                                  |
 | Fonte: Autor                                                        |
@@ -137,7 +146,7 @@ Carregando variáveis `x` e `y` para facilitar plot dos dados e calculando `y_pr
 ```py
 x       = data['kg'].values.copy()
 y       = data['km_l'].values
-y_pred  = b0 + b1 * x
+y_pred  = b + w * x
 
 print(f'x: {x}')
 print(f'\n\ny: {y}')
@@ -149,7 +158,7 @@ Plotando dados reais e reta de predição.
 ```py
 fig = go.Figure()
 fig.add_trace(go.Scatter(x=data['kg'], y=data['km_l'],  name='train',       mode='markers',       marker_color='rgba(152, 0, 0, .8)'))
-fig.add_trace(go.Scatter(x=data['kg'], y=y_hat,         name='prediction',  mode='lines+markers', marker_color='rgba(0, 152, 0, .8)'))
+fig.add_trace(go.Scatter(x=data['kg'], y=y_pred,        name='prediction',  mode='lines+markers', marker_color='rgba(0, 152, 0, .8)'))
 
 fig.update_layout(title = f'Correlação de eficiência pela massa dos veículos',title_x=0.5, xaxis_title= "Massa do veículo", yaxis_title="Eficiência")
 fig.update_xaxes(showline=True, linewidth=2, linecolor='black', mirror=True)
@@ -159,8 +168,8 @@ fig.show()
 
 Caso a reta não esteja, visualmente ajustada aos pontos, retorne e ajuste os valores de `b` e `w`.
 
-<!-- 
-```py
+
+<!-- ```py
 mean_x = np.mean(data['kg'])
 mean_y = np.mean(data['km_l'])
 
