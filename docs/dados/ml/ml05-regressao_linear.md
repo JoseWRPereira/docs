@@ -126,7 +126,7 @@ def covariance(x,y):
 ---
 
 
-4) Calcular os coeficiêntes `w` e `b`:
+4) Calcular os coeficientes `w` e `b`:
 
 $$ w = \frac{ cov_{xy} }{\sigma^2_x} $$
 
