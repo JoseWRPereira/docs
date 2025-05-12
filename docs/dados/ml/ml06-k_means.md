@@ -17,11 +17,11 @@ O algoritmo de Lloyd, mais conhecido como K-means, é um algoritmo não supervis
 Cada um desses grupos é representado por um centróide, que é o ponto médio entre os pontos do grupo.
 
 
-Claro que neste exemplo a visualização destes três grupos é fácil, o que não ocorre em conjunto de dados reais com tanta facilidade. 
+Tomando um exemplo simplificado do gráfico de quantidade de compras por volume de produtos comprados, a visualização destes três grupos é fácil, o que não ocorre em conjunto de dados reais com tanta facilidade. 
 
 ![Conjunto de dados](img/ml06-dados.png)
 
-A etapa inicial é definir o número de centróides que desejamos utilizar. Neste caso três (3). Eles são dispostos em posições aleatórios inicialmente. 
+A etapa inicial do agrupamento (clusterização) consiste em definir o número de centróides que desejamos utilizar. Neste caso três (3). Eles são dispostos em posições aleatórios inicialmente. 
 
 ![Centroides_aleatórios](img/ml06-centroides_aleatorios.png)
 
@@ -46,6 +46,14 @@ Como resultado final do algoritmo, temos os três grupos de clientes em uma loja
 - o grupo de clientes que compram com pouca frequência e poucos produtos;
 - o grupo de clientes que compram com uma frequência maior com um pouco mais de produtos em seus carrinhos;
 - o grupo de clientes mais valioso, pois são aqueles que possuem um frequência de compra alta e compram muitos produtos. 
+
+---
+
+| | Interação do centróide no processo de clusterização  | |
+|:---:|:---:|:---:|
+| ![cluster](img/ml06-cluster3.gif) |![cluster](img/ml06-cluster5a.gif)|![cluster](img/ml06-cluster5b.gif)|
+||Fonte: [Prof. JH](https://youtu.be/KN44-5oXZ7w?si=3XUjdxwJ3ciPhsGJ)||
+
 
 ---
 
