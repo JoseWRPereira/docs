@@ -27,21 +27,41 @@ tags:
 2. [MATLAB Plot Gallery](https://www.mathworks.com/products/matlab/plot-gallery.html)
 3. 
 
+---
 
 # Lógica Fuzzy
 [Aplicação da Lógica Fuzzy em sw e hw](https://doceru.com/doc/8cnnv08)
 
 
+---
 
-# Python x SQL
+# Python
 ![Py x SQL](img/py_x_sql.png)
 Fonte: LinkedIn Python
 
-
 ![Pandas](img/pandas.jpg)
+
+## FFT
+
+[Como fazer Transformada de Fourier no Python? (FFT) | Sinais e Sistemas](https://youtu.be/1-i4byj3MqI?si=-6yPHQfrE-wjiHab)
+
+
 
 
 ---
+
+# RISC-V
+
+- [MC404 - Organização Básica de Computadores e Linguagem de Montagem](https://www.ic.unicamp.br/~rodolfo/mc404/)
+- [An Introduction to Assembly Programming with RISC-V](https://riscv-programming.org/book/riscv-book.html)
+- [Guia Prático RISC-V: Atlas de uma arquitetura aberta](http://riscvbook.com/portuguese/)
+-  RISC-V Simulator, RISC-V Interpreter, Venus, QtRVSim.
+
+
+
+# LaTeX
+
+- [Lista de Símbolos Matemáticos](https://wp.ufpel.edu.br/fernandosimoes/files/2012/06/Simbolos-matematicos.pdf)
 
 
 

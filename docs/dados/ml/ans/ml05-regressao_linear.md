@@ -30,7 +30,7 @@ Carregue o arquivo de dados diretamente do seu computador clicando no botão `Up
 | ![load_csv](../img/ml05-load_csv.png)                                  |
 | Fonte: Autor                                                        |
 
-1) O dataset utilizado pode ser baixado [aqui](../dataset/carro_eficiencia.csv).
+1) O dataset utilizado pode ser baixado [aqui](../../dataset/carro_eficiencia.csv).
 
 2) Importando as bibliotecas:
 
@@ -147,7 +147,120 @@ Isso significa que, para um novo número de reclamações (x), poderemos prever 
 Elabora uma equação de predição para o conjunto de dados de seguros suecos.
 
 
+1) O dataset utilizado pode ser baixado [aqui](../../dataset/swedish_insurance.csv).
+
+2) Importando as bibliotecas:
+
+```py
+# Biblioteca para manipulação de conjunto de dados, incluindo arquivos .csv
+import pandas as pd
+
+# Biblioteca para calculo científico e algebra linear
+import numpy as np
+import math
+
+# Bibliotecas para visualização de dados
+import matplotlib.pyplot as plt
+import plotly.express as px
+import plotly.graph_objects as go
+```
+
+3) Realizando a leitura da tabela de dados para a variável `data`:
+
+```py
+data = pd.read_csv('swedish_insurance.csv')
+data.info()
+```
+
+4) Exibindo os dados:
+
+```py
+print(data.columns)
+data.head(10)
+```
+
+5) Plotando os dados:
+
+```py
+fig = px.scatter(x = data['X'], y=data['Y'])
+fig.update_layout(title = 'Previsão de pagamento de Seguros de Automóvel na Suécia', title_x=0.5, xaxis_title= "Núm. de Reclamações", yaxis_title="Pagamento Total [kr]", height = 500, width = 700)
+fig.update_xaxes(showline=True, linewidth=2, linecolor='black', mirror=True)
+fig.update_yaxes(showline=True, linewidth=2, linecolor='black', mirror=True)
+fig.show()
+```
+
+6) Calculando coeficientes `b` e `w`, de forma estatística:
+
+```py
+# Média
+mean_x = np.mean(data['X'])
+mean_y = np.mean(data['Y'])
+
+# Variância 
+var_x = np.var(data['X'])
+var_y = np.var(data['Y'])
+
+
+print('x stats: mean= %.3f   variance= %.3f' % (mean_x, var_x))
+print('y stats: mean= %.3f   variance= %.3f' % (mean_y, var_y))
+
+
+# Função para cálculo da covariância entre x e y
+def covariance(x,y):
+  mean_x = np.mean(x)
+  mean_y = np.mean(y)
+  covar = 0.0
+  for i in range(len(x)):
+    covar += x[i]*y[i]
+  return (covar/len(x)) - mean_x * mean_y
+
+
+# Covariância entre x e y
+covar_xy = covariance(data['X'], data['Y'])
+print(f'Cov(x,y): {covar_xy}')
+
+# Cálculo dos coeficiêntes w e b
+w = covar_xy / var_x
+b = mean_y - w * mean_x
+
+print(f'Coeficientes:\n b: {b}  w: {w} \n \n y = b + w.x\n\n')
+print(f'y = {b:.3f} + {w:.3f} * x')
+```
+
+
+
+7) Carregando variáveis `x` e `y` para facilitar plot dos dados e calculando `y_pred` com base nos parâmetros definidos anteriormente:
+
+```py
+x       = data['X'].values.copy()
+y       = data['Y'].values
+y_pred  = b + w * x
+
+print(f'x: {x}')
+print(f'\n\ny: {y}')
+print(f'\n\ny_hat: {y_pred}')
+```
+
+8) Plotando dados reais e reta de predição:
+
+```py
+fig = go.Figure()
+fig.add_trace(go.Scatter(x=data['X'], y=data['Y'],  name='train',       mode='markers',       marker_color='rgba(152, 0, 0, .8)'))
+fig.add_trace(go.Scatter(x=data['X'], y=y_pred,     name='prediction',  mode='lines+markers', marker_color='rgba(0, 152, 0, .8)'))
+
+fig.update_layout(title = f'Previsão de pagamento de Seguros de Automóvel na Suécia',title_x=0.5, xaxis_title= "Núm. Reclamações", yaxis_title="Pagamento [kr]")
+fig.update_xaxes(showline=True, linewidth=2, linecolor='black', mirror=True)
+fig.update_yaxes(showline=True, linewidth=2, linecolor='black', mirror=True)
+fig.show()
+```
+
+
+
+
+
+
 ---
+
 **Referências**
 
 1. [Regressão Linear](https://developers.google.com/machine-learning/crash-course/linear-regression?hl=pt-br)

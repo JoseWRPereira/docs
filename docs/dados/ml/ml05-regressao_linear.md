@@ -59,12 +59,12 @@ em que:
 
 No aprendizado de máquina, escrevemos a equação de um modelo de regressão linear da seguinte maneira:
 
-$$y' = b + w_1 x_1$$
+$$y' = b + w . x$$
 
 - $y'$ é o **rótulo** previsto, ou seja, a saída;
 - $b$ é o **viés** (*bias*) do modelo, é um parâmetro calculado durante o treinamento e representa o mesmo conceito da intersecção de `y` na equação algébrica de uma linha;
-- $w_1$ é o **peso** do elemento. O peso é o mesmo conceito da inclinação da reta na equação algébrica de uma linha. O peso também é um parâmetro do modelo calculado durante o treinamento;
-- $x_1$ é um **recurso**, ou seja, a entrada.
+- $w$ é o **peso** do elemento. O peso é o mesmo conceito da inclinação da reta na equação algébrica de uma linha. O peso também é um parâmetro do modelo calculado durante o treinamento;
+- $x$ é um **recurso**, ou seja, a entrada.
 
 
 Para uma modelagem com um número maior de recursos, ou seja, entradas, como no exemplo, além da massa, poderíamos ter a aceleração, o número de cilindros, a potência, etc, a equação ficaria algo como:
@@ -72,6 +72,74 @@ Para uma modelagem com um número maior de recursos, ou seja, entradas, como no 
 $$y' = b + w_1 x_1 + w_2 x_2 + w_3 x_3 + w_4 x_4$$
 
 Sendo os valores de `x` correspondente as grandezas de entrada e os valors de `w`, respectivos coeficiêntes gerados no treimento. 
+
+
+**Calculando os coeficientes `b` e `w`**
+
+1) Calcular a média dos valores de `x` e `y`:
+
+$$ \bar{x} = \frac{1}{N} \sum_{i=1}^{N} x_i \qquad \qquad \bar{y} = \frac{1}{N} \sum_{i=1}^{N} y_i$$
+
+```python
+mean_x = np.mean(data['X'])
+mean_y = np.mean(data['Y'])
+```
+
+---
+
+2) Calcular a variância populacional para as séries `x` e `y`:
+
+$$\sigma^2_x = \frac{1}{N} \sum_{i=1}^{N} (x_i - \bar{x})^2 \qquad \qquad \qquad \sigma^2_y = \frac{1}{N} \sum_{i=1}^{N} (y_i - \bar{y})^2$$
+
+```py
+var_x = np.var(data['X'])
+var_y = np.var(data['Y'])
+```
+
+---
+3) Calcular a covariância entre as séries de dados `x` e `y`:
+
+$$cov_{xy} = \sigma_{xy} = \frac{1}{N} \sum_{i=1}^{N} (x_i - \bar{x})(y_i - \bar{y}) =  \frac{\sum_{i=1}^{N} (x_i . y_i) }{N} - {\bar{x}.\bar{y}}$$
+
+
+```py
+def covariance(x, y):
+    mean_x = np.mean(x)
+    mean_y = np.mean(y)
+    covar = 0.0
+    for i in range(len(x)):
+        covar += (x[i] - mean_x) * (y[i] - mean_y)
+    return covar/len(x)
+```
+
+
+```py
+def covariance(x,y):
+  mean_x = np.mean(x)
+  mean_y = np.mean(y)
+  covar = 0.0
+  for i in range(len(x)):
+    covar += x[i]*y[i]
+  return (covar/len(x)) - mean_x * mean_y
+```
+
+---
+
+
+4) Calcular os coeficiêntes `w` e `b`:
+
+$$ w = \frac{ cov_{xy} }{\sigma^2_x} $$
+
+```py
+w = covar_xy / var_x
+```
+
+$$ b = \bar{y} - w.\bar{x} $$
+
+```py
+b = mean_y - w * mean_x
+```
+
 
 ---
 
@@ -208,7 +276,7 @@ O conjunto de dados chamado [*`Auto Insurance in Sweden`*](../dataset/swedish_in
 
 Isso significa que, para um novo número de reclamações (x), poderemos prever o pagamento total (y).
 
-Elabora uma equação de predição para o conjunto de dados de seguros suecos.
+Elabore uma equação de predição para o conjunto de dados de seguros suecos.
 
 
 ---
