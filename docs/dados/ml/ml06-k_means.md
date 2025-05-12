@@ -57,7 +57,7 @@ Como resultado final do algoritmo, temos os três grupos de clientes em uma loja
 
 ---
 
-**Vantages**
+**Vantagens**
 
 - Simples entender e aplicar;
 - Eficiente computacionalmente, permitindo trabalhar com grande quantidade de dados.
