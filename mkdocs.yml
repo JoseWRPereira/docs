@@ -6,6 +6,7 @@ nav:
     - Sistemas Digitais:    index_digitais.md
     - Automação Industrial: index_automacao.md
     - Ciência de Dados:     index_dados.md
+    - Projetos:             index_gestao.md
   - Sistemas Digitais: 
     - index_digitais.md
     - Microcontroladores:

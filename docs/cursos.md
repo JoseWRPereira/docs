@@ -46,7 +46,12 @@ Fonte: LinkedIn Python
 [Como fazer Transformada de Fourier no Python? (FFT) | Sinais e Sistemas](https://youtu.be/1-i4byj3MqI?si=-6yPHQfrE-wjiHab)
 
 
+# Banco de Dados
 
+## SQLite
+- [How to install SQLite3 on Windows 10/11 [2024 Update] Create Database, Table in SQL | Complete Guide](https://youtu.be/ZiJb7EIaRCE?si=47HxrMwOSyZPwbF9)
+- [SQLite Databases With Python - Full Course - freeCodeCamp.org](https://youtu.be/byHcYRpMgI4?si=Kjdy4gSxPZ9kSZbm)
+- 
 
 ---
 
