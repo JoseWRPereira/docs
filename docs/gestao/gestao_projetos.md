@@ -38,4 +38,16 @@ Diretório com [template para TCCs](https://github.com/JoseWRPereira/tcc_templat
 
 # Scrum
 
+![ScrumProcess](img/SCRUM.png)
+
+## Referências
+1. [Scrum Essentials in Under 10 Minutes - Scrum Alliance](https://youtu.be/RtQ3tpq-RuE?si=CNq0DVJIIwwUYhcO)
+2. [Scrum.org](https://www.scrum.org/)
+3. [Scrum // Dicionário do Programador - Código Fonte TV](https://youtu.be/3aCww_1RnL0?si=LNLqSJSmEiJ5MbP0)
+4. [Scrum - Aprenda Scrum em 9 minutos - MindMaster](https://youtu.be/XfvQWnRgxG0?si=JGu0gHxJvkSv1Cv1)
+5. [SCRUM O QUE É (de um Jeito BEM Prático) - Blog Abri Minha Empresa](https://youtu.be/HlmiVz0SqNQ?si=Us6Djd2c4tUsis0G)
+6. [Metodologia Ágil para Engenheiros: Como Aplicar o Scrum na Prática - IBEE](https://youtu.be/4ap_8MnZzcs?si=cvV1T2Uv1-bbfZoc)
+7. [ENTENDA SCRUM EM 5 MINUTOS - Agile School](https://youtu.be/yMxvfTVbOVM?si=ujfeNk8YkP15wax3)
+
+
 ---
