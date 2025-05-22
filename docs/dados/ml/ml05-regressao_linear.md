@@ -272,7 +272,7 @@ print(f'Coeficientes:\n b: {b1}  w: {w1} ')
 
 **Exercício: Conjunto de dados de seguros sueco**
 
-O conjunto de dados chamado [*`Auto Insurance in Sweden`*](../dataset/swedish_insurance.csv) (Seguro Automóvel na Suécia) e envolve a previsão do pagamento total de todas as reivindicações em milhares de *`Swedish Krona`* (Coroas suecas) (y) dado o número total de reclamações (x).
+O conjunto de dados chamado [*`Auto Insurance in Sweden`*](../dataset/swedish_insurance.csv)  (Seguro Automóvel na Suécia) e envolve a previsão do pagamento total de todas as reivindicações em milhares de *`Swedish Krona`* (Coroas suecas) (y) dado o número total de reclamações (x).
 
 Isso significa que, para um novo número de reclamações (x), poderemos prever o pagamento total (y).
 
