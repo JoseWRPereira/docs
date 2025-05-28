@@ -24,6 +24,7 @@ nav:
         - digitais/mcu/avr_atmega328p/lab07-bibliotecas.md
         - digitais/mcu/avr_atmega328p/lab08-semaforo_temporizado.md
         - digitais/mcu/avr_atmega328p/lab09-displayLCD.md
+        - digitais/mcu/avr_atmega328p/lab10-teclado.md
         - digitais/mcu/avr_atmega328p/lab_atividades.md
     - Conectividade:
       - ESP32:

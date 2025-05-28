@@ -12,6 +12,27 @@ tags:
 
 # Rede Neural
 
+Rede Neural é um modelo computacional, ou seja, uma representação de uma rede baseada no comportamento de um neurônio biológico.
+
+
+![Perceptron](img/ml07-perceptron.png)
+
+- $x_0, x_1, x_2, ..., x_n$: Sinais de entrada;
+- $w_0, w_1, w_2, ... w_n$: Weight (Peso);
+- $\Sigma$: Somatório dos sinais de entrada;
+- $\varphi$: Função de Ativação. Operação de não linearidade;
+- $y$: Saída.
+
+
+A conexão entre vários neurônios, organizados em camadas, formam uma rede neural.
+
+![RedeNeural](img/ml07-neuronio_rede_neural.png)
+
+
+Quando a quantidade de camadas aumenta, surge o termo *Deep Learning*.
+
+
+Treinamento: Fornecer entradas + Fornecer Saídas -> Ajustar pesos;
 
 ---
 
@@ -21,15 +42,11 @@ tags:
 2. [Redes Neurais - Introdução às Redes Neurais - UniVESP](https://youtu.be/kzFqGhK8Q2s?si=k9br8YGYsInt6WAD)
 3. [Redes Neurais Artificiais](https://sites.icmc.usp.br/andre/research/neural/)
 4. [O que é uma rede neural? - IBM](https://www.ibm.com/br-pt/think/topics/neural-networks)
-5. 
-
-
-1. [Fuzzy Logic: Definition, Meaning, Examples, and History](https://www.investopedia.com/terms/f/fuzzy-logic.asp)
-2. [Fuzzy Logic in AI Explained for Beginners | Fuzzy Logic in Artificial Intelligence | Scaler](https://youtu.be/3XqeCYnaSqc?si=AlmGLmyjT5Ojm443)
-3. [ Fuzzy Logic in Artificial Intelligence | Introduction to Fuzzy Logic & Membership Function | Edureka](https://www.youtube.com/live/xD1c8jTFF78?si=Vl9BYvvotWOoZXyR)
-4. [What Is Fuzzy Logic? | Fuzzy Logic, Part 1 - MATLAB](https://youtu.be/__0nZuG4sTw?si=kbr3EiBQU1ut7XrK)
-5. [PID vs. Other Control Methods: What's the Best Choice](https://youtu.be/lRZ4NT5DRk8?si=gP0d7JHtxZrgQ4K6)
-6. 
+5. [Neurônios e Redes Neurais Artificiais - Blog do Nei](https://neigrando.com/2022/03/03/neuronios-e-redes-neurais-artificiais/)
+6. [Introdução completa a Redes Neurais em Python utilizando Tensorflow/Keras - Pedro Didier](https://youtu.be/PdFf_QOfjCg?si=9-xpSamvS0xzBYuT)
+7. [Redes Neurais e Machine Learning | Nerdologia Tech](https://youtu.be/1_c_MA1F-vU?si=Wmc3qwZTDKdK7G5U)
+8. [Rede neural do zero em Python: Modelo básico | Machine Learning para humanos](https://youtu.be/x8glTaEselM?si=ZipSVysbdKYfdaeT)
+9. [ep13 Treino, teste e validação | Cérebro Eletrônico IFSP](https://youtu.be/1pxw6lMT1Tw?si=Ms9vDx5ADHAUJZGq)
 
 
 
