@@ -2,73 +2,72 @@ site_name: Prof. José W. R. Pereira
 
 nav:
   - Principal:
-    - index.md
-    - Sistemas Digitais:    index_digitais.md
-    - Automação Industrial: index_automacao.md
-    - Ciência de Dados:     index_dados.md
-    - Projetos:             index_gestao.md
-  - Sistemas Digitais: 
-    - index_digitais.md
-    - Microcontroladores:
-      - Geral:
-        - digitais/mcu/mcu1-embarcados.md
-        - digitais/mcu/mcu2-microcontroladores.md
-      - AVR ATmega328P:
-        - digitais/mcu/avr_atmega328p/lab00-ambientacao.md
-        - digitais/mcu/avr_atmega328p/lab01-sinalizador_garagem.md
-        - digitais/mcu/avr_atmega328p/lab02-partida_estrela_triangulo.md
-        - digitais/mcu/avr_atmega328p/lab03-semaforo.md
-        - digitais/mcu/avr_atmega328p/lab04-display7seg.md
-        - digitais/mcu/avr_atmega328p/lab05-2displays7seg.md
-        - digitais/mcu/avr_atmega328p/lab06-deteccao_bordas.md
-        - digitais/mcu/avr_atmega328p/lab07-bibliotecas.md
-        - digitais/mcu/avr_atmega328p/lab08-semaforo_temporizado.md
-        - digitais/mcu/avr_atmega328p/lab09-displayLCD.md
-        - digitais/mcu/avr_atmega328p/lab10-teclado.md
-        - digitais/mcu/avr_atmega328p/lab11-ihm.md
-        - digitais/mcu/avr_atmega328p/lab_atividades.md
-    - Conectividade:
-      - ESP32:
-        - digitais/iot/esp32/esp32-1-intro.md
-        - digitais/iot/esp32/lab00-ambientacao.md
-        - digitais/iot/esp32/lab01-blink.md
-        - digitais/iot/esp32/lab02-componente.md
+      - index.md
+      - Sistemas Digitais: index_digitais.md
+      - Automação Industrial: index_automacao.md
+      - Ciência de Dados: index_dados.md
+      - Projetos: index_gestao.md
+  - Sistemas Digitais:
+      - index_digitais.md
+      - Microcontroladores:
+          - Geral:
+              - digitais/mcu/mcu1-embarcados.md
+              - digitais/mcu/mcu2-microcontroladores.md
+          - AVR ATmega328P:
+              - digitais/mcu/avr_atmega328p/lab00-ambientacao.md
+              - digitais/mcu/avr_atmega328p/lab01-sinalizador_garagem.md
+              - digitais/mcu/avr_atmega328p/lab02-partida_estrela_triangulo.md
+              - digitais/mcu/avr_atmega328p/lab03-semaforo.md
+              - digitais/mcu/avr_atmega328p/lab04-display7seg.md
+              - digitais/mcu/avr_atmega328p/lab05-2displays7seg.md
+              - digitais/mcu/avr_atmega328p/lab06-deteccao_bordas.md
+              - digitais/mcu/avr_atmega328p/lab07-bibliotecas.md
+              - digitais/mcu/avr_atmega328p/lab08-semaforo_temporizado.md
+              - digitais/mcu/avr_atmega328p/lab09-displayLCD.md
+              - digitais/mcu/avr_atmega328p/lab10-teclado.md
+              - digitais/mcu/avr_atmega328p/lab11-ihm.md
+              - digitais/mcu/avr_atmega328p/lab12-timer.md
+              - digitais/mcu/avr_atmega328p/lab_atividades.md
+      - Conectividade:
+          - ESP32:
+              - digitais/iot/esp32/esp32-1-intro.md
+              - digitais/iot/esp32/lab00-ambientacao.md
+              - digitais/iot/esp32/lab01-blink.md
+              - digitais/iot/esp32/lab02-componente.md
   - Automação Industrial:
-    - index_automacao.md
-    - Controladores Programáveis:
-      - Aulas:
-        - automacao/clp/index.md
-      - Altus Duo TB131:
-        - automacao/clp/altus_tb131/lab00-ambientacao.md
-        - automacao/clp/altus_tb131/lab01-novo_projeto.md
-        - automacao/clp/altus_tb131/lab02-contatos_bobinas.md
-        - automacao/clp/altus_tb131/lab03-setReset.md
-        - automacao/clp/altus_tb131/lab04-borda_subida_descida.md
-        - automacao/clp/altus_tb131/lab05-temporizadores.md
-        - automacao/clp/altus_tb131/lab06-contadores.md
-        - automacao/clp/altus_tb131/lab07-blocos_funcionais.md
-      - Situações de Aprendizagem:
-        - automacao/clp/altus_tb131/sa1-projeto_partida_direta_motor.md
-        - automacao/clp/altus_tb131/sa2-projeto_partida_estrela_triangulo.md
-        - automacao/clp/altus_tb131/sa3-projeto_semaforo.md
-    - automacao/redes/index.md
+      - index_automacao.md
+      - Controladores Programáveis:
+          - Aulas:
+              - automacao/clp/index.md
+          - Altus Duo TB131:
+              - automacao/clp/altus_tb131/lab00-ambientacao.md
+              - automacao/clp/altus_tb131/lab01-novo_projeto.md
+              - automacao/clp/altus_tb131/lab02-contatos_bobinas.md
+              - automacao/clp/altus_tb131/lab03-setReset.md
+              - automacao/clp/altus_tb131/lab04-borda_subida_descida.md
+              - automacao/clp/altus_tb131/lab05-temporizadores.md
+              - automacao/clp/altus_tb131/lab06-contadores.md
+              - automacao/clp/altus_tb131/lab07-blocos_funcionais.md
+          - Situações de Aprendizagem:
+              - automacao/clp/altus_tb131/sa1-projeto_partida_direta_motor.md
+              - automacao/clp/altus_tb131/sa2-projeto_partida_estrela_triangulo.md
+              - automacao/clp/altus_tb131/sa3-projeto_semaforo.md
+      - automacao/redes/index.md
   - Ciência de Dados:
-    - index_dados.md
-    - Dados:
-      - Análise de Dados:
-        - dados/ad/ad00-analise_de_dados.md
-        - dados/ad/ad01-ambiente_desen.md
-      - Machine Learning:
-        - dados/ml/ml01-ia_ml_dl.md
-        - dados/ml/ml02-ml.md
-        - dados/ml/ml03-matriz_confusao.md
-        - dados/ml/ml04-knn.md
-        - dados/ml/ml05-regressao_linear.md
-        - dados/ml/ml06-k_means.md
-  - Indicações: 
-    - indicacoes.md
-
-
+      - index_dados.md
+      - Dados:
+          - Análise de Dados:
+              - dados/ad/ad00-analise_de_dados.md
+              - dados/ad/ad01-ambiente_desen.md
+          - Machine Learning:
+              - dados/ml/ml01-ia_ml_dl.md
+              - dados/ml/ml02-ml.md
+              - dados/ml/ml03-matriz_confusao.md
+              - dados/ml/ml04-knn.md
+              - dados/ml/ml05-regressao_linear.md
+              - dados/ml/ml06-k_means.md
+  - Indicações:
+      - indicacoes.md
 
 #        - automacao\clp\altus_tb131\h1_3-borda_subida_descida.md
 #        - automacao\clp\altus_tb131\h1_4-temporizadores.md
@@ -116,8 +115,8 @@ theme:
       primary: teal
       accent: orange
   font:
-   text: Lora
-   code: Roboto Mono
+    text: Lora
+    code: Roboto Mono
 
 #    plugins:
 #      - blog:
@@ -130,7 +129,7 @@ theme:
 repo_url: https://github.com/josewrpereira/docs
 repo_name: josewrpereira/docs
 
-extra: 
+extra:
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/josewrpereira
@@ -138,7 +137,6 @@ extra:
       link: https://www.linkedin.com/in/josewrpereira/
     - icon: fontawesome/solid/envelopes-bulk
       link: mailto:josewrpereira@protonmail.com
-
 
 markdown_extensions:
   - pymdownx.highlight:
@@ -162,10 +160,5 @@ extra_javascript:
   - javascripts/mathjax.js
   - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
 
-
-
-
 copyright: |
   &copy; 2025 <a href="https://github.com/josewrpereira" target="_blank" rel="noopener">José W. R. Pereira</a>
-
-
