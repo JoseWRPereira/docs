@@ -1,6 +1,7 @@
 ---
 title: Lógica Fuzzy
-icon: fontawesome/solid/users-viewfinder
+icon: fontawesome/solid/mountain
+icon: fontawesome/solid/angle-up
 author:
  - José W. R. Pereira
 tags:

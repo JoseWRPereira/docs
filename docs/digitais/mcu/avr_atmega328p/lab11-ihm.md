@@ -29,6 +29,7 @@ Seguem códigos de apoio para o display e teclado.
 #include "lcd.h"
 #include "teclado.h"
 
+
 void main(void) 
 {
 	char tecla;
