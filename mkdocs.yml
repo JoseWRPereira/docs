@@ -66,8 +66,8 @@ nav:
               - dados/ml/ml04-knn.md
               - dados/ml/ml05-regressao_linear.md
               - dados/ml/ml06-k_means.md
-              - dados/ml/ml07-rede_neural.md
-              - dados/ml/ml08-fuzzy.md
+#              - dados/ml/ml07-rede_neural.md
+#              - dados/ml/ml08-fuzzy.md
   - Indicações:
       - indicacoes.md
 
