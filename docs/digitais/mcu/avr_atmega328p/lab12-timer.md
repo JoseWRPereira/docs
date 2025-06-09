@@ -86,7 +86,7 @@ A configuração do comportamento é realizada através dos seguintes registrado
 
 
 ---
-**Exemplo de simulação de temporização**
+[**Exemplo de simulação de temporização**](simulide/ihm.sim1)
 
 ![Simulacao](img/lab12-temporizador.gif)
 

@@ -36,6 +36,9 @@ Quando a quantidade de camadas aumenta, surge o termo *Deep Learning*.
 O treinamento de um modelo de *machine learning* consiste em produzir um algoritmo, fornecer valores de entrada e valores de saída, de modo que o algoritmo **ajuste adequadamente os pesos da rede** até que o resultado seja satisfatório. 
 
 
+![Treinamento](img/ml07-treinamento.png)
+
+![Ajuste](img/ml07-ajuste.gif)
 ---
 
 **Código de exemplo**
@@ -131,16 +134,17 @@ plt.plot(x, get_linear_curve(x, w, b),'g', lw=3)
 
 **Referências**
 
-1. [O que é Rede Neural Artificial e como funciona | Pesquisador de IA explica | IA Descomplicada](https://youtu.be/i6l3R7j95x8?si=ZifbipBY92RXpY5n)
-2. [Redes Neurais - Introdução às Redes Neurais - UniVESP](https://youtu.be/kzFqGhK8Q2s?si=k9br8YGYsInt6WAD)
-3. [Redes Neurais Artificiais](https://sites.icmc.usp.br/andre/research/neural/)
-4. [O que é uma rede neural? - IBM](https://www.ibm.com/br-pt/think/topics/neural-networks)
-5. [Neurônios e Redes Neurais Artificiais - Blog do Nei](https://neigrando.com/2022/03/03/neuronios-e-redes-neurais-artificiais/)
-6. [Introdução completa a Redes Neurais em Python utilizando Tensorflow/Keras - Pedro Didier](https://youtu.be/PdFf_QOfjCg?si=9-xpSamvS0xzBYuT)
-7. [Redes Neurais e Machine Learning | Nerdologia Tech](https://youtu.be/1_c_MA1F-vU?si=Wmc3qwZTDKdK7G5U)
-8. [Rede neural do zero em Python: Modelo básico | Machine Learning para humanos](https://youtu.be/x8glTaEselM?si=ZipSVysbdKYfdaeT)
-9. [ep13 Treino, teste e validação | Cérebro Eletrônico IFSP](https://youtu.be/1pxw6lMT1Tw?si=Ms9vDx5ADHAUJZGq)
-10. [APRENDA REDES NEURAIS EM PYTHON - TEORIA E PRÁTICA | Inteligência Mil Grau](https://youtu.be/I8MkOHFOmhc?si=dLs1iw06YDc4Thue)
+1. [The Perceptron: A probabilistic Model for information storage and organization in the brain | F. Rosembratt](https://www.ling.upenn.edu/courses/cogs501/Rosenblatt1958.pdf)
+2. [O que é Rede Neural Artificial e como funciona | Pesquisador de IA explica | IA Descomplicada](https://youtu.be/i6l3R7j95x8?si=ZifbipBY92RXpY5n)
+3. [Redes Neurais - Introdução às Redes Neurais - UniVESP](https://youtu.be/kzFqGhK8Q2s?si=k9br8YGYsInt6WAD)
+4. [Redes Neurais Artificiais](https://sites.icmc.usp.br/andre/research/neural/)
+5. [O que é uma rede neural? - IBM](https://www.ibm.com/br-pt/think/topics/neural-networks)
+6. [Neurônios e Redes Neurais Artificiais - Blog do Nei](https://neigrando.com/2022/03/03/neuronios-e-redes-neurais-artificiais/)
+7. [Introdução completa a Redes Neurais em Python utilizando Tensorflow/Keras - Pedro Didier](https://youtu.be/PdFf_QOfjCg?si=9-xpSamvS0xzBYuT)
+8. [Redes Neurais e Machine Learning | Nerdologia Tech](https://youtu.be/1_c_MA1F-vU?si=Wmc3qwZTDKdK7G5U)
+9. [Rede neural do zero em Python: Modelo básico | Machine Learning para humanos](https://youtu.be/x8glTaEselM?si=ZipSVysbdKYfdaeT)
+10. [ep13 Treino, teste e validação | Cérebro Eletrônico IFSP](https://youtu.be/1pxw6lMT1Tw?si=Ms9vDx5ADHAUJZGq)
+11. [APRENDA REDES NEURAIS EM PYTHON - TEORIA E PRÁTICA | Inteligência Mil Grau](https://youtu.be/I8MkOHFOmhc?si=dLs1iw06YDc4Thue)
 
 
 
