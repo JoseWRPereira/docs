@@ -27,6 +27,7 @@ nav:
               - digitais/mcu/avr_atmega328p/lab10-teclado.md
               - digitais/mcu/avr_atmega328p/lab11-ihm.md
               - digitais/mcu/avr_atmega328p/lab12-timer.md
+              - digitais/mcu/avr_atmega328p/lab13-adc.md
               - digitais/mcu/avr_atmega328p/lab_atividades.md
       - Conectividade:
           - ESP32:
@@ -67,7 +68,7 @@ nav:
               - dados/ml/ml05-regressao_linear.md
               - dados/ml/ml06-k_means.md
               - dados/ml/ml07-rede_neural.md
-#              - dados/ml/ml08-fuzzy.md
+  #              - dados/ml/ml08-fuzzy.md
   - Indicações:
       - indicacoes.md
 
