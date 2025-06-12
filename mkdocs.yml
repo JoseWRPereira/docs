@@ -49,6 +49,9 @@ nav:
               - automacao/clp/altus_tb131/lab05-temporizadores.md
               - automacao/clp/altus_tb131/lab06-contadores.md
               - automacao/clp/altus_tb131/lab07-blocos_funcionais.md
+              - automacao/clp/altus_tb131/lab08-entradas_saidas_analogicas.md
+              - automacao/clp/altus_tb131/lab09-bloco_funcional.md
+              - automacao/clp/altus_tb131/lab10-funcao.md
           - Situações de Aprendizagem:
               - automacao/clp/altus_tb131/sa1-projeto_partida_direta_motor.md
               - automacao/clp/altus_tb131/sa2-projeto_partida_estrela_triangulo.md
