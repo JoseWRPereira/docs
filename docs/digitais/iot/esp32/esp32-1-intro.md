@@ -25,15 +25,15 @@ O ESP32 pode ser adquirido em vários formatos, sendo eles:
 - [Módulos](https://www.espressif.com/en/support/download/documents/modules);
 - [Kits de Desenvolvimento](https://www.espressif.com/en/support/download/documents/development-board).
 
-Em todos os casos a documentação é muito completa, desde os passos para instalação das ferramentas de desenvolvimento, até um conjunto amplo de bibliotecas disponíveis para uso nas mais diversas aplicações. 
+Em todos os casos a documentação é muito completa, desde os passos para instalação das ferramentas de desenvolvimento, até um conjunto amplo de bibliotecas disponíveis para uso nas mais diversas aplicações.
 
 ---
 
 # Espressif IoT Development Framework (ESP-IDF)
 
-O [ESP-IDF](https://www.espressif.com/en/products/sdks/esp-idf) é o *framework* oficial da Espressif para a linha de controladores ESP32. Oferece recursos necessários para desenvolver aplicações de uso geral, em linguagem C e C++. 
+O [ESP-IDF](https://www.espressif.com/en/products/sdks/esp-idf) é o *framework* oficial da Espressif para a linha de controladores ESP32. Oferece recursos necessários para desenvolver aplicações de uso geral, em linguagem C e C++.
 
-É um projeto *open-source* e pode ser baixado do [GitHub](https://github.com/espressif/esp-idf). 
+É um projeto *open-source* e pode ser baixado do [GitHub](https://github.com/espressif/esp-idf).
 
 Disponibiliza os seguintes **Componentes de software**:
 
@@ -60,9 +60,8 @@ Disponibiliza os seguintes **Componentes de software**:
 
 FreeRTOS é um núcleo do Sistema Operacional de Tempo Real para sistemas embarcados.
 
-- [What is an RTOS?](https://www.freertos.org/about-RTOS.html)
-- [FreeRTOS Books](https://www.freertos.org/Documentation/RTOS_book.html)
-- [RTOS Fundamentals](https://www.freertos.org/implementation/a00002.html)
+- [What is an RTOS?](https://www.freertos.org/Why-FreeRTOS)
+- [FreeRTOS Documentation](https://www.freertos.org/Documentation/00-Overview)
 - [ESP-IDF FreeRTOS](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-reference/system/freertos.html)
 
 
@@ -76,5 +75,3 @@ FreeRTOS é um núcleo do Sistema Operacional de Tempo Real para sistemas embarc
 - [Component Library](https://github.com/UncleRus/esp-idf-lib)
 - [Documentation](https://esp-idf-lib.readthedocs.io/en/latest/)
 - [Examples](https://github.com/UncleRus/esp-idf-lib/tree/master/examples)
-
-
