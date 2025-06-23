@@ -23,7 +23,7 @@ O controlador utilizado no laboratório está montado em um kit didático denomi
 
 # Ferramentas de Desenvolvimento
 
-Para o desenvolvimento dos programas, pode-se baixar o software [Master Tool IEC](https://www.altus.com.br/suporte/download/baixararquivo/BgYB/2) diretamente do site da [Altus SA](https://www.altus.com.br/produto/11/clp-duo), acessando o seguinte caminho:
+Para o desenvolvimento dos programas, pode-se baixar o software [Master Tool IEC](https://www.altus.com.br/wp-content/uploads/2024/11/mastertool_iec_mt8200.zip) diretamente do site da [Altus SA](https://www.altus.com.br/serie/programacao-clp/), acessando o seguinte caminho:
 
 - Produtos > Controladores Programáveis > Série Duo
 
