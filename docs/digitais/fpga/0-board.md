@@ -72,11 +72,29 @@
 | Fonte: [DE1-SoC Development and Education Kit](https://www.terasic.com.tw/cgi-bin/page/archive.pl?Language=English&CategoryNo=205&No=836&PartNo=2#heading) |
 
 
+- [Manual do usuário DE1-SoC - rev.F/G](https://www.terasic.com.tw/cgi-bin/page/archive_download.pl?Language=English&No=836&FID=3a3708b0790bb9c721f94909c5ac96d6)
 
+---
+
+| Figura : Diagrama de blocos da distribuição de clock no DE1-SoC |
+|:---------------------------------------------------------------:|
+| ![diagramaBlocos_clockDistribution](img/blockDiagram-ClockDistribution_DE1-SoC.png) |
+| Fonte: Manual do usuário DE1-SoC - rev. F/G - pág. 22           |
+
+**Tabela 1: Atribuição de pinos de clock**
+|  Signal Name  |  FPGA Pin No.   |  Description        | I/O Standard  |
+|:-------------:|:---------------:|:-------------------:|:-------------:|
+| CLOCK_50      | PIN_AF14        | 50 MHz clock input  | 3.3V          |
+| CLOCK2_50     | PIN_AA16        | 50 MHz clock input  | 3.3V          |
+| CLOCK3_50     | PIN_Y26         | 50 MHz clock input  | 3.3V          |
+| CLOCK4_50     | PIN_K14         | 50 MHz clock input  | 3.3V          |
+| HPS_CLOCK1_25 | PIN_D25         | 25 MHz clock input  | 3.3V          |
+| HPS_CLOCK2_25 | PIN_F25         | 25 MHz clock input  | 3.3V          |
 
 ---
 
 
+---
 
 
 
