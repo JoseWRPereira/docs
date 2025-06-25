@@ -37,11 +37,14 @@ Para abrir o terminal integrado:
 
 **2. Habilite o ambiente de desenvolvimento no diretório local**
 
-```ps1
+```ps1 title="PowerShell - Windows"
 C:\Espressif\frameworks\esp-idf-v5.2.1\export.ps1 .
 ```
+```sh title="Bash - GNU/Linux"
+. $HOME/espressif/esp-idf/export.sh
+```
 
-Obs: O caminho do `export.ps1` vai mudar em função do local escolhido durante a instalação do framework esp-idf. 
+Obs: O caminho do `export.ps1`/`export.sh` vai mudar em função do local escolhido durante a instalação do framework esp-idf.
 
 ---
 
@@ -79,8 +82,7 @@ idf.py -C ./components create-component builtinLED
 
 **7. Criando código do componente**
 
-- Arquivo: `esp32_component_builtinLED/components/builtinLED/builtinLED.c`
-```C
+```C title="esp32_component_builtinLED/components/builtinLED/builtinLED.c"
 #include <stdio.h>
 #include "driver/gpio.h"
 #include "builtinLED.h"
@@ -109,8 +111,7 @@ void builtinLED(char b)
 ```
 
 
-- Arquivo: `esp32_component_builtinLED/components/builtinLED/include/builtinLED.h`
-```C
+```C title="esp32_component_builtinLED/components/builtinLED/include/builtinLED.h"
 #ifndef BUILTINLED_H
 #define BUILTINLED_H
 
@@ -124,8 +125,7 @@ void builtinLED(char b);
 #endif
 ```
 
-- Arquivo: `esp32_component_builtinLED/components/builtinLED/CMakeLists.txt`
-```C
+```C title="esp32_component_builtinLED/components/builtinLED/CMakeLists.txt"
 idf_component_register( SRCS            "builtinLED.c"
                         REQUIRES        driver
                         INCLUDE_DIRS    "include")
@@ -136,8 +136,7 @@ idf_component_register( SRCS            "builtinLED.c"
 
 **8. Criando código principal**
 
-- Arquivo: `esp32_component_builtinLED/main/component_builtinLED.c`
-```C
+```C title="esp32_component_builtinLED/main/component_builtinLED.c"
 #include <stdio.h>
 #include "freertos/FreeRTOS.h"
 #include "builtinLED.h"
@@ -155,8 +154,7 @@ void app_main(void)
 }
 ```
 
-- Arquivo: `esp32_component_builtinLED/main/CMakeLists.txt`
-```py
+```py title="esp32_component_builtinLED/main/CMakeLists.txt"
 idf_component_register( SRCS            "component_builtinLED.c"
                         REQUIRES        builtinLED
                         INCLUDE_DIRS    ".")
@@ -169,8 +167,7 @@ idf_component_register( SRCS            "component_builtinLED.c"
 
 **9. CMakeLists inicial**
 
-- Arquivo: `esp32_component_builtinLED/CMakeLists.txt`
-```py
+```py title="esp32_component_builtinLED/CMakeLists.txt"
 # For more information about build system see
 # https://docs.espressif.com/projects/esp-idf/en/latest/api-guides/build-system.html
 # The following five lines of boilerplate have to be in your project's
@@ -192,6 +189,5 @@ idf.py build
 **11. Gravando o programa no dispositivo alvo**
 
 ```ps1
-idf.py -p COM3 flash 
+idf.py -p COM3 flash
 ```
-
