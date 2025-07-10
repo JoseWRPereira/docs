@@ -82,56 +82,49 @@ Os diversos dispositivos da placa e os conectores podem ser vistos na distribui�
 | ![layout](img/lab00-DE1-SoC_Layout_top_01-01.jpg) |
 | Fonte: [DE1-SoC Development and Education Kit](https://www.terasic.com.tw/cgi-bin/page/archive.pl?Language=English&CategoryNo=205&No=836&PartNo=3#heading) |
 
+Na parte inferior da placa de desenvolvimento é possível configurar o FPGA para operar em modo EPCS ([Erasable Programmable Configurable Serial](http://notes-application.abcelectronique.com/038/38-21611.pdf)) ou HPS ([Hard Processor System](https://www.intel.com/content/www/us/en/docs/programmable/683458/current/hard-processor-system-hps.html)) através das chaves de seleção `MSEL[4:0]` implementadas na chave `SW10`, como ilustrado na Figura 3.
+
+
+
+
 | Figura 3: Layout inferior da placa DE1-SoC                 |
 |:-------------------------------------------------:|
 | ![layout](img/lab00-DE1-SoC_Layout_bot_01-01.jpg) |
 | Fonte: [DE1-SoC Development and Education Kit](https://www.terasic.com.tw/cgi-bin/page/archive.pl?Language=English&CategoryNo=205&No=836&PartNo=3#heading) |
 
+Obs: Note que a chave na posiçõa `ON` corresponde ao valor lógico `0`.
+
+| MSEL[4:0] |  Configure Scheme | Description |
+|:---------:|:-----------------:|:-----------:|
+| 10010     | AS                | FPGA configured from EPCS (default) |
+| 01010     | FPPx32            | FPGA configured from HPS software: Linux
+| 00000     | FPPx16            | FPGA configured from HPS software: U-Boot, <br> with image stored on the SD card, like LXDE Desktop or <br> console Linux with frame buffer edition.|
 
 ---
 
-**Distribuição de Clock no DE1-SoC**
+**Versões do kit didático**
 
-| Figura : Diagrama de blocos da distribuição de clock no DE1-SoC |
-|:---------------------------------------------------------------:|
-| ![diagramaBlocos_clockDistribution](img/lab00-blockDiagram-ClockDistribution_DE1-SoC.png) |
-| Fonte: Manual do usuário DE1-SoC - rev. F/G - pág. 22           |
-
-**Tabela 1: Atribuição de pinos de clock**
-
-|  Signal Name  |  FPGA Pin No.   |  Description        | I/O Standard  |
-|:-------------:|:---------------:|:-------------------:|:-------------:|
-| CLOCK_50      | PIN_AF14        | 50 MHz clock input  | 3.3V          |
-| CLOCK2_50     | PIN_AA16        | 50 MHz clock input  | 3.3V          |
-| CLOCK3_50     | PIN_Y26         | 50 MHz clock input  | 3.3V          |
-| CLOCK4_50     | PIN_K14         | 50 MHz clock input  | 3.3V          |
-| HPS_CLOCK1_25 | PIN_D25         | 25 MHz clock input  | 3.3V          |
-| HPS_CLOCK2_25 | PIN_F25         | 25 MHz clock input  | 3.3V          |
-
----
+Existem algumas revisões no projeto e documentação da placa de desenvolvimento. Para identificar a versão que estamos utilizando, basta identificar, na parte inferior da placa, o número de série, conforme ilustrado na Figura 4.
 
 
----
+| Figura 4: Identificando a versão da placa         |
+|:-------------------------------------------------:|
+| ![layout](img/lab00-revG.png) |
+| Fonte: [DE1-SoC Development and Education Kit](https://www.terasic.com.tw/cgi-bin/page/archive.pl?Language=English&CategoryNo=205&No=836&PartNo=4#heading) |
 
+**Conteúdo do kit**
 
+A Figura 5 ilustra o conteúdo do kit didático DE1-SoC, que será utilizado durante o desenvolvimento das atividades deste componente curricular.
 
-Driver no linux (Debian)
-- [USB Blaster](https://www.rocketboards.org/foswiki/Documentation/UsingUSBBlasterUnderLinux)
+| Figura 5: Conteúdo do kit         |
+|:-------------------------------------------------:|
+| ![layout](img/lab00-conteudoKit.png) |
+| Fonte: [DE1-SoC Development and Education Kit](https://www.terasic.com.tw/cgi-bin/page/archive.pl?Language=English&CategoryNo=205&No=836&PartNo=4#heading) |
 
-
-
----
-
-[My First FPGA Tutorial](https://www.terasic.com.tw/cgi-bin/page/archive.pl?Language=English&CategoryNo=&No=658#contents)
-
-
----
-
-- [Manual do usuário DE1-SoC - rev.F/G](https://www.terasic.com.tw/cgi-bin/page/archive_download.pl?Language=English&No=836&FID=3a3708b0790bb9c721f94909c5ac96d6)
 
 ---
 # Referências
 
-1. [DE1-SoC Development and Education Kit | terasIC](https://www.terasic.com.tw/cgi-bin/page/archive.pl?Language=English&CategoryNo=205&No=836&PartNo=1#contents)
-2. [Digital System Design (DSD) | kevinwlu github](https://github.com/kevinwlu/dsd)
-3.
+1. [Manual do usuário DE1-SoC - rev.F/G](https://www.terasic.com.tw/cgi-bin/page/archive_download.pl?Language=English&No=836&FID=3a3708b0790bb9c721f94909c5ac96d6)
+2. [DE1-SoC Development and Education Kit | terasIC](https://www.terasic.com.tw/cgi-bin/page/archive.pl?Language=English&CategoryNo=205&No=836&PartNo=1#contents)
+3. [Digital System Design (DSD) | kevinwlu github](https://github.com/kevinwlu/dsd)

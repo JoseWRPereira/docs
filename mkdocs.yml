@@ -9,6 +9,7 @@ nav:
       - Projetos: index_gestao.md
   - Sistemas Digitais:
       - index_digitais.md
+      - digitais/componente_curricular/sdpe8.md
       - Microcontroladores:
           - Geral:
               - digitais/mcu/mcu1-embarcados.md
