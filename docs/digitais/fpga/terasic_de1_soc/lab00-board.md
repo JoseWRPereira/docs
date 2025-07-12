@@ -121,6 +121,66 @@ A Figura 5 ilustra o conteúdo do kit didático DE1-SoC, que será utilizado dur
 | ![layout](img/lab00-conteudoKit.png) |
 | Fonte: [DE1-SoC Development and Education Kit](https://www.terasic.com.tw/cgi-bin/page/archive.pl?Language=English&CategoryNo=205&No=836&PartNo=4#heading) |
 
+---
+
+# Software
+
+O software de desenvolvimento utilizado para projetos com a placa DE1-SoC é o [Intel® Quartus® Prime Lite Edition Design Software](https://www.intel.com/content/www/us/en/software-kit/849770/intel-quartus-prime-lite-edition-design-software-version-24-1-for-windows.html), aqui em sua versão 24.1.
+
+Ao baixar o instalador recomendado, execute o arquivo `qinst-lite-windows-24.1std-1077.exe` no Windows ou `qinst-lite-linux-24.1std-1077.run` no Linux.
+
+Ao abrir a janela do instalador, conforme Figura 6, selecione os pacotes pertinentes à sua aplicação. Aqui são selecionados pacotes para os dispositivos `Cyclone® V` e `MAX® II`.
+
+| Figura 6: Instalação do Quartus Prime Lite Edition |
+|:--------------------------------------------------:|
+| ![quartus](img/lab00-quartus_prime_lite.png) |
+| Fonte: [Intel® Quartus® Prime Lite Edition Design Software](https://www.intel.com/content/www/us/en/software-kit/849770/intel-quartus-prime-lite-edition-design-software-version-24-1-for-windows.html) |
+
+Após a instalação a ferramenta está pronta para o uso.
+
+
+| Figura 7: Quartus Prime Lite Edition  |
+|:-------------------------------------:|
+| ![quartus](img/lab00-quartus.png)     |
+| Fonte: Autor                          |
+
+
+## Comunicação com a placa de desenvolvimento
+
+1) Verifique a fonte de alimentação e conecte-a entre a placa e a tomada;
+
+2) Conecte o cabo USB entre a placa e o computador;
+
+3) Pressione o botão vermelho para ligar a placa;
+
+4) No Windows, abra o `Gerenciador de dispositivos` e verifique se o seguinte dispositivo foi reconhecido:
+
+- JTAG cables
+    - Altera USB-Blaster II (JTAG interface)
+    - Altera USB-Blaster II (System console interface)
+- Caso apareça `Dispositivo desconhecido`
+    - Verifique se o driver está na pasta do quartus: `C:\intelFPGA_lite\XX.X\quartus\drivers\usb-blaster-ii`, onde o `XX.X` é a versão instalada.
+    - Se não houver o arquivo do driver na pasta de instalação do Quartus, baixe o [driver](https://www.intel.com/content/www/us/en/support/programmable/articles/000074502.html?wapkw=USB-Blaster%20II) direto do site e instale-o.
+
+4) No Linux, não há necessidade de instalar driver para realizar download via USB-BlasterTM e USB-BlasterII, mas necessita de permissão de administrador.
+
+- Com privilégio de administrador, via `sudo` por exemplo, crie o novo arquivo `/etc/udev/rules.d/92-usbblaster.rules`, contendo:
+
+```bash title='92-usbblaster.rules'
+# USB-Blaster
+SUBSYSTEM=="usb", ATTRS{idVendor}=="09fb", ATTRS{idProduct}=="6001", MODE="0666"
+SUBSYSTEM=="usb", ATTRS{idVendor}=="09fb", ATTRS{idProduct}=="6002", MODE="0666"
+
+SUBSYSTEM=="usb", ATTRS{idVendor}=="09fb", ATTRS{idProduct}=="6003", MODE="0666"
+
+# USB-Blaster II
+SUBSYSTEM=="usb", ATTRS{idVendor}=="09fb", ATTRS{idProduct}=="6010", MODE="0666"
+SUBSYSTEM=="usb", ATTRS{idVendor}=="09fb", ATTRS{idProduct}=="6810", MODE="0666"
+```
+
+- Caso tenha problemas, consulte [Intel® FPGA Download Cable (formerly USB-Blaster) Driver for Linux](https://www.intel.com/content/www/us/en/programmable/support/support-resources/download/drivers/dri-usb_b-lnx.html).
+
+Obs: A distribuição de GNU/Linux aqui utilizada é `Debian 12`.
 
 ---
 # Referências
