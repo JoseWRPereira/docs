@@ -105,3 +105,50 @@ tags:
 # Referências
 
 1. [Quartus com Questa:Escolhendo o hardware | Nets&Nuts](https://nets-nuts.com.br/quartus-com-questa-modelsim-instalacao-e-configuracao-1/)
+
+| Figura : Questa Install                                 |
+|:-------------------------------------------------------:|
+| ![operacao](img/lab01-questa_install.png)               |
+| Fonte: Autor                                            |
+
+| Figura : Questa Install                                 |
+|:-------------------------------------------------------:|
+| ![operacao](img/lab01-questa_install-2.png)             |
+| Fonte: Autor                                            |
+
+| Figura : Modelsim Install                               |
+|:-------------------------------------------------------:|
+| ![operacao](img/lab01-modelsim_install.png)             |
+| Fonte: Autor                                            |
+
+| Figura : Modelsim Install                               |
+|:-------------------------------------------------------:|
+| ![operacao](img/lab01-modelsim_install-2.png)           |
+| Fonte: Autor                                            |
+
+
+| Figura : EDA licenseSetup_sim                           |
+|:-------------------------------------------------------:|
+| ![operacao](img/lab01-EDAlicenseSetup_sim.png)          |
+| Fonte: Autor                                            |
+
+| Figura : EDA tool Option_sim                            |
+|:-------------------------------------------------------:|
+| ![operacao](img/lab01-EDAtoolOption_sim.png)            |
+| Fonte: Autor                                            |
+
+| Figura : EDA tool Setting_sim                           |
+|:-------------------------------------------------------:|
+| ![operacao](img/lab01-EDAtoolSetting_sim.png)           |
+| Fonte: Autor                                            |
+
+
+```bash title=".bashrc"
+export LM_LICENSE_FILE="$HOME/intelFPGA_lite/24.1std/licenses/LR-NNNNNN_License.dat"
+```
+
+
+
+QuestaSim: /home/josewrpereira/intelFPGA_lite/24.1std/questa_fse/bin
+Qesta Intel F?: /home/josewrpereira/intelFPGA_lite/24.1std/questa_fse/linux_x86_64
+ModelSim: /home/josewrpereira/intelFPGA/20.1/modelsim_ase/bin
