@@ -90,8 +90,18 @@ tags:
 | ![output_files](img/lab01-output_files.png)             |
 | Fonte: Autor                                            |
 
+| Figura 14: Gravar dispositivo                           |
+|:-------------------------------------------------------:|
+| ![gravar_dispositivo](img/lab01-start_prog.png)             |
+| Fonte: Autor                                            |
 
-| Figura 14: Operação de lógica E                         |
+
+| Figura 15: Operação de lógica E                         |
 |:-------------------------------------------------------:|
 | ![operacao](img/lab01-operacao.png)                     |
 | Fonte: Autor                                            |
+
+
+# Referências
+
+1. [Quartus com Questa:Escolhendo o hardware | Nets&Nuts](https://nets-nuts.com.br/quartus-com-questa-modelsim-instalacao-e-configuracao-1/)
