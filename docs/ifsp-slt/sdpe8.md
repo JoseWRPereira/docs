@@ -1,6 +1,6 @@
 ---
 title: SDPE8
-icon: fontawesome/solid/earth-americas
+icon: fontawesome/brands/blackberry
 author:
  - José W. R. Pereira
 tags:
@@ -9,35 +9,36 @@ tags:
  - DE1-SoC
 ---
 
-# SDPE8 - Sistemas Digitais Programáveis
+#
 
-- Instituição: [IFSP Salto](https://slt.ifsp.edu.br/)
-- Curso: [Bacharelado em Engenharia de Controle e Automação](https://slt.ifsp.edu.br/index.php/component/content/article?id=510)
-- [Projeto Pedagógico do Curso - PPC](https://nextcloud.slt.ifsp.edu.br/nextcloud/index.php/s/n7YQrbWs9K9cEwL) (ingressantes até 2022)
-- Código: SDPE8
-- Semestre: 8º
-- Número de aulas semanais: 4
-- Quantidade total de aulas: 76
-- Carga horária presencial/à distância: 63,3/0,0
-- Abordagem metodológica: Teórico/Prática
-- Laboratório: Eletrônica e Microcontroladores
-- Pré-requisitos: Eletrônica Digital - ELDE3
-- Horário: Segunda-feira: 7:50 - 11:30 (D?/B106)
-- Avaliação do ensino/aprendizagem:
-    - AL: Atividades em laboratório
-    - Pp: Projeto prático
-- Média final = 0.5 Al + 0.5 Pp
+| Componente Curricular | Sistemas Digitais Programáveis |
+|:---|:---|
+| Curso | Engenharia de Controle e Automação |
+| Código |SDPE8|
+| Semestre | 8º|
+| Número de aulas semanais | 4 |
+| Quantidade total de aulas | 76 |
+| Carga horária presencial/à distância | 63,3/0,0 |
+| Abordagem metodológica | Teórico/Prática |
+| Laboratório | Eletrônica e Microcontroladores |
+| Pré-requisitos| Eletrônica Digital - ELDE3 |
+| Horário | Terça-feira: 8:40 - 12:20 (D111) |
+| Avaliação do ensino/aprendizagem | - AL: Atividades em laboratório <br> - Pp: Projeto prático <br> - Média final = 0.5 Al + 0.5 Pp |
 
+---
 
-## Ementa
+**Ementa**
+
 A componente curricular aborda as arquiteturas e a teoria de dispositivos lógicos reprogramáveis, programação de dispositivos FPGA e dispositivos lógicos complexos programáveis (CPLD), bem como linguagem **VHDL** e projetos de laboratório com dispositivos reconfiguráveis.
 
-## Objetivos
-- Adquirir conhecimento teórico acerca de dispositivos lógicos programáveis e sobre a linguagem VHDL;
-− Conhecer componentes como FPGAs, sua estrutura lógica e programação;
-− Realizar aplicações, simulação e experimentos de laboratório com tais dispositivos.
+**Objetivos**
 
-## Conteúdo Programático
+- Adquirir conhecimento teórico acerca de dispositivos lógicos programáveis e sobre a linguagem VHDL;
+- Conhecer componentes como FPGAs, sua estrutura lógica e programação;
+- Realizar aplicações, simulação e experimentos de laboratório com tais dispositivos.
+
+**Conteúdo Programático**
+
 - Fundamentos de lógica reconfigurável: introdução aos sistemas digitais programáveis;
 - Arquiteturas de FPGAs: blocos lógicos, blocos de entrada/saídas, memórias, interconexões;
 - Programação de dispositivos reconfiguráveis por diagrama de blocos de funções;
@@ -50,7 +51,7 @@ com VHDL;
 - Práticas de laboratório: Experimentos com sistemas de automação controlados por
 FPGAs.
 
-## Bibliografia
+**Bibliografia**
 
 - D'AMORE, Roberto. VHDL: descrição e síntese de circuitos digitais. 2. ed. Rio de Janeiro: LTC, 2012.
 - PEDRONI, Volnei A. Eletrônica digital moderna e VHDL. Rio de Janeiro: Elsevier, 2010.
@@ -71,14 +72,13 @@ Hoboken, N.J.: Wiley-interscience; IEEE, 2007.
 
 ---
 
-
----
-
-## Plano de aulas
-
+**Plano de aulas**
 
 | Semana | Data | Conteúdo | Metodologia de Ensino e Recursos |
 |:------:|:----:|:---------|:---------------------------------|
 | 1 | 28/07/2025 | Apresentação do Componente Curricular; <br> Introdução aos dispositivos Reconfiguráveis | Exposição dialogada; <br> Quadro branco ou lousa, Datashow e Computador |
 | 2 | 04/08/2025 | Placa DE1-SoC <br> Software Intel Quartus | Exposição dialogada e  Prática orientada <br> Lab. Informática, kit didático e software específico |
 |||||
+
+
+---
