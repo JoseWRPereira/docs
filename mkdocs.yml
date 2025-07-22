@@ -11,9 +11,10 @@ nav:
           - index_ifsp_slt.md
           - 2025:
               - ifsp-slt/sdpe8.md
+              - ifsp-slt/rpie8.md
+              - ifsp-slt/sltclpr.md
   - Sistemas Digitais:
       - index_digitais.md
-      - digitais/componente_curricular/sdpe8.md
       - Microcontroladores:
           - Geral:
               - digitais/mcu/mcu1-embarcados.md
@@ -47,8 +48,10 @@ nav:
   - Automação Industrial:
       - index_automacao.md
       - Controladores Programáveis:
-          - Aulas:
-              - automacao/clp/index.md
+          - Tecnologia:
+              - automacao/clp/01-contexto_historico.md
+              - automacao/clp/02-descricao_estrutural.md
+              - automacao/clp/03-descricao_funcional.md
           - Altus Duo TB131:
               - automacao/clp/altus_tb131/lab00-ambientacao.md
               - automacao/clp/altus_tb131/lab01-novo_projeto.md
@@ -65,7 +68,19 @@ nav:
               - automacao/clp/altus_tb131/sa1-projeto_partida_direta_motor.md
               - automacao/clp/altus_tb131/sa2-projeto_partida_estrela_triangulo.md
               - automacao/clp/altus_tb131/sa3-projeto_semaforo.md
-      - automacao/redes/index.md
+      - Redes Industriais:
+          - Tecnologia:
+              - automacao/redes/tecnologia/01-redes_conceito.md
+              - automacao/redes/tecnologia/02-classificacao_arquiteturas.md
+              - automacao/redes/tecnologia/03-dimensionamento.md
+              - automacao/redes/tecnologia/04-modelo_osi_iso.md
+              - automacao/redes/tecnologia/05-meio_fisico.md
+              - automacao/redes/tecnologia/06-protocolos_comunicacao.md
+              - automacao/redes/tecnologia/07-wireless.md
+              - automacao/redes/tecnologia/08-iiot.md
+      - Sistemas Supervisórios:
+          - Tecnologia:
+              - automacao/scada/tecnologia/01-conceito.md
   - Ciência de Dados:
       - index_dados.md
       - Dados:
@@ -84,20 +99,8 @@ nav:
   - Indicações:
       - indicacoes.md
 
-#        - automacao\clp\altus_tb131\h1_3-borda_subida_descida.md
-#        - automacao\clp\altus_tb131\h1_4-temporizadores.md
-#        - automacao\clp\altus_tb131\h1_5-contadores.md
-#        - automacao\clp\altus_tb131\h1_6-entradas_saidas_analogicas.md
-#        - automacao\clp\altus_tb131\h1_7_1-blocos_funcionais_comparacao.md
-#        - automacao\clp\altus_tb131\h1_7_2-blocos_funcionais_operacao.md
-#        - automacao\clp\altus_tb131\h1_7_3-blocos_funcionais_selecao.md
-#        - automacao\clp\altus_tb131\h1_8-funcao.md
-#        - automacao\clp\altus_tb131\h1_9-bloco_funcional.md
 #        - automacao\clp\altus_tb131\h1_10_1-ihm_display_var.md
 #        - automacao\clp\altus_tb131\h1_10_2-ihm_edita_var.md
-#      - Situações de Aprendizagem:
-#        - automacao\clp\altus_tb131\A1_5-projeto_partida_estrela_triangulo.md
-#        - automacao\clp\altus_tb131\A1_6-projeto_semaforo.md
 
 theme:
   name: material

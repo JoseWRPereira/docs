@@ -76,9 +76,26 @@ Hoboken, N.J.: Wiley-interscience; IEEE, 2007.
 
 | Semana | Data | Conteúdo | Metodologia de Ensino e Recursos |
 |:------:|:----:|:---------|:---------------------------------|
-| 1 | 28/07/2025 | Apresentação do Componente Curricular; <br> Introdução aos dispositivos Reconfiguráveis | Exposição dialogada; <br> Quadro branco ou lousa, Datashow e Computador |
-| 2 | 04/08/2025 | Placa DE1-SoC <br> Software Intel Quartus | Exposição dialogada e  Prática orientada <br> Lab. Informática, kit didático e software específico |
-|||||
+| 1 | 29/07/2025 | Apresentação do Componente Curricular; <br> Introdução aos dispositivos Reconfiguráveis | Exposição dialogada; <br> Quadro branco ou lousa, Datashow e Computador |
+| 2 | 05/08/2025 | Placa DE1-SoC <br> Software Intel Quartus | Exposição dialogada e  Prática orientada <br> Lab. Informática, kit didático e software específico |
+|  3 | 12/08/2025 |  |  |
+|  4 | 19/08/2025 |  |  |
+|  5 | 26/08/2025 |  |  |
+|  6 | 02/09/2025 |  |  |
+|  7 | 09/09/2025 |  |  |
+|  8 | 16/09/2025 |  |  |
+|  9 | 23/09/2025 |  |  |
+| 10 | 30/09/2025 |  |  |
+| 11 | 07/10/2025 |  |  |
+| 12 | 21/10/2025 |  |  |
+| 13 | 28/10/2025 |  |  |
+| 14 | 04/11/2025 |  |  |
+| 15 | 11/11/2025 |  |  |
+| 16 | 18/11/2025 |  |  |
+| 17 | 25/11/2025 |  |  |
+| 18 | 02/12/2025 |  |  |
+| 19 | 09/12/2025 |  |  |
+
 
 
 ---
