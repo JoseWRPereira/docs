@@ -15,34 +15,34 @@ nav:
               - ifsp-slt/sltclpr.md
   - Sistemas Digitais:
       - index_digitais.md
-      - Microcontroladores:
-          - Geral:
+      - "": #Microcontroladores:
+          - Microcontroladores:
               - digitais/mcu/mcu1-embarcados.md
               - digitais/mcu/mcu2-microcontroladores.md
-          - AVR ATmega328P:
-              - digitais/mcu/avr_atmega328p/lab00-ambientacao.md
-              - digitais/mcu/avr_atmega328p/lab01-sinalizador_garagem.md
-              - digitais/mcu/avr_atmega328p/lab02-partida_estrela_triangulo.md
-              - digitais/mcu/avr_atmega328p/lab03-semaforo.md
-              - digitais/mcu/avr_atmega328p/lab04-display7seg.md
-              - digitais/mcu/avr_atmega328p/lab05-2displays7seg.md
-              - digitais/mcu/avr_atmega328p/lab06-deteccao_bordas.md
-              - digitais/mcu/avr_atmega328p/lab07-bibliotecas.md
-              - digitais/mcu/avr_atmega328p/lab08-semaforo_temporizado.md
-              - digitais/mcu/avr_atmega328p/lab09-displayLCD.md
-              - digitais/mcu/avr_atmega328p/lab10-teclado.md
-              - digitais/mcu/avr_atmega328p/lab11-ihm.md
-              - digitais/mcu/avr_atmega328p/lab12-timer.md
-              - digitais/mcu/avr_atmega328p/lab13-adc.md
-              - digitais/mcu/avr_atmega328p/lab_atividades.md
-      - Conectividade:
+              - AVR ATmega328P:
+                  - digitais/mcu/avr_atmega328p/lab00-ambientacao.md
+                  - digitais/mcu/avr_atmega328p/lab01-sinalizador_garagem.md
+                  - digitais/mcu/avr_atmega328p/lab02-partida_estrela_triangulo.md
+                  - digitais/mcu/avr_atmega328p/lab03-semaforo.md
+                  - digitais/mcu/avr_atmega328p/lab04-display7seg.md
+                  - digitais/mcu/avr_atmega328p/lab05-2displays7seg.md
+                  - digitais/mcu/avr_atmega328p/lab06-deteccao_bordas.md
+                  - digitais/mcu/avr_atmega328p/lab07-bibliotecas.md
+                  - digitais/mcu/avr_atmega328p/lab08-semaforo_temporizado.md
+                  - digitais/mcu/avr_atmega328p/lab09-displayLCD.md
+                  - digitais/mcu/avr_atmega328p/lab10-teclado.md
+                  - digitais/mcu/avr_atmega328p/lab11-ihm.md
+                  - digitais/mcu/avr_atmega328p/lab12-timer.md
+                  - digitais/mcu/avr_atmega328p/lab13-adc.md
+                  - digitais/mcu/avr_atmega328p/lab_atividades.md
+      - "": #     - Conectividade:
           - ESP32:
               - digitais/iot/esp32/esp32-1-intro.md
               - digitais/iot/esp32/lab00-ambientacao.md
               - digitais/iot/esp32/lab01-blink.md
               - digitais/iot/esp32/lab02-componente.md
-      - FPGA:
-          - TerasIC DE1-SoC:
+      - "": #    - FPGA:
+          - FPGA: # TerasIC DE1-SoC:
               - digitais/fpga/terasic_de1_soc/lab00-board.md
               - digitais/fpga/terasic_de1_soc/lab01-novo_projeto.md
   - Automação Industrial:
