@@ -47,29 +47,29 @@ nav:
               - digitais/fpga/terasic_de1_soc/lab01-novo_projeto.md
   - Automação Industrial:
       - index_automacao.md
-      - Controladores Programáveis:
-          - Tecnologia:
-              - automacao/clp/01-contexto_historico.md
-              - automacao/clp/02-descricao_estrutural.md
-              - automacao/clp/03-descricao_funcional.md
-          - Altus Duo TB131:
-              - automacao/clp/altus_tb131/lab00-ambientacao.md
-              - automacao/clp/altus_tb131/lab01-novo_projeto.md
-              - automacao/clp/altus_tb131/lab02-contatos_bobinas.md
-              - automacao/clp/altus_tb131/lab03-setReset.md
-              - automacao/clp/altus_tb131/lab04-borda_subida_descida.md
-              - automacao/clp/altus_tb131/lab05-temporizadores.md
-              - automacao/clp/altus_tb131/lab06-contadores.md
-              - automacao/clp/altus_tb131/lab07-blocos_funcionais.md
-              - automacao/clp/altus_tb131/lab08-entradas_saidas_analogicas.md
-              - automacao/clp/altus_tb131/lab09-bloco_funcional.md
-              - automacao/clp/altus_tb131/lab10-funcao.md
-          - Situações de Aprendizagem:
-              - automacao/clp/altus_tb131/sa1-projeto_partida_direta_motor.md
-              - automacao/clp/altus_tb131/sa2-projeto_partida_estrela_triangulo.md
-              - automacao/clp/altus_tb131/sa3-projeto_semaforo.md
-      - Redes Industriais:
-          - Tecnologia:
+      - "": #Controladores Programáveis:
+          - Controladores Programáveis:
+              - automacao/clp/tecnologia/01-contexto_historico.md
+              - automacao/clp/tecnologia/02-descricao_estrutural.md
+              - automacao/clp/tecnologia/03-descricao_funcional.md
+              - Altus Duo TB131:
+                  - automacao/clp/altus_tb131/lab00-ambientacao.md
+                  - automacao/clp/altus_tb131/lab01-novo_projeto.md
+                  - automacao/clp/altus_tb131/lab02-contatos_bobinas.md
+                  - automacao/clp/altus_tb131/lab03-setReset.md
+                  - automacao/clp/altus_tb131/lab04-borda_subida_descida.md
+                  - automacao/clp/altus_tb131/lab05-temporizadores.md
+                  - automacao/clp/altus_tb131/lab06-contadores.md
+                  - automacao/clp/altus_tb131/lab07-blocos_funcionais.md
+                  - automacao/clp/altus_tb131/lab08-entradas_saidas_analogicas.md
+                  - automacao/clp/altus_tb131/lab09-bloco_funcional.md
+                  - automacao/clp/altus_tb131/lab10-funcao.md
+              - Situações de Aprendizagem:
+                  - automacao/clp/altus_tb131/sa1-projeto_partida_direta_motor.md
+                  - automacao/clp/altus_tb131/sa2-projeto_partida_estrela_triangulo.md
+                  - automacao/clp/altus_tb131/sa3-projeto_semaforo.md
+      - "": # Redes Industriais:
+          - Redes Industriais:
               - automacao/redes/tecnologia/01-redes_conceito.md
               - automacao/redes/tecnologia/02-classificacao_arquiteturas.md
               - automacao/redes/tecnologia/03-dimensionamento.md
@@ -78,8 +78,8 @@ nav:
               - automacao/redes/tecnologia/06-protocolos_comunicacao.md
               - automacao/redes/tecnologia/07-wireless.md
               - automacao/redes/tecnologia/08-iiot.md
-      - Sistemas Supervisórios:
-          - Tecnologia:
+      - "": #Sistemas Supervisórios:
+          - Sistemas Supervisórios:
               - automacao/scada/tecnologia/01-conceito.md
   - Ciência de Dados:
       - index_dados.md
