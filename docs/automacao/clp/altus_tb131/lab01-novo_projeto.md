@@ -17,7 +17,7 @@ tags:
 
 1.1 Com o **Master Tool IEC** aberto, clique em `Arquivo` > `Novo a partir do modelo...`
 
-1.2 Selecione a segunda opção: **Modelo_DU350_DU351_v110** > Abrir 
+1.2 Selecione a segunda opção: **Modelo_DU350_DU351_v110** > Abrir
 
 ![Novo Projeto](./gif/lab1-novo.gif)
 
@@ -25,7 +25,7 @@ tags:
 
 **2. Verificando arquivo `NAVEGA (PRG)`:**
 
-Em POUs, abra o arquivo `NAVEGA (PRG)` e verifique se o conteúdo está como ilustrado abaixo:
+Em POUs, abra o arquivo `NAVEGA (PRG)` e **verifique** se o conteúdo está como ilustrado abaixo:
 
 ``` Pascal
 PROGRAM NAVEGA
@@ -91,16 +91,14 @@ Aqui a porta alocada foi a `COM3`.
 
 5.1 Após todos os ajustes realizados, clique em `Comunicação` e `Login`.
 
-5.2 A mensagem: `O programa foi alterado! Enviar o novo programa?` deve aparecer se estiver tudo certo. 
+5.2 A mensagem: `O programa foi alterado! Enviar o novo programa?` deve aparecer se estiver tudo certo.
 
-5.3 Estando tudo certo, clique em `Sim` e o *Download* será realizado. 
+5.3 Estando tudo certo, clique em `Sim` e o *Download* será realizado.
 
 ![Conectando e gravando](gif/lab1-com_login.gif)
 
 5.4 Caso um **erro** ocorra, ***não entre em pânico***:
 
-5.4.1 Verificar os cabos de conexão. 
+5.4.1 Verificar os cabos de conexão e tente novamente. Se persistir, solicite orientação ao professor.
 
 5.**4.2**
-
-

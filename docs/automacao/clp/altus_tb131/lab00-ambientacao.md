@@ -12,9 +12,9 @@ tags:
 
 # Equipamento
 
-O **Duo** é um equipamento da série de **Controladores Programáveis** da Altus com **Interface Homem Máquina (IHM)** incorporada. Utilizado em sistemas que demandam supervisão e controle em um só ambiente. 
+O **Duo** é um equipamento da série de **Controladores Programáveis** da Altus com **Interface Homem Máquina (IHM)** incorporada. Utilizado em sistemas que demandam supervisão e controle em um só ambiente.
 
-O controlador utilizado no laboratório está montado em um kit didático denominado [TB131](https://www.altus.com.br/produto/15/kit-didatico), contendo conexões que facilitam testes de bancada e conexões com eletroválvulas, contatores e sensores com a utilização de [cabos com pino tipo 'banana'](https://www.ryndackcomponentes.com.br/conectores-e-chaves/outros-conectores/pinos-e-bornes-banana-garras-jacare-e-pontas-de-prova/pinos-banana.html). Possui ainda cháves para simulação de acionamentos, motor de passo incorporado, potenciômetros em entradas analógicas e display de 7 segmentos para saída analógica. 
+O controlador utilizado no laboratório está montado em um kit didático denominado [TB131](https://www.altus.com.br/produto/15/kit-didatico), contendo conexões que facilitam testes de bancada e conexões com eletroválvulas, contatores e sensores com a utilização de [cabos com pino tipo 'banana'](https://www.ryndackcomponentes.com.br/conectores-e-chaves/outros-conectores/pinos-e-bornes-banana-garras-jacare-e-pontas-de-prova/pinos-banana.html). Possui ainda cháves para simulação de acionamentos, motor de passo incorporado, potenciômetros em entradas analógicas e display de 7 segmentos para saída analógica.
 
 
 ![TB131-CLP-DUO](img/lab0-tb131-duo.png)
@@ -25,7 +25,7 @@ O controlador utilizado no laboratório está montado em um kit didático denomi
 
 Para o desenvolvimento dos programas, pode-se baixar o software [Master Tool IEC](https://www.altus.com.br/wp-content/uploads/2024/11/mastertool_iec_mt8200.zip) diretamente do site da [Altus SA](https://www.altus.com.br/serie/programacao-clp/), acessando o seguinte caminho:
 
-- Produtos > Controladores Programáveis > Série Duo
+- Download > Software de Programação > Software
 
 ![Produtos](img/lab0-caminho_material.png)
 
@@ -37,7 +37,7 @@ Para a comunicação do controlador com o computador, pode ser necessária a ins
 
 # Ambiente de Desenvolvimento
 
-O Master Tool IEC é o ambiente de desenvolvimento para o controlador programável da série Duo, da Altus. 
+O Master Tool IEC é o ambiente de desenvolvimento para o controlador programável da série Duo, da Altus.
 
 A figura abaixo ilustra as ferramentas da sua interface padrão, destacando-se:
 
@@ -49,4 +49,3 @@ A figura abaixo ilustra as ferramentas da sua interface padrão, destacando-se:
 6. Barra de status;
 
 ![IDE](img/lab0-ide_mastertool.png)
-
