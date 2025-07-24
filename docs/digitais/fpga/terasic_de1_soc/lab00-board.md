@@ -188,3 +188,4 @@ Obs: A distribuição de GNU/Linux aqui utilizada é `Debian 12`.
 1. [Manual do usuário DE1-SoC - rev.F/G](https://www.terasic.com.tw/cgi-bin/page/archive_download.pl?Language=English&No=836&FID=3a3708b0790bb9c721f94909c5ac96d6)
 2. [DE1-SoC Development and Education Kit | terasIC](https://www.terasic.com.tw/cgi-bin/page/archive.pl?Language=English&CategoryNo=205&No=836&PartNo=1#contents)
 3. [Digital System Design (DSD) | kevinwlu github](https://github.com/kevinwlu/dsd)
+4. [Quartus com Questa:Escolhendo o hardware | Nets&Nuts](https://nets-nuts.com.br/quartus-com-questa-modelsim-instalacao-e-configuracao-1/)
