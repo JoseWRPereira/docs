@@ -1,6 +1,6 @@
 ---
 title: Lab01 - Novo Projeto
-icon: fontawesome/solid/earth-americas
+icon: fontawesome/solid/folder-plus
 author:
  - José W. R. Pereira
 tags:

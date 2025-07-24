@@ -81,28 +81,30 @@ Apresenta conceitos relacionados a tecnologias digitais para automação e otimi
 
 **Plano de aulas**
 
-| Semana | Data | Conteúdo | Metodologia de Ensino e Recursos |
-|:------:|:----:|:---------|:---------------------------------|
-|  1 | 28/07/2025 |  |  |
-|  2 | 06/08/2025 |  |  |
-|  3 | 13/08/2025 |  |  |
-|  4 | 20/08/2025 |  |  |
-|  5 | 27/08/2025 |  |  |
-|  6 | 03/09/2025 |  |  |
-|  7 | 10/09/2025 |  |  |
-|  8 | 17/09/2025 |  |  |
-|  9 | 24/09/2025 |  |  |
-| 10 | 01/10/2025 |  |  |
-| 11 | 08/10/2025 |  |  |
-| 12 | 22/10/2025 |  |  |
+| Semana | Data   | Conteúdo | Metodologia de Ensino e Recursos |
+|:------:|:------:|:---------|:---------------------------------|
+|  1 | 28/07/2025 | - Apresentação da disciplina; <br> - [Contexto histórico](/automacao/clp/tecnologia/01-contexto_historico). | - Exposição Dialogada: Lousa/Quadro branco e projetor multimídia. <br> - Prática orientada: Laboratório com CLPs e computadores com softwares de desenvolvimento (Master Tool IEC). |
+|  2 | 06/08/2025 | - Descrição estrutural: Fonte, CPU, Memórias, Entradas, Saídas, Comunicação, Expansão; <br> - [Ambientação com software de desenvolvimento](/automacao/clp/altus_tb131/lab00-ambientacao). | - Exposição dialogada. <br> - Prática orientada. |
+|  3 | 13/08/2025 | - Descrição Funcional; <br> - Crianção e execução de projeto no kit de desenvolvimento; | - Exposição dialogada. <br> - Prática orientada. |
+|  4 | 20/08/2025 | - Temporização; | - Exposição dialogada. <br> - Prática orientada.  |
+|  5 | 27/08/2025 | - Temporização; | - Exposição dialogada. <br> - Prática orientada.  |
+|  6 | 03/09/2025 | - Bloco Funcional; | - Exposição dialogada. <br> - Prática orientada.  |
+|  7 | 10/09/2025 | - Situação de Aprendizagem 1 (SA1): Partida Estrela-Triangulo; | - Exposição dialogada. <br> - Prática orientada.  |
+|  8 | 17/09/2025 | - SA2: Acionamento Bi-manual; | - Exposição dialogada. <br> - Prática orientada. |
+|  9 | 24/09/2025 | - Revisão das situações de aprendizagem | - Exposição dialogada. <br> - Prática orientada.  |
+| 10 | 01/10/2025 | - Situação de aprendizagem avaliativa : P1; | - Exposição dialogada. <br> - Prática orientada.  |
+| 11 | 08/10/2025 | - Contadores; <br> - Comparadores; | - Exposição dialogada. <br> - Prática orientada.  |
+| 12 | 22/10/2025 | - Contadores; | - Exposição dialogada. <br> - Prática orientada.  |
 | 13 | 25/10/2025 | IFCiência |  |
-| 14 | 29/10/2025 |  |  |
-| 15 | 05/11/2025 |  |  |
-| 16 | 12/11/2025 |  |  |
-| 17 | 19/11/2025 |  |  |
-| 18 | 26/11/2025 |  |  |
-| 19 | 03/12/2025 |  |  |
-| 20 | 10/12/2025 |  |  |
+| 14 | 29/10/2025 | - Acionamento sequencial: Diagrama Trajeto-Passo; | - Exposição dialogada. <br> - Prática orientada.  |
+| 15 | 05/11/2025 | - Método de programação: Maximização de contatos; | - Exposição dialogada. <br> - Prática orientada.  |
+| 16 | 12/11/2025 | - Método de programação: Maximização de contatos; | - Exposição dialogada. <br> - Prática orientada.  |
+| 17 | 19/11/2025 | - Método de programação: Minimização de contatos; | - Exposição dialogada. <br> - Prática orientada.  |
+| 18 | 26/11/2025 | - Variáveis analógicas; | - Exposição dialogada. <br> - Prática orientada.  |
+| 19 | 03/12/2025 | - Revisão das atividades práticas presenciais; | - Exposição dialogada. <br> - Prática orientada.  |
+| 20 | 10/12/2025 | - Revisão das atividades práticas presenciais; | - Exposição dialogada. <br> - Prática orientada.  |
+
+
 
 
 ---

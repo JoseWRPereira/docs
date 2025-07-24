@@ -72,25 +72,25 @@ A disciplina aborda os conteúdos básicos de redes e comunicação para o monit
 
 | Semana | Data | Conteúdo | Metodologia de Ensino e Recursos |
 |:------:|:----:|:---------|:---------------------------------|
-|  1 | 04/08/2025 |  |  |
-|  2 | 11/08/2025 |  |  |
-|  3 | 18/08/2025 |  |  |
-|  4 | 25/08/2025 |  |  |
-|  5 | 01/09/2025 |  |  |
-|  6 | 15/09/2025 |  |  |
-|  7 | 22/09/2025 |  |  |
-|  8 | 29/09/2025 |  |  |
-|  9 | 06/10/2025 |  |  |
-| 10 | 20/10/2025 |  |  |
+|  1 | 04/08/2025 | - Apresentação da disciplina; <br> - Definição de redes industriais; <br> Sinais de comunicação; | Exposição Dialogada: Lousa/Quadro branco e projetor multimídia. <br> Prática Orientada: Laboratório com computadores, software Termite, osciloscópio, adaptador CP2102; |
+|  2 | 11/08/2025 | - Classificação de Redes; <br> - Comunicação Ponto a ponto; | Exposição Dialogada: Lousa/Quadro branco e projetor multimídia. <br> Prática Orientada: Laboratório com computadores, software Termite, osciloscópio, adaptador CP2102; |
+|  3 | 18/08/2025 | - Dimensionamento de redes; <br> - Interpretar comandos com arduino; | - Exposição Dialogada: Lousa/Quadro branco e projetor multimídia. <br> - Prática orientada: Laboratório com computadores, software termite, osciloscópio, adaptador CP2102, Arduino; |
+|  4 | 25/08/2025 | - Modelo OSI; <br> - Comunicação Serial - RS485 | - Exposição Dialogada: Lousa/Quadro branco e projetor multimídia. <br> - Prática orientada: Laboratório com computadores, software termite, osciloscópio, adaptador CP2102, Arduino, Conversor MAX485 e XY017 |
+|  5 | 01/09/2025 | - Meio físico e transmissão de dados; <br> - Rede em barramento RS485 | - Exposição Dialogada: Lousa/Quadro branco e projetor multimídia. <br> - Prática orientada: Laboratório com computadores, software termite, osciloscópio, adaptador CP2102, Arduino, Conversor MAX485 e XY017 |
+|  6 | 15/09/2025 | - Padrões de comunicação Serial; <br> - Rede em barramento RS485 | - Exposição Dialogada: Lousa/Quadro branco e projetor multimídia. <br> - Prática orientada: Laboratório com computadores, software termite, osciloscópio, adaptador CP2102, Arduino, Conversor MAX485 e XY017 |
+|  7 | 22/09/2025 | - Protocolos de Comunicação Modbus <br> - Modbus com CLP Altus | - Exposição Dialogada: Lousa/Quadro branco e projetor multimídia; <br> - Prática orientada: Laboratório com computadores, software termite, osciloscópio, adaptador CP2102, Arduino, Conversor MAX485 e XY017, CLP; |
+|  8 | 29/09/2025 | - Protocolos de Comunicação (Seminário); <br> - Projeto: Montagem de Dispositivo de Rede; | - Exposição Dialogada: Lousa/Quadro branco e projetor multimídia; <br> - Prática orientada: Laboratório com computadores, software termite, osciloscópio, adaptador CP2102, Arduino, Conversor MAX485 e XY017, CLP; |
+|  9 | 06/10/2025 | - Protocolos de Comunicação (Seminário); <br> - Projeto: Montagem de Dispositivo de Rede; | - Exposição Dialogada: Lousa/Quadro branco e projetor multimídia; <br> - Prática orientada: Laboratório com computadores, software termite, osciloscópio, adaptador CP2102, Arduino, Conversor MAX485 e XY017, CLP; |
+| 10 | 20/10/2025 | - Protocolos de Comunicação (Seminário); <br> - Projeto: Programação e Configuração de Dispositivo de Rede; | - Exposição Dialogada: Lousa/Quadro branco e projetor multimídia; <br> - Prática orientada: Laboratório com computadores, software termite, osciloscópio, adaptador CP2102, Arduino, Conversor MAX485 e XY017, CLP; |
 | 11 | 25/10/2025 |  IFCiência |  |
-| 12 | 27/10/2025 |  |  |
-| 13 | 03/11/2025 |  |  |
-| 14 | 10/11/2025 |  |  |
-| 15 | 17/11/2025 |  |  |
-| 16 | 24/11/2025 |  |  |
-| 17 | 01/12/2025 |  |  |
-| 18 | 08/12/2025 |  |  |
-| 19 | 15/12/2025 |  |  |
+| 12 | 27/10/2025 |  - Sistemas Supervisório; <br> - Integração CLP/Arduino/Supervisório via Modbus | - Exposição Dialogada: Lousa/Quadro branco e projetor multimídia; <br> - Prática orientada: Laboratório com computadores, software termite, osciloscópio, adaptador CP2102, Arduino, Conversor MAX485 e XY017, CLP, ScadaBR; |
+| 13 | 03/11/2025 | - Sistemas Supervisórios Industriais; <br> - Integração CLP/Arduino/Supervisório via Modbus; | - Exposição Dialogada: Lousa/Quadro branco e projetor multimídia; <br> - Prática orientada: Laboratório com computadores, software termite, osciloscópio, adaptador CP2102, Arduino, Conversor MAX485 e XY017, CLP, ScadaBR; |
+| 14 | 10/11/2025 | - Sistemas Supervisórios Industriais; <br> - Integração CLP/Arduino/Supervisório via Modbus;  | - Exposição Dialogada: Lousa/Quadro branco e projetor multimídia; <br> - Prática orientada: Laboratório com computadores, software termite, osciloscópio, adaptador CP2102, Arduino, Conversor MAX485 e XY017, CLP, ScadaBR; |
+| 15 | 17/11/2025 | - Sistemas Supervisórios Industriais; <br> - Integração CLP/Arduino/Supervisório via Modbus;  | - Exposição Dialogada: Lousa/Quadro branco e projetor multimídia; <br> - Prática orientada: Laboratório com computadores, software termite, osciloscópio, adaptador CP2102, Arduino, Conversor MAX485 e XY017, CLP, ScadaBR; |
+| 16 | 24/11/2025 | - Dispositivos Sem Fio; | - Exposição Dialogada: Lousa/Quadro branco e projetor multimídia; <br> - Prática orientada: Laboratório com computadores, ESP32 e software específico; |
+| 17 | 01/12/2025 | - Internet das Coisas e MQTT; | - Exposição Dialogada: Lousa/Quadro branco e projetor multimídia; <br> - Prática orientada: Laboratório com computadores, ESP32 e software específico; |
+| 18 | 08/12/2025 | - ESP32 e Sockets; | - Exposição Dialogada: Lousa/Quadro branco e projetor multimídia; <br> - Prática orientada: Laboratório com computadores, ESP32 e software específico; |
+| 19 | 15/12/2025 | - Industrial Internet das Coisas; <br> - Segurança : Artigo: Lima, P.M., Alves, M.V.S., Carvalho, L.K. et al. Security Against Communication Network Attacks of Cyber-Physical Systems. J Control Autom Electr Syst 30, 125–135 (2019). https://doi.org/10.1007/s40313-018-0420-9 | - Exposição Dialogada: Lousa/Quadro branco e projetor multimídia;  |
 
 
 

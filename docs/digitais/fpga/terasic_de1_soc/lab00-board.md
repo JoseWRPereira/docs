@@ -1,6 +1,6 @@
 ---
 title: Lab00 - DevKit
-icon: fontawesome/solid/earth-americas
+icon: fontawesome/solid/chess-board
 author:
  - José W. R. Pereira
 tags:

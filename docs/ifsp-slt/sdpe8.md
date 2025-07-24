@@ -76,25 +76,25 @@ Hoboken, N.J.: Wiley-interscience; IEEE, 2007.
 
 | Semana | Data | Conteúdo | Metodologia de Ensino e Recursos |
 |:------:|:----:|:---------|:---------------------------------|
-| 1 | 29/07/2025 | Apresentação do Componente Curricular; <br> Introdução aos dispositivos Reconfiguráveis | Exposição dialogada; <br> Quadro branco ou lousa, Datashow e Computador |
-| 2 | 05/08/2025 | Placa DE1-SoC <br> Software Intel Quartus | Exposição dialogada e  Prática orientada <br> Lab. Informática, kit didático e software específico |
-|  3 | 12/08/2025 |  |  |
-|  4 | 19/08/2025 |  |  |
-|  5 | 26/08/2025 |  |  |
-|  6 | 02/09/2025 |  |  |
-|  7 | 09/09/2025 |  |  |
-|  8 | 16/09/2025 |  |  |
-|  9 | 23/09/2025 |  |  |
-| 10 | 30/09/2025 |  |  |
-| 11 | 07/10/2025 |  |  |
-| 12 | 21/10/2025 |  |  |
-| 13 | 28/10/2025 |  |  |
-| 14 | 04/11/2025 |  |  |
-| 15 | 11/11/2025 |  |  |
-| 16 | 18/11/2025 |  |  |
-| 17 | 25/11/2025 |  |  |
-| 18 | 02/12/2025 |  |  |
-| 19 | 09/12/2025 |  |  |
+| 1 | 29/07/2025 | - Apresentação do Componente Curricular; <br> - Revisão de Eletrônica Digital; | - Exposição dialogada; <br> - Quadro branco ou lousa, Datashow e Computador |
+| 2 | 05/08/2025 | - Introdução aos dispositivos Reconfiguráveis <br> - [Placa DE1-SoC](/digitais/fpga/terasic_de1_soc/lab00-board) <br> - [Software Intel Quartus](/digitais/fpga/terasic_de1_soc/lab01-novo_projeto); | - Exposição dialogada e  Prática orientada <br> - Lab. Informática, kit didático e software específico |
+|  3 | 12/08/2025 | - Introdução à Linguagem VHDL; | - Exposição dialogada e  Prática orientada <br> - Lab. Informática, kit didático e software específico |
+|  4 | 19/08/2025 | - Comandos concorrentes básicos; | - Exposição dialogada e  Prática orientada <br> - Lab. Informática, kit didático e software específico |
+|  5 | 26/08/2025 | - Comandos sequencias básicos; | - Exposição dialogada e  Prática orientada <br> - Lab. Informática, kit didático e software específico |
+|  6 | 02/09/2025 | - Atraso, variável e atributos; | - Exposição dialogada e  Prática orientada <br> - Lab. Informática, kit didático e software específico |
+|  7 | 09/09/2025 | - Estratégias de descrição de circuitos síncronos; | - Exposição dialogada e  Prática orientada <br> - Lab. Informática, kit didático e software específico |
+|  8 | 16/09/2025 | - Componentes e esquemas de iteração; | - Exposição dialogada e  Prática orientada <br> - Lab. Informática, kit didático e software específico |
+|  9 | 23/09/2025 | - Prova P1; | Prova Teórico-Prática |
+| 10 | 30/09/2025 | - Subprogramas; | - Exposição dialogada e  Prática orientada <br> - Lab. Informática, kit didático e software específico |
+| 11 | 07/10/2025 | - Bibliotecas e pacotes; | - Exposição dialogada e  Prática orientada <br> - Lab. Informática, kit didático e software específico |
+| 12 | 21/10/2025 | - Padrão IEEE 1164; | - Exposição dialogada e  Prática orientada <br> - Lab. Informática, kit didático e software específico |
+| 13 | 28/10/2025 | - Padrão IEEE 1076.3; | - Exposição dialogada e  Prática orientada <br> - Lab. Informática, kit didático e software específico |
+| 14 | 04/11/2025 | - Declaração de tipos e pseudônimos; | - Exposição dialogada e  Prática orientada <br> - Lab. Informática, kit didático e software específico |
+| 15 | 11/11/2025 | - Arquivos; | - Exposição dialogada e  Prática orientada <br> - Lab. Informática, kit didático e software específico |
+| 16 | 18/11/2025 | - Tópicos avançados; | - Exposição dialogada e  Prática orientada <br> - Lab. Informática, kit didático e software específico |
+| 17 | 25/11/2025 | - Teste; | - Exposição dialogada e  Prática orientada <br> - Lab. Informática, kit didático e software específico |
+| 18 | 02/12/2025 | - Prova P2; | Prova Teórico-Prática |
+| 19 | 09/12/2025 | - Leitura do artigo | ADIL YAZDEEN, A. .; ZEEBAREE , S. R. M. .; MOHAMMED SADEEQ, M.; KAK, S. F. .; AHMED, O. M. .; ZEBARI, R. R. FPGA Implementations for Data Encryption and Decryption via Concurrent and Parallel Computation: A Review. Qubahan Academic Journal, [S. l.], v. 1, n. 2, p. 8–16, 2021. DOI: 10.48161/qaj.v1n2a38. Disponível em: https://journal.qubahan.com/index.php/qaj/article/view/38. Acesso em: 24 jul. 2025.  |
 
 
 

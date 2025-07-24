@@ -43,6 +43,7 @@ nav:
               - digitais/iot/esp32/lab02-componente.md
       - "": #    - FPGA:
           - FPGA: # TerasIC DE1-SoC:
+              - digitais/fpga/tecnologia/t01-intro_plds.md
               - digitais/fpga/terasic_de1_soc/lab00-board.md
               - digitais/fpga/terasic_de1_soc/lab01-novo_projeto.md
   - Automação Industrial:
