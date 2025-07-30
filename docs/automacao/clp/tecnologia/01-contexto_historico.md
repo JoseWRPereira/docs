@@ -11,7 +11,7 @@ tags:
 #
 
 
-**[Contexto Histórico](slides/aula01-contexto_historico.pdf)**
+**[Contexto Histórico](../slides/aula01-contexto_historico.pdf)**
 
 ---
 

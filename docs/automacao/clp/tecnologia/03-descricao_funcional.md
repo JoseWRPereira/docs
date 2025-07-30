@@ -10,7 +10,7 @@ tags:
 
 #
 
-**[Descrição funcional](slides/aula03-descricao_funcional.pdf)**
+**[Descrição funcional](../slides/aula03-descricao_funcional.pdf)**
 
 ---
 

@@ -11,7 +11,7 @@ tags:
 #
 
 
-**[Descrição estrutural](slides/aula02-descricao_estrutural.pdf)**
+**[Descrição estrutural](../slides/aula02-descricao_estrutural.pdf)**
 
 ---
 

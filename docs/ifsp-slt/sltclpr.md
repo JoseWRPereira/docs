@@ -30,7 +30,7 @@ tags:
 
 **Ementa**
 
-O Componente Curricular desenvolve habilidades de programação de CLPs em linguagem LADDER, para as principais aplicações da indústria.
+O Componente Curricular desenvolve habilidades de **programação de CLPs em linguagem LADDER**, para as principais aplicações da indústria.
 Desenvolve a interpretação de circuitos de comandos de elétricos para linguagem LADDER e a utilização de ferramentas de programação e simulação em LADDER.
 Apresenta conceitos relacionados a tecnologias digitais para automação e otimização de processos como Internet das Coisas e Indústria 4.0.
 
