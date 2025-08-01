@@ -10,7 +10,7 @@ tags:
 
 #
 
-**[Classificação e arquiteturas](slides/aula02-classificacao_das_redes.pdf)**
+**[Classificação e arquiteturas](../slides/aula02-classificacao_das_redes.pdf)**
 
 ---
 

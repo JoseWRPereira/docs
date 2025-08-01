@@ -10,7 +10,7 @@ tags:
 
 #
 
-**[IIoT](slides/aula09-IIoT.pdf)**
+**[IIoT](../slides/aula09-IIoT.pdf)**
 
 ---
 

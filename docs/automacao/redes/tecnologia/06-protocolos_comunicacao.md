@@ -10,7 +10,7 @@ tags:
 
 #
 
-**[Protocolo de comunicação <br> MODBUS](slides/aula06-protocolo_de_comunicacao_MODBUS.pdf)**
+**[Protocolo de comunicação <br> MODBUS](../slides/aula06-protocolo_de_comunicacao_MODBUS.pdf)**
 
 ---
 

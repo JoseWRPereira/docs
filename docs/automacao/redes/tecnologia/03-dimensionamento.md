@@ -10,7 +10,7 @@ tags:
 
 #
 
-**[Critérios para dimensionamento](slides/aula03-criterios_para_dimensionamento.pdf)**
+**[Critérios para dimensionamento](../slides/aula03-criterios_para_dimensionamento.pdf)**
 
 ---
 

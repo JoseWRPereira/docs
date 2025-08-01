@@ -10,7 +10,7 @@ tags:
 
 #
 
-**[Meio Físico <br> RS232/RS485/RS422](slides/aula05-MeioFisico-RS_232-485-422.pdf)**
+**[Meio Físico <br> RS232/RS485/RS422](../slides/aula05-MeioFisico-RS_232-485-422.pdf)**
 
 ---
 

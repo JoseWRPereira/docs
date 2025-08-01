@@ -10,7 +10,7 @@ tags:
 
 #
 
-**[Rede sem fio industrial](slides/aula08-redes_sem_fio_em_ambiente_industrial.pdf)**
+**[Rede sem fio industrial](../slides/aula08-redes_sem_fio_em_ambiente_industrial.pdf)**
 
 ---
 

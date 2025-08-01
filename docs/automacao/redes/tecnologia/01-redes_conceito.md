@@ -10,7 +10,7 @@ tags:
 
 #
 
-**[O que são Redes Industriais? <br>Conceito, história e evolução](slides/aula01-definicao_de_redes_industriais.pdf)**
+**[O que são Redes Industriais? <br>Conceito, história e evolução](../slides/aula01-definicao_de_redes_industriais.pdf)**
 
 ---
 

@@ -10,7 +10,7 @@ tags:
 
 #
 
-**[Modelo OSI/ISO](slides/aula04-Modelo_OSI.pdf)**
+**[Modelo OSI/ISO](../slides/aula04-Modelo_OSI.pdf)**
 
 ---
 
