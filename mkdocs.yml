@@ -82,6 +82,9 @@ nav:
       - "": #Sistemas Supervisórios:
           - Sistemas Supervisórios:
               - automacao/scada/tecnologia/01-conceito.md
+      - "": #Pneumática:
+          - Pneumática:
+              - automacao/pneumatica/fluidsim/01-simulacao.md
   - Ciência de Dados:
       - index_dados.md
       - Dados:
