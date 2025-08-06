@@ -83,8 +83,8 @@ Apresenta conceitos relacionados a tecnologias digitais para automação e otimi
 
 | Semana | Data   | Conteúdo | Metodologia de Ensino e Recursos |
 |:------:|:------:|:---------|:---------------------------------|
-|  1 | 28/07/2025 | - Apresentação da disciplina; <br> - [Contexto histórico](/automacao/clp/tecnologia/01-contexto_historico). | - Exposição Dialogada: Lousa/Quadro branco e projetor multimídia. <br> - Prática orientada: Laboratório com CLPs e computadores com softwares de desenvolvimento (Master Tool IEC). |
-|  2 | 06/08/2025 | - Descrição estrutural: Fonte, CPU, Memórias, Entradas, Saídas, Comunicação, Expansão; <br> - [Ambientação com software de desenvolvimento](/automacao/clp/altus_tb131/lab00-ambientacao). | - Exposição dialogada. <br> - Prática orientada. |
+|  1 | 28/07/2025 | - Apresentação da disciplina; <br> - [Contexto histórico](/../automacao/clp/tecnologia/01-contexto_historico.). | - Exposição Dialogada: Lousa/Quadro branco e projetor multimídia. <br> - Prática orientada: Laboratório com CLPs e computadores com softwares de desenvolvimento (Master Tool IEC). |
+|  2 | 06/08/2025 | - Descrição estrutural: Fonte, CPU, Memórias, Entradas, Saídas, Comunicação, Expansão; <br> - [Ambientação com software de desenvolvimento](/../../automacao/clp/altus_tb131/lab00-ambientacao). | - Exposição dialogada. <br> - Prática orientada. |
 |  3 | 13/08/2025 | - Descrição Funcional; <br> - Crianção e execução de projeto no kit de desenvolvimento; | - Exposição dialogada. <br> - Prática orientada. |
 |  4 | 20/08/2025 | - Temporização; | - Exposição dialogada. <br> - Prática orientada.  |
 |  5 | 27/08/2025 | - Temporização; | - Exposição dialogada. <br> - Prática orientada.  |
