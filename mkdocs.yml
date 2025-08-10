@@ -34,6 +34,7 @@ nav:
                   - digitais/mcu/avr_atmega328p/lab11-ihm.md
                   - digitais/mcu/avr_atmega328p/lab12-timer.md
                   - digitais/mcu/avr_atmega328p/lab13-adc.md
+                  - digitais/mcu/avr_atmega328p/lab14-usart.md
                   - digitais/mcu/avr_atmega328p/lab_atividades.md
       - "": #     - Conectividade:
           - ESP32:
