@@ -45,8 +45,11 @@ nav:
       - "": #    - FPGA:
           - FPGA: # TerasIC DE1-SoC:
               - digitais/fpga/tecnologia/t01-intro_plds.md
+              - digitais/fpga/tecnologia/t02-hdl.md
               - digitais/fpga/terasic_de1_soc/lab00-board.md
               - digitais/fpga/terasic_de1_soc/lab01-novo_projeto.md
+              - digitais/fpga/terasic_de1_soc/lab02-simul_vwf.md
+              - digitais/fpga/terasic_de1_soc/lab03-rtl_viewer.md
   - Automação Industrial:
       - index_automacao.md
       - "": #Controladores Programáveis:
