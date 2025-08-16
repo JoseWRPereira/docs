@@ -15,66 +15,67 @@ nav:
               - ifsp-slt/sltclpr.md
   - Sistemas Digitais:
       - index_digitais.md
-      - "": #Microcontroladores:
-          - Microcontroladores:
+      - Microcontroladores:
+          - Tecnologia:
               - digitais/mcu/mcu1-embarcados.md
               - digitais/mcu/mcu2-microcontroladores.md
-              - AVR ATmega328P:
-                  - digitais/mcu/avr_atmega328p/lab00-ambientacao.md
-                  - digitais/mcu/avr_atmega328p/lab01-sinalizador_garagem.md
-                  - digitais/mcu/avr_atmega328p/lab02-partida_estrela_triangulo.md
-                  - digitais/mcu/avr_atmega328p/lab03-semaforo.md
-                  - digitais/mcu/avr_atmega328p/lab04-display7seg.md
-                  - digitais/mcu/avr_atmega328p/lab05-2displays7seg.md
-                  - digitais/mcu/avr_atmega328p/lab06-deteccao_bordas.md
-                  - digitais/mcu/avr_atmega328p/lab07-bibliotecas.md
-                  - digitais/mcu/avr_atmega328p/lab08-semaforo_temporizado.md
-                  - digitais/mcu/avr_atmega328p/lab09-displayLCD.md
-                  - digitais/mcu/avr_atmega328p/lab10-teclado.md
-                  - digitais/mcu/avr_atmega328p/lab11-ihm.md
-                  - digitais/mcu/avr_atmega328p/lab12-timer.md
-                  - digitais/mcu/avr_atmega328p/lab13-adc.md
-                  - digitais/mcu/avr_atmega328p/lab14-usart.md
-                  - digitais/mcu/avr_atmega328p/lab_atividades.md
-      - "": #     - Conectividade:
+          - AVR ATmega328P:
+              - digitais/mcu/avr_atmega328p/lab00-ambientacao.md
+              - digitais/mcu/avr_atmega328p/lab01-sinalizador_garagem.md
+              - digitais/mcu/avr_atmega328p/lab02-partida_estrela_triangulo.md
+              - digitais/mcu/avr_atmega328p/lab03-semaforo.md
+              - digitais/mcu/avr_atmega328p/lab04-display7seg.md
+              - digitais/mcu/avr_atmega328p/lab05-2displays7seg.md
+              - digitais/mcu/avr_atmega328p/lab06-deteccao_bordas.md
+              - digitais/mcu/avr_atmega328p/lab07-bibliotecas.md
+              - digitais/mcu/avr_atmega328p/lab08-semaforo_temporizado.md
+              - digitais/mcu/avr_atmega328p/lab09-displayLCD.md
+              - digitais/mcu/avr_atmega328p/lab10-teclado.md
+              - digitais/mcu/avr_atmega328p/lab11-ihm.md
+              - digitais/mcu/avr_atmega328p/lab12-timer.md
+              - digitais/mcu/avr_atmega328p/lab13-adc.md
+              - digitais/mcu/avr_atmega328p/lab14-usart.md
+              - digitais/mcu/avr_atmega328p/lab_atividades.md
+      - Conectividade: #     - Conectividade:
           - ESP32:
               - digitais/iot/esp32/esp32-1-intro.md
               - digitais/iot/esp32/lab00-ambientacao.md
               - digitais/iot/esp32/lab01-blink.md
               - digitais/iot/esp32/lab02-componente.md
-      - "": #    - FPGA:
-          - FPGA: # TerasIC DE1-SoC:
+      - FPGA: #    - FPGA:
+          - Tecnologia:
               - digitais/fpga/tecnologia/t01-intro_plds.md
               - digitais/fpga/tecnologia/t02-hdl.md
+          - TerasIC DE1-SoC:
               - digitais/fpga/terasic_de1_soc/lab00-board.md
               - digitais/fpga/terasic_de1_soc/lab01-novo_projeto.md
               - digitais/fpga/terasic_de1_soc/lab02-simul_vwf.md
               - digitais/fpga/terasic_de1_soc/lab03-rtl_viewer.md
   - Automação Industrial:
       - index_automacao.md
-      - "": #Controladores Programáveis:
-          - Controladores Programáveis:
+      - Controladores Programáveis:
+          - Tecnologia:
               - automacao/clp/tecnologia/01-contexto_historico.md
               - automacao/clp/tecnologia/02-descricao_estrutural.md
               - automacao/clp/tecnologia/03-descricao_funcional.md
-              - Altus Duo TB131:
-                  - automacao/clp/altus_tb131/lab00-ambientacao.md
-                  - automacao/clp/altus_tb131/lab01-novo_projeto.md
-                  - automacao/clp/altus_tb131/lab02-contatos_bobinas.md
-                  - automacao/clp/altus_tb131/lab03-setReset.md
-                  - automacao/clp/altus_tb131/lab04-borda_subida_descida.md
-                  - automacao/clp/altus_tb131/lab05-temporizadores.md
-                  - automacao/clp/altus_tb131/lab06-contadores.md
-                  - automacao/clp/altus_tb131/lab07-blocos_funcionais.md
-                  - automacao/clp/altus_tb131/lab08-entradas_saidas_analogicas.md
-                  - automacao/clp/altus_tb131/lab09-bloco_funcional.md
-                  - automacao/clp/altus_tb131/lab10-funcao.md
-              - Situações de Aprendizagem:
-                  - automacao/clp/altus_tb131/sa1-projeto_partida_direta_motor.md
-                  - automacao/clp/altus_tb131/sa2-projeto_partida_estrela_triangulo.md
-                  - automacao/clp/altus_tb131/sa3-projeto_semaforo.md
-      - "": # Redes Industriais:
-          - Redes Industriais:
+          - Altus Duo TB131:
+              - automacao/clp/altus_tb131/lab00-ambientacao.md
+              - automacao/clp/altus_tb131/lab01-novo_projeto.md
+              - automacao/clp/altus_tb131/lab02-contatos_bobinas.md
+              - automacao/clp/altus_tb131/lab03-setReset.md
+              - automacao/clp/altus_tb131/lab04-borda_subida_descida.md
+              - automacao/clp/altus_tb131/lab05-temporizadores.md
+              - automacao/clp/altus_tb131/lab06-contadores.md
+              - automacao/clp/altus_tb131/lab07-blocos_funcionais.md
+              - automacao/clp/altus_tb131/lab08-entradas_saidas_analogicas.md
+              - automacao/clp/altus_tb131/lab09-bloco_funcional.md
+              - automacao/clp/altus_tb131/lab10-funcao.md
+          - Situações de Aprendizagem:
+              - automacao/clp/altus_tb131/sa1-projeto_partida_direta_motor.md
+              - automacao/clp/altus_tb131/sa2-projeto_partida_estrela_triangulo.md
+              - automacao/clp/altus_tb131/sa3-projeto_semaforo.md
+      - Redes Industriais:
+          - Tecnologia:
               - automacao/redes/tecnologia/01-redes_conceito.md
               - automacao/redes/tecnologia/02-classificacao_arquiteturas.md
               - automacao/redes/tecnologia/03-dimensionamento.md
@@ -83,11 +84,11 @@ nav:
               - automacao/redes/tecnologia/06-protocolos_comunicacao.md
               - automacao/redes/tecnologia/07-wireless.md
               - automacao/redes/tecnologia/08-iiot.md
-      - "": #Sistemas Supervisórios:
-          - Sistemas Supervisórios:
+      - Sistemas Supervisórios:
+          - SCADA:
               - automacao/scada/tecnologia/01-conceito.md
-      - "": #Pneumática:
-          - Pneumática:
+      - Pneumática:
+          - Simulação:
               - automacao/pneumatica/fluidsim/01-simulacao.md
   - Ciência de Dados:
       - index_dados.md
