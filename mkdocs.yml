@@ -51,6 +51,8 @@ nav:
               - digitais/fpga/terasic_de1_soc/lab01-novo_projeto.md
               - digitais/fpga/terasic_de1_soc/lab02-simul_vwf.md
               - digitais/fpga/terasic_de1_soc/lab03-rtl_viewer.md
+          - GHDL-GtkWave:
+              - digitais/fpga/ghdl-gtkwave/ghdl-0-intro.md
   - Automação Industrial:
       - index_automacao.md
       - Controladores Programáveis:
