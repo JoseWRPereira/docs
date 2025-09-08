@@ -52,6 +52,7 @@ nav:
               - digitais/fpga/tecnologia/t06-ghdl-gtkwave.md
           - VHDL:
               - digitais/fpga/vhdl/v01-hdl.md
+              - digitais/fpga/vhdl/v02-vhdl-intro.md
   - Automação Industrial:
       - index_automacao.md
       - Controladores Programáveis:
