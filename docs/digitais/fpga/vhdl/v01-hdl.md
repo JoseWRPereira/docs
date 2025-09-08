@@ -67,7 +67,7 @@ Todo arquivo VHDL requer ao menos duas estruturas:
 
 Circuito combinacional simples:
 
-![combinacional](img/t02-circuitoCombinacional.png)
+![combinacional](img/v01-circuitoCombinacional.png)
 
 ```vhdl title='VHDL'
 library IEEE;
@@ -118,7 +118,7 @@ end main;
 
 Suporta diversos níveis de hierarquia, sendo que a descrição pode ser a interligação de um conjunto de descrições.
 
-![hierarquia](img/t02-hierarquia.png)
+![hierarquia](img/v01-hierarquia.png)
 
 
 **Estilo de descrição**
@@ -168,7 +168,7 @@ Assim, o resultado para os dois códigos acima é o mesmo, pois no circuito sint
 
 Comandos sequenciais, como acontece em linguagens de programação mais convencionais, podem ser declaradas somente em uma região específica, subprogramas e processos, e delimitada do código. Cada região é executada de forma concorrente às demais.
 
-![codigoSequencial](img/t02-codigoSequencial.png)
+![codigoSequencial](img/v01-codigoSequencial.png)
 
 ---
 
@@ -182,14 +182,14 @@ Nos circuitos digitais isso se deve a uma falta de correspondência da descriç�
 
 Motivos da limitação:
 
-- Falta de correspondência entre: construção x circuito real. A construção do código pode ser simulada, porém não pode ser montado por não haver o correspondende componente real. 
-- Impossibilidade de síntese direta. Uma multiplicação de dois números reais, por exemplo, pode ser simulada, porém a complexidade do circuito é alta o suficiente para não poder ser montado, sintetizado. 
+- Falta de correspondência entre: construção x circuito real. A construção do código pode ser simulada, porém não pode ser montado por não haver o correspondende componente real.
+- Impossibilidade de síntese direta. Uma multiplicação de dois números reais, por exemplo, pode ser simulada, porém a complexidade do circuito é alta o suficiente para não poder ser montado, sintetizado.
 
 
 **Síntese da descrição**
 
 
-1. Elaboração da descrição e compilação. 
+1. Elaboração da descrição e compilação.
 
 2. A mesma descrição é interpretada por uma ferramenta de síntese que infere as estruturas necessárias para um circuito que corresponda à descrição.
 
@@ -218,4 +218,3 @@ Uma nova simulação pode ser feita, agora com uma precisão maior, envolvendo o
 1. D'AMORE, Roberto. VHDL: descrição e síntese de circuitos digitais. 2. ed. Rio
 de Janeiro: LTC, 2012.
 2. [Curso VHDL - O Código da Eletrônica](https://youtube.com/playlist?list=PLYE3wKnWQbHDdnb3FsDkNx2tj8xoQAPtN&si=7aHA5SoGaX29JoGp)
-

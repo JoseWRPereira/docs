@@ -1,5 +1,5 @@
 ---
-title: Lab01 - Novo Projeto
+title: Quartus - Novo Projeto
 icon: fontawesome/solid/folder-plus
 author:
  - José W. R. Pereira
@@ -9,7 +9,7 @@ tags:
  - DE1-SoC
 ---
 
-![Board](img/lab00-board.png)
+![Quartus](img/t03-quartus-capa.png)
 
 O processo de criação de um projeto para o kit DE1-SoC é complexo e possui um série razoavelmente extensa de passos, assim, realize-os com atenção.
 
@@ -25,7 +25,7 @@ Após ler as instruções da tela *New Project Wizard*, clique em *Next*, confor
 
 | Figura 1: Novo Projeto                             |
 |:--------------------------------------------------:|
-| ![newProjectWizard](img/lab01-newProjectWizard.png)|
+| ![newProjectWizard](img/t03-newProjectWizard.png)|
 | Fonte: Autor                                       |
 
 
@@ -39,7 +39,7 @@ Após ler as instruções da tela *New Project Wizard*, clique em *Next*, confor
 
 | Figura 2: Identificação do projeto        |
 |:-----------------------------------------:|
-| ![newProject](img/lab01-nome_projeto.png) |
+| ![newProject](img/t03-nome_projeto.png) |
 | Fonte: Autor                              |
 
 
@@ -55,7 +55,7 @@ Após ler as instruções da tela *New Project Wizard*, clique em *Next*, confor
 
 | Figura 3: Seleção de placa e simulação    |
 |:-----------------------------------------:|
-| ![board_sim](img/lab01-board_sim.png)     |
+| ![board_sim](img/t03-board_sim.png)     |
 | Fonte: Autor                              |
 
 ---
@@ -70,7 +70,7 @@ Após a criação do projeto, vamos criar o programa utilizando um **diagrama de
 
 | Figura 4: Novo arquivo - Diagrama de Blocos             |
 |:-------------------------------------------------------:|
-| ![new_file](img/lab01-novo_arquivo_diagramaBlocos.png)  |
+| ![new_file](img/t03-novo_arquivo_diagramaBlocos.png)  |
 | Fonte: Autor                                            |
 
 Foi criado um arquivo com o nome *Block1.bdf*.
@@ -91,7 +91,7 @@ Após realizar o *Download* do arquivo `DE1_SoC.qsf`:
 
 | Figura 5: Importação de atribuição de pinos             |
 |:-------------------------------------------------------:|
-| ![pinAssignments](img/lab01-importAssignments.png)      |
+| ![pinAssignments](img/t03-importAssignments.png)      |
 | Fonte: Autor                                            |
 
 ---
@@ -102,7 +102,7 @@ Após realizar o *Download* do arquivo `DE1_SoC.qsf`:
 
 | Figura 6: Inserindo portas lógicas básicas              |
 |:-------------------------------------------------------:|
-| ![symbolTool](img/lab01-symbolTool.png)                 |
+| ![symbolTool](img/t03-symbolTool.png)                 |
 | Fonte: Autor                                            |
 
 > Selecione em *Libraries*, o diretório *primitives* e *logic* ou digite no campo *Name* o nome da porta que se quer usar: `and2`, em seguida, clique em *Ok*.
@@ -110,7 +110,7 @@ Após realizar o *Download* do arquivo `DE1_SoC.qsf`:
 
 | Figura 7: Inserindo elementos primitivos                |
 |:-------------------------------------------------------:|
-| ![primitives_logic](img/lab01-primitives_logic.png)     |
+| ![primitives_logic](img/t03-primitives_logic.png)     |
 | Fonte: Autor                                            |
 
 
@@ -119,7 +119,7 @@ A Figura 8 ilustar a ferramenta para inserir pinos de entrada (`Input`), saída 
 
 | Figura 8: Inserindo conectores                          |
 |:-------------------------------------------------------:|
-| ![conectores](img/lab01-in_out_inout.png)               |
+| ![conectores](img/t03-in_out_inout.png)               |
 | Fonte: Autor                                            |
 
 
@@ -131,7 +131,7 @@ Para alocar os pinos, ainda sem nomes ou conexões com os dispositivos físicos,
 
 | Figura 9: Alocando os pinos                             |
 |:-------------------------------------------------------:|
-| ![pinPlanner](img/lab01-pinPlanner.png)                 |
+| ![pinPlanner](img/t03-pinPlanner.png)                 |
 | Fonte: Autor                                            |
 
 
@@ -142,7 +142,7 @@ Ao final, não devem haver erros no circuito.
 
 | Figura 10: Compilando o circuito                        |
 |:-------------------------------------------------------:|
-| ![compileDesign](img/lab01-compileDesign.png)           |
+| ![compileDesign](img/t03-compileDesign.png)           |
 | Fonte: Autor                                            |
 
 
@@ -153,7 +153,7 @@ Selecione *Hardware Setup*, conforme Figura 11.
 
 | Figura 11: Abrindo o Program Device                     |
 |:-------------------------------------------------------:|
-| ![programDevice](img/lab01-hardware_setup.png)          |
+| ![programDevice](img/t03-hardware_setup.png)          |
 | Fonte: Autor                                            |
 
 
@@ -163,7 +163,7 @@ Selecione o dispositivo: `5CSEMA5`.
 
 | Figura 12: Auto Detect                                  |
 |:-------------------------------------------------------:|
-| ![autoDetect](img/lab01-autoDetect.png)                 |
+| ![autoDetect](img/t03-autoDetect.png)                 |
 | Fonte: Autor                                            |
 
 Conforme Figura 13, clique em `<none>` do campo *File*, para abrir a janela de carregamento do arquivo compilado.
@@ -172,21 +172,21 @@ Abra o diretório `output_files` e selecione o seu projeto com extensão `.sof`.
 
 | Figura 13: Output_files                                 |
 |:-------------------------------------------------------:|
-| ![output_files](img/lab01-output_files.png)             |
+| ![output_files](img/t03-output_files.png)             |
 | Fonte: Autor                                            |
 
 Na mesa linha ainda, marque a caixa de seleção do campo *Program/Configure* e clique em *Start*.
 
 | Figura 14: Gravar dispositivo                           |
 |:-------------------------------------------------------:|
-| ![gravar_dispositivo](img/lab01-start_prog.png)             |
+| ![gravar_dispositivo](img/t03-start_prog.png)             |
 | Fonte: Autor                                            |
 
 Ao final da barra de progresso com 100%, o programa está gravado.
 
 | Figura 15: Operação de lógica E                         |
 |:-------------------------------------------------------:|
-| ![operacao](img/lab01-operacao.png)                     |
+| ![operacao](img/t03-operacao.png)                     |
 | Fonte: Autor                                            |
 
 Realize o teste da **lógica E** utilizando as chaves `SW9` e `SW8` como entradas e a saída `LEDR9`.

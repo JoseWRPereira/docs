@@ -45,14 +45,13 @@ nav:
       - FPGA: #    - FPGA:
           - Tecnologia:
               - digitais/fpga/tecnologia/t01-intro_plds.md
-              - digitais/fpga/tecnologia/t02-hdl.md
-          - TerasIC DE1-SoC:
-              - digitais/fpga/terasic_de1_soc/lab00-board.md
-              - digitais/fpga/terasic_de1_soc/lab01-novo_projeto.md
-              - digitais/fpga/terasic_de1_soc/lab02-simul_vwf.md
-              - digitais/fpga/terasic_de1_soc/lab03-rtl_viewer.md
-          - GHDL-GtkWave:
-              - digitais/fpga/ghdl-gtkwave/ghdl-0-intro.md
+              - digitais/fpga/tecnologia/t02-terasic-DE1-SoC.md
+              - digitais/fpga/tecnologia/t03-quartus-novo_projeto.md
+              - digitais/fpga/tecnologia/t04-quartus-sim_vwf.md
+              - digitais/fpga/tecnologia/t05-quartus-rtl_viewer.md
+              - digitais/fpga/tecnologia/t06-ghdl-gtkwave.md
+          - VHDL:
+              - digitais/fpga/vhdl/v01-hdl.md
   - Automação Industrial:
       - index_automacao.md
       - Controladores Programáveis:

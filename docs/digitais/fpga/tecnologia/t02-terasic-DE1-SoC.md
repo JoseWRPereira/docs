@@ -1,5 +1,5 @@
 ---
-title: Lab00 - DevKit
+title: TerasIC DE1 SoC - DevKit
 icon: fontawesome/solid/chess-board
 author:
  - José W. R. Pereira
@@ -9,7 +9,7 @@ tags:
  - DE1-SoC
 ---
 
-![Board](img/lab00-board.png)
+![Board](img/t02-board.png)
 
 
 # [TerasIC DE1-SoC](https://www.terasic.com.tw/cgi-bin/page/archive.pl?Language=English&No=836) for Intel FPGA University Program
@@ -22,7 +22,7 @@ O SoC da Altera integra, como mostrado na Figura 1, um **sistema de processador 
 
 | Figura 1: Diagrama de blocos - DE1-Soc DevKit         |
 |:-----------------------------------------------------:|
-| ![blockDiagram](img/lab00-blockDiagram-DE1_SoC-DevKit.png)  |
+| ![blockDiagram](img/t02-blockDiagram-DE1_SoC-DevKit.png)  |
 | Fonte: [DE1-SoC Development and Education Kit](https://www.terasic.com.tw/cgi-bin/page/archive.pl?Language=English&CategoryNo=205&No=836&PartNo=2#heading) |
 
 ---
@@ -79,7 +79,7 @@ Os diversos dispositivos da placa e os conectores podem ser vistos na distribui�
 
 | Figura 2: Layout superior da placa DE1-SoC                 |
 |:-------------------------------------------------:|
-| ![layout](img/lab00-DE1-SoC_Layout_top_01-01.jpg) |
+| ![layout](img/t02-DE1-SoC_Layout_top_01-01.jpg) |
 | Fonte: [DE1-SoC Development and Education Kit](https://www.terasic.com.tw/cgi-bin/page/archive.pl?Language=English&CategoryNo=205&No=836&PartNo=3#heading) |
 
 Na parte inferior da placa de desenvolvimento é possível configurar o FPGA para operar em modo EPCS ([Erasable Programmable Configurable Serial](http://notes-application.abcelectronique.com/038/38-21611.pdf)) ou HPS ([Hard Processor System](https://www.intel.com/content/www/us/en/docs/programmable/683458/current/hard-processor-system-hps.html)) através das chaves de seleção `MSEL[4:0]` implementadas na chave `SW10`, como ilustrado na Figura 3.
@@ -89,7 +89,7 @@ Na parte inferior da placa de desenvolvimento é possível configurar o FPGA par
 
 | Figura 3: Layout inferior da placa DE1-SoC                 |
 |:-------------------------------------------------:|
-| ![layout](img/lab00-DE1-SoC_Layout_bot_01-01.jpg) |
+| ![layout](img/t02-DE1-SoC_Layout_bot_01-01.jpg) |
 | Fonte: [DE1-SoC Development and Education Kit](https://www.terasic.com.tw/cgi-bin/page/archive.pl?Language=English&CategoryNo=205&No=836&PartNo=3#heading) |
 
 Obs: Note que a chave na posiçõa `ON` corresponde ao valor lógico `0`.
@@ -109,7 +109,7 @@ Existem algumas revisões no projeto e documentação da placa de desenvolviment
 
 | Figura 4: Identificando a versão da placa         |
 |:-------------------------------------------------:|
-| ![layout](img/lab00-revG.png) |
+| ![layout](img/t02-revG.png) |
 | Fonte: [DE1-SoC Development and Education Kit](https://www.terasic.com.tw/cgi-bin/page/archive.pl?Language=English&CategoryNo=205&No=836&PartNo=4#heading) |
 
 **Conteúdo do kit**
@@ -118,7 +118,7 @@ A Figura 5 ilustra o conteúdo do kit didático DE1-SoC, que será utilizado dur
 
 | Figura 5: Conteúdo do kit         |
 |:-------------------------------------------------:|
-| ![layout](img/lab00-conteudoKit.png) |
+| ![layout](img/t02-conteudoKit.png) |
 | Fonte: [DE1-SoC Development and Education Kit](https://www.terasic.com.tw/cgi-bin/page/archive.pl?Language=English&CategoryNo=205&No=836&PartNo=4#heading) |
 
 ---
@@ -133,7 +133,7 @@ Ao abrir a janela do instalador, conforme Figura 6, selecione os pacotes pertine
 
 | Figura 6: Instalação do Quartus Prime Lite Edition |
 |:--------------------------------------------------:|
-| ![quartus](img/lab00-quartus_prime_lite.png) |
+| ![quartus](img/t02-quartus_prime_lite.png) |
 | Fonte: [Intel® Quartus® Prime Lite Edition Design Software](https://www.intel.com/content/www/us/en/software-kit/849770/intel-quartus-prime-lite-edition-design-software-version-24-1-for-windows.html) |
 
 Após a instalação a ferramenta está pronta para o uso.
@@ -141,7 +141,7 @@ Após a instalação a ferramenta está pronta para o uso.
 
 | Figura 7: Quartus Prime Lite Edition  |
 |:-------------------------------------:|
-| ![quartus](img/lab00-quartus.png)     |
+| ![quartus](img/t02-quartus.png)     |
 | Fonte: Autor                          |
 
 

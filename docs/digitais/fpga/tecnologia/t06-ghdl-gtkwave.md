@@ -10,7 +10,7 @@ tags:
  - GtkWave
 ---
 
-![logo](img/ghdl-logo.png)
+![logo](img/t06-ghdl-logo.png)
 
 O GHDL é um compilador e simulador de código aberto para VHDL, mantido pela comunidade de desenvolvedores no [GitHub](https://github.com/ghdl/ghdl), regularmente atualizado.
 
@@ -24,7 +24,7 @@ Necessita exportar seus arquivos para formatos de onda do tipo GHW, VCD ou FST p
 
 ---
 
-![gtkwave](img/GtkWave-logo.gif)
+![gtkwave](img/t06-GtkWave-logo.gif)
 
 O [GtkWave](https://gtkwave.sourceforge.net/) é uma ferramenta de análise para executar depuração em modelos de simulação VHDL.
 
@@ -154,7 +154,7 @@ make wave
 ```
 
 
-![and_wave](img/and_wave.png)
+![and_wave](img/t06-and_wave.png)
 
 
 ---

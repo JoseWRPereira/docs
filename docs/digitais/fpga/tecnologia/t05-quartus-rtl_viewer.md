@@ -1,5 +1,5 @@
 ---
-title: Lab03 - Visualização do RTL
+title: Quartus - Visualização do RTL
 icon: fontawesome/solid/arrow-down-up-across-line
 author:
  - José W. R. Pereira
@@ -9,67 +9,67 @@ tags:
  - DE1-SoC
 ---
 
-![lab2_capa](img/lab03-rtl_viewer_capa.png)
+![lab2_capa](img/t05-rtl_viewer_capa.png)
 
 ---
 
 | Figura 1: Novo arquivo VHDL           |
 |:-------------------------------------:|
-| ![Board](img/lab03-questasim-01.png)  |
+| ![Board](img/t05-questasim-01.png)  |
 | Fonte: Autor                          |
 
 | Figura 2: Edição do código, análise e sintese |
 |:---------------------------------------------:|
-| ![Board](img/lab03-questasim-02.png)          |
+| ![Board](img/t05-questasim-02.png)          |
 | Fonte: Autor                                  |
 
 | Figura 3: Simulação do RTL            |
 |:-------------------------------------:|
-| ![Board](img/lab03-questasim-03.png)  |
+| ![Board](img/t05-questasim-03.png)  |
 | Fonte: Autor                          |
 
 | Figura 4: Simulação no Questa         |
 |:-------------------------------------:|
-| ![Board](img/lab03-questasim-04.png)  |
+| ![Board](img/t05-questasim-04.png)  |
 | Fonte: Autor                          |
 
 
 | Figura 5: Adicionando formas de onda  |
 |:-------------------------------------:|
-| ![Board](img/lab03-questasim-05.png)  |
+| ![Board](img/t05-questasim-05.png)  |
 | Fonte: Autor                          |
 
 | Figura 6: Abrindo objetos             |
 |:-------------------------------------:|
-| ![Board](img/lab03-questasim-06.png)  |
+| ![Board](img/t05-questasim-06.png)  |
 | Fonte: Autor                          |
 
 
 | Figura 7: Modificando formas de onda das entradas |
 |:-------------------------------------:|
-| ![Board](img/lab03-questasim-07.png)  |
+| ![Board](img/t05-questasim-07.png)  |
 | Fonte: Autor                          |
 
 | Figura 8: Execução das formas de onda |
 |:-------------------------------------:|
-| ![Board](img/lab03-questasim-08.png)  |
+| ![Board](img/t05-questasim-08.png)  |
 | Fonte: Autor                          |
 
 | Figura 9: Salvando simulação          |
 |:-------------------------------------:|
-| ![Board](img/lab03-questasim-09.png)  |
+| ![Board](img/t05-questasim-09.png)  |
 | Fonte: Autor                          |
 
 
 | Figura 10: Abrindo a visualização do RTL |
 |:-------------------------------------:|
-| ![Board](img/lab03-questasim-10.png)  |
+| ![Board](img/t05-questasim-10.png)  |
 | Fonte: Autor                          |
 
 
 | Figura 11: Visualização do RTL        |
 |:-------------------------------------:|
-| ![Board](img/lab03-questasim-11.png)  |
+| ![Board](img/t05-questasim-11.png)  |
 | Fonte: Autor                          |
 
 
