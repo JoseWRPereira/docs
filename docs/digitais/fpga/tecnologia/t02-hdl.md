@@ -111,3 +111,111 @@ end main;
 
 
 ---
+
+**Aspectos gerais da linguagem**
+
+**Hierarquia**
+
+Suporta diversos níveis de hierarquia, sendo que a descrição pode ser a interligação de um conjunto de descrições.
+
+![hierarquia](img/t02-hierarquia.png)
+
+
+**Estilo de descrição**
+
+Um circuito pode ser descrito de diversas maneiras, com diferentes níveis de abstração, entre eles comportamental, por expressões lógicas e por redes de ligação.
+
+```vhdl title="comportamental"
+if a = b then
+    equals <= '1';
+else
+    equals <= '0';
+end if;
+```
+
+```vhdl title="expressões lógicas"
+equals <= '1' when (a = b) else '0';
+```
+
+```vhdl title="redes de ligação (estrutural)"
+U0: xnor port map (a(0), b(0), x(0));
+U1: xnor port map (a(1), b(1), x(1));
+U2: xnor port map (a(2), b(2), x(2));
+U3: xnor port map (a(3), b(3), x(3));
+U4: and4 port map (x(0), x(1), x(2), x(3), equals);
+```
+
+No estilo misto, os estilos mostrados acima são usados em um mesmo código.
+
+
+**Concorrência**
+
+Na concorrência, a ordem dos comandos não importa, pois descrevem partes de um circuito, e uma mudança de valor em um sinal, acarreta a execução de todos os comandos envolvidos.
+
+```vhdl
+x <= a and b;
+y <= c or x;
+```
+
+```vhdl
+y <= c or x;
+x <= a and b;
+```
+
+Assim, o resultado para os dois códigos acima é o mesmo, pois no circuito sintetizado, tudo acontece ao mesmo tempo.
+
+**Comandos sequenciais**
+
+Comandos sequenciais, como acontece em linguagens de programação mais convencionais, podem ser declaradas somente em uma região específica, subprogramas e processos, e delimitada do código. Cada região é executada de forma concorrente às demais.
+
+![codigoSequencial](img/t02-codigoSequencial.png)
+
+---
+
+**Síntese de circuitos**
+
+A linguagem VHDL está voltada para o projeto e documentação de circuitos
+digitais, então não necessariamente a linguagem foi criada para síntese de circuitos. Assim, nem todo código e nem toda construção em HDL pode ser sintetizada
+em circuitos lógicos.
+
+Nos circuitos digitais isso se deve a uma falta de correspondência da descrição com o circuito digital real, a impossibilidade da síntese com precisão, ou uma falta de detalhamento para uma síntese direta.
+
+Motivos da limitação:
+
+- Falta de correspondência entre: construção x circuito real. A construção do código pode ser simulada, porém não pode ser montado por não haver o correspondende componente real. 
+- Impossibilidade de síntese direta. Uma multiplicação de dois números reais, por exemplo, pode ser simulada, porém a complexidade do circuito é alta o suficiente para não poder ser montado, sintetizado. 
+
+
+**Síntese da descrição**
+
+
+1. Elaboração da descrição e compilação. 
+
+2. A mesma descrição é interpretada por uma ferramenta de síntese que infere as estruturas necessárias para um circuito que corresponda à descrição.
+
+3. Verificação de erros de sintaxe;
+
+4. Circuito nível RTL (Register Transfer Level): não é associado a nenhuma tecnologia,apenas à lógica digital;
+
+5. Nível de portas: portas lógicas, somadores, comparadores etc. São componentes que existem no seu dispositivo de destino, por exemplo na sua FPGA ou no seu ASIC.
+
+6. Otimização: a depender do seu dispositivo final você pode escolher se quer uma velocidade maior ou uma área menor.
+
+![sintese](img/t02-sintese.png)
+
+
+**Rede de Ligações**
+
+O resultado dessa etapa é um arquivo contendo uma rede de ligações de elementos básicos disponíveis na tecnologia do dispositivo empregado. Esse arquivo contendo a rede de ligações é a base de dados para a ferramenta que realiza o posicionamento e a interligação dos componentes, place and route.
+
+Uma nova simulação pode ser feita, agora com uma precisão maior, envolvendo os tempos de atraso.
+
+
+---
+
+**Referências**
+
+1. D'AMORE, Roberto. VHDL: descrição e síntese de circuitos digitais. 2. ed. Rio
+de Janeiro: LTC, 2012.
+2. [Curso VHDL - O Código da Eletrônica](https://youtube.com/playlist?list=PLYE3wKnWQbHDdnb3FsDkNx2tj8xoQAPtN&si=7aHA5SoGaX29JoGp)
+
