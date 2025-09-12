@@ -92,6 +92,7 @@ nav:
       - Pneumática:
           - Simulação:
               - automacao/pneumatica/fluidsim/01-simulacao.md
+              - automacao/pneumatica/fluidsim/02-circuitosSequenciais.md
   - Ciência de Dados:
       - index_dados.md
       - Dados:
