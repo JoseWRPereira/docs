@@ -1,6 +1,6 @@
 ---
 title: Simulação
-icon: fontawesome/solid/caret-up
+icon: fontawesome/solid/char-line
 authors:
  - José W. R. Pereira
 tags:
