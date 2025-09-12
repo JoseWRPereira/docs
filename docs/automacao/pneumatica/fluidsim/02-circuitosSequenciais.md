@@ -1,6 +1,6 @@
 ---
-title: Simulação
-icon: fontawesome/solid/char-line
+title: Exercícios
+icon: fontawesome/solid/chart-line
 authors:
  - José W. R. Pereira
 tags:
@@ -13,7 +13,7 @@ tags:
 
 **Exercícios**
 
-Elabore o diagrama de acionamento dos circuitos eletopneumáticos das figuras 1, 2, 3 e 4.
+Elabore o diagrama de acionamento dos circuitos eletopneumáticos das figuras 1, 2, 3 e 4 utilizando a técnica de maximização de contatos.
 
 | Figura 1: Sequencia de movimentos A+ A- |
 |:---------------------------------------:|
@@ -37,7 +37,7 @@ Elabore o diagrama de acionamento dos circuitos eletopneumáticos das figuras 1,
 
 ---
 
-Elabore os diagramas pneumáticos e de acionamento das sequencias de movimento para os atuadores A, B e C das figuras 5, 6, 7 e 8.
+Elabore os diagramas pneumáticos e de acionamento das sequencias de movimento para os atuadores A, B e C das figuras 5, 6, 7 e 8, utilizando a técnica de maximização de contatos.
 
 | Figura 5: Diagrama Trajeto-Passo |
 |:--------------------------------:|
