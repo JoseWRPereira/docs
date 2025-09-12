@@ -13,7 +13,7 @@ tags:
 
 **Exercícios**
 
-Elabore o diagrama de acionamento dos circuitos eletopneumáticos das figuras 1, 2, 3 e 4 utilizando a técnica de maximização de contatos.
+Elabore o diagrama de acionamento dos circuitos eletropneumáticos das figuras 1, 2, 3 e 4 utilizando a técnica de maximização de contatos.
 
 | Figura 1: Sequencia de movimentos A+ A- |
 |:---------------------------------------:|
