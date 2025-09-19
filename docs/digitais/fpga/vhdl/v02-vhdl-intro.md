@@ -186,47 +186,43 @@ file nome_do_file : tipo;
 
 **Exemplo** de uso de redes de ligação com a classe de objetos do tipo `signal`.
 
-Segue ilustração de um diagrama de portas lógicas equivalente a um circuito do tipo Flip flop JK Master Slave.
+Segue ilustração de um diagrama de portas lógicas equivalente a um circuito do tipo Flip flop tipo D.
 
-Estão destacados os pinos de entradas e saídas para declaração nos ports. 
+Estão destacados os pinos de entradas e saídas para declaração nos `PORTS`. 
 
-As linhas de conexão internas são nomeadas como um vetor a com os índices de 0 a 5.
+As linhas de conexão internas são nomeadas como um vetor a com os índices de 0 a 1.
 
-![ffjk_master_slave](img/v02-jk_master_slave.png)
+![flip flip tipo D](img/v02-ffd.png)
 
 
-Segue código que descreve o circuito de Flip flop JK Master Slave. 
+Segue código que descreve o circuito de Flip flop tipo D. 
 
-```vhdl title="FF JK Master Slave"
+```vhdl title="FF D"
 -- --------------------------------------------------------
 -- Sistemas Digitais Programáveis - 2025-2
--- Código: FF JK Master Slave
+-- Código: FF tipo D
 -- Autor: José W. R. Pereira
--- Data: 2025-09-08
+-- Data: 2025-09-18
 -- --------------------------------------------------------
 
 -- Bibliotecas e Pacotes
 
 -- Entidade
-entity ffjk_master_slave is
+entity ffd is
     port(
-            j, k, clk:  in      bit;
-            q, q_bar:   out     bit
+            d, clk:     in      bit;
+            q, q_bar:   buffer  bit
         );
-end entity ffjk_master_slave;
+end entity;
 
 -- Arquitetura
-architecture main of ffjk_master_slave is
-    signal a: bit_vector(0 to 5);
+architecture main of ffd is
+    signal a: bit_vector(0 to 1);
 begin
-    a(0) <= not (q_bar and j and clk);
-    a(1) <= not (q     and k and clk);
-    a(2) <= a(0) nand a(3);
-    a(3) <= a(1) nand a(2);
-    a(4) <= a(2) nand (not clk);
-    a(5) <= a(3) nand (not clk);
-    q    <= a(4) nand q_bar;
-    q_bar <= a(5) nand q;
+	a(0) <= d nand clk;
+    a(1) <= not d nand clk;
+    q    <= a(0) nand qbar;
+    qbar <= a(1) nand q;
 end architecture main;
 ```
 
