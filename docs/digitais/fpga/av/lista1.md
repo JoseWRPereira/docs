@@ -9,7 +9,7 @@ tags:
  - VHDL
 ---
 
-# [Form - Lista de Exercícios - Decodificadores](https://forms.gle/fXJpuskJRknr7LNB7)
+# [Form - Lista de Exercícios - Decodificadores](https://docs.google.com/forms/d/e/1FAIpQLScm4_KOlCniUa16sCyAL3u6lpLGXHaGEPTBr2CrAqWMw4y3AQ/viewform?usp=sharing&ouid=109600203603184728591)
 
 
 
