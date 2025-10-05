@@ -1,6 +1,6 @@
 ---
 title: Lista 1
-icon: fontawesome/solid/hard-drive
+icon: fontawesome/brands/blackberry
 author:
  - José W. R. Pereira
 tags:

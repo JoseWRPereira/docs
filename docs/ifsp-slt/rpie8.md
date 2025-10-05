@@ -1,5 +1,5 @@
 ---
-title: RPIE8
+title: RPIE8 - Ementa
 icon: fontawesome/solid/network-wired
 author:
  - José W. R. Pereira
@@ -26,10 +26,6 @@ tags:
 
 ---
 
-- [Lab. 04 - Rede ponto a ponto](/docs/ifsp-slt/rpie8/redes/lab04)
-- [Lab. 05 - Rede multiponto - RS485](/docs/ifsp-slt/rpie8/redes/lab05)
-
----
 
 **Ementa**
 

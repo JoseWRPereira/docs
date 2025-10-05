@@ -10,9 +10,16 @@ nav:
       - IFSP-Salto:
           - index_ifsp_slt.md
           - 2025:
-              - ifsp-slt/sdpe8.md
-              - ifsp-slt/rpie8.md
-              - ifsp-slt/sltclpr.md
+              - SDPE8:
+                  - ifsp-slt/sdpe8.md
+                  - ifsp-slt/vhdl/lista1.md
+                  - ifsp-slt/vhdl/lista2.md
+              - RPIE8:
+                  - ifsp-slt/rpie8.md
+                  - ifsp-slt/redes/lab04.md
+                  - ifsp-slt/redes/lab05.md
+              - CLPR:
+                  - ifsp-slt/sltclpr.md
   - Sistemas Digitais:
       - index_digitais.md
       - Microcontroladores:
