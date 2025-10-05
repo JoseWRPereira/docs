@@ -26,6 +26,11 @@ tags:
 
 ---
 
+- [Lab. 04 - Rede ponto a ponto](/docs/ifsp-slt/rpie8/redes/lab04)
+- [Lab. 05 - Rede multiponto - RS485](/docs/ifsp-slt/rpie8/redes/lab05)
+
+---
+
 **Ementa**
 
 A disciplina aborda os conteúdos básicos de redes e comunicação para o monitoramento, supervisão e controle de dispositivos industriais.

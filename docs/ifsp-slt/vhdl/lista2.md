@@ -27,6 +27,7 @@ Utilizando os arquivos de descrição `latch_sr.vhdl`, `latch_d.vhdl` e `d_ff.vh
 
 Note que para forçar a saída para zero, o sinal `CLR` deve estar zerado, pois há uma inversora na entrada do sinal. 
 
+---
 
 2) Modifique o arquivo `d_ff.vhdl` de modo que a descrição seja equivalente ao flip-flop tipo D apresentado na Figura 2. 
 

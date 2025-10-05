@@ -27,8 +27,8 @@ tags:
 
 ---
 
-[Lista 1: Decodificadores](/docs/digitais/fpga/av/lista1)
-[Lista 2: Latches e Flip-flop D](/docs/digitais/fpga/av/lista2)
+- [Lista 1: Decodificadores](/docs/ifsp-slt/sdpe8/vhdl/lista1)
+- [Lista 2: Latches e Flip-flop D](/docs/digitais/fpga/av/lista2)
 ---
 
 **Ementa**
