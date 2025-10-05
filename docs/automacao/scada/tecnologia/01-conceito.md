@@ -10,7 +10,7 @@ tags:
 
 #
 
-**[Sistema Supervisório <br> SCADA](slides/aula07-sistemas_SCADA.pdf)**
+**[Sistema Supervisório <br> SCADA](../slides/aula07-sistemas_SCADA.pdf)**
 
 ---
 
@@ -23,5 +23,6 @@ tags:
     - Elipse;
     - BluePlant;
     - ScadaBR.
+- [Laboratório](../slides/aula07lab-ScadaBR.pdf)
 
 ---
