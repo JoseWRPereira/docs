@@ -53,6 +53,7 @@ nav:
           - VHDL:
               - digitais/fpga/vhdl/v01-hdl.md
               - digitais/fpga/vhdl/v02-vhdl-intro.md
+              - digitais/fpga/vhdl/v03-dff.md
   - Automação Industrial:
       - index_automacao.md
       - Controladores Programáveis:

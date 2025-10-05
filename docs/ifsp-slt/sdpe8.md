@@ -27,6 +27,10 @@ tags:
 
 ---
 
+[Lista 1: Decodificadores](/docs/digitais/fpga/av/lista1)
+[Lista 2: Latches e Flip-flop D](/docs/digitais/fpga/av/lista2)
+---
+
 **Ementa**
 
 A componente curricular aborda as arquiteturas e a teoria de dispositivos lógicos reprogramáveis, programação de dispositivos FPGA e dispositivos lógicos complexos programáveis (CPLD), bem como linguagem **VHDL** e projetos de laboratório com dispositivos reconfiguráveis.
