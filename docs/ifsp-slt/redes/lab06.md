@@ -21,9 +21,9 @@ tags:
 #include <ArduinoModbus.h>  // Lib Arduino Modbus (instalar via gerenciador)
 
     // Parametros de comunicao
-#define SLAVE_ID            1              // endereco do escravo Modbus RTU
-#define BAUDRATE            9600          // 19200 bps
-#define UART_CONFIG         SERIAL_8N1  // 8 data bits, sem paridade, 2 stop bits
+#define SLAVE_ID            1               // endereco do escravo Modbus RTU
+#define BAUDRATE            9600            // 9600 bps
+#define UART_CONFIG         SERIAL_8N1      // 8 data bits, sem paridade, 1 stop bit
 
     // Mapeamento dos pinos de entradas e saidas
 const int inputDigitalMap[]   = { 8, 9 };     // pinos usados como entradas digitais - digital inputs
@@ -45,6 +45,8 @@ const int outputPwmMap[]      = { 5, 6 };     // pinos usados como saidas analog
 #define COIL_ADDRESS            0x0020
 #define PWM_OUTPUTS_ADDRESS     0x0030
 #define HOLDING_REGS_ADDRESS    PWM_OUTPUTS_ADDRESS + PWM_OUTPUTS_SIZE  // endereco das variaveis internas comeca depois dos pwm
+
+
 
 ///////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////// Configuracoes
@@ -93,12 +95,12 @@ void setup()
 
 void loop() 
 {
-  
-  ModbusRTUServer.poll();               // Verifica requisicoes Modbus RTU recebidas e atualiza dados no servidor
+    // Verifica requisicoes Modbus RTU recebidas e atualiza dados no servidor
+  ModbusRTUServer.poll();               
 
 
-  // Rotina de atualizacao das ENTRADAS
-  // atualiza o estado das entradas mapeadas na memoria do servidor
+    // Rotina de atualizacao das ENTRADAS
+    // atualiza o estado das entradas mapeadas na memoria do servidor
 
   for (int i = 0; i < DIGITAL_INPUTS_SIZE; i++) 
   {
@@ -111,8 +113,8 @@ void loop()
     ModbusRTUServer.writeInputRegisters(ANALOG_INPUT_ADDRESS + i, &tempRead, 1);
   }
 
-  // Rotina de atualizacao das SAIDAS
-  // escreve estado das saidas mapeadas conforme a memoria atual do servidor
+    // Rotina de atualizacao das SAIDAS
+    // escreve estado das saidas mapeadas conforme a memoria atual do servidor
 
   for (int i = 0; i < COILS_SIZE; i++) 
   {
@@ -124,17 +126,17 @@ void loop()
     analogWrite(outputPwmMap[i], ModbusRTUServer.holdingRegisterRead(PWM_OUTPUTS_ADDRESS + i));
   }
 
-  // Rotina de atualizacao das vars analógicas pós pwm
+    // Rotina de atualizacao das vars analógicas pós pwm
 
-  // Teste de leitura dos holding registers (word, 16 bits)
+    // Teste de leitura dos holding registers (word, 16 bits)
   uint16_t testValue = ModbusRTUServer.holdingRegisterRead(PWM_OUTPUTS_ADDRESS + PWM_OUTPUTS_SIZE + 0);
   if (testValue > 1000) 
     digitalWrite(LED_BUILTIN, HIGH);
   else 
     digitalWrite(LED_BUILTIN, LOW);
 
-  // Teste de escrita dos holding registers
-  // o holding register com offset 1 guarda o tempo decorrido em segundos desde a inicializacao do Arduino
+    // Teste de escrita dos holding registers
+    // o holding register com offset 1 guarda o tempo decorrido em segundos desde a inicializacao do Arduino
   uint16_t seconds = millis() / 1000;
   ModbusRTUServer.holdingRegisterWrite(PWM_OUTPUTS_ADDRESS + PWM_OUTPUTS_SIZE + 1, seconds);
 }
