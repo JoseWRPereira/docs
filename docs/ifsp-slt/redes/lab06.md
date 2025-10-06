@@ -46,11 +46,13 @@ const int outputPwmMap[]      = { 5, 6 };     // pinos usados como saidas analog
 #define PWM_OUTPUTS_ADDRESS     0x0030
 #define HOLDING_REGS_ADDRESS    PWM_OUTPUTS_ADDRESS + PWM_OUTPUTS_SIZE  // endereco das variaveis internas comeca depois dos pwm
 
-
 ///////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////// Configuracoes do Arduino
+//////////////////////////////////////////////////////////////// Configuracoes
+
 void setup() 
 {
+
+///////////////////////////////////////////////////// Arduino
 
   for(int i = 0; i < DIGITAL_INPUTS_SIZE; i++) 
   {
@@ -70,8 +72,7 @@ void setup()
 
   pinMode(LED_BUILTIN, OUTPUT);                     // LED da placa
 
-///////////////////////////////////////////////////////////////////////////////
-////////////////////////////////////////////// Configura o servidor Modbus RTU
+////////////////////////////////////////////////////// Servidor Modbus RTU
  
   if (!ModbusRTUServer.begin(SLAVE_ID, BAUDRATE, UART_CONFIG)) 
   {
@@ -79,7 +80,8 @@ void setup()
     while (1)
       ;
   }
-  // Associa os enderecos de registradores do servidor modbus para as entradas e saídas definidas 
+
+    // Associa os enderecos de registradores do servidor modbus para as entradas e saídas definidas 
   ModbusRTUServer.configureDiscreteInputs(DIGITAL_INPUT_ADDRESS, DIGITAL_INPUTS_SIZE);
   ModbusRTUServer.configureInputRegisters(ANALOG_INPUT_ADDRESS, ANALOG_INPUTS_SIZE);
   ModbusRTUServer.configureCoils(COIL_ADDRESS, COILS_SIZE);
@@ -89,8 +91,8 @@ void setup()
 ///////////////////////////////////////////////////////////////////////////////
 ///////////////////////// Sincroniza entradas e saidas com o Modbus RTU Server
 
-void loop() {
-  //*******************************************************
+void loop() 
+{
   
   ModbusRTUServer.poll();               // Verifica requisicoes Modbus RTU recebidas e atualiza dados no servidor
 
