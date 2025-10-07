@@ -33,7 +33,7 @@ Note que para forçar a saída para zero, o sinal `CLR` deve estar zerado, pois 
 
 | Figura 2: Flip-flop tipo D com Preset e Clear |
 |:------------------------------------:|
-| ![dff_clr](img/lista2-1.png)         |
+| ![dff_clr](img/lista2-2.png)         |
 | Fonte: Autor                         |
 
 Note que neste exercício, há inversoras nas entradas de *Preset*, *Clear* e *Clock*. 
