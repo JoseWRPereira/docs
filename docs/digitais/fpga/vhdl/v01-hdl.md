@@ -12,204 +12,142 @@ tags:
 
 ---
 
-Uma linguagem de descrição de hardware (Hardware Description Language - HDL) é uma linguagem de computador especializada usada para descrever a estrutura e o comportamento de circuitos eletrônicos e, mais comumente, circuitos lógicos digitais.
+**I. Introdução e Contexto Histórico do VHDL**
 
-Uma linguagem de descrição de hardware descreve o que um hardware faz e como:
+O VHDL (VHSIC Hardware Description Language) é uma Linguagem de Descrição de Hardware (HDL) desenvolvida para descrever o comportamento de circuitos ou sistemas eletrônicos, permitindo que o circuito físico seja implementado a partir dessa descrição. A origem da linguagem remonta ao projeto VHSIC (Very High Speed Integrated Circuits), financiado pelo Departamento de Defesa dos EUA (DARPA) na década de 1980, com o objetivo de criar uma ferramenta padrão para projeto e documentação de circuitos.
 
-- Modelar
-- Representar
-- Simular
+O VHDL foi a primeira HDL a ser padronizada pelo IEEE (Institute of Electrical and Electronic Engineers). As principais versões e padrões incluem:
 
-Existem várias linguagens de descrição de hardware. As duas principais são:
+- **IEEE 1076 (1987 e 1993):** O padrão fundamental da linguagem. As alterações de 1993, embora significativas para arquivos, não trouxeram mudanças cruciais para a síntese de circuitos.
+- **IEEE 1164:** Introduziu o pacote `std_logic_1164`, que define tipos de dados (como `STD_LOGIC`) capazes de modelar condições reais de circuitos, como alta impedância (`Z`), níveis de força fraca (`L` e `H`), e estados desconhecidos (`U`, `X`, `W`).
+- **IEEE 1076.3:** Define tipos numéricos em formato de vetor (`signed` e `unsigned`) e funções aritméticas para síntese, preenchendo a lacuna deixada pela limitação das operações aritméticas em tipos `INTEGER` e `REAL`.
 
-- VHDL
-- SystemVerilog
-
-
-
-**VHDL**
-
-O nome VHDL é um acrônimo de VHSIC Hardware Description Language. Já o termo VHSIC é o acrônimo de Very High Speed Integrated Circuit. Assim podemos traduzir livremente o nome VHDL como **"linguagem de descrição de hardware para circuitos integrados de velocidade muito alta"**.
-
-
-A linguagem VHDL foi originalmente desenvolvida por empresas contratadas pelo governo americano e agora é um padrão requerido por todos os ASICs projetados para o exército americano.
-
-1981: DoD (*Department of Defense*) patrocina o 1º encontro de especialistas com o objetivo de discutir métodos para a descrição de circuitos.
-
-1983: DoD define os requisitos de uma linguagem padrão e firma contrato com IBM, Texas e Intermetrics com objetivo de desenvolvimento da linguagem e programas.
-
-1985: Apresentação da versão 7.2 com direitos autorais do manual transferidos para o IEEE – Institute of Electrical and Electronic Engineer
-- Incumbências do IEEE:
-    - Definir um padrão para a linguagem
-    - Manter futuros desenvolvimentos (novas versões etc.)
-
-1987: Após revisões propostas por acadêmicos, representantes de indústrias e o governo dos Estados Unidos, foi definido o padrão IEEE 1076-1987.
-
-As versões mais utilizadas são as definidas em 1993 e 2008, junto com seus pacotes.
-
-Os pacotes tem o objetivo de adicionar facilidades à linguagem, como:
-
-- IEEE 1164: Pacote std_logic_1164
-- IEEE 1076.3: Pacotes numeric_bit e numeric_std
-
-
-
-Todo arquivo VHDL requer ao menos duas estruturas:
-
-- Entidade (*entity*)
-    - Define os aspectos externos da função VHDL, isto é, os nomes das entradas e saídas e o nome da função.
-- Arquitetura (*architecture*)
-    - Define aspectos internos, funcionamento e relação entre os sinais internos e declarados na entidade.
+Uma motivação chave para o uso do VHDL é sua natureza como um padrão independente de tecnologia e fabricante, assegurando a portabilidade e a reusabilidade do código.
 
 ---
 
-**Exemplo**
+**II. Aspectos Gerais e Estrutura da Linguagem**
 
-Circuito combinacional simples:
+**Concorrência vs. Sequencialidade**
 
-![combinacional](img/v01-circuitoCombinacional.png)
+A característica fundamental do VHDL é ser uma **linguagem concorrente**. Com exceção de regiões específicas do código, os comandos são executados simultaneamente, refletindo o funcionamento paralelo de um sistema digital real, onde a ordem de apresentação dos comandos é irrelevante para o comportamento final.
 
-```vhdl title='VHDL'
-library IEEE;
-use IEEE.std_logic_1164.all;
+- **Simulação e Atraso Delta ($\Delta$):** Para coordenar a avaliação de eventos que ocorrem no mesmo instante em um código concorrente, o simulador utiliza um atraso interno nulo, denominado $\Delta$. Um sinal recebe um novo valor após um intervalo de $1\Delta$, garantindo a ordenação lógica dos eventos.
 
-entity circuito is
-    PORT( a,b,c: IN std_logic; s: OUT std_logic );
-end circuito;
+No entanto, o VHDL permite delimitar regiões de **código sequencial** usando comandos específicos, onde a execução dos comandos segue a ordem de sua apresentação. Essas regiões são tipicamente encontradas em subprogramas (funções e procedimentos) e processos (`PROCESS`).
 
-architecture main of circuito is
-begin
-    s <= (a and b) or c;
-end main;
+**Elementos Estruturais Fundamentais**
 
-```
+Uma descrição VHDL básica é composta por:
 
-**Vantagem do VHDL em relação ao Esquemático**
+1. **Entidade (`ENTITY`):** A abstração primária de um circuito. Define a interface externa do projeto, listando as portas (`PORTs`) e, opcionalmente, os genéricos (`GENERIC`).
+2. **Arquitetura (`ARCHITECTURE`):** Descreve o comportamento ou a estrutura interna da entidade, especificando as relações entre as entradas e saídas. Uma entidade pode ter múltiplas arquiteturas, cada par (Entidade-Arquitetura) representando uma entidade distinta com a mesma interface.
 
-- Projeto independente da tecnologia;
-- Pode-se utilizar a descrição do projeto em vários tipos de plataforma, de um simulador para outro;
-- Pode-se utilizar um projeto em VHDL em diferentes projetos;
-- Permite, através de simulação, verificar o comportamento do sistema digital;
-- Facilidade na atualização dos projetos;
-- Reduz tempo de projeto e custo;
-- O objetivo do projeto fica mais claro do que na representação por esquemáticos;
-- O volume de documentação diminui, já que um código bem comentado em VHDL substitui com vantagens o esquemático e a descrição funcional do sistema;
+![EntidadeArquitetura](img/v01-entidade_arquitetura.png)
+
+**Portas e Modos**
+
+As portas definem a direção e a natureza da transferência de informação na interface da entidade:
+
+- **IN:** Exclusivamente entrada.
+- **OUT:** Saída. O valor não pode ser lido internamente pela arquitetura.
+- **BUFFER:** Saída, cujo valor pode ser lido internamente. É útil quando o valor de saída precisa ser usado como entrada dentro da própria arquitetura.
+- **INOUT:** Porta bidirecional, usada para modelar barramentos de dados.
 
 ---
 
-**Aspectos da linguagem**
+**Classes de Objetos**
 
-1. Suporta diversos níveis de hierarquia: uma descrição pode ser um conjunto de descrições interligadas.
-2. Estilo de descrição:
-   1. Diversas maneiras de descrever um circuito
-   2. Níveis de abstração: comportamental, expressões lógicas, redes de ligação;
-3. Linguagem concorrente
-   1. Ordem dos comandos não importa;
-   2. Mudança de valor em um sinal acarreta a execução de todos os comandos envolvidos.
-4. Comandos sequenciais:
-   1. Somente em regiões delimitadas no código, subprogramas e processos.
+Existem quatro classes de objetos em VHDL:
 
+- **Sinal (`SIGNAL`):** Utilizado em regiões concorrentes e sequenciais; o valor é atualizado após um $\Delta$ (na suspensão do processo, se em região sequencial).
+- **Variável (`VARIABLE`):** Utilizada em regiões sequenciais; o valor é assumido imediatamente após a execução do comando.
+- **Constante (`CONSTANT`):** Valor estático, não alterável durante a execução.
+- **Arquivo (`FILE`):** Associado à manipulação de arquivos no sistema hospedeiro (usado principalmente em testes).
 
 ---
 
-**Aspectos gerais da linguagem**
+**III. Aplicações do VHDL e Fluxo de Projeto**
 
-**Hierarquia**
+O VHDL não foi concebido originalmente para a síntese de circuitos, mas sim para a descrição e simulação. Contudo, sua aplicação principal no desenvolvimento de hardware digital (ASICs, FPGAs) é a **síntese**.
 
-Suporta diversos níveis de hierarquia, sendo que a descrição pode ser a interligação de um conjunto de descrições.
+**Fluxo de Síntese**
 
-![hierarquia](img/v01-hierarquia.png)
+O processo de projeto com VHDL, do início ao fim, envolve tipicamente as seguintes etapas:
 
+1. **Elaboração da Descrição VHDL (RTL):** Criação do código com o nível de abstração adequado. Isso pode ser um processo iterativo, com simulações e detalhamento até que a descrição seja sintetizável.
+2. **Verificação (Simulação):** O código é validado via simulação, geralmente com estímulos de teste, para garantir que ele corresponda à especificação do projeto.
+3. **Síntese:** Uma ferramenta de síntese interpreta o código e infere as estruturas de hardware necessárias (registradores, portas lógicas) no nível RTL (Register Transfer Level).
+4. **Transposição para a Tecnologia Alvo:** O circuito RTL (que é genérico) é mapeado para elementos disponíveis na tecnologia de fabricação específica (nível de portas lógicas), otimizando o circuito (velocidade vs. área).
+5. **Posicionamento e Interligação (_Place and Route_):** Definição do layout físico dos componentes e roteamento das interconexões no dispositivo alvo.
+6. **Verificação Pós-Layout:** O circuito físico com os atrasos de interconexão (obtidos via arquivos SDF - Standard Delay Format) é submetido novamente à simulação para verificar temporização e restrições.
 
-**Estilo de descrição**
+**Abstração e Hierarquia Top-Down**
 
-Um circuito pode ser descrito de diversas maneiras, com diferentes níveis de abstração, entre eles comportamental, por expressões lógicas e por redes de ligação.
+O VHDL suporta múltiplos níveis de abstração e organização hierárquica. O _top-down design_ (do todo para as partes mais simples) é facilitado pela capacidade de usar diferentes estilos de descrição (estrutural e comportamental) e pela modularização.
 
-```vhdl title="comportamental"
-if a = b then
-    equals <= '1';
-else
-    equals <= '0';
-end if;
-```
-
-```vhdl title="expressões lógicas"
-equals <= '1' when (a = b) else '0';
-```
-
-```vhdl title="redes de ligação (estrutural)"
-U0: xnor port map (a(0), b(0), x(0));
-U1: xnor port map (a(1), b(1), x(1));
-U2: xnor port map (a(2), b(2), x(2));
-U3: xnor port map (a(3), b(3), x(3));
-U4: and4 port map (x(0), x(1), x(2), x(3), equals);
-```
-
-No estilo misto, os estilos mostrados acima são usados em um mesmo código.
-
-
-**Concorrência**
-
-Na concorrência, a ordem dos comandos não importa, pois descrevem partes de um circuito, e uma mudança de valor em um sinal, acarreta a execução de todos os comandos envolvidos.
-
-```vhdl
-x <= a and b;
-y <= c or x;
-```
-
-```vhdl
-y <= c or x;
-x <= a and b;
-```
-
-Assim, o resultado para os dois códigos acima é o mesmo, pois no circuito sintetizado, tudo acontece ao mesmo tempo.
-
-**Comandos sequenciais**
-
-Comandos sequenciais, como acontece em linguagens de programação mais convencionais, podem ser declaradas somente em uma região específica, subprogramas e processos, e delimitada do código. Cada região é executada de forma concorrente às demais.
-
-![codigoSequencial](img/v01-codigoSequencial.png)
+A hierarquia é construída no VHDL principalmente pela declaração e solicitação de **componentes**. Um componente representa uma entidade (módulo) menor que é interligada em uma arquitetura maior (estilo estrutural), permitindo o reuso e modularidade do código.
 
 ---
 
-**Síntese de circuitos**
+**IV. Comandos e Construções Essenciais**
 
-A linguagem VHDL está voltada para o projeto e documentação de circuitos
-digitais, então não necessariamente a linguagem foi criada para síntese de circuitos. Assim, nem todo código e nem toda construção em HDL pode ser sintetizada
-em circuitos lógicos.
+**Comandos Concorrentes**
 
-Nos circuitos digitais isso se deve a uma falta de correspondência da descrição com o circuito digital real, a impossibilidade da síntese com precisão, ou uma falta de detalhamento para uma síntese direta.
+- **Atribuição de Sinal (`<=`):** A forma básica de atribuir valor a um sinal, sempre com um atraso de $1\Delta$ em relação à sua avaliação.
+- **`WHEN ELSE` (Atribuição Condicional):** Permite a transferência condicional de um sinal com prioridade: a primeira condição verdadeira na lista define o valor do sinal.
+- **`WITH SELECT` (Atribuição Selecionada):** Transfere um valor a um sinal com base em uma expressão de escolha. As condições devem ser mutuamente exclusivas e todas as possibilidades devem ser cobertas.
 
-Motivos da limitação:
+**Comandos Sequenciais**
 
-- Falta de correspondência entre: construção x circuito real. A construção do código pode ser simulada, porém não pode ser montado por não haver o correspondende componente real.
-- Impossibilidade de síntese direta. Uma multiplicação de dois números reais, por exemplo, pode ser simulada, porém a complexidade do circuito é alta o suficiente para não poder ser montado, sintetizado.
+Estes comandos são usados dentro de processos ou subprogramas:
 
+- **Atribuição de Variável (`:=`):** O valor é assumido imediatamente.
+- **`IF ELSE`:** Permite a execução condicional de comandos com prioridade definida pela ordem das cláusulas (`IF`, `ELSIF`, `ELSE`).
+- **`CASE WHEN`:** Permite a execução condicional de comandos baseada no valor de uma expressão de escolha. As condições devem ser mutuamente exclusivas e todas as condições devem ser cobertas, sendo ideal para máquinas de estados.
+- **`WAIT`:** Suspende a execução de um processo ou procedimento, podendo ser condicionado por eventos em sinais (`WAIT ON`), expressões booleanas (`WAIT UNTIL`), ou tempo (`WAIT FOR`).
+- **`NULL`:** Não realiza nenhuma operação; útil em construções `CASE WHEN` para cobrir condições sem ação necessária, ou para manter o valor anterior em registradores.
 
-**Síntese da descrição**
+**Outras Estruturas de Controle**
 
+- **`GENERATE`:** Repete comandos concorrentes (`FOR` ou `IF`), crucial para a criação automática de circuitos regulares (como somadores celulares).
+- **`LOOP`:** Repete comandos sequenciais (`FOR` ou `WHILE`), usado em rotinas de conversão e geração de vetores de teste. Pode ser controlado por comandos `NEXT` e `EXIT`.
 
-1. Elaboração da descrição e compilação.
+---
 
-2. A mesma descrição é interpretada por uma ferramenta de síntese que infere as estruturas necessárias para um circuito que corresponda à descrição.
+**V. Conceitos Avançados**
 
-3. Verificação de erros de sintaxe;
+**Tipos Complexos e Padrões IEEE**
 
-4. Circuito nível RTL (Register Transfer Level): não é associado a nenhuma tecnologia,apenas à lógica digital;
+- **Declaração de Tipos:** O VHDL permite a criação de novos tipos (escalares, enumerados, físicos e compostos), sendo o tipo `RECORD` (registro) e `ARRAY` (vetor, incluindo multidimensional) particularmente úteis.
+- **Vetor com Limites em Aberto (_Unconstrained Array_):** Permite criar tipos de vetores cuja dimensão é definida apenas na declaração do objeto ou na chamada de um subprograma.
+- **Memórias:** Memórias ROM e RAM são implementadas usando vetores compostos por elementos do tipo vetor, o que permite que a ferramenta de síntese infira e utilize blocos de memória dedicados, se disponíveis na tecnologia alvo.
 
-5. Nível de portas: portas lógicas, somadores, comparadores etc. São componentes que existem no seu dispositivo de destino, por exemplo na sua FPGA ou no seu ASIC.
+**Funções de Resolução**
 
-6. Otimização: a depender do seu dispositivo final você pode escolher se quer uma velocidade maior ou uma área menor.
+Para que um sinal seja acionado por múltiplos controladores (como em um barramento), ele deve ser declarado com um tipo que inclua uma **função de resolução**. Esta função é responsável por determinar o valor lógico final do sinal em caso de conflito, com base no nível de força e no valor lógico de cada controlador (vide tipos `STD_LOGIC` do pacote IEEE 1164).
 
-![sintese](img/t02-sintese.png)
+**Teste e Verificação**
 
+O VHDL fornece comandos e estruturas para criar entidades de teste completas:
 
-**Rede de Ligações**
+- **`ASSERT`:** Comando usado para notificar condições ilegais durante a simulação. Se a condição (o requisito correto) for falsa, uma mensagem é exibida, com um nível de gravidade (`FAILURE`, `ERROR`, `WARNING`, `NOTE`).
+- **`REPORT`:** Usado para relatar mensagens durante a simulação (disponível a partir do VHDL-1993).
+- **Comandos Pospostos (`POSTPONED`):** Permitem que a execução de comandos concorrentes (como `ASSERT` ou procedimentos) seja atrasada até que todas as iterações de $\Delta$ no instante atual da simulação tenham terminado, garantindo que a avaliação ocorra apenas com valores estáveis.
 
-O resultado dessa etapa é um arquivo contendo uma rede de ligações de elementos básicos disponíveis na tecnologia do dispositivo empregado. Esse arquivo contendo a rede de ligações é a base de dados para a ferramenta que realiza o posicionamento e a interligação dos componentes, place and route.
+**Configurações**
 
-Uma nova simulação pode ser feita, agora com uma precisão maior, envolvendo os tempos de atraso.
+As configurações gerenciam a hierarquia de um projeto, definindo os elos entre um componente solicitado em uma arquitetura e uma entidade de projeto específica.
 
+- **Especificação de Configuração:** Inserida na declaração da arquitetura.
+- **Declaração de Configuração:** Uma unidade de projeto separada, permitindo que a configuração seja alterada sem recompilar as entidades que utilizam os componentes.
+
+**Bibliotecas e Pacotes**
+
+- **Bibliotecas (`LIBRARY`):** Locais de armazenamento das unidades de projeto compiladas. `WORK` e `STD` são padrão.
+- **Pacotes (`PACKAGE`):** Usados para agrupar constantes, tipos, subprogramas e declarações de componentes, facilitando o reuso do código. O acesso aos itens é feito via cláusula `USE`.
+
+A reusabilidade e modularidade são pilares do VHDL, permitindo a gestão de projetos complexos através da hierarquia (_top-down design_) e do particionamento lógico do código em pacotes e entidades.
 
 ---
 
