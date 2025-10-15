@@ -1,5 +1,5 @@
 ---
-title: Linguagem de Descrição de Hardware - HDL
+title: 01 - Linguagem de Descrição de Hardware - HDL
 icon: fontawesome/solid/language
 author:
  - José W. R. Pereira
@@ -12,7 +12,7 @@ tags:
 
 ---
 
-**I. Introdução e Contexto Histórico do VHDL**
+**1. Introdução e Contexto Histórico do VHDL**
 
 O VHDL (VHSIC Hardware Description Language) é uma Linguagem de Descrição de Hardware (HDL) desenvolvida para descrever o comportamento de circuitos ou sistemas eletrônicos, permitindo que o circuito físico seja implementado a partir dessa descrição. A origem da linguagem remonta ao projeto VHSIC (Very High Speed Integrated Circuits), financiado pelo Departamento de Defesa dos EUA (DARPA) na década de 1980, com o objetivo de criar uma ferramenta padrão para projeto e documentação de circuitos.
 
@@ -26,7 +26,7 @@ Uma motivação chave para o uso do VHDL é sua natureza como um padrão indepen
 
 ---
 
-**II. Aspectos Gerais e Estrutura da Linguagem**
+**2. Aspectos Gerais e Estrutura da Linguagem**
 
 **Concorrência vs. Sequencialidade**
 
@@ -67,7 +67,7 @@ Existem quatro classes de objetos em VHDL:
 
 ---
 
-**III. Aplicações do VHDL e Fluxo de Projeto**
+**3. Aplicações do VHDL e Fluxo de Projeto**
 
 O VHDL não foi concebido originalmente para a síntese de circuitos, mas sim para a descrição e simulação. Contudo, sua aplicação principal no desenvolvimento de hardware digital (ASICs, FPGAs) é a **síntese**.
 
@@ -90,7 +90,7 @@ A hierarquia é construída no VHDL principalmente pela declaração e solicita�
 
 ---
 
-**IV. Comandos e Construções Essenciais**
+**4. Comandos e Construções Essenciais**
 
 **Comandos Concorrentes**
 
@@ -115,7 +115,7 @@ Estes comandos são usados dentro de processos ou subprogramas:
 
 ---
 
-**V. Conceitos Avançados**
+**5. Conceitos Avançados**
 
 **Tipos Complexos e Padrões IEEE**
 

@@ -59,9 +59,11 @@ nav:
               - digitais/fpga/tecnologia/t05-quartus-rtl_viewer.md
               - digitais/fpga/tecnologia/t06-ghdl-gtkwave.md
           - VHDL:
-              - digitais/fpga/vhdl/v01-hdl.md
-              - digitais/fpga/vhdl/v02-vhdl-intro.md
-              - digitais/fpga/vhdl/v03-dff.md
+              - digitais/fpga/vhdl/v01-fundamentos.md
+              - digitais/fpga/vhdl/v02-estrutura.md
+              - digitais/fpga/vhdl/v03-concorrencia.md
+#              - digitais/fpga/vhdl/v02-vhdl-intro.md
+#              - digitais/fpga/vhdl/v03-dff.md
   - Automação Industrial:
       - index_automacao.md
       - Controladores Programáveis:
