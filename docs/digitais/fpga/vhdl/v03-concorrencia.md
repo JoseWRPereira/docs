@@ -47,6 +47,7 @@ A construção `WHEN ELSE` define uma transferência condicional que é avaliada
 | ![WhenElse](img/v03-when_else.png) |
 | Fonte: Autor                       |
 
+Segue código genérico de implementação da estrutura da cadeia seletora apresentada na Figura 1. Note que o tipo das entradas e saída devem ser os mesmos, inclusive sua dimensão, se forem declarados do tipo `bit_vector`. A variável de seleção não precisam ser do mesmo tipo ou dimensão das entradas e saída. 
 
 ```vhdl title="When Else"
 entity sel is
@@ -67,10 +68,13 @@ end architecture;
 
 
 
+A Figura 2 ilustra uma simbologia de implementação de um mux de quatro entradas (D0..D3), duas seleções (S0,S1) e uma saída (Y), que será usado para exemplificar as aplicações da estrutura `when else` e `with select`.
 
-Exemplo de implementação de um mux de quatro entradas (D0..D3), duas seleções (S0,S1) e uma saída (Y). 
+| Figura 2: MUX 4x1                         |
+|:-----------------------------------------:|
+| ![WhenElse](img/v03-when_else_mux4x1.png) |
+| Fonte: Autor                              |
 
-![WhenElse](img/v03-when_else_mux4x1.png)
 
 ```vhdl title="MUX 4x1 com when else"
 entity mux4x1 is 
@@ -83,7 +87,7 @@ end entity mux4x1;
 
 
 architecture main of mux4x1 is 
-signal sel : bit_vector(1 downto 0) := "00";
+    signal sel : bit_vector(1 downto 0) := "00";
 begin
     sel <= S1 & S0; -- Concatenação de bits
 
@@ -93,6 +97,9 @@ begin
             D3;
 end architecture main;
 ```
+
+
+![MUX4x1_when_else](img/v03-mux4x1_when_else.png)
 
 
 
@@ -116,6 +123,8 @@ end entity mux4x1;
 architecture main of mux4x1 is 
     signal sel : bit_vector(1 downto 0) := "00";
 begin
+    sel <= S1 & S0; -- Concatenação de bits
+
     with sel select
         Y   <=      D0 when "00",
                     D1 when "01",
@@ -124,7 +133,7 @@ begin
 end architecture;
 ```
 
-
+![mux4x1_with_select](img/v03-mux4x1_with_select.png)
 
 
 **3.3. Inferência de Elementos de Memória (Latches)**
@@ -165,3 +174,17 @@ A palavra reservada `UNAFFECTED` (`NÃO AFETADO`), válida apenas no VHDL-1993, 
 |Atribuição `<=`|Concorrente|N/A|N/A|Lógica Combinacional Direta|
 
 ---
+
+A Figura 5 apresenta o RTL gerado para cada um dos códigos apresentados anteriormente, usando `WHEN ELSE` em (a) e  `WITH SELECT` em (b).  
+
+| Figura 5: RTL das duas versões de MUX 4x1 |
+|:-----------------------------------------:|
+| ![RTL](img/v03-rtl.png) |
+|Fonte: Autor |
+
+---
+
+**Referências**
+
+1. D'AMORE, Roberto. **VHDL**: descrição e síntese de circuitos digitais. 2. ed. Rio
+de Janeiro: LTC, 2012.

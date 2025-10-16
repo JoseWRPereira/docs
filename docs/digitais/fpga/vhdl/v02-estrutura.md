@@ -229,11 +229,11 @@ ARCHITECTURE exemplo OF std_xa1 IS
 BEGIN
 	x1 <= a OR NOT b;                -- Certo: operador NOT tem precedência mais elevada
 	x2 <= a AND b AND c;             -- Certo: operadores iguais
-	-- x3 <= a AND b OR c;           -- Errado: expressão ambígua x3=(a.b)+c ou x3=a.(b+c) ?
+ -- x3 <= a AND b OR c;              -- Errado: expressão ambígua x3=(a.b)+c ou x3=a.(b+c) ?
 	x3 <= (a AND b) OR c;            -- Certo: empregando parêntesis
-	-- x4 <= a AND b OR c AND d;     -- Errado: expressão ambígua, operadores com mesma precedência
+ -- x4 <= a AND b OR c AND d;        -- Errado: expressão ambígua, operadores com mesma precedência
 	x4 <= (a AND b) OR (c AND d);    -- Certo: x4 = a.b + c.d
-	-- x5 <= a NAND b NAND c;        -- Errado: operadores com negação necessitam parêntesis
+ -- x5 <= a NAND b NAND c;           -- Errado: operadores com negação necessitam parêntesis
 	x5 <= (a NAND b) NAND c;         -- Certo: operador com negação entre parêntesis
 END exemplo;
 ```
@@ -292,8 +292,48 @@ A Figura 1 ilustra o uso de alguns dos elementos apresentados, como a estrutura 
 | Fonte: Autor                                      |
 
 ---
+**Exercícios**
+
+1) Escreva o código em VHDL para uma entidade que apresenta quatro entradas ($a,b,c,d$) e quatro saídas ($x,y,z,w$), sendo todas elas do tipo `bit`. As expressões que relacional as entradas com as saídas são as seguintes: 
+
+ - $x = a + \overline{b}$
+ - $y = a + b.\overline{c} + d$
+ - $z = (a + \overline{b}).(c + \overline{d})$
+ - $w = (a + \overline{b}) + \overline{(c + a.d)}$
+
+
+---
+
+2) Considerando a seguinte descrição:
+
+```vhdl
+ENTITY ex2 IS
+	PORT(
+			a, b: OUT BIT_VECTOR(2 DOWNTO 0);
+			c, d: OUT BIT_VECTOR(0 TO 2)
+		);
+END ENTITY;
+
+ARCHITECTURE teste OF ex2 IS
+	CONSTANT x: BIT_VECTOR(0 TO 7) := B"11011001";
+	SIGNAL	 y: BIT_VECTOR(3 DOWNTO 0);
+BEGIN
+	a <= x(1 TO 3);
+	b <= y(3 DOWNTO 1);
+	c <= x(5 DOWNTO 7);
+	d <= x(2 DOWNTO 0);
+	y <= x(2 TO 5);
+END ARCHITECTURE;
+```
+
+Determine, sem auxílio de um simulador, qual é o valor de cada porta de saída. Note que todos os comandos são concorrentes, e, portanto, a ordem das linhas do código não importa. 
+
+---
+
+
+---
 
 **Referências**
 
-1. D'AMORE, Roberto. VHDL: descrição e síntese de circuitos digitais. 2. ed. Rio
+1. D'AMORE, Roberto. **VHDL**: descrição e síntese de circuitos digitais. 2. ed. Rio
 de Janeiro: LTC, 2012.
