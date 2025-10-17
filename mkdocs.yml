@@ -21,6 +21,8 @@ nav:
                   - ifsp-slt/redes/lab06.md
               - CLPR:
                   - ifsp-slt/sltclpr.md
+              - SAUT:
+                  - ifsp-slt/saut/lista1.md
   - Sistemas Digitais:
       - index_digitais.md
       - Microcontroladores:

@@ -9,8 +9,7 @@ tags:
  - VHDL
 ---
 
-# Lista de Exercícios - flip-flop D
-
+# Lista 2 - Flip-flop D - [Form](https://forms.gle/z82SUEugsUKrKfA56)
 
 
 ---
