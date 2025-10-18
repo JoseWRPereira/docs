@@ -65,8 +65,8 @@ nav:
               - digitais/fpga/vhdl/v02-estrutura.md
               - digitais/fpga/vhdl/v03-concorrencia.md
               - digitais/fpga/vhdl/v04-sequencial.md
+              - digitais/fpga/vhdl/v04_1-dff.md
 #              - digitais/fpga/vhdl/v02-vhdl-intro.md
-#              - digitais/fpga/vhdl/v03-dff.md
   - Automação Industrial:
       - index_automacao.md
       - Controladores Programáveis:

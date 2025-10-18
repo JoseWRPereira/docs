@@ -1,5 +1,5 @@
 ---
-title: Latch RS e D / Flip-flop D
+title: 04.1 - Latch RS e D / Flip-flop D
 icon: fontawesome/solid/d
 author:
  - José W. R. Pereira
@@ -32,7 +32,7 @@ O Latch Set-Reset é o mais simples e não possui sinal de clock como os demais.
 
 | Figura 1: Latch Set-Reset       |
 |:-------------------------------:|
-| ![latchSR](img/v03-latchSR.png) |
+| ![latchSR](img/v04_1-latchSR.png) |
 | Fonte: Autor                    |
 
 
@@ -49,7 +49,7 @@ begin
 end architecture;
 ```
 
-![latchSR-wave](img/v03-latchSR-wave.png)
+![latchSR-wave](img/v04_1-latchSR-wave.png)
 
 
 ---
@@ -65,7 +65,7 @@ A saída do latch tipo D é atualizado com o valor da entrada D quando a entrada
 
 | Figura 2: Latch tipo D          |
 |:-------------------------------:|
-| ![latchD](img/v03-latchD.png)   |
+| ![latchD](img/v04_1-latchD.png)   |
 | Fonte: Autor                    |
 
 
@@ -85,7 +85,7 @@ begin
 	
 end architecture;
 ```
-![latchD-wave](img/v03-latchD-wave.png)
+![latchD-wave](img/v04_1-latchD-wave.png)
 
 
 ---
@@ -98,7 +98,7 @@ A Figura 3 apresenta o diagrama de um flip-flop tipo D com atualização pela bo
 
 | Figura 3: Flip-flop tipo D com clock em borda de subida |
 |:-------------------------------:|
-| ![dff-rising](img/v03-dff_rising.png) |
+| ![dff-rising](img/v04_1-dff_rising.png) |
 | Fonte: Autor                    |
 
 
@@ -120,7 +120,7 @@ begin
 	
 end architecture;
 ```
-![Dff-wave](img/v03-dff-wave.png)
+![Dff-wave](img/v04_1-dff-wave.png)
 
 
 
@@ -129,7 +129,7 @@ A Figura 4 apresenta o diagrama de um flip-flop tipo D com atualização pela bo
 
 | Figura 4: Flip-flop tipo D com clock em borda de descida |
 |:-------------------------------:|
-| ![dff-falling](img/v03-dff_falling.png) |
+| ![dff-falling](img/v04_1-dff_falling.png) |
 | Fonte: Autor                    |
 
 
