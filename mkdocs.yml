@@ -66,6 +66,7 @@ nav:
               - digitais/fpga/vhdl/v03-concorrencia.md
               - digitais/fpga/vhdl/v04-sequencial.md
               - digitais/fpga/vhdl/v04_1-dff.md
+              - digitais/fpga/vhdl/v05-atraso_atributos.md
 #              - digitais/fpga/vhdl/v02-vhdl-intro.md
   - Automação Industrial:
       - index_automacao.md
