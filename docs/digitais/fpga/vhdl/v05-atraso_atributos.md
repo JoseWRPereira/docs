@@ -188,6 +188,54 @@ end architecture;
 | Fonte: Autor                                    |
 
 
+A instrução `wait for 100 ns;` não tem suporte em ferramentas de síntese, apenas em ferramentas de simulação, dessa forma, para executar o teste da diferença entre `signal` e `variable`, esse comando foi substituído por `wait until clk'event;`, que é sintetizável na detecção do evento bordas de um sinal de *clock* (`clk`), incluído na interface e gerando sinal de sincronismo no teste de bancada (*testbench*).
+
+```vhdl title='Diferença no uso de signal e variable'
+entity vars is
+    port(   clk: in bit;
+            y0, y1: out integer );
+end entity;
+
+architecture main of vars is
+    signal z0 : integer := 0;
+begin
+    sig: process
+    begin
+        z0 <= z0 + 1;
+        y0 <= z0;
+        wait until (clk'event and clk='1');
+    end process;
+
+    var: process
+    variable z1 : integer := 0;
+    begin
+        z1 := z1 + 1;
+        y1 <= z1;
+        wait until (clk'event and clk='1');
+    end process;
+end architecture;
+```
+
+```vhdl title='testbench'
+entity tb is
+end entity;
+
+architecture testbench of tb is
+    signal tb_y0: integer;
+    signal tb_y1: integer;
+     signal ck: bit;
+begin
+    VRS: entity work.vars(main) port map(y0=>tb_y0,y1=>tb_y1, clk=>ck);
+
+     ck <= not ck after 50 ns;
+end architecture;
+```
+
+| Figura 7: Diferença entre `signal` e `variable` no Questa |
+|:---------------------------------------------------------:|
+| ![SignalVarQuesta](img/v05-signal_var_questa.png) |
+| Fonte: Autor |
+
 ---
 
 **3. Atributos (Attributes)**
@@ -201,6 +249,52 @@ Três termos descrevem a condição de um sinal durante um ciclo de simulação:
 - **Active:** É atribuído um novo valor a um sinal, mesmo que esse valor seja idêntico ao anterior (atribuição ativa).
 - **Quiet:** O sinal não é ativo no ciclo atual da simulação.
 - **Event:** Representa uma mudança no valor que o sinal irá assumir.
+
+```vhdl title='Entidade superior de teste de atributos'
+entity atributos is
+	port(a,b: in bit; z: out bit);
+end entity;
+
+architecture main of atributos is
+begin	
+	z <= a xor b;
+end architecture;
+```
+
+```vhdl title='testbench'
+entity tb is
+end entity;
+
+architecture testbench of tb is
+	signal x0, x1: bit;
+	signal y0: bit;
+	signal ativo: bit;
+	signal quieto: bit;
+	signal evento: bit;
+begin
+	ATRIB: entity work.atributos(main) port map(a=>x0,b=>x1,z=>y0);
+
+	x0 <= not x0 after 100 ns;
+	x1 <= not x1 after 200 ns;
+	
+	ATIV: process(x0, x1,ativo,quieto,evento)
+	begin
+		if x0'active then	ativo <= '1'; 	else	ativo <= '0'; 	end if;
+		
+		if x0'quiet then 	quieto <= '1';	else 	quieto <= '0';	end if;
+		
+		if x0'event then 	evento <= '1'; else 	evento <= '0'; end if;
+			
+	end process;
+	
+end architecture;
+```
+
+| Figura : Simulação de sinais de atributos: `active`, `quiet` e `event` |
+|:----------------------------------------------------------------------:|
+| ![Active_Quiet_Event](img/v05-atrib_act_qt_ev.png) |
+| Fonte: Autor |
+
 
 **3.2 Atributos Predefinidos**
 
