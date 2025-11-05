@@ -105,6 +105,8 @@ nav:
       - Sistemas Supervisórios:
           - SCADA:
               - automacao/scada/tecnologia/01-conceito.md
+              - automacao/scada/tecnologia/02-scada_br.md
+              - automacao/scada/tecnologia/03-scada_br_lab.md
       - Pneumática:
           - Simulação:
               - automacao/pneumatica/fluidsim/01-simulacao.md
