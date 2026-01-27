@@ -127,14 +127,15 @@ nav:
           - Análise de Dados:
               - dados/ad/ad00-analise_de_dados.md
               - dados/ad/ad01-ambiente_desen.md
-          - Machine Learning:
-              - dados/ml/ml01-ia_ml_dl.md
               - dados/ml/ml02-ml.md
               - dados/ml/ml03-matriz_confusao.md
               - dados/ml/ml04-knn.md
               - dados/ml/ml05-regressao_linear.md
               - dados/ml/ml06-k_means.md
               - dados/ml/ml07-rede_neural.md
+          - Machine Learning:
+              - dados/ml/ml01-ia_ml_dl.md
+              - dados/ml/ml02-intro.md
   #              - dados/ml/ml08-fuzzy.md
   - Indicações:
       - indicacoes.md
