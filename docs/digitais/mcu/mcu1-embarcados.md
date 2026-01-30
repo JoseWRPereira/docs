@@ -9,11 +9,12 @@ tags:
     - AVR
 ---
 
+#
 
 ![capa](img/mcu01-mcu_capa.png)
 
 
-# [Aula 01 - Sistemas embarcados](slides/Aula01-SistemasEmbarcados.pdf)
+# [Sistemas embarcados](slides/Aula01-SistemasEmbarcados.pdf)
 
 A terceira revolução industrial, que ocorreu após o fim da Segunda Guerra Mundial, produzida pelo desenvolvimento e utilização em larga escala da microeletrônica, possibilitou a construção dos primeiros computadores, ainda de grande porte, que evoluíram para os microcomputadores, que logo foram ligados em rede. Em seguida vieram os computadores portáteis, alcançando o que chamamos smartphones, mas que erroneamente ainda chamamos de celulares. 
 
@@ -70,93 +71,143 @@ Um sistema embarcado basicamente é composto por um processador, microcontrolado
 
 A área de sistemas embarcados apresentam grandes desafios relacionados à mão de obra, desenvolvimento de projetos e concorrência. Um projeto de sistema embarcado é composto de um *hardware* com seus aspectos de eletrônica, invólucro ou carcaça e a sua estética afetando a experiência do usuário, firmware com sua infraestrutura, características de aplicação e usabilidade e ainda a sua documentação com regulamentos e normas a serem seguidas. Com tudo isso, faz-se necessário que o profissional possua um conhecimento plural das tecnologias e do negócio envolvidos no projeto. 
 
-Como é o mercado de trabalho para profissionais desta área? Para ilustrar tal questão o portal [Embarcados](https://embarcados.com.br/), que traz informações sobre esta área no Brasil, faz pesquisas de mercado com o seu público brasileiro. Seguem os resumos da [Pesquisa sobre o mercado brasileiro de sistemas embarcados e IoT 2023](https://embarcados.com.br/relatorio-da-pesquisa-sobre-o-mercado-brasileiro-de-sistemas-embarcados-e-iot-2023/).
+Como é o mercado de trabalho para profissionais desta área? Para ilustrar tal questão o portal [Embarcados](https://embarcados.com.br/), que traz informações sobre esta área no Brasil, faz [pesquisas](https://embarcados.com.br/pesquisas/) de mercado com o seu público brasileiro. 
 
 
-**Perfil dos profissionais de Sistema Embarcados e IoT**
+# Perfil dos profissionais de Sistema Embarcados e IoT
 
-- O Mercado permanece com domínio dos homens (95,79%).
-- 66,84% são formados em Engenharia.
-- 55,61% são desenvolvedores/engenheiros.
-- Predominantemente, quem desenvolve na área frequentou a universidade. 81,57% dos desenvolvedores contam com Superior completo ou Pós-graduação completa/incompleta.
-- 69,64% possuem 31 anos ou mais.
-- 53,51% possuem 5 anos ou mais de experiência na área.
+Com base nos relatórios de **2021, 2023 e 2025**, da pesquisa de perfil profissinal em sistemas embarcados e iot, realizada pelo portal embarcados, é possível observar a evolução do mercado brasileiro de sistemas embarcados em diversas categorias. Abaixo, as tabelas detalham essa progressão:
 
+## **1. Perfil Demográfico e Acadêmico**
+O perfil dos profissionais mostra uma **estabilidade no domínio masculino** e um aumento contínuo no **nível de escolaridade**, com destaque para a pós-graduação.
 
+| Categoria | Pesquisa 2021 | Pesquisa 2023 | Pesquisa 2025 |
+| :--- | :---: | :---: | :---: |
+| **Gênero (Masculino)** | 95,84% | 95,79% | **94,9%** |
+| **Pós-graduação (Concluída)** | 36,74% | 39,47% | **41,99%** |
+| **Formação em Engenharia** (Elétrica/Comp.) | 67,24%  | 66,84% | **67,98%** |
 
-**Perfil dos profissionais de Sistema Embarcados e IoT**
+## **2. Carreira e Modalidade de Trabalho**
+Nota-se um **declínio no interesse em trabalhar para empresas no exterior** e uma retomada gradual, porém constante, do **trabalho presencial** ao longo dos anos.
 
-- Um número menor de desenvolvedores brasileiros, se comparado a pesquisa de mercado de 2021, declarou seu interesse em trabalhar fora do Brasil, em uma empresa do exterior, nos próximos anos (Em 2023: 38,60% contra 45,06%, em 2021).
-- A maioria está localizada hoje no Sudeste (57,99%), em São Paulo (46,52%), exerce a modalidade CLT (56,56%) e trabalha em empresa entre 11 e 99 colaboradores (26,84%).
-- Mesmo após a pandemia de Covid-19, atualmente, em maio de 2023, 47,75% declararam trabalhar de forma presencial, 36,48% declararam trabalhar parte remoto, parte de forma presencial e 15,78% declararam trabalhar de forma remota.
-- 41,18% dos que responderam à pesquisa afirmaram receber mais de R$ 9.001,00 de salário mensal.
-- A pesquisa mostra que o profissional de Sistemas Embarcados e IoT exerce diversas atividades na empresa. Desenvolvimento e depuração de firmware/software para sistemas embarcados foram as duas atividades mais citadas.
+| Pergunta / Opção | Pesquisa 2021 | Pesquisa 2023 | Pesquisa 2025 |
+| :--- | :---: | :---: | :---: |
+| **Pretende trabalhar no exterior? (Sim)** | 45,06% | 38,60% | **32,0%** |
+| **Modalidade Presencial** | 43,52% | 47,75% | **51,4%** |
+| **Modalidade Híbrida** | 40,98% | 36,48% | **34,7%** |
+| **Modalidade Remota** | 15,50% | 15,78% | **13,8%** |
 
+## **3. Tecnologias e Ferramentas de Software**
+A **linguagem C** e a ferramenta **Visual Studio Code** consolidaram seu crescimento e liderança absoluta no setor de desenvolvimento.
 
-
-**Ferramentas para Sistema Embarcados e IoT**
-
-- IoT (46,95%) e Sistemas Industriais, incluindo automação e controle industrial (40,21%) são as principais áreas de aplicação que são desenvolvidas atualmente.
-- Comunicação sem fio (76%), alimentação por bateria (57,26%) e Capacidade de Tempo Real (52,63%) são os recursos mais utilizados em projetos de sistemas embarcados.
-- A principal comunicação sem fio utilizada atualmente é Wi-Fi (58,74%), seguido por Celular 3G/4G (40,84%), Bluetooth LE/Smart (39,16%) e Lora (33,26%).
-- Observa-se que há um crescimento considerável em uso de tecnologias com Celular 3G/4G e as aplicações com 5G ainda são discretas (13,05%).
-- A maioria dos projetos de hardware são desenvolvidos pela própria empresa que o profissional trabalha (75,27%).
--  Kits com ESP8266/ESP32 (55,58%) são as ferramentas de prototipação rápida preferida pelos profissionais, seguido de Kits de desenvolvimento fornecidos pelos fabricantes do processador ou módulo (48,58%), Arduino e suas variações (47,05%) e Raspberry Pi (39,17%). No entanto, a maioria não incorpora kits ou placas de prototipação em seus produtos (53,39%).
-- O framework mais utilizado para prototipagem de hardware é o Arduino (47,92%).
--  Dentre as ferramentas mais importantes para o desenvolvimento de projetos, Osciloscópio (78,77%), IDE (76,81%), Compilador (66,30%) e Debugger (58,42%) foram as opções mais citadas.
--  Multisim (14,22%) surge empatado com Proteus (14,22%), além de Matlab/Simulink (13,79%) foram as ferramentas de simulação mais citadas para desenvolvimento de hardware.
-- As três marcas de instrumentos da fonte de bancada dos profissionais foram: Minipa (60,61%), Hikari (56,67%) e Keysight (31,95%).
-
+| Tecnologia / Ferramenta | Pesquisa 2021 | Pesquisa 2023 | Pesquisa 2025 |
+| :--- | :---: | :---: | :---: |
+| **Linguagem C (Prioritária)** | 74,72% | 77,78% | **80,45%** |
+| **Linguagem C++ (Padrão)** | 45,79% | 50,44% | **53,01%** |
+| **Visual Studio Code (Codificação)** | 58,50% | 70,24% | **79,26%** |
+| **Git (Controle de Versão)** | 73,02% | 73,74% | **76,30%** |
 
 
-**Software em Sistema Embarcados e IoT**
+Outras linguagens e tecnologias de codificação citadas ao longo dos anos incluem:
 
-- Visual Studio Code (70,24%) é a principal ferramenta de codificação e Git é o sistema de controle de versão preferido (73,74%) entre os profissionais brasileiros que responderam à pesquisa 2023.
-- Os principais gerenciadores de projetos citados na pesquisa são: Microsoft Excel (37,20%), Jira (30,85%) e Microsoft Teams (28,01%).
-- A linguagem C predomina sobre as outras linguagens, citada por 77,78% dos profissionais, seguida por C++ (50,44%) e Python (24,44%).
-- O RTOS embarcado mais popular, embarcado nos projetos atuais, é o Amazon FreeRTOS (32,22%), seguido pelo Zephyr Project (7,56%) e Nuttx (5,78%). No entanto, muitos profissionais (40,89%) declararam não utilizar nenhum RTOS em seus sistemas embarcados atuais.
+- **C# e .NET**: Em 2025, o C# foi utilizado por 9,02% dos respondentes e o ecossistema .NET por 4,51%
+- **JavaScript e Java**: Ambas mantêm uma fatia constante de usuários, com o JavaScript apresentando 7,52% e o Java 4,89% no levantamento de 2025
+- **Assembly**: Esta linguagem de baixo nível apresentou uma queda gradual, saindo de 6,00% em 2023 para 3,01% em 2025
+- **Rust**: Focada em segurança de memória, a linguagem Rust começou a aparecer nos relatórios, alcançando 3,38% de utilização em 2025
+- Frameworks e Variantes: O uso de **Qt com C++** (6,77%), **MicroPython** (4,14%) e **Wiring** (**Arduino**) (3,76%) também é reportado como parte das ferramentas de programação atuais
 
-
-
-**Processadores em projetos de Sistemas Embarcados e IoT**
-
-- Decisão via Departamento de Pesquisa e Desenvolvimento (54.33%) é a forma mais citada como sendo uma das maiores influências na escolha do microcontrolador/microprocessador de um projeto atual. A decisão vem principalmente por decisão em grupo entre engenheiros para 58,26% dos que responderam.
-- As duas razões mais citadas para a troca do microcontrolador/microprocessador do projeto atual são: o novo dispositivo escolhido pela equipe possui recursos melhores ou novos periféricos (59,63%) e o preço do microcontrolador pesa na hora da decisão de realizar a troca (56,65%).
-- Na hora da escolha de um microcontrolador/microprocessador, os fatores mais citados foram o custo do chip (62,39%) e a disponibilidade de ferramentas de desenvolvimento de software (56,42%).
-- A maioria (69,95%) dos profissionais afirmaram que o microcontrolador/microprocessador de 32-bits são os mais utilizados nos projetos atuais. Em relação aos projetos futuros há uma pequena tendência a migração para microprocessador de 64-bits. (34,63% afirmaram que acreditam que utilizarão tecnologia 64-bits em seus próximos projetos). No entanto, 72,94% afirmam que não atualizaram o micro nos últimos 12 meses.
+Além dessas linguagens de alto nível, os projetos também envolvem linguagens de descrição de hardware, como **VHDL** e **Verilog**, embora em menor escala.
 
 
 
-**Processadores, CPLDs, ASICs e FPGAs em projetos de Sistemas Embarcados e IoT**
+## **4. Tipos de Processadores Utilizados (Bits)**
+O mercado brasileiro apresenta uma migração contínua para dispositivos de maior capacidade de processamento, com os microcontroladores de **32 bits** atingindo seu maior patamar em 2025.
 
-- As empresas fabricantes de microcontroladores/microprocessadores mais citadas na pesquisa, pois seus chips estão sendo utilizados nos projetos de sistemas embarcados atuais, são: Espressif (47,94%), seguido por ST (46,33%) e Microchip/Atmel (41,74%). Para projetos futuros, os profissionais responderam que usarão: ST (48,17%), Espressif (45,41%) e Microchip (30,73%). Houve um grande crescimento da Espressif em ambas as respostas.
-- 20,37% dos profissionais afirmaram que seus projetos utilizam FPGA, CLPD ou ASIC. Há uma tendência de baixa, já que para os próximos projetos há uma expectativa de 18,52% dos profissionais que haverá o uso de FPGA, CPLD ou ASIC. 
-- Intel/Altera (14,12%) e XILINX (9,26%) são as empresa mais citadas quando perguntado a respeito de quais fornecedores de FPGA/CPLD/ASIC os profissionais estão considerando usar no próximo projeto. No entanto, muitos profissionais ainda não decidiram (15,05%). A participação da Intel cresceu, se comparada com a pesquisa de mercado de 2021.
+| Tipo de Processador | Pesquisa 2021 | Pesquisa 2023 | Pesquisa 2025 |
+| :--- | :---: | :---: | :---: |
+| **Microcontrolador 32 bits** | 65,57%* | 69,95% | **76,77%** |
+| **Microcontrolador 8 bits** | 11,01% | 37,39% | **27,95%** |
+| **Microprocessador 32 bits** | - | 30,05% | **26,77%** |
+| **Microprocessador 64 bits** | 8,20% | 24,31% | **24,80%** |
+
+*\*Em 2021, o dado de 32 bits englobava microcontroladores e microprocessadores na mesma categoria de destaque.*
+
+### **5. Principais Fabricantes (Uso Atual)**
+A **STMicroelectronics** retomou a liderança absoluta em 2025, enquanto a **Espressif** manteve um crescimento constante desde 2021, consolidando-se como uma das favoritas devido ao foco em IoT.
+
+| Fabricante | Pesquisa 2021 | Pesquisa 2023 | Pesquisa 2025 |
+| :--- | :---: | :---: | :---: |
+| **STMicroelectronics** | 47,78% | 46,33% | **58,27%** |
+| **Espressif** | 41,45% | 47,94% | **50,79%** |
+| **Microchip / Atmel** | **44,73%** | 41,74% | 29,53% |
+| **NXP** | 26,00% | **26,61%** | 21,65% |
+| **Texas Instruments** | 22,95% | **23,17%** | 20,08% |
+
+### **6. Arquiteturas de Preferência para Projetos Futuros**
+A arquitetura **ARM** permanece dominante, mas o interesse por **RISC-V** apresentou um salto significativo, quase dobrando sua relevância entre 2023 e 2025.
+
+| Arquitetura | Pesquisa 2023 | Pesquisa 2025 |
+| :--- | :---: | :---: |
+| **ARM** | 77,06% | **80,71%** |
+| **RISC-V** | 27,29% | **38,98%** |
+| **Xtensa** | - | **21,26%** |
+| **Proprietária (AVR, PIC, etc)** | **31,88%** | 16,54% |
+
+### **7. Fatores Decisivos na Escolha do Chip**
+O **custo** continua sendo o fator primordial para os engenheiros brasileiros, seguido de perto pela disponibilidade de ecossistema de software.
+
+| Fator de Escolha | Pesquisa 2021 | Pesquisa 2023 | Pesquisa 2025 |
+| :--- | :---: | :---: | :---: |
+| **Custo do Chip** | 65,11% | 62,39% | **67,32%** |
+| **Disp. Ferramentas Software** | **59,48%** | 56,42% | 54,33% |
+| **Popularidade / Comunidade** | **50,59%** | **47,02%** | 45,28% |
+| **Desempenho do Chip** | 43,56% | **44,04%** | 42,13% |
+
+*   **Razão para Troca:** A principal motivação para mudar de microcontrolador em um projeto é a busca por **melhores recursos e novos periféricos** (58,66% em 2025), superando a pressão por preço.
+*   **Migração para 64 bits:** Embora os 32 bits dominem, há uma tendência de migração para **64 bits** em projetos futuros, citada por 34,25% dos profissionais em 2025.
+*   **Hardware Próprio:** O desenvolvimento de hardware nacional segue forte, com **78,52% das empresas** optando por desenvolver seus próprios projetos em vez de terceirizar, o que influencia diretamente na escolha técnica dos componentes.
 
 
+## **8. Hardware e Internet das Coisas (IoT)**
+No desenvolvimento de hardware, a preferência por **projetos próprios** aumentou, enquanto o uso de plataformas de nuvem como a **Amazon AWS** apresentou oscilações, mas manteve a liderança.
 
-**Como as empresas estão desenvolvendo seus produtos IoT**
-
-- Conectividade, Segurança e Preço Final da solução, nesta ordem, foram as três principais preocupações relatadas pelos profissionais durante a pesquisa, em relação à implementação de IoT.
-- A maioria (60,38%) não usa terceiros para projetos IoT e desenvolve dispositivos/sensores (54,25%).
-- Os principais motivos pelos quais as empresas desenvolvem soluções IoT são para atender uma necessidade de mercado (55,66%) e para inovar (50,94%).
-- Inteligência de Negócios e Análise de Dados foi citado por 52,12% dos profissionais, sobre o questionamento de onde as empresas obteriam maior valor com os dados em IoT.
-- MQTT (48,11%), 3G/4G (37,97%), Bluetooth (35,38%), e Lora (31,13%) foram as principais respostas quando perguntado sobre como seria composta a Stack do dispositivo (ou Gateway) IoT.
-- Amazon AWS se mantém como escolha #1 em Nuvem IoT utilizada em projetos IoT (Cresceu de 29,67% na pesquisa 2021 para 35,38% neste levantamento).
+| Categoria | Pesquisa 2021 | Pesquisa 2023 | Pesquisa 2025 |
+| :--- | :---: | :---: | :---: |
+| **Desenvolve Hardware Próprio** | 75,74% | 75,27% | **78,52%** |
+| **Nuvem IoT: Amazon AWS** | 29,67% | **35,38%** | 29,84% |
+| **Uso de RTOS (Nenhum)** | **46,92%** | 40,89% | 37,97% |
+| **Principal Protocolo: MQTT** | 40,91% | 48,11% | **50,81%** |
 
 
+## **9. Comparativo das Principais Faixas Salariais (R$)**
 
-**Referências e complementos**
+| Faixa Salarial (Mensal) | Pesquisa 2021 | Pesquisa 2023 | Pesquisa 2025 |
+| :--- | :---: | :---: | :---: |
+| **Até R$ 3.000** | **12,53%** | 10,66% | 4,96% |
+| **R$ 3.001 a R$ 6.000** | **22,29%** | 19,06% | 17,02% |
+| **R$ 6.001 a R$ 9.000** | **20,81%** | 19,06% | 18,44% |
+| **R$ 9.001 a R$ 12.000** | 15,07% | **20,29%** | 17,38% |
+| **R$ 12.001 a R$ 15.000**| 9,98% | 8,61% | **11,35%** |
+| **R$ 15.001 a R$ 18.000**| 3,82% | 4,71% | **7,80%** |
 
-1. [Luiz Bitencourt - Projetos de sistemas embarcados: Uma rápida discussão](https://youtu.be/a4Dp11lupMk?si=-PxlMLHoaTTqyhnG)
-2. [Código Fonte TV - Sistemas Embarcados (Embedded Systems) // Dicionário do Programador](https://youtu.be/XppU8kKpa6I?si=FD160Zz98GxOjtZF)
-3. [Código Fonte TV - Conhecimentos necessários para trabalhar com sistemas embarcados](https://youtu.be/W0hzWoLHZ5k?si=VpPoSw16wqpc5bvA)
-4. [UniVESP - Eletrônica Embarcada - Aula 01 - Introdução aos Sistemas Embarcados Eletrônica Embarcada em Veículos](https://youtu.be/ElIMxXcFkGQ?si=ESfqJPKiZ7ubXIrt)
-5. [Dobra Espacial - Como o computador da Apollo funcionava?](https://youtu.be/ge6zfKaMfAQ?si=_n7vtLODE14b4XIC)
-6. [Apollo Guidance Computer (AGC) Code - Github](https://github.com/chrislgarry/Apollo-11)
-7. [Coding with Dee - This is the code that sent Apollo 11 to the moon (and it’s awesome)](https://youtu.be/XHN6LV_1dWk?si=zQDcLbEC47ON3oxW)
-8. [Apollo Guidance And Navigation - A Problem in Man and Machine Integration - David G. Hoag - MIT](https://ntrs.nasa.gov/api/citations/19720063753/downloads/19720063753.pdf)
-9. [Rodrigo Maximiano Antunes de Almeida - 01 - Sistemas embarcados e Linguagem C](https://www.youtube.com/live/azv20pt6fCM?si=u3_6EL-LUr1mEigd)
+
+---
+
+# Referências e complementos
+
+1. **EMBARCADOS. Pesquisa sobre o Mercado Brasileiro de Sistemas Embarcados e IoT 2021.** [S. l.]: Embarcados, 2021. Disponível em: https://embarcados.com.br/relatorio-da-pesquisa-sobre-o-mercado-brasileiro-de-sistemas-embarcados-e-iot-2021/
+2. **EMBARCADOS. Pesquisa sobre o Mercado Brasileiro de Sistemas Embarcados e IoT 2023.** [S. l.]: Embarcados, 2023. Disponível em: https://embarcados.com.br/relatorio-da-pesquisa-sobre-o-mercado-brasileiro-de-sistemas-embarcados-e-iot-2023/
+3. **EMBARCADOS. Pesquisa sobre o Mercado Brasileiro de Sistemas Embarcados e IoT 2025.** [S. l.]: Embarcados, 2025. Disponível em: https://embarcados.com.br/relatorio-da-pesquisa-sobre-o-mercado-brasileiro-de-sistemas-embarcados-e-iot-2025/
+4. [Luiz Bitencourt - Projetos de sistemas embarcados: Uma rápida discussão](https://youtu.be/a4Dp11lupMk?si=-PxlMLHoaTTqyhnG)
+5. [Código Fonte TV - Sistemas Embarcados (Embedded Systems) // Dicionário do Programador](https://youtu.be/XppU8kKpa6I?si=FD160Zz98GxOjtZF)
+6. [Código Fonte TV - Conhecimentos necessários para trabalhar com sistemas embarcados](https://youtu.be/W0hzWoLHZ5k?si=VpPoSw16wqpc5bvA)
+7. [UniVESP - Eletrônica Embarcada - Aula 01 - Introdução aos Sistemas Embarcados Eletrônica Embarcada em Veículos](https://youtu.be/ElIMxXcFkGQ?si=ESfqJPKiZ7ubXIrt)
+8. [Dobra Espacial - Como o computador da Apollo funcionava?](https://youtu.be/ge6zfKaMfAQ?si=_n7vtLODE14b4XIC)
+9. [Apollo Guidance Computer (AGC) Code - Github](https://github.com/chrislgarry/Apollo-11)
+10. [Coding with Dee - This is the code that sent Apollo 11 to the moon (and it’s awesome)](https://youtu.be/XHN6LV_1dWk?si=zQDcLbEC47ON3oxW)
+11. [Apollo Guidance And Navigation - A Problem in Man and Machine Integration - David G. Hoag - MIT](https://ntrs.nasa.gov/api/citations/19720063753/downloads/19720063753.pdf)
+12. [Rodrigo Maximiano Antunes de Almeida - 01 - Sistemas embarcados e Linguagem C](https://www.youtube.com/live/azv20pt6fCM?si=u3_6EL-LUr1mEigd)
+
 
 
 ---

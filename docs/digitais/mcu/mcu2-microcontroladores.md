@@ -9,12 +9,13 @@ tags:
     - AVR
 ---
 
+#
 
 ![capa](img/mcu01-mcu_capa.png)
 
 ---
 
-# [Aula 02 - Microcontroladores](slides/Aula02-Microcontroladores.pdf)
+# [1. Microcontroladores](slides/Aula02-Microcontroladores.pdf)
 
 Os Microcontroladores são uma derivação dos Microprocessadores que surgiram para uso e 
 aplicações específicas, principalmente em sistemas industriais e mais recentemente 
@@ -52,8 +53,11 @@ Tabela: Comparação entre MPU e MCU
 Fonte: [AWS - Qual é a diferença entre microprocessadores e microcontroladores?](https://aws.amazon.com/pt/compare/the-difference-between-microprocessors-microcontrollers/)
 
 
+---
 
-**Mas como surgiu a ideia do primeiro processador?**
+# 2. Contexto Histórico
+
+## 2.1 Como surgiu a ideia do primeiro processador?
 
 No ano de 1971, Federico Faggin da Intel, respondeu a um pedido de 12 microchips 
 personalizados para uma calculadora do fabricante de eletrônicos japonês Busicom com 
@@ -86,7 +90,7 @@ designer-chefe da Intel para o 8080 os antecessores 4004 e 8008.
 > 
 > [Há 50 anos: celebrando o influente Intel 8080](https://www.intel.com.br/content/www/br/pt/newsroom/news/50-years-ago-the-influential-intel-8080.html)
 
-**Uma nova era**
+## 2.2 Uma nova era
 
 O Intel 8080 abriu as portas de um novo mundo a ser explorado por programadores do 
 mundo inteiro de tecnologias a explorar, o que possibilitou o seu uso não só em 
@@ -114,7 +118,7 @@ desde o icônico 8080.
 
 
 
-**O lendário 8051**
+## 2.3 O lendário 8051
 
 Ainda no começo dos anos 80, a Intel desenvolveu um controlador com tecnologia NMOS, 
 o famoso **8051**, que logo evoluiu para tecnologia CMOS, 
@@ -139,6 +143,7 @@ Em oposição ao modelo CISC, foi desenvolvido em Harvard uma arquitetura que ut
 
 Com o passar do tempo essas tecnologias forma se fundindo, características de uma foram incorporadas à outra e vice-versa. 
 
+## 2.4 AVR
 
 No início dos anos 90 surge um projeto de estudantes noruegueses ganhou muito espaço no mercado com seu controlador com arquitetura baseada em RISC, denominada AVR, que foi adquirida a licença pela Atmel, o maior fabricante de microcontroladores de 8 bits, na época, grande fornecedor de chips 8051, apesar de já ser um projeto aberto e fabricado por diversas outras empresas. 
 
@@ -152,6 +157,7 @@ No ano de 2016, a líder do mercado de semicondutores de 8 bits foi adquirida pe
 | ![AVR_ATMEL_Microchip](img/mcu02-avr_atmel_microchip.png)|
 | Fonte: Próprio autor |
 
+## 2.5 Arduino
 
 Em 2005 na Itália foi desenvolvida a plataforma de prototipagem Arduino, que ganhou a mente e os corações de estudantes, entusiastas e hobbistas no mundo todo, por sua facilidade de uso inclusive e principalmente para leigos, robustez e acesso à informações, simples, objetivas e claras. 
 
@@ -163,45 +169,17 @@ Dentre os diversos modelos de Arduino, o mais comum e popular é o Uno, que util
 | Fonte: Próprio autor |
 
 
+## 2.6 ARM 
+
 Outra grande evolução foi a adoção da arquitetura ARM, que apesar de ser dos anos 80, tornou-se popular tanto em processadores quanto em microcontroladores nos anos 2000. 
 
 A quantidade de microcontroladores hoje é imensa, cada fabricante possui diversas famílias com dezenas ou centenas de modelos, cada um com alguma característica de periférico que pode ser o mais adequado para cada aplicação. O mercado é gigante bem como suas possibilidades, principalmente com a utilização de dispositivos de 32 bits a um preço menor do que os de 8 bits e a implementação de sistemas de comunicação sem fio. 
 
 Assim como há diversos microcontroladores, os fabricantes também investiram no modelo de desenvolvimento amplamente aceito pelo mercado com o Arduino, e disponibiliza placas de desenvolvimento para os desenvolvedores se familiarizarem com os seus dispositivos e poderem utilizar com mais segurança em projetos próprios. 
 
+---
 
-
-**Principais etapas de processamento**
-
-1. **Buscar:** o microprocessador busca instruções na memória do computador. Esse processo pode ser iniciado por entrada automática ou manual.
-2. **Decodificar:** o microprocessador "decodifica" as instruções, interpretando a entrada ou comando em uma solicitação e iniciando um processo ou cálculo específico. 
-3. **Executar:** o microprocessador realiza a operação necessária ou solicitada. 
-4. **Armazenar:** o resultado da execução é armazenado na memória do computador.
-
-
-
-| Figura: Arquiteturas Von Neumann x Harvard |
-|:------------------------------------------:|
-| ![vonNeumann_x_harvard](img/mcu02-vonNeumann_x_Harvard.png)|
-| Fonte: Próprio autor |
-
-
-
-**Arquitetura de microprocessadores**
-
-
-A arquitetura de um microprocessador refere-se a diversas metodologias de design e organização dos vários componentes de CPU do processador. Estes são os principais elementos de arquitetura de um microprocessador:
-
-- **Arquitetura de Conjunto de Instruções (ISA):** a ISA do microprocessador define o conjunto de instruções que o processador pode executar. As ISAs, como as arquiteturas RISC (Computador com Conjunto de Instruções Reduzido) e CISC (Computador com Conjunto de Instruções Complexo), oferecem vários métodos para processamento de dados, com diferentes níveis de desempenho, confiabilidade e velocidade, adequados para diversos tipos de aplicações.
-
-- **Caminho de dados:** o caminho de dados de um microprocessador dita a ordem em que os dados se movem através de seus componentes (barramentos, ULA, registradores), influenciando o desempenho geral.
-
-- **Caminho de controle:** Semelhante ao caminho de dados, o caminho de controle na arquitetura de um microprocessador instrui a sequência de operações e gerencia a transmissão de dados dentro da CPU.
-
-- **Hierarquia de memória:** a hierarquia de memória é um componente crítico da arquitetura do processador, fornecendo uma estrutura para diferentes níveis de memória (cache, registros, [RAM](https://www.ibm.com/br-pt/history/dram)) para otimizar o acesso eficiente aos dados e a velocidade de recuperação.
-
-
-**Tipos de microprocessadores**
+# 3. Tipos de Microprocessadores
 
 Os microprocessadores variam em potência, desempenho, metodologias de arquitetura, tamanho, consumo de energia e muitas outras variáveis e são projetados para todos os tipos de aplicações. Microprocessadores de uso geral são comuns em computadores pessoais e dispositivos móveis, enquanto unidades especializadas de alto desempenho, como Processadores de Sinal Digital (DSPs), são projetadas para tarefas exigentes como processamento de áudio, fala, vídeo e imagem.  
 
@@ -215,7 +193,83 @@ A seguir estão alguns dos principais tipos de microprocessadores.
 - **Processadores de rede**: Um tipo de microprocessador ASIC especificamente otimizado para o processamento de pacotes de dados de rede mais frequentemente utilizados em switches de telecomunicações, roteadores e dispositivos de segurança de rede. 
 - **Coprocessadores**: Os coprocessadores, como as unidades de ponto flutuante (FPUs), são projetados para fornecer suporte auxiliar à CPU principal de um sistema para aumentar o desempenho durante certas tarefas exigentes, como a realização de cálculos científicos avançados ou fórmulas matemáticas complicadas.
 
+---
 
+Um **microcontrolador (MCU)** é essencialmente um "computador em um único chip", que integra em um único encapsulamento a unidade de processamento, memórias e diversos periféricos. Para entender sua estrutura e interações internas, podemos dividir o conceito em três pilares fundamentais:
+# 4. Estrutura e interações
+
+Para entender as estruturas e interações internas, podemos dividir o conceito de microcontrolador em três pilares fundamentais
+
+# 4.1 Arquitetura e Organização de Barramentos
+
+A forma como os componentes internos se comunicam é definida por sua arquitetura de barramentos:
+
+*   **Von Neumann:** Utiliza um **único barramento** para tráfego de dados e instruções, o que simplifica o design, mas pode criar um gargalo de processamento.
+
+*   **Harvard:** Possui **barramentos e memórias fisicamente separados** para dados e instruções, o que permite ao processador buscar uma instrução e acessar dados simultaneamente, aumentando o desempenho através do *pipeline*.
+
+| Figura: Arquiteturas Von Neumann x Harvard |
+|:------------------------------------------:|
+| ![vonNeumann_x_harvard](img/mcu02-vonNeumann_x_Harvard.png)|
+| Fonte: Próprio autor |
+
+
+*   **ISA (Arquitetura de Conjunto de Instruções):** Define as operações que o processador pode executar, sendo as mais comuns a **RISC** (instruções simples e de tamanho fixo, focadas em velocidade) e a **CISC** (instruções complexas que realizam múltiplas operações de uma vez).
+
+| Figura: Arquiteturas internas de microcontroladores |
+|:---------------------------------------------------:|
+| ![arquitetura](img/mcu02-barramentos.png) |
+| Fonte: Datasheet [STM32F103xx](https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.st.com/resource/en/datasheet/stm32f103c8.pdf&ved=2ahUKEwjNzMOW_LOSAxXNALkGHUPoNqcQFnoECAQQAQ&usg=AOvVaw0rd6I_7fuhTLdZOoycvGV5) [AT89C51ED2](https://www.microchip.com/en-us/product/at89c51ed2)|
+
+---
+
+## 4.2 Partes Fundamentais (Estrutura Interna)
+
+Os componentes principais que residem dentro do chip são:
+
+*   **CPU (Unidade Central de Processamento):** É o "cérebro" composto pela **Unidade de Controle (CU)**, que coordena as operações; pela **Unidade Lógica e Aritmética (ALU)**, que realiza cálculos e testes lógicos; e por **Registradores**, que são memórias ultra-rápidas para armazenamento temporário de dados de trabalho.
+
+*   **Memórias Internas:**
+    *   **Flash:** Memória não volátil onde o **firmware** (programa) é armazenado.
+    *   **SRAM:** Memória volátil de acesso rápido para variáveis e dados de execução.
+    *   **EEPROM:** Usada para armazenar dados que precisam ser preservados mesmo sem energia, como configurações.
+
+*   **Periféricos:** Os principais periféricos internos encontrados em microcontroladores modernos, como a família **AVR (ATMega328P)** e **ARM Cortex-M**, incluem:
+    *   **Portas de Entrada e Saída de Uso Geral (GPIO):** São as interfaces mais comuns, permitindo a conexão com dispositivos digitais como botões e LEDs. Elas são organizadas em registradores (como o **DDR**, que define a direção, e o **PORT**, que define o nível lógico) e podem ser multiplexadas com outras funções internas para otimizar o número de pinos do componente.
+    *   **Temporizadores e Contadores (Timers/Counters):** Essenciais para o gerenciamento de tempo, esses módulos permitem contar eventos externos ou gerar intervalos de tempo precisos para interrupções periódicas. Eles também são a base para a geração de sinais **PWM (Modulação por Largura de Pulso)**, fundamentais no controle de potência de motores e intensidade de luz.
+    *   **Conversores de Sinal:** 
+        *   **ADC (Conversor Analógico-Digital):** Traduz grandezas físicas (como temperatura ou luz lidas por sensores analógicos) em valores binários que o processador consegue interpretar.
+        *   **Comparador Analógico:** Compara as tensões em dois pinos de entrada, alterando sua saída digital de acordo com qual sinal é maior, o que é útil para detecção de níveis de tensão e alarmes.
+    *   **Interfaces de Comunicação:** Permitem que o microcontrolador troque dados com outros circuitos ou computadores. As mais comuns são:
+        *   **USART/UART:** Comunicação serial assíncrona, muito utilizada para terminais de depuração e módulos Bluetooth ou RF.
+        *   **SPI (Serial Peripheral Interface):** Protocolo síncrono de alta velocidade, ideal para cartões SD e displays gráficos.
+        *   **I2C ou TWI (Two-Wire Interface):** Barramento de dois fios que permite conectar múltiplos dispositivos de baixa velocidade, como sensores de temperatura e relógios de tempo real (RTC).
+    *   **Módulos de Supervisão e Segurança:**
+      *   **Watchdog Timer (WDT):** Funciona como um "cão de guarda" que reinicializa o sistema automaticamente caso o programa trave devido a erros ou interferências, garantindo a confiabilidade de sistemas críticos.
+      *   **Controlador de Interrupções (como o NVIC no ARM):** Gerencia a prioridade e a execução de tarefas que devem interromper o fluxo normal do programa para responder a eventos imediatos.
+
+    Além desses, dependendo do modelo, podem estar integrados outros periféricos sofisticados como controladores **USB, CAN** (comum em veículos) e até interfaces **Ethernet** para conectividade de rede direta. A integração desses recursos no mesmo silício reduz drasticamente o custo, o tamanho físico das placas de circuito impresso e o consumo de energia, tornando os microcontroladores a escolha ideal para sistemas embarcados e dispositivos de **Internet das Coisas (IoT)**.
+
+    Além disso, muitos microcontroladores modernos também incluem recursos de **segurança**, como **criptografia** e **autenticação**, para proteger dados e garantir a integridade dos sistemas. 
+
+---
+
+## 4.3. Interações Internas: O Ciclo de Operação
+
+As interações ocorrem de forma sincronizada por um sinal de **Clock**, que dita o ritmo das transferências de dados entre a CPU, a memória e os periféricos. O processamento segue quatro etapas principais:
+
+1.  **Buscar (Fetch):** A CPU busca a instrução na memória de programa no endereço apontado pelo **Contador de Programa (PC)**.
+
+2.  **Decodificar (Decode):** A instrução é carregada no **Registrador de Instrução (IR)** e traduzida pela Unidade de Controle em sinais elétricos de comando.
+
+3.  **Executar (Execute):** A ALU realiza a operação matemática ou lógica solicitada.
+
+4.  **Armazenar (Store):** O resultado é gravado de volta em um registrador ou na memória de dados.
+
+Além desse ciclo, o microcontrolador interage com o mundo externo através de **interrupções**, eventos de hardware que suspendem temporariamente a execução do programa principal para atender a uma tarefa imediata e prioritária, garantindo a natureza reativa do sistema.
+
+
+---
 
 
 **Referências e complementos**

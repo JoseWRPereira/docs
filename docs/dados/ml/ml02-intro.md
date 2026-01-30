@@ -55,6 +55,7 @@ São três as subáreas principais, ou mais comuns para a divisão da área de M
 
 
 ---
+
 # Fluxo de Trabalho para Sistemas de ML
 
 Um roteiro típico para a construção de modelos preditivos é dividido em três fases críticas:
