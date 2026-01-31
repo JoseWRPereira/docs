@@ -30,6 +30,30 @@ nav:
                   - ifsp-slt/saut/lista1.md
   - Sistemas Digitais:
       - index_digitais.md
+      - Tecnologia:
+          - Eletrônica Digital:
+              - digitais/eletronica/tecnologia/sdig0-fundamentos.md
+              - digitais/eletronica/tecnologia/sdig1-sistema_numeracao.md
+              - digitais/eletronica/tecnologia/sdig2-portas_logicas.md
+              - digitais/eletronica/tecnologia/sdig3-expressoes_logicas_circuitos.md
+          - Microcontroladores:
+              - digitais/mcu/mcu1-embarcados.md
+              - digitais/mcu/mcu2-microcontroladores.md
+              - digitais/mcu/mcu3-perifericos_internos.md
+          - ESP32:
+              - digitais/iot/esp32/esp32-1-intro.md
+              - digitais/iot/esp32/lab00-ambientacao.md
+              - digitais/iot/esp32/lab01-blink.md
+              - digitais/iot/esp32/lab02-componente.md
+          - FPGA:
+              - digitais/fpga/tecnologia/t01-intro_plds.md
+              - digitais/fpga/tecnologia/t02-terasic-DE1-SoC.md
+              - digitais/fpga/tecnologia/t03-quartus-novo_projeto.md
+              - digitais/fpga/tecnologia/t04-quartus-sim_vwf.md
+              - digitais/fpga/tecnologia/t05-quartus-rtl_viewer.md
+              - digitais/fpga/tecnologia/t06-ghdl-gtkwave.md
+          - Periféricos:
+              - digitais/devices/dev01-led.md
       - Eletrônica Digital:
           - Tecnologia:
               - digitais/eletronica/tecnologia/sdig0-fundamentos.md
