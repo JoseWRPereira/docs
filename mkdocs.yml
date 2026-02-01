@@ -11,7 +11,8 @@ nav:
           - index_ifsp_slt.md
           - 2026:
               - SLTSDIG:
-                  - ifsp-slt/sltsdig.md
+                  - ifsp-slt/digitais/sltsdig_ementa.md
+                  - ifsp-slt/digitais/sltsdig_plano_aula.md
           - 2025:
               - SDPE8:
                   - ifsp-slt/sdpe8.md
@@ -40,11 +41,6 @@ nav:
               - digitais/mcu/mcu1-embarcados.md
               - digitais/mcu/mcu2-microcontroladores.md
               - digitais/mcu/mcu3-perifericos_internos.md
-          - ESP32:
-              - digitais/iot/esp32/esp32-1-intro.md
-              - digitais/iot/esp32/lab00-ambientacao.md
-              - digitais/iot/esp32/lab01-blink.md
-              - digitais/iot/esp32/lab02-componente.md
           - FPGA:
               - digitais/fpga/tecnologia/t01-intro_plds.md
               - digitais/fpga/tecnologia/t02-terasic-DE1-SoC.md
@@ -54,17 +50,7 @@ nav:
               - digitais/fpga/tecnologia/t06-ghdl-gtkwave.md
           - Periféricos:
               - digitais/devices/dev01-led.md
-      - Eletrônica Digital:
-          - Tecnologia:
-              - digitais/eletronica/tecnologia/sdig0-fundamentos.md
-              - digitais/eletronica/tecnologia/sdig1-sistema_numeracao.md
-              - digitais/eletronica/tecnologia/sdig2-portas_logicas.md
-              - digitais/eletronica/tecnologia/sdig3-expressoes_logicas_circuitos.md
-      - Microcontroladores:
-          - Tecnologia:
-              - digitais/mcu/mcu1-embarcados.md
-              - digitais/mcu/mcu2-microcontroladores.md
-              - digitais/mcu/mcu3-perifericos_internos.md
+      - Dispositivos:
           - AVR ATmega328P:
               - digitais/mcu/avr_atmega328p/lab00-ambientacao.md
               - digitais/mcu/avr_atmega328p/lab01-sinalizador_garagem.md
@@ -82,36 +68,76 @@ nav:
               - digitais/mcu/avr_atmega328p/lab13-adc.md
               - digitais/mcu/avr_atmega328p/lab14-usart.md
               - digitais/mcu/avr_atmega328p/lab_atividades.md
-      - Conectividade: #     - Conectividade:
           - ESP32:
               - digitais/iot/esp32/esp32-1-intro.md
               - digitais/iot/esp32/lab00-ambientacao.md
               - digitais/iot/esp32/lab01-blink.md
               - digitais/iot/esp32/lab02-componente.md
-      - FPGA: #    - FPGA:
-          - Tecnologia:
-              - digitais/fpga/tecnologia/t01-intro_plds.md
-              - digitais/fpga/tecnologia/t02-terasic-DE1-SoC.md
-              - digitais/fpga/tecnologia/t03-quartus-novo_projeto.md
-              - digitais/fpga/tecnologia/t04-quartus-sim_vwf.md
-              - digitais/fpga/tecnologia/t05-quartus-rtl_viewer.md
-              - digitais/fpga/tecnologia/t06-ghdl-gtkwave.md
-          - VHDL:
-              - digitais/fpga/vhdl/v01-fundamentos.md
-              - digitais/fpga/vhdl/v02-estrutura.md
-              - digitais/fpga/vhdl/v03-concorrencia.md
-              - digitais/fpga/vhdl/v04-sequencial.md
-              - digitais/fpga/vhdl/v04_1-dff.md
-              - digitais/fpga/vhdl/v05-atraso_atributos.md
+          #      - Eletrônica Digital:
+          #          - Tecnologia:
+          #              - digitais/eletronica/tecnologia/sdig0-fundamentos.md
+          #              - digitais/eletronica/tecnologia/sdig1-sistema_numeracao.md
+          #              - digitais/eletronica/tecnologia/sdig2-portas_logicas.md
+          #              - digitais/eletronica/tecnologia/sdig3-expressoes_logicas_circuitos.md
+          #      - Microcontroladores:
+          #          - Tecnologia:
+          #              - digitais/mcu/mcu1-embarcados.md
+          #              - digitais/mcu/mcu2-microcontroladores.md
+          #              - digitais/mcu/mcu3-perifericos_internos.md
+  #      - Conectividade: #     - Conectividade:
+  #          - ESP32:
+  #              - digitais/iot/esp32/esp32-1-intro.md
+  #              - digitais/iot/esp32/lab00-ambientacao.md
+  #              - digitais/iot/esp32/lab01-blink.md
+  #              - digitais/iot/esp32/lab02-componente.md
+  #      - FPGA: #    - FPGA:
+  #          - Tecnologia:
+  #              - digitais/fpga/tecnologia/t01-intro_plds.md
+  #              - digitais/fpga/tecnologia/t02-terasic-DE1-SoC.md
+  #              - digitais/fpga/tecnologia/t03-quartus-novo_projeto.md
+  #              - digitais/fpga/tecnologia/t04-quartus-sim_vwf.md
+  #              - digitais/fpga/tecnologia/t05-quartus-rtl_viewer.md
+  #              - digitais/fpga/tecnologia/t06-ghdl-gtkwave.md
+  #          - VHDL:
+  #              - digitais/fpga/vhdl/v01-fundamentos.md
+  #              - digitais/fpga/vhdl/v02-estrutura.md
+  #              - digitais/fpga/vhdl/v03-concorrencia.md
+  #              - digitais/fpga/vhdl/v04-sequencial.md
+  #              - digitais/fpga/vhdl/v04_1-dff.md
+  #              - digitais/fpga/vhdl/v05-atraso_atributos.md
   #              - digitais/fpga/vhdl/v02-vhdl-intro.md
   - Automação Industrial:
       - index_automacao.md
-      - Controladores Programáveis:
-          - Tecnologia:
+      - Tecnologia:
+          - Controladores Programáveis:
               - automacao/clp/tecnologia/01-fundamentos.md
               - automacao/clp/tecnologia/02-interfaces.md
               - automacao/clp/tecnologia/03-num_logicas.md
               - automacao/clp/tecnologia/04-acionamento_basico.md
+          - Situações de Aprendizagem:
+              - automacao/clp/altus_tb131/sa1-projeto_partida_direta_motor.md
+              - automacao/clp/altus_tb131/sa2-projeto_partida_estrela_triangulo.md
+              - automacao/clp/altus_tb131/sa3-projeto_semaforo.md
+          #      - Redes Industriais:
+          - Redes Industriais:
+              - automacao/redes/tecnologia/01-redes_conceito.md
+              - automacao/redes/tecnologia/02-classificacao_arquiteturas.md
+              - automacao/redes/tecnologia/03-dimensionamento.md
+              - automacao/redes/tecnologia/04-modelo_osi_iso.md
+              - automacao/redes/tecnologia/05-meio_fisico.md
+              - automacao/redes/tecnologia/06-protocolos_comunicacao.md
+              - automacao/redes/tecnologia/07-wireless.md
+              - automacao/redes/tecnologia/08-iiot.md
+          #      - Sistemas Supervisórios:
+          - SCADA:
+              - automacao/scada/tecnologia/01-conceito.md
+              - automacao/scada/tecnologia/02-scada_br.md
+              - automacao/scada/tecnologia/03-scada_br_lab.md
+      #      - Pneumática:
+      #          - Simulação:
+      #              - automacao/pneumatica/fluidsim/01-simulacao.md
+      #              - automacao/pneumatica/fluidsim/02-circuitosSequenciais.md
+      - Equipamento:
           - Altus Duo TB131:
               - automacao/clp/altus_tb131/lab00-ambientacao.md
               - automacao/clp/altus_tb131/lab01-novo_projeto.md
@@ -124,29 +150,7 @@ nav:
               - automacao/clp/altus_tb131/lab08-entradas_saidas_analogicas.md
               - automacao/clp/altus_tb131/lab09-bloco_funcional.md
               - automacao/clp/altus_tb131/lab10-funcao.md
-          - Situações de Aprendizagem:
-              - automacao/clp/altus_tb131/sa1-projeto_partida_direta_motor.md
-              - automacao/clp/altus_tb131/sa2-projeto_partida_estrela_triangulo.md
-              - automacao/clp/altus_tb131/sa3-projeto_semaforo.md
-      - Redes Industriais:
-          - Tecnologia:
-              - automacao/redes/tecnologia/01-redes_conceito.md
-              - automacao/redes/tecnologia/02-classificacao_arquiteturas.md
-              - automacao/redes/tecnologia/03-dimensionamento.md
-              - automacao/redes/tecnologia/04-modelo_osi_iso.md
-              - automacao/redes/tecnologia/05-meio_fisico.md
-              - automacao/redes/tecnologia/06-protocolos_comunicacao.md
-              - automacao/redes/tecnologia/07-wireless.md
-              - automacao/redes/tecnologia/08-iiot.md
-      - Sistemas Supervisórios:
-          - SCADA:
-              - automacao/scada/tecnologia/01-conceito.md
-              - automacao/scada/tecnologia/02-scada_br.md
-              - automacao/scada/tecnologia/03-scada_br_lab.md
-      - Pneumática:
-          - Simulação:
-              - automacao/pneumatica/fluidsim/01-simulacao.md
-              - automacao/pneumatica/fluidsim/02-circuitosSequenciais.md
+
   - Ciência de Dados:
       - index_dados.md
       - Dados:

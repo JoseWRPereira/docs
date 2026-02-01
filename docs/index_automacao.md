@@ -43,15 +43,4 @@ A **integração** dessas diversas tecnologias, de forma sincronizada, coerente 
 
 Frente à natureza plural e interdisciplinar, novas disciplinas se utilizam de recortes e colagens de conteúdos e competências de diversas disciplinas tradicionais, tais como mecânica, pneumática, hidráulica, elétrica, eletrônica, computação e gestão, necessárias para iniciar a formação de um profissional com as competências necessárias para atuação em automação industrial.
 
-
-
 ---
-
-# Aulas SAUT
-
-| Aula | Título | Conteúdo | Material complementar |
-| ---- | ------ | -------- | --------------------- |
-| 00   | [Apresentação](automacao/saut/slides/Aula00-Apresentacao.pdf) | - Ementa;<br>- Objetivos;<br>- Conteúdo Programático;<br>- Bibliografia<br>- Avaliação | [Mecatrônica - IFSP Salto](https://slt.ifsp.edu.br/index.php/component/content/article?id=1677) |
-| 01   | [Automação Industrial](automacao/saut/slides/Aula01-SistemasDeAutomacao.pdf)  | - Definição;<br>- A revolução industrial e a automação;;<br>- O profissional;<br>- As tecnologias. | 1. [LabDeEletronica - Uma Viagem Pela História da Automação.](https://youtu.be/Jkpp9f2mo38?si=TXCpzE3Cm89qrKbR)<br>2. [Telecurso 2000 - Automação - 01 Introdução a automação](https://youtu.be/Cnh1VyvbpJU?si=NRzWblOgxs17JwNc) |
-| 02 | [Controlador Lógico Programável](automacao/clp/index.md) |  |  |
-| 03 | [Redes Industriais](automacao/saut/slides/aula00-redes_industriais-SAUT.pdf)      |           |           |

@@ -1,6 +1,6 @@
 ---
-title: SLTSDIG - Ementa
-icon: fontawesome/solid/square-binary
+title: Ementa
+icon: fontawesome/solid/file-contract
 author:
  - José W. R. Pereira
 tags:
@@ -9,6 +9,8 @@ tags:
 ---
 
 #
+
+# Ementa
 
 | Componente Curricular | Sistemas Digitais |
 |:---|:---|
@@ -69,15 +71,6 @@ A disciplina trabalha os sistemas de numeração, conceitos de eletrônica digit
 - IDOETA, Ivan Valeije; CAPUANO, Francisco Gabriel. Elementos de Eletrônica Digital. 41. ed. São Paulo, SP: Érica, 2012, 544 p. ISBN 978-85-7194-019-2.
 - MALVINO, Albert Paul; BATES, David J. Eletrônica: volume 1. 8. ed. Porto Alegre: AMGH, 2016. 567 p. ISBN 9788580555769
 - SEDRA, Adel S.; SMITH, Kenneth C. Microeletrônica. 5. ed. São Paulo: Pearson Education do Brasil, 2012. 848 p. ISBN 978-85-7605-022-3.
-
----
-
-**Plano de aulas**
-
-| Semana | Data | Conteúdo | Metodologia de Ensino e Recursos |
-|:------:|:----:|:---------|:---------------------------------|
-|  1 | /02/2026 | - Apresentação da disciplina; <br> - Definições <br> - Tipos de Sinais; | Exposição Dialogada: Lousa/Quadro branco e projetor multimídia. <br> Prática Orientada: Laboratório com computadores, Software |
-|  2 | /02/2026 | - Sistemas de numeração; <br> - Codificação de Sinais; | Exposição Dialogada: Lousa/Quadro branco e projetor multimídia. <br> Prática Orientada: Laboratório com computadores; |
 
 
 
