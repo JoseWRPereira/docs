@@ -8,7 +8,7 @@ tags:
     - Portas Lógicas
 ---
 
-# Elementos lógicos
+# [Elementos lógicos](../../slides/SDIG01-ElementosLogicos.pdf)
 
 Elementos lógicos, ou ainda **portas lógicas**, constituem os **blocos fundamentais** para a implementação de circuitos e sistemas digitais. Esses elementos operam essencialmente sob os princípios da **lógica binária**, o que significa que suas entradas e saídas podem assumir apenas um de **dois estados discretos: 0 ou 1**. Em termos físicos e elétricos, o **nível lógico 0** representa a **ausência de tensão** ou um **estado de não-condução**, enquanto o **nível lógico 1** representa a **presença de tensão ou condução**.
 

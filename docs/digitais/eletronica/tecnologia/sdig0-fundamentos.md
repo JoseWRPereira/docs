@@ -19,13 +19,14 @@ A análise e o projeto de sistemas digitais modernos exigem diferentes níveis d
 
 ---
 
-- **1. Fundamentos:**
+
+- **1. Fundamentos:** [slide](../slides/SDIG00-Apresentacao.pdf)
 	- 1.1 Diferença entre sistemas analógicos e digitais;
-	- 1.2 Sistemas de Numeração
+	- 1.2 Sistemas de Numeração 
 		- 1.2.1 Bases numéricas (Binária, Octal e Hexadecimal)
 		- 1.2.2 Códigos (ASCII, BCD e Gray)
 - **2. Lógica Combinacional Básica:** 
-	- 2.1 Portas lógicas fundamentais (AND, OR, NOT) e suas tabelas-verdade
+	- 2.1 Portas lógicas fundamentais (AND, OR, NOT) e suas tabelas-verdade [slide](../slides/SDIG01-ElementosLogicos.pdf)
 	- 2.2 Portas lógicas derivadas (NAND, NOR, XOR, XNOR) e suas tabelas-verdade
 	- 2.3 Expressões lógicas e circuitos
 	- 2.4 Otimização de circuitos através de simplificação de expressões lógicas 

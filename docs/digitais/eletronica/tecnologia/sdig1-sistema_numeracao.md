@@ -7,7 +7,7 @@ tags:
     - Eletrônica Digital
 ---
 
-# Sistemas de Numeração
+# [Sistemas de Numeração](../../slides/SDIG00-Apresentacao.pdf)
 
 Sistemas de numeração são estruturas matemáticas fundamentais compostas por um conjunto de símbolos e regras que permitem a representação e a atribuição de valores numéricos a grandezas, objetos ou fenômenos do cotidiano. Historicamente, a dependência humana de atribuir valores numéricos aumentou em uma escala sem precedentes, sendo que, na eletrônica moderna, o entendimento desses sistemas é essencial para descrever como os circuitos processam informações.
 

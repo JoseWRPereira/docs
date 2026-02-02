@@ -10,7 +10,7 @@ tags:
     - Circuitos
 ---
 
-# Expressões Lógicas
+# [Expressões Lógicas](../../slides/SDIG02-ExpressoesLogicas.pdf)
 
 Expressões lógicas, também denominadas expressões booleanas, consistem na **representação algébrica** do comportamento de circuitos e sistemas digitais, estabelecendo uma **relação matemática entre variáveis de entrada e uma saída resultante**. Elas fundamentam-se na **Álgebra de Boole**, desenvolvida por George Boole no século XIX, que utiliza postulados e operações simples para resolver problemas práticos de controle através de estados binários: 0 (ausência de tensão ou não-condução) e 1 (presença de tensão ou condução).
 
