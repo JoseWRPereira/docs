@@ -13,6 +13,12 @@ nav:
               - SLTSDIG:
                   - ifsp-slt/digitais/sltsdig_ementa.md
                   - ifsp-slt/digitais/sltsdig_plano_aula.md
+              - SLTCLPE:
+                  - ifsp-slt/automacao/sltclpe_ementa.md
+                  - ifsp-slt/automacao/sltclpe_plano_aula.md
+              - SLTMCMP:
+                  - ifsp-slt/digitais/sltmcmp_ementa.md
+                  - ifsp-slt/digitais/sltmcmp_plano_aula.md
           - 2025:
               - SDPE8:
                   - ifsp-slt/sdpe8.md
