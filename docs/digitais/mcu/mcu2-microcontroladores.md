@@ -15,7 +15,7 @@ tags:
 
 ---
 
-# [1. Microcontroladores](slides/Aula02-Microcontroladores.pdf)
+# [1. Microcontroladores](../slides/uC02-Microcontroladores.pdf)
 
 Os Microcontroladores são uma derivação dos Microprocessadores que surgiram para uso e 
 aplicações específicas, principalmente em sistemas industriais e mais recentemente 

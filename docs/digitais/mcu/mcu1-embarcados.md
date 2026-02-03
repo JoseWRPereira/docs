@@ -14,7 +14,7 @@ tags:
 ![capa](img/mcu01-mcu_capa.png)
 
 
-# [Sistemas embarcados](slides/Aula01-SistemasEmbarcados.pdf)
+# [1. Sistemas embarcados](../slides/uC01-SistemasEmbarcados.pdf)
 
 A terceira revolução industrial, que ocorreu após o fim da Segunda Guerra Mundial, produzida pelo desenvolvimento e utilização em larga escala da microeletrônica, possibilitou a construção dos primeiros computadores, ainda de grande porte, que evoluíram para os microcomputadores, que logo foram ligados em rede. Em seguida vieram os computadores portáteis, alcançando o que chamamos smartphones, mas que erroneamente ainda chamamos de celulares. 
 
@@ -74,11 +74,12 @@ A área de sistemas embarcados apresentam grandes desafios relacionados à mão 
 Como é o mercado de trabalho para profissionais desta área? Para ilustrar tal questão o portal [Embarcados](https://embarcados.com.br/), que traz informações sobre esta área no Brasil, faz [pesquisas](https://embarcados.com.br/pesquisas/) de mercado com o seu público brasileiro. 
 
 
-# Perfil dos profissionais de Sistema Embarcados e IoT
+# 2. Perfil dos profissionais de Sistema Embarcados e IoT
 
 Com base nos relatórios de **2021, 2023 e 2025**, da pesquisa de perfil profissinal em sistemas embarcados e iot, realizada pelo portal embarcados, é possível observar a evolução do mercado brasileiro de sistemas embarcados em diversas categorias. Abaixo, as tabelas detalham essa progressão:
 
-## **1. Perfil Demográfico e Acadêmico**
+## 2.1 Perfil Demográfico e Acadêmico
+
 O perfil dos profissionais mostra uma **estabilidade no domínio masculino** e um aumento contínuo no **nível de escolaridade**, com destaque para a pós-graduação.
 
 | Categoria | Pesquisa 2021 | Pesquisa 2023 | Pesquisa 2025 |
@@ -87,7 +88,8 @@ O perfil dos profissionais mostra uma **estabilidade no domínio masculino** e u
 | **Pós-graduação (Concluída)** | 36,74% | 39,47% | **41,99%** |
 | **Formação em Engenharia** (Elétrica/Comp.) | 67,24%  | 66,84% | **67,98%** |
 
-## **2. Carreira e Modalidade de Trabalho**
+## 2.2 Carreira e Modalidade de Trabalho
+
 Nota-se um **declínio no interesse em trabalhar para empresas no exterior** e uma retomada gradual, porém constante, do **trabalho presencial** ao longo dos anos.
 
 | Pergunta / Opção | Pesquisa 2021 | Pesquisa 2023 | Pesquisa 2025 |
@@ -97,7 +99,7 @@ Nota-se um **declínio no interesse em trabalhar para empresas no exterior** e u
 | **Modalidade Híbrida** | 40,98% | 36,48% | **34,7%** |
 | **Modalidade Remota** | 15,50% | 15,78% | **13,8%** |
 
-## **3. Tecnologias e Ferramentas de Software**
+## 2.3 Tecnologias e Ferramentas de Software
 A **linguagem C** e a ferramenta **Visual Studio Code** consolidaram seu crescimento e liderança absoluta no setor de desenvolvimento.
 
 | Tecnologia / Ferramenta | Pesquisa 2021 | Pesquisa 2023 | Pesquisa 2025 |
@@ -120,7 +122,8 @@ Além dessas linguagens de alto nível, os projetos também envolvem linguagens 
 
 
 
-## **4. Tipos de Processadores Utilizados (Bits)**
+## 2.4 Tipos de Processadores Utilizados (Bits)
+
 O mercado brasileiro apresenta uma migração contínua para dispositivos de maior capacidade de processamento, com os microcontroladores de **32 bits** atingindo seu maior patamar em 2025.
 
 | Tipo de Processador | Pesquisa 2021 | Pesquisa 2023 | Pesquisa 2025 |
@@ -132,7 +135,8 @@ O mercado brasileiro apresenta uma migração contínua para dispositivos de mai
 
 *\*Em 2021, o dado de 32 bits englobava microcontroladores e microprocessadores na mesma categoria de destaque.*
 
-### **5. Principais Fabricantes (Uso Atual)**
+## 2.5 Principais Fabricantes (Uso Atual)
+
 A **STMicroelectronics** retomou a liderança absoluta em 2025, enquanto a **Espressif** manteve um crescimento constante desde 2021, consolidando-se como uma das favoritas devido ao foco em IoT.
 
 | Fabricante | Pesquisa 2021 | Pesquisa 2023 | Pesquisa 2025 |
@@ -143,7 +147,8 @@ A **STMicroelectronics** retomou a liderança absoluta em 2025, enquanto a **Esp
 | **NXP** | 26,00% | **26,61%** | 21,65% |
 | **Texas Instruments** | 22,95% | **23,17%** | 20,08% |
 
-### **6. Arquiteturas de Preferência para Projetos Futuros**
+## 2.6 Arquiteturas de Preferência para Projetos Futuros
+
 A arquitetura **ARM** permanece dominante, mas o interesse por **RISC-V** apresentou um salto significativo, quase dobrando sua relevância entre 2023 e 2025.
 
 | Arquitetura | Pesquisa 2023 | Pesquisa 2025 |
@@ -153,7 +158,8 @@ A arquitetura **ARM** permanece dominante, mas o interesse por **RISC-V** aprese
 | **Xtensa** | - | **21,26%** |
 | **Proprietária (AVR, PIC, etc)** | **31,88%** | 16,54% |
 
-### **7. Fatores Decisivos na Escolha do Chip**
+## 2.7 Fatores Decisivos na Escolha do Chip
+
 O **custo** continua sendo o fator primordial para os engenheiros brasileiros, seguido de perto pela disponibilidade de ecossistema de software.
 
 | Fator de Escolha | Pesquisa 2021 | Pesquisa 2023 | Pesquisa 2025 |
@@ -168,7 +174,7 @@ O **custo** continua sendo o fator primordial para os engenheiros brasileiros, s
 *   **Hardware Próprio:** O desenvolvimento de hardware nacional segue forte, com **78,52% das empresas** optando por desenvolver seus próprios projetos em vez de terceirizar, o que influencia diretamente na escolha técnica dos componentes.
 
 
-## **8. Hardware e Internet das Coisas (IoT)**
+## 2.8 Hardware e Internet das Coisas (IoT)
 No desenvolvimento de hardware, a preferência por **projetos próprios** aumentou, enquanto o uso de plataformas de nuvem como a **Amazon AWS** apresentou oscilações, mas manteve a liderança.
 
 | Categoria | Pesquisa 2021 | Pesquisa 2023 | Pesquisa 2025 |
@@ -179,7 +185,7 @@ No desenvolvimento de hardware, a preferência por **projetos próprios** aument
 | **Principal Protocolo: MQTT** | 40,91% | 48,11% | **50,81%** |
 
 
-## **9. Comparativo das Principais Faixas Salariais (R$)**
+## 2.9 Comparativo das Principais Faixas Salariais (R$)
 
 | Faixa Salarial (Mensal) | Pesquisa 2021 | Pesquisa 2023 | Pesquisa 2025 |
 | :--- | :---: | :---: | :---: |
@@ -193,20 +199,25 @@ No desenvolvimento de hardware, a preferência por **projetos próprios** aument
 
 ---
 
-# Referências e complementos
+# Material Complementar
+
+1. [Luiz Bitencourt - Projetos de sistemas embarcados: Uma rápida discussão](https://youtu.be/a4Dp11lupMk?si=-PxlMLHoaTTqyhnG)
+2. [Código Fonte TV - Sistemas Embarcados (Embedded Systems) // Dicionário do Programador](https://youtu.be/XppU8kKpa6I?si=FD160Zz98GxOjtZF)
+3. [Código Fonte TV - Conhecimentos necessários para trabalhar com sistemas embarcados](https://youtu.be/W0hzWoLHZ5k?si=VpPoSw16wqpc5bvA)
+4. [UniVESP - Eletrônica Embarcada - Aula 01 - Introdução aos Sistemas Embarcados Eletrônica Embarcada em Veículos](https://youtu.be/ElIMxXcFkGQ?si=ESfqJPKiZ7ubXIrt)
+5. [Dobra Espacial - Como o computador da Apollo funcionava?](https://youtu.be/ge6zfKaMfAQ?si=_n7vtLODE14b4XIC)
+6. [Apollo Guidance Computer (AGC) Code - Github](https://github.com/chrislgarry/Apollo-11)
+7. [Coding with Dee - This is the code that sent Apollo 11 to the moon (and it’s awesome)](https://youtu.be/XHN6LV_1dWk?si=zQDcLbEC47ON3oxW)
+8. [Apollo Guidance And Navigation - A Problem in Man and Machine Integration - David G. Hoag - MIT](https://ntrs.nasa.gov/api/citations/19720063753/downloads/19720063753.pdf)
+9. [Rodrigo Maximiano Antunes de Almeida - 01 - Sistemas embarcados e Linguagem C](https://www.youtube.com/live/azv20pt6fCM?si=u3_6EL-LUr1mEigd)
+
+---
+
+# Referências
 
 1. **EMBARCADOS. Pesquisa sobre o Mercado Brasileiro de Sistemas Embarcados e IoT 2021.** [S. l.]: Embarcados, 2021. Disponível em: https://embarcados.com.br/relatorio-da-pesquisa-sobre-o-mercado-brasileiro-de-sistemas-embarcados-e-iot-2021/
 2. **EMBARCADOS. Pesquisa sobre o Mercado Brasileiro de Sistemas Embarcados e IoT 2023.** [S. l.]: Embarcados, 2023. Disponível em: https://embarcados.com.br/relatorio-da-pesquisa-sobre-o-mercado-brasileiro-de-sistemas-embarcados-e-iot-2023/
 3. **EMBARCADOS. Pesquisa sobre o Mercado Brasileiro de Sistemas Embarcados e IoT 2025.** [S. l.]: Embarcados, 2025. Disponível em: https://embarcados.com.br/relatorio-da-pesquisa-sobre-o-mercado-brasileiro-de-sistemas-embarcados-e-iot-2025/
-4. [Luiz Bitencourt - Projetos de sistemas embarcados: Uma rápida discussão](https://youtu.be/a4Dp11lupMk?si=-PxlMLHoaTTqyhnG)
-5. [Código Fonte TV - Sistemas Embarcados (Embedded Systems) // Dicionário do Programador](https://youtu.be/XppU8kKpa6I?si=FD160Zz98GxOjtZF)
-6. [Código Fonte TV - Conhecimentos necessários para trabalhar com sistemas embarcados](https://youtu.be/W0hzWoLHZ5k?si=VpPoSw16wqpc5bvA)
-7. [UniVESP - Eletrônica Embarcada - Aula 01 - Introdução aos Sistemas Embarcados Eletrônica Embarcada em Veículos](https://youtu.be/ElIMxXcFkGQ?si=ESfqJPKiZ7ubXIrt)
-8. [Dobra Espacial - Como o computador da Apollo funcionava?](https://youtu.be/ge6zfKaMfAQ?si=_n7vtLODE14b4XIC)
-9. [Apollo Guidance Computer (AGC) Code - Github](https://github.com/chrislgarry/Apollo-11)
-10. [Coding with Dee - This is the code that sent Apollo 11 to the moon (and it’s awesome)](https://youtu.be/XHN6LV_1dWk?si=zQDcLbEC47ON3oxW)
-11. [Apollo Guidance And Navigation - A Problem in Man and Machine Integration - David G. Hoag - MIT](https://ntrs.nasa.gov/api/citations/19720063753/downloads/19720063753.pdf)
-12. [Rodrigo Maximiano Antunes de Almeida - 01 - Sistemas embarcados e Linguagem C](https://www.youtube.com/live/azv20pt6fCM?si=u3_6EL-LUr1mEigd)
 
 
 
