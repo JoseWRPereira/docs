@@ -97,8 +97,8 @@ Aqui a porta alocada foi a `COM3`.
 
 ![Conectando e gravando](gif/lab1-com_login.gif)
 
-5.4 Caso um **erro** ocorra, ***não entre em pânico***:
+5.4 Caso um **erro** ocorra:
 
 5.4.1 Verificar os cabos de conexão e tente novamente. Se persistir, solicite orientação ao professor.
 
-5.**4.2**
+5.**4.2**  ***Não entre em pânico !***
