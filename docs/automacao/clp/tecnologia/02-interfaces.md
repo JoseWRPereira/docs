@@ -8,7 +8,7 @@ tags:
     - PLC
 ---
 
-# Interfaces de Entrada e Saída
+# [Interfaces de Entrada e Saída](../../../slides/CLP02-Interfaces.pdf)
 
 As **interfaces de entrada e saída (E/S)** de um CLP, representam o local onde os **dispositivos de campo** são conectados, servindo como o vínculo físico e de comunicação entre esses dispositivos e a Unidade Central de Processamento (CPU). A função primordial dessas interfaces é **condicionar os vários sinais** recebidos ou enviados aos dispositivos externos, garantindo que a comunicação entre o mundo físico e o processador ocorra de forma eficiente.
 

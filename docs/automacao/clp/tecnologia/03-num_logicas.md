@@ -8,7 +8,7 @@ tags:
     - PLC
 ---
 
-# Sistema Numérico
+# [Sistema Numérico](../../slides/CLP03-Numeros_Logicas.pdf)
 
 Os CLPs operam internamente através de números binários para processar e armazenar informações, por isso há um importância em conhecer como são representados os dados em algumas de suas diferentes formas.  
 

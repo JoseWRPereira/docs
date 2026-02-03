@@ -15,12 +15,12 @@ tags:
 
 | Semana | Data  | Conteúdo Planejado | Metodologia de Ensino e Recursos  | Material de Apoio |
 | :----: | :---: | :----------------- | :-------------------------------- |:-----------------:|
-|   1    | 09/02 | - Apresentação da disciplina<br>- Fundamentos | Exposição Dialogada: Lousa/Quadro branco e projetor multimídia.  <br> | |
-|   1    | 13/02 | - Interfaces de Entrada e Saída | Exposição Dialogada: Lousa/Quadro branco e projetor multimídia. | |
-|   2    | 20/02 |                                                                          | | |
-|   2    | 23/02 | - Sistemas de Numeração e Lógicas Digitais                               | | |
+|   1    | 09/02 | Apresentação da disciplina<br> [Fundamentos](../../automacao/clp/tecnologia/01-fundamentos.md) | Exposição Dialogada: Lousa/Quadro branco e projetor multimídia.  <br> | [Slide](../../automacao/slides/CLP01-Fundamentos.pdf)|
+|   1    | 13/02 | [Interfaces de Entrada e Saída](../../automacao/clp/tecnologia/02-interfaces.md) | Exposição Dialogada: Lousa/Quadro branco e projetor multimídia. | [Slide](../../automacao/slides/CLP02-Interfaces.pdf) |
+|   2    | 20/02 | [Sistemas de Numeração e Lógicas Digitais](../../automacao/clp/tecnologia/03-num_logicas.md) | | [Slide](../../automacao/slides/CLP03-Numeros_Logicas.pdf) |
+|   2    | 23/02 | [Programação básica em CLP](../../automacao/clp/tecnologia/04-acionamento_basico.md) | | [Slide](../../automacao/slides/CLP04-PartidaDireta.pdf) |
 |   3    | 27/02 |                                                                          | | |
-|   3    | 02/03 | - Programação básica em CLP                                              | | |
+|   3    | 02/03 |  | | |
 |   4    | 06/03 | - Contatos e Bobinas<br>- Set/Reset<br>- Bordas                          | | |
 |   4    | 09/03 | - Programação básica em CLP                                              | | |
 |   5    | 13/03 | - Temporizadores (TON)                                                   | | |

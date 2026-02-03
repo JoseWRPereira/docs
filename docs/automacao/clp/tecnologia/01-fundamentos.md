@@ -8,7 +8,7 @@ tags:
     - PLC
 ---
 
-# Controladores Lógicos Programáveis
+# [Controladores Lógicos Programáveis](../../../slides/CLP01-Fundamentos.pdf)
 
 Os **Controladores Lógicos Programáveis (CLPs)** são definidos como computadores industriais projetados para controlar máquinas e processos, tendo evoluído originalmente como substitutos para sistemas de controle baseados em relés. Diferente de um computador pessoal, o CLP é construído para operar em ambientes industriais severos, suportando variações de temperatura, umidade e ruídos elétricos.
 
@@ -73,7 +73,7 @@ A substituição da lógica de relés por CLPs oferece benefícios significativo
 
 ---
 
-# **[6. Contexto Histórico](../slides/aula01-contexto_historico.pdf)**
+# 6. Contexto Histórico
 
 O final da década de 60 proporcionaram para o desenvolvimento tecnológico industrial um marco de extrema importância para o grande desenvolvimento da automação no chão de fábrica, o nascimento do primeiro controlador programável.
 

@@ -14,11 +14,11 @@ tags:
 
 | Semana | Data  | Conteúdo Planejado | Metodologia de Ensino e Recursos | Material de apoio |
 | :----: | :---: |:------------------ | :------------------------------- |:-----------------:|
-|   1    | 11/02 | - Apresentação da Disciplina<br>- [Fundamentos de Sistemas Digitais](../../digitais/eletronica/tecnologia/sdig0-fundamentos.md);<br>  | - Exposição Dialogada: Lousa/Quadro branco e projetor multimídia.               | [Slide](../../digitais/slides/SDIG00-Apresentacao.pdf) |
-|   1    | 13/02 | - Sistemas de Numeração.           |             |                   |
-|   2    | 20/02 | - Portas lógicas:<br>    - Fundamentais (AND, OR, NOT);<br>	- Derivadas (NAND, NOR, XOR, XNOR);<br>	- Tabelas-verdade;                                      |             |                   |
-|   2    | 25/02 | - Expressões lógicas e circuitos   |             |                   |
-|   3    | 27/02 |                                    |             |                   |
+|   1    | 11/02 | Apresentação da Disciplina<br> [Fundamentos de Sistemas Digitais](../../digitais/eletronica/tecnologia/sdig0-fundamentos.md); | Exposição Dialogada: Lousa/Quadro branco e projetor multimídia.               | [Slide](../../digitais/slides/SDIG00-Apresentacao.pdf) |
+|   1    | 13/02 | [Sistemas de Numeração](../../digitais/eletronica/tecnologia/sdig0-fundamentos.md). |  Exposição Dialogada: Lousa/Quadro branco e projetor multimídia.| [Slide](../../digitais/slides/SDIG00-Apresentacao.pdf) |
+|   2    | 20/02 | [Lógica Combinacional Básica](../../digitais/eletronica/tecnologia/sdig2-portas_logicas.md)<br> - Portas lógicas:<br>    - Fundamentais (AND, OR, NOT);<br>	- Derivadas (NAND, NOR, XOR, XNOR);<br>	- Tabelas-verdade; | Exposição Dialogada: Lousa/Quadro branco e projetor multimídia | [Slide](../../digitais/slides/SDIG01-ElementosLogicos.pdf)|
+|   2    | 25/02 | [Expressões lógicas e circuitos](../../digitais/eletronica/tecnologia/sdig3-expressoes_logicas_circuitos.md) | Exposição Dialogada: Lousa/Quadro branco e projetor multimídia. <br>  Lab. de Eletrônica, kit didático e software específico | [Slide](../../digitais/slides/SDIG02-ExpressoesLogicas.pdf) |
+|   3    | 27/02 | [Expressões lógicas e circuitos](../../digitais/eletronica/tecnologia/sdig3-expressoes_logicas_circuitos.md) |  Lab. Informática e software específico |  [Slide](../../digitais/slides/SDIG02-ExpressoesLogicas.pdf) |
 |   3    | 04/03 | - Otimização de circuitos através de simplificação de expressões lógicas<br>- Álgebra de Boole        |                |           |
 |   4    | 06/03 |                                    |             |                   |
 |   4    | 11/03 | - Teorema de De Morgan             |             |                   |

@@ -8,7 +8,7 @@ tags:
     - PLC
 ---
 
-# 
+# [Acionamento Básico com CLP](../../slides/CLP04-PartidaDireta.pdf)
 
 
 # 1. Partida Direta de Motor
