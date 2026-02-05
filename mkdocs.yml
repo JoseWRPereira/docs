@@ -79,39 +79,7 @@ nav:
               - digitais/iot/esp32/lab00-ambientacao.md
               - digitais/iot/esp32/lab01-blink.md
               - digitais/iot/esp32/lab02-componente.md
-          #      - Eletrônica Digital:
-          #          - Tecnologia:
-          #              - digitais/eletronica/tecnologia/sdig0-fundamentos.md
-          #              - digitais/eletronica/tecnologia/sdig1-sistema_numeracao.md
-          #              - digitais/eletronica/tecnologia/sdig2-portas_logicas.md
-          #              - digitais/eletronica/tecnologia/sdig3-expressoes_logicas_circuitos.md
-          #      - Microcontroladores:
-          #          - Tecnologia:
-          #              - digitais/mcu/mcu1-embarcados.md
-          #              - digitais/mcu/mcu2-microcontroladores.md
-          #              - digitais/mcu/mcu3-perifericos_internos.md
-  #      - Conectividade: #     - Conectividade:
-  #          - ESP32:
-  #              - digitais/iot/esp32/esp32-1-intro.md
-  #              - digitais/iot/esp32/lab00-ambientacao.md
-  #              - digitais/iot/esp32/lab01-blink.md
-  #              - digitais/iot/esp32/lab02-componente.md
-  #      - FPGA: #    - FPGA:
-  #          - Tecnologia:
-  #              - digitais/fpga/tecnologia/t01-intro_plds.md
-  #              - digitais/fpga/tecnologia/t02-terasic-DE1-SoC.md
-  #              - digitais/fpga/tecnologia/t03-quartus-novo_projeto.md
-  #              - digitais/fpga/tecnologia/t04-quartus-sim_vwf.md
-  #              - digitais/fpga/tecnologia/t05-quartus-rtl_viewer.md
-  #              - digitais/fpga/tecnologia/t06-ghdl-gtkwave.md
-  #          - VHDL:
-  #              - digitais/fpga/vhdl/v01-fundamentos.md
-  #              - digitais/fpga/vhdl/v02-estrutura.md
-  #              - digitais/fpga/vhdl/v03-concorrencia.md
-  #              - digitais/fpga/vhdl/v04-sequencial.md
-  #              - digitais/fpga/vhdl/v04_1-dff.md
-  #              - digitais/fpga/vhdl/v05-atraso_atributos.md
-  #              - digitais/fpga/vhdl/v02-vhdl-intro.md
+
   - Automação Industrial:
       - index_automacao.md
       - Tecnologia:
@@ -120,11 +88,6 @@ nav:
               - automacao/clp/tecnologia/02-interfaces.md
               - automacao/clp/tecnologia/03-num_logicas.md
               - automacao/clp/tecnologia/04-acionamento_basico.md
-          - Situações de Aprendizagem:
-              - automacao/clp/altus_tb131/sa1-projeto_partida_direta_motor.md
-              - automacao/clp/altus_tb131/sa2-projeto_partida_estrela_triangulo.md
-              - automacao/clp/altus_tb131/sa3-projeto_semaforo.md
-          #      - Redes Industriais:
           - Redes Industriais:
               - automacao/redes/tecnologia/01-redes_conceito.md
               - automacao/redes/tecnologia/02-classificacao_arquiteturas.md
@@ -134,7 +97,6 @@ nav:
               - automacao/redes/tecnologia/06-protocolos_comunicacao.md
               - automacao/redes/tecnologia/07-wireless.md
               - automacao/redes/tecnologia/08-iiot.md
-          #      - Sistemas Supervisórios:
           - SCADA:
               - automacao/scada/tecnologia/01-conceito.md
               - automacao/scada/tecnologia/02-scada_br.md
@@ -156,6 +118,11 @@ nav:
               - automacao/clp/altus_tb131/lab08-entradas_saidas_analogicas.md
               - automacao/clp/altus_tb131/lab09-bloco_funcional.md
               - automacao/clp/altus_tb131/lab10-funcao.md
+      - Situações de Aprendizagem:
+          - CLP:
+              - automacao/sitap/clp/sa1-projeto_partida_direta_motor.md
+              - automacao/sitap/clp/sa2-projeto_partida_estrela_triangulo.md
+              - automacao/sitap/clp/sa3-projeto_semaforo.md
 
   - Ciência de Dados:
       - index_dados.md
