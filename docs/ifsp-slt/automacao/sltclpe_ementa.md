@@ -21,7 +21,7 @@ tags:
 | Quantidade total de aulas | 76 |
 | Carga horária presencial/à distância | 63,3/0,0 |
 | Abordagem metodológica | Teórico/Prática |
-| Laboratório | B107 / D110 |
+| Laboratório | D110 / B107 |
 | Pré-requisitos (sugeridos) |  |
 | Horário | Segunda-feira (B107): T1 08:50 - 10:30, T2 10:40 - 12:20 <br> Sexta-feira (D110): 10:40 - 12:20 |
 | Avaliação do ensino/aprendizagem | - AL: Atividades em laboratório <br> - APL: Avaliação Prática de Laboratório <br> - Média final = 0,5.AL + 0,5.APL| 
