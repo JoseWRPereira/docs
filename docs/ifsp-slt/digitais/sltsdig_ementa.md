@@ -24,7 +24,7 @@ tags:
 | Laboratório | Eletrônica / Informática |
 | Pré-requisitos (sugeridos) |  |
 | Horário | Quarta-feira: 7:00 - 10:30 (B100/B109) <br> Sexta-feira: 08:50 - 10:30 (D105) |
-| Avaliação do ensino/aprendizagem | - AL: Atividades em laboratório <br> - Pp: Projeto prático <br> - Média final = | 
+| Avaliação do ensino/aprendizagem | - AL: Atividades em laboratório <br> - P: Prova <br> - Média final = 0,5.AL + 0,5.P| 
 
 ---
 

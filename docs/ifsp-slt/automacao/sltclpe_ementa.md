@@ -24,7 +24,7 @@ tags:
 | Laboratório | B107 / D110 |
 | Pré-requisitos (sugeridos) |  |
 | Horário | Segunda-feira (B107): T1 08:50 - 10:30, T2 10:40 - 12:20 <br> Sexta-feira (D110): 10:40 - 12:20 |
-| Avaliação do ensino/aprendizagem | - AL: Atividades em laboratório <br> - Pp: Projeto prático <br> - Média final = | 
+| Avaliação do ensino/aprendizagem | - AL: Atividades em laboratório <br> - APL: Avaliação Prática de Laboratório <br> - Média final = 0,5.AL + 0,5.APL| 
 
 ---
 

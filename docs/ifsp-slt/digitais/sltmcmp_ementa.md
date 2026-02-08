@@ -24,7 +24,7 @@ tags:
 | Laboratório | B100 |
 | Pré-requisitos (sugeridos) |  |
 | Horário | T1: Sexta-feira: 19:00 - 20:40 (B100) <br> T2: Sexta-feira: 20:55 - 22:35 (B100) |
-| Avaliação do ensino/aprendizagem | - AL: Atividades em laboratório <br> - Pp: Projeto prático <br> - Média final = | 
+| Avaliação do ensino/aprendizagem | - AL: Atividades em laboratório <br> - Pp: Projeto prático <br> - Média final = 0,6*AL + 0,4*Pp| 
 
 ---
 
