@@ -21,9 +21,9 @@ tags:
 | Quantidade total de aulas | 76 |
 | Carga horária presencial/à distância | 63,3/0,0 |
 | Abordagem metodológica | Teórico/Prática |
-| Laboratório | Eletrônica / Informática |
+| Laboratório | D105-C102/B100 |
 | Pré-requisitos (sugeridos) |  |
-| Horário | Quarta-feira: 7:00 - 10:30 (B100/B109) <br> Sexta-feira: 08:50 - 10:30 (D105) |
+| Horário | Quarta-feira (B100): T2: 07:00 - 08:40 T1: 08:50 - 10:30 <br> Sexta-feira (D105): 08:50 - 10:30  |
 | Avaliação do ensino/aprendizagem | - AL: Atividades em laboratório <br> - P: Prova <br> - Média final = 0,5.AL + 0,5.P| 
 
 ---
