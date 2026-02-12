@@ -54,15 +54,6 @@ nav:
               - digitais/Tecnologia/fpga/tecnologia/t04-quartus-sim_vwf.md
               - digitais/Tecnologia/fpga/tecnologia/t05-quartus-rtl_viewer.md
               - digitais/Tecnologia/fpga/tecnologia/t06-ghdl-gtkwave.md
-      - Situações de Aprendizagem:
-          - Básicas:
-              - digitais/SituacoesAprendizagem/Basicas/sa01-sinalizador_garagem.md
-              - digitais/SituacoesAprendizagem/Basicas/sa02-partida_estrela_triangulo.md
-              - digitais/SituacoesAprendizagem/Basicas/sa03-semaforo.md
-      - Periféricos:
-          - Digital I/O:
-              - digitais/Perifericos/dev01-led.md
-              - digitais/Perifericos/dev02-button.md
       - Controladores:
           - Arduino:
               - digitais/Controladores/arduino/uno01-digital_output.md
@@ -88,6 +79,15 @@ nav:
               - digitais/iot/esp32/lab00-ambientacao.md
               - digitais/iot/esp32/lab01-blink.md
               - digitais/iot/esp32/lab02-componente.md
+      - Periféricos:
+          - Digital I/O:
+              - digitais/Perifericos/dev01-led.md
+              - digitais/Perifericos/dev02-button.md
+      - Situações de Aprendizagem:
+          - Básicas:
+              - digitais/SituacoesAprendizagem/Basicas/sa01-sinalizador_garagem.md
+              - digitais/SituacoesAprendizagem/Basicas/sa02-partida_estrela_triangulo.md
+              - digitais/SituacoesAprendizagem/Basicas/sa03-semaforo.md
 
   - Automação Industrial:
       - index_automacao.md
