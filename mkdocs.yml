@@ -56,6 +56,7 @@ nav:
               - digitais/fpga/tecnologia/t06-ghdl-gtkwave.md
           - Periféricos:
               - digitais/devices/dev01-led.md
+              - digitais/devices/dev02-button.md
       - Dispositivos:
           - Arduino:
               - digitais/mcu/arduino/uno01-pisca_led.md

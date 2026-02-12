@@ -37,11 +37,7 @@ No desenvolvimento de sistemas embarcados, é fundamental observar os seguintes 
 A integração de LEDs é tão comum que quase todo sistema embarcado possui ao menos um para testes iniciais, sendo o programa que o faz piscar (o famoso *Blink*) considerado o "Hello World" da eletrônica.
 
 
-
-
----
-
-O dispositivo responsável por acionar o LED é o microcontrolador(uC), através de um pino configurado como saída. Este pino pode estar fornecendo corrente como fonte (source) ao ramo ou drenando (sink) corrente dele.
+Através de um pino de microcontrolador, configurado como saída, pode-se realizar o acionamento do LED. Este pino pode estar fornecendo corrente como fonte (source) ao ramo ou drenando (sink) corrente dele.
 
 | Ligação do pino como fonte (Source) | Ligação do pino como dreno (Sink) |
 |:-----------------------------------:|:---------------------------------:|
@@ -49,9 +45,9 @@ O dispositivo responsável por acionar o LED é o microcontrolador(uC), através
 
 O pino do uC possui limitação de corrente, que pode variar a depender do modelo ou fabricante.
 
-A corrente máxima por pino é de `40 mA`, de acordo com o Datasheet (AVR ATmega328P, capítulo *28.1 Absolute maximum ratings*, pág. 258).
+A corrente máxima por pino é de `40 mA`, de acordo com o Datasheet (AVR ATmega328P, capítulo *28.1 Absolute maximum ratings*, pág. 258), que é o microcontrolador do Arduino Uno. Este valor varia de acordo com o dispositivo controlador, sendo assim, sempre consulte o manual do fabricante do controlador que está sendo utilizado. 
 
-A vantagem de utilizar o pino como fonte é trabalhar com uma lógica direta, em que o estado lógico 1(verdadeiro, +5V) produz o acionamento do LED, enquanto que na configuração do pino como dreno a lógica de acionamento é invertida, pois o pino em estado lógico 0(falso, 0V) produz o acionamento do LED.
+A vantagem de utilizar o pino como fonte é trabalhar com uma lógica direta, em que o estado lógico 1 (verdadeiro, +5V) produz o acionamento do LED, enquanto que na configuração do pino como dreno a lógica de acionamento é invertida, pois para produzir o acionamento do LED o pino deve estar em estado lógico 0 (falso, 0V).
 
 
 
