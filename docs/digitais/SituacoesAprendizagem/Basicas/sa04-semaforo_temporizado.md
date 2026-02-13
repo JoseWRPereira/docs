@@ -1,5 +1,5 @@
 ---
-title: Lab 8 - Semáforo Temporizado
+title: sa04 - Semáforo Temporizado
 icon: fontawesome/solid/traffic-light
 author:
  - José W. R. Pereira
@@ -12,26 +12,21 @@ tags:
 ---
 
 
-<!-- ![atmega328](img/lab0-atmega328p.png) -->
-![SemaforoTemporizado](img/lab08-semaforo_temporizado.gif)
-
----
-
-# Situação de Aprendizagem
+# Semáforo com temporizador
 
 
-**1. Objetivo: Semáforo com temporizador**
+# 1. Objetivo:
 
 Desenvolver uma aplicação, programa, para um ser executado na [simulação](img/lab08-sim-avr-semaforo_temporizado.sim1) de controle de tráfego (semáforo), a ser instalado em um cruzamento de pedestre. 
 
 |Figura 1a: Exemplo de cruzamento de pedestres| Figura 1b: Semáforo para veículos|
 |:-------------------------------------------:|:--------------------------------:|
-| ![semaforo_pedestre](img/lab3-semaforo_freepik.png)|![semaforo](img/lab3-semaforo.gif)|
+| ![semaforo_pedestre](img/semaforo-freepik.png)|![semaforo](img/semaforo.gif)|
 | Fonte: [freepik](https://br.freepik.com/vetores-premium/pedestre-atravessar-a-rua-com-pessoas-da-equipe-e-semaforo-e-cidade_5589436.htm)  | |
 
 
 
-**2. Requisitos da solução**
+# 2. Requisitos da solução
 
 1. Interface
       1. Semáforo de veículos (Vm, Am, Vd);
@@ -56,29 +51,20 @@ Desenvolver uma aplicação, programa, para um ser executado na [simulação](im
 3. Estrutra (*Hardware*): Circuito eletrônico
     * Potência por sinaleiro: 7W
     * Tensão de operação: 24V
+    * Displays de 7 segmentos Anodo ou Catodo comum
 
-**3. Planejamento da solução**
+---
+
+# 3. Planejamento da solução
 
 1. Planejamento do produto final
-      1. Projeto em plataforma de versionamento;
-      2. Código fonte;
-      3. Simulação;
-      4. Protótipo (opcional);
-      5. Circuito eletrônico (opcional).
-   
 2. Planejamento das ferramentas e materiais
-
 3. Planejamento do processo
-    1. Criar o projeto na plataforma de versionamento;
-    2. Definir mapa de entradas e saídas;
-    3. Construir o circuito no simulador;
-    4. Criar projeto de validação do circuito no simulador;
-    5. Criar programa(firmware) da aplicação;
-    6. Montar circuito em matriz de contatos;
-    7. Testar programa(firmware) na montagem do protótipo;
-    8. Registrar resultado da atividade.
 
-**4. Solução**
+---
 
+# 4. Solução
+
+![SemaforoTemporizado](img/semaforo_temporizado.gif)
 
 Bom trabalho!

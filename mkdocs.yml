@@ -81,13 +81,19 @@ nav:
               - digitais/iot/esp32/lab02-componente.md
       - Periféricos:
           - Digital I/O:
-              - digitais/Perifericos/dev01-led.md
-              - digitais/Perifericos/dev02-button.md
+              - digitais/Perifericos/dio01-led.md
+              - digitais/Perifericos/dio02-button.md
+              - digitais/Perifericos/dio03-display7seg.md
+              - digitais/Perifericos/dio04-displayLCD.md
+              - digitais/Perifericos/dio05-teclado.md
       - Situações de Aprendizagem:
           - Básicas:
               - digitais/SituacoesAprendizagem/Basicas/sa01-sinalizador_garagem.md
               - digitais/SituacoesAprendizagem/Basicas/sa02-partida_estrela_triangulo.md
               - digitais/SituacoesAprendizagem/Basicas/sa03-semaforo.md
+              - digitais/SituacoesAprendizagem/Basicas/sa04-semaforo_temporizado.md
+          - Intermediárias:
+              - digitais/SituacoesAprendizagem/Intermediarias/01-ihm.md
 
   - Automação Industrial:
       - index_automacao.md

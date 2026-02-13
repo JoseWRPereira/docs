@@ -22,7 +22,7 @@ Desenvolver uma aplicação, projeto eletrônico e programa, para um dispositivo
 
 |Figura 1a: Exemplo de cruzamento de pedestres| Figura 1b: Semáforo para veículos|
 |:-------------------------------------------:|:--------------------------------:|
-| ![semaforo_pedestre](img/lab3-semaforo_freepik.png)|![semaforo](img/lab3-semaforo.gif)|
+| ![semaforo_pedestre](img/semaforo-freepik.png)|![semaforo](img/semaforo.gif)|
 | Fonte: [freepik](https://br.freepik.com/vetores-premium/pedestre-atravessar-a-rua-com-pessoas-da-equipe-e-semaforo-e-cidade_5589436.htm)  | |
 
 

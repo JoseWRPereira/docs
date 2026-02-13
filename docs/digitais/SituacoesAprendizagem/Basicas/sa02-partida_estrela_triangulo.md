@@ -20,7 +20,7 @@ Desenvolver uma aplicação, projeto eletrônico e programa, para um dispositivo
 
 | Figura 1: Diagramas de comando e potência da partida Estrela-Triângulo          |
 |:-------------------------------------------------------------------------------:|
-| ![diagrama](img/lab2-partida-estrela-delta-comando-potencia.png)                |
+| ![diagrama](img/partida_ET.png)                                                 |
 |Fonte: [Wikipedia](https://pt.wikipedia.org/wiki/Partida_estrela-tri%C3%A2ngulo) |
 
 ---

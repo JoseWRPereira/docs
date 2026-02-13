@@ -17,7 +17,7 @@ tags:
 
 Desenvolver uma aplicação, projeto eletrônico e programa, para um dispositivo de sinalização de segurança para saída de veículos em garagem.
 
-![SinalizadorGaragem](img/lab1-sinalizador.png)
+![SinalizadorGaragem](img/sinalizador.png)
 
 ---
 

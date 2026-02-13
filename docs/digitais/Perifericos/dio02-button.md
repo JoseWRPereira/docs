@@ -10,7 +10,7 @@ tags:
 
 #
 
-# Chave Táctil, Botão de Pressão ou *Push-Button*
+# 1. Chave Táctil, Botão de Pressão ou *Push-Button*
 
 
 É um dispositivo que realiza condução ou interrupção elétrica entre, ao menos, dois de seus terminais de forma momentânea. 
@@ -42,7 +42,7 @@ Ao pressionar o botão, ele fecha, ligando o ponto de conexão com o pino do uC 
 A configuração com o resistor de pull-down é a que proporciona uma lógica direta a entrada do dado: botão pressionado.
 
 
-## O Fenômeno do *Bounce* (Trepidação)
+## 2. O Fenômeno do *Bounce* (Trepidação)
 
 Na prática, os botões mecânicos não estabelecem contato de forma instantânea e limpa. Quando pressionados ou soltos, os contatos metálicos sofrem um repique mecânico, gerando o chamado bounce. Esse ruído produz oscilações na tensão que podem durar cerca de 10 ms, fazendo com que o microcontrolador (que opera em alta velocidade) interprete um único clique físico como múltiplos acionamentos lógicos.
 
@@ -53,13 +53,13 @@ Na prática, os botões mecânicos não estabelecem contato de forma instantâne
 
 
 
-### Técnicas de Debounce
+### 2.1 Técnicas de Debounce
 
 Para solucionar o problema da trepidação, utiliza-se a técnica de **debounce**. Em sistemas microcontrolados ela é comumente realizada via software, porém o **debounce por hardware** é uma técnica que filtra essas oscilações antes mesmo que o sinal chegue ao pino do microcontrolador, economizando recursos de processamento da CPU.
 
 As fontes descrevem duas formas principais de realizar o debounce via hardware:
 
-#### 1. Filtros RC (Resistor-Capacitor)
+#### 2.1.1 Filtros RC (Resistor-Capacitor)
 
 A maneira mais comum de filtrar o ruído é através do uso de **capacitores** e resistores.
 
@@ -75,7 +75,7 @@ A maneira mais comum de filtrar o ruído é através do uso de **capacitores** e
 | ![Bounce](img/02-debounce.png) |
 |  |
 
-#### 2. Eliminadores de Trepidação com Latches (Biestáveis)
+#### 2.1.2 Eliminadores de Trepidação com Latches (Biestáveis)
 
 Sistemas que exigem uma transição lógica extremamente limpa, como o computador didático SAP-1, utilizam circuitos integrados de lógica digital para criar um debouncer.
 
@@ -86,6 +86,56 @@ Sistemas que exigem uma transição lógica extremamente limpa, como o computado
 *   **Aplicações:** Esse método é ideal para gerar pulsos de clock manuais ou sinais de controle de etapa única (*single-step*), onde um único pulso limpo é obrigatório para evitar múltiplos avanços no programa.
 
 Embora o debounce por software seja mais econômico por não exigir componentes extras, o **debounce por hardware** é superior em sistemas críticos onde a **velocidade de resposta** e a **previsibilidade temporal** são fundamentais, pois o microcontrolador não precisa "perder tempo" executando rotinas de atraso para validar a entrada.
+
+---
+
+# 3. Detecção de borda 
+
+![disp7seg_capa](img/button-bordas_capa.png)
+
+
+A **detecção de borda** é o processo de identificar a **transição de estado** em um sinal digital, ou seja, o exato momento em que a tensão muda de um nível lógico para outro. Em sistemas embarcados, essa técnica é fundamental para reagir a eventos externos, como o pressionar de um botão ou o sinal de um sensor, permitindo que o microcontrolador execute uma ação específica apenas no instante da mudança, em vez de processar continuamente enquanto o nível permanece estático.
+
+Existem dois tipos principais de bordas:
+
+*   **Borda de Subida (*Rising Edge*):** Quando o sinal transita do nível lógico baixo (0) para o nível lógico alto (1).
+*   **Borda de Descida (*Falling Edge*):** Quando o sinal transita do nível lógico alto (1) para o nível lógico baixo (0).
+
+
+Na ilustração seguinte os sinais para a detecção de bordas de subida e descida em função de um sinal de entrada e intervalos discretos (t0, t1, ..., tn) representando o tempo de execução de cada ciclo de execução do programa principal. 
+
+
+| Figura: Detecção de bordas de subida (*rising*) e descida (*falling*)|
+|:--------------------------------------------------------:|
+| ![scan](img/button-scan.png)                              |
+| Fonte: Autor                                             |
+
+
+
+
+
+
+## 3.1 Como realizá-la de forma genérica
+
+A detecção de borda pode ser implementada tanto por **hardware dedicado** (periféricos internos) quanto por **lógica de software**.
+
+Em aplicações simples onde o uso de interrupções não é viável, a detecção é feita via Software (Polling), comparando o estado atual de um pino com o seu estado anterior dentro do laço principal (*loop*).
+
+*   **Algoritmo genérico:**
+    1.  Lê o estado atual do pino.
+    2.  Compara com o estado salvo na iteração anterior.
+    3.  Se (Anterior == 0 e Atual == 1), houve uma **borda de subida**.
+    4.  Atualiza o estado anterior para a próxima leitura.
+*   **Atenção:** Ao realizar a detecção via software em botões mecânicos, é indispensável implementar uma técnica de **debounce** para filtrar o ruído (trepidação) que ocorre durante a transição, evitando que múltiplas bordas falsas sejam detectadas em um curto intervalo de tempo.
+
+
+
+
+| Figura: Detecção de borda para incremento e decremento |
+|:--------------------------------------------------------:|
+| ![bordas_inc_dec](img/button-bordas_inc_dec.gif)          |
+| Fonte: Autor                                             |
+
 
 
 ---
