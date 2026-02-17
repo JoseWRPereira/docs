@@ -56,7 +56,7 @@ Ao utilizar um Controlador Lógico Programável, a lógica de fiação física �
     *   **S1 - PARTIDA (Contato Normalmente Aberto):** Quando acionado realiza a partida do motor.
     *   **S0 - PARADA (Contato Normalmente Fechado):** Quando acionado realiza a parada do motor.
     *   **OL (Contato Normalmente Fechado):** Quando acionado indica sobrecarga no acionamento do motor.
-    *   **M:** Ativa a bobina do contator que liga o motor.
+    *   **K1:** Ativa a bobina do contator que liga o motor.
     *   **G**: Ativa sinaleiro verde.
     *   **R**: Ativa sinaleiro vermelho.
 
