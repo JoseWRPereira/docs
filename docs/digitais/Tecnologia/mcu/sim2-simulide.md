@@ -20,6 +20,9 @@ O [SimulIDE](https://simulide.com/p/) é um simulador de circuitos eletrônicos 
 
 ![Simulide](img/sim-simulide-testeCI.png)
 
+![Simulide](img/sim-simulide-blink.png)
+
+
 ---
 
 # Referências

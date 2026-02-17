@@ -22,6 +22,10 @@ O [Tinkercad](https://www.tinkercad.com/) é uma ferramenta online gratuita da A
 
 ![Tinkercad](img/sim-tinkercad-testeCI.png)
 
+![Tinkercad](img/sim-tinkercad-blink.png)
+
+![Tinkercad](img/sim-tinkercad-blink_code.png)
+
 
 ---
 
