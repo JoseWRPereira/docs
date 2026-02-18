@@ -24,7 +24,7 @@ Desenvolver uma aplicação, projeto eletrônico e programa, para um dispositivo
 # 2. Requisitos da solução
 
   1. Luzes piscando enquanto o portão estiver aberto;
-  2. Intervalo de alternância entre luzes: 1s.
+  2. Intervalo de alternância entre luzes: 500 ms.
 
 ---
 

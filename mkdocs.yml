@@ -77,7 +77,7 @@ nav:
               - digitais/mcu/avr_atmega328p/lab12-timer.md
               - digitais/mcu/avr_atmega328p/lab13-adc.md
               - digitais/mcu/avr_atmega328p/lab14-usart.md
-              - digitais/mcu/avr_atmega328p/lab_atividades.md
+#              - digitais/mcu/avr_atmega328p/lab_atividades.md
           - ESP32:
               - digitais/iot/esp32/esp32-1-intro.md
               - digitais/iot/esp32/lab00-ambientacao.md
