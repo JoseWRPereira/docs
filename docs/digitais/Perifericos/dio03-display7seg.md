@@ -89,6 +89,13 @@ Para acionar um display individual, cada segmento (identificado pelas letras de 
 2.  **Decodificação:** Utiliza-se uma **tabela de decodificação** (ou *lookup table*) no código, que traduz o valor binário convencional para o padrão de bits que o display exige. 
 3.  **Saída de Dados:** O microcontrolador escreve o valor da tabela diretamente no registrador da porta (PORT) conectada ao display.
 
+
+| Figura 6: Contagem com 1 dígito               |
+|:---------------------------------------------:|
+| ![Disp7Seg-Digitos](img/disp7seg-digitos.gif) |
+| Fonte: Autor                                  |
+
+
 # 3. Uso com Múltiplos Dígitos (Multiplexação)
 
 Ligar vários dígitos diretamente exigiria um número excessivo de pinos (ex: 32 pinos para 4 dígitos). Para resolver isso, utiliza-se a técnica de **multiplexação temporal**, baseada no fenômeno da **persistência da visão** humana.
@@ -101,7 +108,7 @@ Ligar vários dígitos diretamente exigiria um número excessivo de pinos (ex: 3
 
 Segue um exemplo, Figura 6, de implementação de dois dígitos com displays de sete segmentos utilizando a técnica de multiplexação.
 
-| Figura 6: Contagem com 2 dígitos            |
+| Figura 7: Contagem com 2 dígitos            |
 |:-------------------------------------------:|
 | ![2xdisp7seg](img/disp7seg-0_99.gif)  |
 | Fonte: Autor                                |

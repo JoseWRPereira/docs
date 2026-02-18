@@ -1,5 +1,5 @@
 ---
-title: Lab 9 - Display de Cristal Líquido
+title: 05 - Display de Cristal Líquido
 icon: fontawesome/solid/tv
 author:
  - José W. R. Pereira
@@ -11,22 +11,27 @@ tags:
  - ATMega328P
 ---
 
+#
 
-![atmega328](img/lab09-capa.png)
+# Biblioteca do Display de Cristal Líquido
 
----
 
-# Display de Cristal Líquido - [LCD HD44780](https://cdn.sparkfun.com/assets/9/5/f/7/b/HD44780.pdf)
+# 1. Objetivo:
 
-| Figura 1: [Simulação](simulide/LCD_HD44780.sim1) de acionamento manual e inserção de caracteres |
+Desenvolver uma conjunto de funções, para controlador o [LCD HD44780 - Hitachi](https://cdn.sparkfun.com/assets/9/5/f/7/b/HD44780.pdf), de modo a reproduzir a seguinte simulação de teste:
+
+
+| Figura 1: [Simulação](../../sim/simulide/LCD_arduino_uno.sim1) de LCD acionado pelo Arduino Uno|
 |:-----------------------------------------------------:|
-| ![AcionamentoManual](img/lab09-manual.gif)            |
-| Fonte: Autor (SimulIDE-1.1.0-SR1)                     |
+| ![Desafio](img/dispLCD-biblioteca.gif)            |
+| Fonte: Autor                                          |
 
-| Figura 2: Mapa de caracteres                          |
-|:-----------------------------------------------------:|
-| ![MapaDeCaracteres](img/lab09-mapa_caracteres.png)    |
-| Fonte: [Sparkfun - Hitachi](https://cdn.sparkfun.com/assets/9/5/f/7/b/HD44780.pdf) |
+
+
+
+# 2. Requisitos da solução
+
+1) Interface
 
 ```c title='Definicao de Comandos ao LCD '
 #define LCD_CLEAR_DISPLAY           0x01
@@ -68,18 +73,6 @@ tags:
 #define LCD_ADDR_LINE_0             0x00
 #define LCD_ADDR_LINE_1             0x40
 ```
-
-
-**Atividade desafio**
-
-Elabore funções em linguagem C de acordo com os protótipos listados abaixo, de modo a controlar o LCD conforme orientação do professor.
-
-| Figura 3: [Simulação](simulide/LCD_arduino_uno.sim1) de LCD acionado pelo Arduino Uno|
-|:-----------------------------------------------------:|
-| ![MapaDeCaracteres](img/lab09-desafio.gif)            |
-| Fonte: Autor                                          |
-
-
 ```C title="lcd.h"
 #ifndef LCD_H
 #define LCD_H
@@ -104,6 +97,11 @@ void lcd( unsigned char lin, unsigned char col, const char * str );
 
 #endif
 ```
+
+
+
+2) Comportamento
+
 
 ```C title="main.c"
 #define F_CPU	16000000L
@@ -130,3 +128,21 @@ void main(void)
 }
 ```
 
+3) Estrutra (*Hardware*): Circuito eletrônico
+
+---
+
+# 3. Planejamento da solução
+
+1. Planejamento do produto final
+2. Planejamento das ferramentas e materiais
+3. Planejamento do processo
+
+---
+
+# 4. Solução
+
+
+Bom trabalho!
+
+---

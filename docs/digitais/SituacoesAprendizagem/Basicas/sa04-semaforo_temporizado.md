@@ -1,5 +1,5 @@
 ---
-title: sa04 - Semáforo Temporizado
+title: 04 - Semáforo Temporizado
 icon: fontawesome/solid/traffic-light
 author:
  - José W. R. Pereira
