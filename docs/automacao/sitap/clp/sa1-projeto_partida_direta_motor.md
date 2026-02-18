@@ -37,27 +37,49 @@ Explicação detalhada sobre o acionamento não faz parte do escopo deste materi
 
 ---
 
-# 2. Objetivo
+# 2. Desenvolvimento do projeto/atividade/tarefa
+
+A etapa inicial no desenvolvimento de uma atividade, tarefa ou projeto é ter um objetivo bem definido. 
+
+## 2.1 Requisitos da solução (Componentes de interface e Comportamento)
+
+Lista dos componentes de interface com suas características e a descrição do comportamento que se deve atingir na solução.
+
+## 2.2 Planejamento (Produto final, Ferramentas, Materiais e Processo )
+
+Definir como será feita a entrega: simulador, montagem de protótipo, montagem de circuito em painel ou PCI, etc, assim como listar os materiais e ferramentas em função do tipo de entrega. Por fim o planejamento do processo, em que deve ficar explicito como, utilizando os materiais listados e manipulando da ferramentas, chega-se ao produto final, com um encadeamento lógico das tarefas que compoem o processo.
+
+## 2.3 Solução
+
+Produto ou processo que atinge o objetivo proposto, através da execução de seu planejamento e satisfação dos seus requisitos.
+
+---
+
+# 3. Objetivo
 Desenvolver uma aplicação, programa, em CLP para realizar uma partida direta de motor trifásico.
 
 ---
 
-## 2.1 Requisitos da solução
+## 3.1 Requisitos da solução
 
-### 2.1.1 Componentes de interface
-  * Botoeira ligar: S1;
-  * Botoeira desligar: S0;
-  * Contator de acionamento: K1;
+### 3.1.1 Componentes de interface
+  * Botoeira ligar: `S1`;
+  * Botoeira desligar: `S0`;
+  * Contator de acionamento: `K1`;
 
-### 2.1.2 Comportamento
-  * Ao pressionar S1
-	   * Ligar K1;
+### 3.1.2 Comportamento
+  - Ao pressionar `S1`:
+	- Ligar `K1`;
 	
-	* Ao pressionar S0, em qualquer momento:
-		 * Desligar K1.
+  - Ao pressionar `S0`:
+  	- Desligar `K1`.
+
+  - `S0` é mandatório sobre `S1`.
 
 
-## 2.2 Planejamento do produto final
+## 3.2 Planejamentos 
+
+### 3.2.1 Produto final
 
 1. Apresentação de funcionamento em kit didático;
 2. Arquivo .pdf contendo:
@@ -65,30 +87,30 @@ Desenvolver uma aplicação, programa, em CLP para realizar uma partida direta d
 	* programa em linguagem `Ladder`, `ST` ou `SFC(Grafcet)` contendo comportamento para a partida proposta.
 
 
-## 2.3 Ferramentas 
+### 3.2.2 Ferramentas 
 
 1. Software Master Tool IEC
 2. Kit didático: TB131 Altus
 
 
-## 2.4 Materiais
+### 3.2.3 Materiais
 
 * Não há!
 
 
-## 2.5 Planejamento do processo
+### 3.2.4 Planejamento do processo
 
 - Abrir projeto a partir do modelo: `Modelo_DU350_DU351_v110.pro`;
 - Acrescentar objeto POU do tipo Programa em linguagem Ladder ou ST ou SFC;
 - Declarar entradas e saídas físicas (Mapa de Entradas e Saídas);
 - Programar a lógica de funcionamento;
-- Testar comportamento.
+- Testar e Validar o comportamento.
 
 ---
 
-# 3. Solução
+## 3.3 Solução
 
-## 3.1 Mapa de Entradas e Saídas
+## 3.3.1 Mapa de Entradas e Saídas
 
 | Função  | Identificador | Descrição                 | Tipo |Endereço |
 |:-------:|:-------------:|:-------------------------:|:----:|:-------:|
@@ -97,14 +119,14 @@ Desenvolver uma aplicação, programa, em CLP para realizar uma partida direta d
 | Saída   | K1            | Contator que aciona motor | Bool |%QX1.0   |
 
 
-## 3.2 Programa em Linguagem Ladder
+## 3.3.2 Programa em Linguagem Ladder
 
 ![Solucao_prog](img/sa1-solucao_prog.png)
 
 Para imprimir o projeto, basta clicar em `Arquivo` e `Imprimir` e realizar a impressão em arquivo .pdf. 
 
 
-## 3.3 Impressão
+## 3.3.3 Impressão
 
 ![Solucao_imprimir](img/sa1-imprimir.png)
 

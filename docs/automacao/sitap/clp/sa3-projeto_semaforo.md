@@ -14,7 +14,7 @@ tags:
 
 ---
 
-**1. Objetivo**
+# 1. Objetivo
 
 Desenvolver uma aplicação, programa de PLC, 
 para um dispositivo de controle de tráfego (semáforo), 
@@ -23,31 +23,39 @@ a ser instalado em um cruzamento de pedestre.
 
 |Figura 1a: Exemplo de cruzamento de pedestres | Figura 1b: Semáforo para veículos|
 |:-------------------------------------------:|:--------------------------------:|
-| ![semaforo_pedestre](img/sa3-semaforo_freepik.png)|![semaforo](gif/sa3-semaforo.gif)|
+| ![semaforo_pedestre](img/sa3-semaforo_freepik.png)|![semaforo](img/sa3-semaforo.gif)|
 | Fonte: [freepik](https://br.freepik.com/vetores-premium/pedestre-atravessar-a-rua-com-pessoas-da-equipe-e-semaforo-e-cidade_5589436.htm)  | |
 
 
 ---
 
-**2. Requisitos**
+## 1.1 - Requisitos da solução
 
-* Intervalo de tempo para o Semáforo de Veículos(sv):
-	* Verde: 42s
-	* Amarelo: 3s
-	* Vermelho: 15s
-* Semáforo de Pedestre(sp) sincronizado com o de veículos:
-	* Verde (sv) : Vermelho (sp)
-	* Amarelo (sv) : Vermelho (sp)
-	* Vermelho (sv) : Verde (sp)
-* Piscar Vermelho (sp) 3x antes de mudar em definitivo.
+### 1.1.1 Componentes de interface
 
-* Botão pulsador para antecipar liberação de passagem dos pedestres:
-	* Se faltar mais do que 10s para o acionamento da cor amarela, reduzir para 10s.
-	* Se faltar menos do que 10s para o acionamento da cor amarela, manter o tempo restante.
+- Sinaleiros do semáforo de veículos (Vermelho, Amarelo, Verde);
+- Sinaleiros do semáforo de pedestres (Vermelho, Verde);
+- Botoeira de passagem de pedestre;
+
+### 1.1.2 Comportamento
+
+- Intervalo de tempo para o Semáforo de Veículos(sv):
+	- Verde: 42s
+	- Amarelo: 3s
+	- Vermelho: 15s
+- Semáforo de Pedestre(sp) sincronizado com o de veículos:
+	- Verde (sv) : Vermelho (sp)
+	- Amarelo (sv) : Vermelho (sp)
+	- Vermelho (sv) : Verde (sp)
+- Piscar Vermelho (sp) 3x antes de mudar em definitivo.
+
+- Botão pulsador para antecipar liberação de passagem dos pedestres:
+	- Se faltar mais do que 10s para o acionamento da cor amarela, reduzir para 10s.
+	- Se faltar menos do que 10s para o acionamento da cor amarela, manter o tempo restante.
 
 ---
 
-**3. Planejamento**
+# 2 Planejamento do produto final, ferramentas, materiais e processo.
 
 Definir como será feita a entrega: 
 simulador, montagem de protótipo, montagem de circuito em painel ou PCI, etc, 
@@ -57,7 +65,9 @@ utilizando os materiais listados e manipulando da ferramentas,
 chega-se ao produto final, com um encadeamento lógico das tarefas que compoem o processo.
 
 
-**4. Solução**
+# 3. Solução
+
+Produto ou processo que atinge o objetivo proposto, através da execução de seu planejamento e satisfação dos seus requisitos.
 
 ---
 
