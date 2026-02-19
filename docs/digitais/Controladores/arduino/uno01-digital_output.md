@@ -15,7 +15,7 @@ Uma **saída digital** é o recurso que permite ao microcontrolador interagir co
 Para configurar e usar uma saída digital, segue-se o procedimento abaixo:
 
 ## 1. Configuração (Função `setup`)
-Antes de utilizar um pino, você deve configurá-lo, para que ele funcione como uma saída. Isso é feito através da função **`pinMode(pin, mode)`**.
+Antes de utilizar um pino, você deve configurá-lo, para que ele funcione como uma saída. Isso é feito através da função **`pinMode(pin, mode)`**, que deve ser executada dentro da função `setup()`.
 
 *   **Parâmetros** 
     * **pin**: Pino do arduino a ser configurado, no Uno de 0 a 13;

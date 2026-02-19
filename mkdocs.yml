@@ -59,6 +59,7 @@ nav:
       - Controladores:
           - Arduino:
               - digitais/Controladores/arduino/uno01-digital_output.md
+              - digitais/Controladores/arduino/uno02-digital_input.md
           - AVR ATmega328P:
               - digitais/Controladores/avr_atmega328p/avr00-devTools.md
               - digitais/Controladores/avr_atmega328p/avr01-digital_io.md
