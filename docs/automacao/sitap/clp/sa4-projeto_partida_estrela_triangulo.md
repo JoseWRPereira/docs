@@ -21,7 +21,7 @@ para um dispositivo de comando para partida Estrela-Triângulo.
 
 | Figura 1: Diagramas de comando e potência da partida Estrela-Triângulo |
 |:-------------------:|
-| ![Diagrama Comando e Potencia](img/sa2-partida-estrela-delta-comando-potencia.png) |
+| ![Diagrama Comando e Potencia](img/partidaET-comando-potencia.png) |
 |Fonte: [Wikipedia](https://pt.wikipedia.org/wiki/Partida_estrela-tri%C3%A2ngulo) |
 
 ---

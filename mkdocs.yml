@@ -141,9 +141,11 @@ nav:
               - automacao/clp/altus_tb131/lab10-funcao.md
       - Situações de Aprendizagem:
           - CLP:
-              - automacao/sitap/clp/sa1-projeto_partida_direta_motor.md
-              - automacao/sitap/clp/sa2-projeto_partida_estrela_triangulo.md
-              - automacao/sitap/clp/sa3-projeto_semaforo.md
+              - automacao/sitap/clp/sa1-operacoes_logicas.md
+              - automacao/sitap/clp/sa2-projeto_partida_direta_motor.md
+              - automacao/sitap/clp/sa3-projeto_portao_diretaReversao.md
+              - automacao/sitap/clp/sa4-projeto_partida_estrela_triangulo.md
+              - automacao/sitap/clp/sa5-projeto_semaforo.md
 
   - Ciência de Dados:
       - index_dados.md

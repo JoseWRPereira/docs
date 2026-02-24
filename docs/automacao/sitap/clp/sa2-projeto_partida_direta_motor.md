@@ -19,7 +19,7 @@ A Figura 1 ilustra os diagramas de potência e de comandos, responsáveis pela a
 
 | Figura 1: Diagrama de Potência e Comando de uma partida direta de motor |
 |:------------------------------------------------:|
-| ![DiagramaPotCom](img/sa1-diagrama_pot_com.png)  |
+| ![DiagramaPotCom](img/partidaDireta-diagrama_pot_com.png)  |
 | Fonte: [PARTIDA DIRETA DE MOTORES - COMO LIGAR? - Ômega Treinamentos](https://youtu.be/V2DbwDzUdlQ?si=F2xr17v3h1VSgnTC) |
 
 
@@ -121,17 +121,17 @@ Desenvolver uma aplicação, programa, em CLP para realizar uma partida direta d
 
 ## 3.3.2 Programa em Linguagem Ladder
 
-![Solucao_prog](img/sa1-solucao_prog.png)
+![Solucao_prog](img/partidaDireta-solucao_prog.png)
 
 Para imprimir o projeto, basta clicar em `Arquivo` e `Imprimir` e realizar a impressão em arquivo .pdf. 
 
 
 ## 3.3.3 Impressão
 
-![Solucao_imprimir](img/sa1-imprimir.png)
+![Solucao_imprimir](img/partidaDireta-imprimir.png)
 
 Caso haja necessidade, realize ajustes na folha de impressão. Cada software possui ajustes próprios. 
 
-![Solucao_impressao](img/sa1-impressao.png)
+![Solucao_impressao](img/partidaDireta-impressao.png)
 
 ---
