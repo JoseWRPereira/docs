@@ -132,6 +132,40 @@ Augustus De Morgan estabeleceu dois teoremas vitais que permitem a conversão en
 
 Toda expressão booleana permanece válida se os operadores AND e OR forem trocados entre si, simultaneamente com a troca dos valores lógicos 0 e 1. Este princípio é fundamental para a síntese de hardware, permitindo, por exemplo, a implementação de uma porta AND utilizando uma porta OR com entradas e saídas invertidas.
 
+---
+
+# Exercícios
+
+## 1. Simplificação de Expressões Booleanas
+Simplifique as seguintes expressões algébricas visando a redução do número de termos ou variáveis:
+
+1. $S = A \bar{B} C + A \bar{B} \bar{C}$
+2. $S = \bar{A} B \bar{C} + A \bar{B} \bar{C} + \bar{A} \bar{B} \bar{C}$
+3. $S = ABC + A\bar{C} + A\bar{B}$
+4. $S = \bar{A}B + A\bar{B} + AB$
+5. $S = A \bar{B} C + A \bar{B} \bar{C} + \bar{A} B C$
+6. $Y = A B C D + A B \bar{C} D + A B C \bar{D}$
+7. $Y = A \bar{B} C + \bar{A} \bar{B} C$
+8. $F = A \bar{B} \bar{C} + \bar{A} B \bar{C} + A B \bar{C}$
+9. $F = A\bar{B}(B+C)$
+
+## 2. Aplicação dos Teoremas de De Morgan
+Utilize as leis de De Morgan para simplificar ou transformar as expressões abaixo, eliminando as barras de negação sobre múltiplos termos:
+
+1.  $F = \overline{A + B + \bar{C}}$
+2.  $F = \overline{\overline{ABC} + D}$
+3.  $F = \overline{A + (B + C)\bar{D}}$
+4.  $F = \overline{\overline{A + B} + \bar{A}B}$
+5.  $F = \overline{A + B + C + \bar{A}\bar{B} + \bar{B}C}$
+6.  $F = \overline{\bar{A}B} + ABC$
+
+## 3. Provas Algébricas e Teóricas
+Demonstre a validade das igualdades ou situações lógicas utilizando os axiomas da álgebra booleana:
+
+Prove a seguinte igualdade: $(A + B)(A + C) = A + BC$ (Dica: utilize a propriedade distributiva e o postulado de que $A+1=1$).
+
+
+
 
 ---
 
