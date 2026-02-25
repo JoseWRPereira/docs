@@ -43,6 +43,7 @@ nav:
               - digitais/Tecnologia/eletronicaDigital/sdig1-sistema_numeracao.md
               - digitais/Tecnologia/eletronicaDigital/sdig2-portas_logicas.md
               - digitais/Tecnologia/eletronicaDigital/sdig3-expressoes_logicas_circuitos.md
+              - digitais/Tecnologia/eletronicaDigital/sdig4-mapa_de_karnaugh.md
           - Microcontroladores:
               - digitais/Tecnologia/mcu/mcu1-embarcados.md
               - digitais/Tecnologia/mcu/mcu2-microcontroladores.md
