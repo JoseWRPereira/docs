@@ -24,7 +24,7 @@ tags:
 |   4    | 06/03 |                                    | Exposição dialogada e Prática orientada <br>Lab. Informática, software específico |  |
 |   5    | 11/03 | - Teorema de De Morgan             |             |                   |
 |   5    | 13/03 |                                    | Exposição dialogada e Prática orientada <br>Lab. Informática, software específico |  |
-|   6    | 18/03 | - Mapa de Karnaugh                 |             |                   |
+|   6    | 18/03 | - [Mapa de Karnaugh](../../digitais/Tecnologia/eletronicaDigital/sdig4-mapa_de_karnaugh.md)                 |             |                   |
 |   6    | 20/03 |                                    | Exposição dialogada e Prática orientada <br>Lab. Informática, software específico |  |
 |   7    | 25/03 | - Somadores e subtratores          |             |                   |
 |   7    | 27/03 |                                    | Exposição dialogada e Prática orientada <br>Lab. Informática, software específico |  |
