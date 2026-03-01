@@ -98,6 +98,7 @@ nav:
           - KiCad:
               - digitais/PCI/KiCad/1-KiCad.md
               - digitais/PCI/KiCad/2-Novo_Projeto.md
+              - digitais/PCI/KiCad/3-Esquematico.md
       - Situações de Aprendizagem:
           - Básicas:
               - digitais/SituacoesAprendizagem/Basicas/sa01-sinalizador_garagem.md
