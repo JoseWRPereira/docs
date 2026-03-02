@@ -57,11 +57,11 @@ O **Intertravamento (Bloqueio)** é uma regra fundamental na lógica de reversã
 
 - Condição: Portão fechado
 	- fc2 acionado;
-	- Se pressionar o "Abrir" o portão deve abrir até atingir o fc2. 
+	- Se pressionar o "Abrir" o portão deve abrir até atingir o fc1. 
 
 - Condição: Portão aberto
 	- fc1 acionado;
-	- Se pressionar o "Fechar" o portão deve fechar até atingir o fc1.
+	- Se pressionar o "Fechar" o portão deve fechar até atingir o fc2.
 
 - Condição: Portão abrindo
 	- Se pressionar o "Fechar" o botão não tem efeito.
