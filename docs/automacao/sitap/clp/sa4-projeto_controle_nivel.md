@@ -30,10 +30,10 @@ para controlar o acionamento de modo a controlar o nível em um reservatório de
 
 ### 1.1.1 Componentes de interface
 
-- LIGA: Botoeira ligar;
-- DESL: Botoeira desligar;
+- LIGA: Botoeira ligar (Contato NA);
+- DESL: Botoeira desligar (Contato NF);
 - A/M:  Chave de seleção de operação Automática/Manual
-- Sensores de nível:
+- Sensores de nível (Presença de líquido - Fechado / Ausência de líquido - Aberto):
     - LSA1: Sensor de nível alto do reservatório superior;
     - LSA0: Sensor de nível baixo do reservatório superior;
     - LSB1: Sensor de nível alto do reservatório inferior;
