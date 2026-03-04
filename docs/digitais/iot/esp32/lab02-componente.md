@@ -51,7 +51,7 @@ Obs: O caminho do `export.ps1`/`export.sh` vai mudar em função do local escolh
 **3. Criando um novo projeto**
 
 ```ps1
-idf.py create-project -p . component_builtinLED
+idf.py create-project -p . piscaLED
 ```
 
 ---
@@ -75,24 +75,24 @@ idf.py build
 **6. Criando um componente (pela primeira vez)**
 
 ```bash
-idf.py -C ./components create-component builtinLED
+idf.py -C ./components create-component led
 ```
 
 ---
 
 **7. Criando código do componente**
 
-```C title="esp32_component_builtinLED/components/builtinLED/builtinLED.c"
+```C title="esp32_component_builtinLED/components/led/led.c"
 #include <stdio.h>
 #include "driver/gpio.h"
-#include "builtinLED.h"
+#include "led.h"
 
 
 /**********************************************************
  * @brief Inicializa pino conectado ao LED embarcado no módulo
  * @param -
 **********************************************************/
-void builtinLED_init( void )
+void led_init( void )
 {
     gpio_reset_pin(BUILTINLED_GPIO);
     gpio_set_direction(BUILTINLED_GPIO, GPIO_MODE_OUTPUT);
@@ -104,29 +104,29 @@ void builtinLED_init( void )
  * @brief Liga/Desliga LED embarcado no módulo
  * @param b  1 LED ON, 0 LED OFF
 **********************************************************/
-void builtinLED(char b)
+void led(char b)
 {
     gpio_set_level(BUILTINLED_GPIO, b);
 }
 ```
 
 
-```C title="esp32_component_builtinLED/components/builtinLED/include/builtinLED.h"
-#ifndef BUILTINLED_H
-#define BUILTINLED_H
+```C title="esp32_component_builtinLED/components/led/include/led.h"
+#ifndef LED_H
+#define LED_H
 
 #define BUILTINLED_GPIO         2
 
 
-void builtinLED_init( void );
-void builtinLED(char b);
+void led_init( void );
+void led(char b);
 
 
 #endif
 ```
 
-```C title="esp32_component_builtinLED/components/builtinLED/CMakeLists.txt"
-idf_component_register( SRCS            "builtinLED.c"
+```C title="esp32_component_builtinLED/components/led/CMakeLists.txt"
+idf_component_register( SRCS            "led.c"
                         REQUIRES        driver
                         INCLUDE_DIRS    "include")
 ```
@@ -136,27 +136,27 @@ idf_component_register( SRCS            "builtinLED.c"
 
 **8. Criando código principal**
 
-```C title="esp32_component_builtinLED/main/component_builtinLED.c"
+```C title="esp32_component_builtinLED/main/piscaLED.c"
 #include <stdio.h>
 #include "freertos/FreeRTOS.h"
-#include "builtinLED.h"
+#include "led.h"
 
 void app_main(void)
 {
-    builtinLED_init();
+    led_init();
     while( 1 )
     {
-        builtinLED( 1 );
+        led( 1 );
         vTaskDelay(500 / portTICK_PERIOD_MS);
-        builtinLED( 0 );
+        led( 0 );
         vTaskDelay(500 / portTICK_PERIOD_MS);
     }
 }
 ```
 
 ```py title="esp32_component_builtinLED/main/CMakeLists.txt"
-idf_component_register( SRCS            "component_builtinLED.c"
-                        REQUIRES        builtinLED
+idf_component_register( SRCS            "piscaLED.c"
+                        REQUIRES        led
                         INCLUDE_DIRS    ".")
 
 
@@ -175,7 +175,7 @@ idf_component_register( SRCS            "component_builtinLED.c"
 cmake_minimum_required(VERSION 3.16)
 
 include($ENV{IDF_PATH}/tools/cmake/project.cmake)
-project(component_builtinLED)
+project(piscaLED)
 ```
 
 ---
