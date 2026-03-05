@@ -12,7 +12,7 @@ tags:
 
 # 
 
-# [Mapa de Karnaugh](../../slides/SDIG02-ExpressoesLogicas)
+# Mapa de Karnaugh
 
 O Mapa de Karnaugh (ou Mapa K) simplifica expressões de **mintermos** — representadas na forma de **Soma de Produtos (SOP)** — através de um método gráfico que identifica padrões de adjacência lógica para eliminar variáveis redundantes. Enquanto a simplificação por álgebra booleana exige manipulações matemáticas complexas, o Mapa K permite visualizar essas reduções diretamente da tabela-verdade.
 
@@ -33,6 +33,7 @@ O processo de simplificação baseia-se em identificar regiões onde a saída as
 ![](img/mapaK-posicao_valor.png)
 
 
+
 ## 3. Eliminação de Variáveis
 A simplificação ocorre quando uma variável aparece dentro de um mesmo laço tanto em sua forma **complementada** (0) quanto **não complementada** (1). Como essas formas se anulam logicamente ($A + \bar{A} = 1$), a variável "desaparece" da expressão resultante.
 
@@ -44,6 +45,11 @@ O impacto da simplificação depende do número de elementos no grupo:
 
 
 ![](img/mapaK-posicao_valor_simplifica.png)
+
+---
+
+![](img/mapaK-3vars.png)
+
 
 
 ## 4. Construção da Expressão Simplificada
@@ -62,7 +68,11 @@ A utilização dessas condições no Mapa de Karnaugh segue critérios técnicos
 
 Essa técnica é amplamente aplicada em componentes onde certas combinações binárias são descartadas, como em decodificadores de BCD para sete segmentos ou em codificadores de prioridade, permitindo que a lógica resultante seja mais econômica em termos de área de silício e consumo de recursos.
 
+![](img/mapaK-disp7seg.png)
 
+Segue exemplo de simplificação usando mapa de Karnaugh com quatro variáveis para o segmento `a` do display. 
+
+![](img/mapaK-disp7seg_a.png)
 
 
 
