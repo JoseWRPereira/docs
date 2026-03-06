@@ -1,6 +1,6 @@
 ---
-title: Lab02 - LED RGB
-icon: fontawesome/solid/circle-half-stroke
+title: Lab03 - LED RGB
+icon: fontawesome/solid/rainbow
 author:
  - José W. R. Pereira
 tags:

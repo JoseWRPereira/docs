@@ -85,6 +85,7 @@ nav:
               - digitais/iot/esp32/lab00-ambientacao.md
               - digitais/iot/esp32/lab01-blink.md
               - digitais/iot/esp32/lab02-componente.md
+              - digitais/iot/esp32/lab03-led_rgb.md
       - Periféricos:
           - Digital I/O:
               - digitais/Perifericos/dio01-led.md

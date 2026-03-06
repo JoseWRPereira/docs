@@ -15,6 +15,28 @@ tags:
 
 # Componentes
 
+No ecossistema do ESP-IDF, framawork oficial da Espressif, os `components` são formas de organizar o código de forma lógica, facilitando a manutenção e a reutilização de código. 
+
+Qualquer pasta com um arquivo `CMakeLists.txt`, dentro da estrutura de projeto pode ser um componente, permitindo a modularidade através do encapsulamento de código e posterior portabilidade.
+
+- Modularidade: Cada trecho com funcionalidade específica pode estar agrupado em um componente, sendo usado pelo arquivo principal que orquestra as chamadas e respostas. 
+
+- Encapsulamento: Cada componente pode ter suas próprias configurações de compilação e dependências.
+
+- Portabilidade: Pode-se copiar a pasta do componente de um projeto para outro de forma simples.
+
+- Colaboração: Diferentes desenvolvedores podem trabalhar em componentes distintos sem gerar conflitos no código principal.
+
+---
+
+Segue uma ilustração de um projeto `piscaLED`. Foram excluídos diretórios produzidos de forma automática pelo ESP-IDF. 
+
+![](img/comp-tree.png)
+
+----
+
+
+
 **1. Crie um novo projeto**
 
 1. Crie um novo diretório para o projeto;
