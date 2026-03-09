@@ -10,7 +10,7 @@ tags:
 
 #
 
-# SET/RESET
+# [SET/RESET](../../slides/CLP05-SetReset.pdf)
 
 
 As funções **SET** e **RESET** (também chamadas de **latch**(trava) e **unlatch**(destrava) em alguns sistemas) são instruções de saída utilizadas para controlar o estado de um bit de memória ou saída física de forma **retentiva**.
@@ -22,7 +22,7 @@ Diferente de uma instrução de saída comum, que depende da continuidade lógic
 *   **SET (Latch):** Quando uma borda de subida (degrau) é aplicado ao bloco da instrução SET, o processador grava um bit **1 (ligado)** no endereço especificado. Mesmo que as condições de entrada do degrau deixem de ser verdadeiras, o bit **permanece em 1**.
 
 ```st
-      LIGA                           BOMBA
+      LIGA                           MOTOR
 |-----| |-----------------------------(S)---|
 
 ```
@@ -31,13 +31,16 @@ Diferente de uma instrução de saída comum, que depende da continuidade lógic
 *   **RESET (Unlatch):** Para desligar o bit que foi "setado", é necessária uma instrução **RESET** com o **mesmo endereço**. Quando o degrau do RESET torna-se verdadeiro, o processador grava um bit **0 (desligado)** no endereço.
 
 ```st
-      DESL                           BOMBA
+      DESL                           MOTOR
 |-----| |-----------------------------(R)---|
 
 ```
 
 
 *   **Retentividade:** Essas instruções são úteis porque mantêm o último estado mesmo em caso de falha de energia ou desligamento do sistema, permitindo que o processo reinicie exatamente de onde parou quando a energia for restaurada.
+
+
+![](img/set_reset-diagrama.png)
 
 
 ### Exemplos de uso
@@ -51,11 +54,11 @@ Diferente de uma instrução de saída comum, que depende da continuidade lógic
 
 # Referências
 
-1. **PETRUZELLA, Frank D.** **Controladores lógicos programáveis**. Tradução de Romeu Abdo; revisão técnica de Antonio Pertence Júnior. **4. ed.** Porto Alegre: **AMGH**, 2014.
+1. PETRUZELLA, Frank D. **Controladores lógicos programáveis**. Tradução de Romeu Abdo; revisão técnica de Antonio Pertence Júnior. 4. ed. Porto Alegre: AMGH, 2014.
 
-2. **GEORGINI, Marcelo.** **Automação aplicada**: descrição e implementação de sistemas sequenciais com PLCs. **9. ed.** São Paulo: **Érica**, 2007.
+2. GEORGINI, Marcelo. **Automação aplicada**: descrição e implementação de sistemas sequenciais com PLCs. 9. ed. São Paulo: Érica, 2007.
 
-3. **SILVA FILHO, Bernardo Severo da (Orient.).** **Curso de controladores lógicos programáveis**. Rio de Janeiro: **Faculdade de Engenharia da UERJ**, Laboratório de Engenharia Elétrica, [s.d.]
+3. SILVA FILHO, Bernardo Severo da (Orient.). **Curso de controladores lógicos programáveis**. Rio de Janeiro: Faculdade de Engenharia da UERJ, Laboratório de Engenharia Elétrica, [s.d.]
 
 
 ---
