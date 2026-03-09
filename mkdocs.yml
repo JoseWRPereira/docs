@@ -120,6 +120,7 @@ nav:
               - automacao/clp/tecnologia/04-acionamento_basico.md
               - automacao/clp/tecnologia/05-set_reset.md
               - automacao/clp/tecnologia/06-bordas.md
+              - automacao/clp/tecnologia/07-temporizadores.md
           - Redes Industriais:
               - automacao/redes/tecnologia/01-redes_conceito.md
               - automacao/redes/tecnologia/02-classificacao_arquiteturas.md
