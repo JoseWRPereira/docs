@@ -173,9 +173,9 @@ nav:
               - dados/ml/ml06-k_means.md
               - dados/ml/ml07-rede_neural.md
           - Machine Learning:
-              - dados/ml/ml01-ia_ml_dl.md
-              - dados/ml/ml02-intro.md
-              - dados/ml/ml03-fundamento_classificacao.md
+              - dados/ml/am01-ia_ml_dl.md
+              - dados/ml/am02-intro.md
+              - dados/ml/am03-fundamento_classificacao.md
   #              - dados/ml/ml08-fuzzy.md
   - Projetos:
       - index_gestao.md
