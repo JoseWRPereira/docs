@@ -115,6 +115,8 @@ Essas leis regem a manipulação de expressões complexas e seguem princípios s
 *   **Absorção:** Termos redundantes são eliminados pela variável dominante 
     * $A + A \cdot B = A$
     * $A \cdot (A + B) = A$
+    * $A + \overline{A} \cdot B = A + B$
+    * $A \cdot (\overline{A} + B) = A \cdot B$
 
 ---
 
