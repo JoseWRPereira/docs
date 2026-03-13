@@ -38,16 +38,17 @@ para controlar o acionamento de modo a controlar o nível em um reservatório de
     - LSA0: Sensor de nível baixo do reservatório superior;
     - LSB1: Sensor de nível alto do reservatório inferior;
     - LSB0: Sensor de nível baixo do reservatório inferior;
+- K1: Acionamento do conjunto motor-bomba que enche a caixa superior.
     
 
 ### 1.1.2 Comportamento
 
 - Chave A/M na posição desativada (Operação manual)
     - Comando LIGA acionado
-        - Se houver água acima do nível mínimo no reservatório inferior, ligar a bomba que envia água para o reservatório superior, até que o seu nível alto seja atingido.
+        - Se houver água acima do nível mínimo no reservatório inferior, ligar K1 (motor-bomba) que envia água para o reservatório superior, até que o seu nível alto seja atingido.
         - Durante qualquer momento de operação da bomba, ela pode ser interrompida se pressionado o botão DESL. 
 - Chave A/M na posição ativada (Operação automática)
-    - O enchimento do reservatório superior deve iniciar quando o nível do reservatório superior estiver abaixo do sensor de nivel baixo, e deve encerrar quando o enchimento quando atingir o sensor alto do reservatório. 
+    - O enchimento do reservatório superior deve iniciar quando o nível do reservatório superior estiver abaixo do sensor de nivel baixo, e deve encerrar quando o enchimento atingir o sensor alto do reservatório, desde que o sensor de nível baixo da caixa inferior esteja acionado, garantindo a existência de água e evitando a queima do conjunto motor-bomba. 
     
 - A bomba não deve ser acionada se o nível de água estiver acima do nível alto no reservatório superior ou abaixo do nível baixo no reservatório inferior, para ambos os modos de operação.
 
