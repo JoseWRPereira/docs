@@ -10,7 +10,7 @@ tags:
 
 #
 
-# Temporizadores 
+# [Temporizadores](../../slides/CLP07-Temporizadores.pdf)
 
 Os **temporizadores** são, depois dos contatos e bobinas, as instruções de CLP mais utilizadas em sistemas de automação industrial. Eles exercem a mesma função que os relés de tempo eletrônicos e mecânicos convencionais, porém de forma lógica como funções definidas internamente e controladas pela programação do usuário. 
 
