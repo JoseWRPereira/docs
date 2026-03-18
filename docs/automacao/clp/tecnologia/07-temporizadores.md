@@ -59,9 +59,9 @@ Os temporizadores servem para gerenciar qualquer processo que dependa do decurso
 
 ---
 
-# Equipamentos 
+## Equipamentos 
 
-## [Altus TB131 - Temporizadores](../altus_tb131/lab05-temporizadores.md)
+- ### [Altus TB131 - Temporizadores](../altus_tb131/lab05-temporizadores.md)
 
 
 ---

@@ -10,8 +10,9 @@ tags:
  - Contadores
 ---
 
-# Contadores
+#
 
+# [Contadores](../tecnologia/08-contadores.md)
 
 ## *Counter UP* - CTU
 

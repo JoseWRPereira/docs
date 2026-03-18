@@ -125,6 +125,7 @@ nav:
               - automacao/clp/tecnologia/05-set_reset.md
               - automacao/clp/tecnologia/06-bordas.md
               - automacao/clp/tecnologia/07-temporizadores.md
+              - automacao/clp/tecnologia/08-contadores.md
           - Redes Industriais:
               - automacao/redes/tecnologia/01-redes_conceito.md
               - automacao/redes/tecnologia/02-classificacao_arquiteturas.md

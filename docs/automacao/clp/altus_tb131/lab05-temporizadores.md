@@ -10,9 +10,10 @@ tags:
  - Temporizadores
 ---
 
-# Temporizadores
 
----
+# 
+
+# [Temporizadores](../tecnologia/07-temporizadores.md)
 
 ## 1. TON - *ON Delay Timer*
 
