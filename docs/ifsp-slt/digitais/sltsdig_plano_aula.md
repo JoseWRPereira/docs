@@ -15,17 +15,17 @@ tags:
 | Semana | Data  | Conteúdo Planejado | Metodologia de Ensino e Recursos | Material de apoio |
 | :----: | :---: |:------------------ | :------------------------------- |:-----------------:|
 |   1    | 06/02 | Atividade Complementar - Palestra Científica de início de semestre - Além do Prompt: Comoa Inteligência Artificial está redefinindo o aprender a aprender - Prof. Damione - IFSP Salto| Palestra | |
-|   1    | 11/02 | Apresentação da Disciplina<br> [Fundamentos de Sistemas Digitais](../../digitais/Tecnologia/eletronicaDigital/sdig0-fundamentos.md); | Exposição Dialogada: Lousa/Quadro branco e projetor multimídia.               | [Slide](../../digitais/slides/SDIG00-Apresentacao.pdf) |
+|   1    | 11/02 | Apresentação da Disciplina<br> [Fundamentos de Sistemas Digitais](../../digitais/Tecnologia/eletronicaDigital/sdig0-fundamentos.md); | Exposição Dialogada: Lousa/Quadro branco e projetor multimídia.               | [Slide](../../digitais/slides/SDIG01-Apresentacao.pdf) |
 |   2    | 13/02 | [Sistemas de Numeração](../../digitais/Tecnologia/eletronicaDigital/sdig1-sistema_numeracao.md) |  Exposição Dialogada: Lousa/Quadro branco e projetor multimídia.| [Slide](../../digitais/slides/SDIG00-Apresentacao.pdf) |
-|   2    | 20/02 | [Lógica Combinacional Básica](../../digitais/Tecnologia/eletronicaDigital/sdig2-portas_logicas.md)<br> - Portas lógicas:<br>    - Fundamentais (AND, OR, NOT);<br>	- Derivadas (NAND, NOR, XOR, XNOR);<br>	- Tabelas-verdade; | Exposição Dialogada: Lousa/Quadro branco e projetor multimídia | [Slide](../../digitais/slides/SDIG01-ElementosLogicos.pdf)|
-|   3    | 25/02 | [Expressões lógicas e circuitos](../../digitais/Tecnologia/eletronicaDigital/sdig3-expressoes_logicas_circuitos.md) | Exposição Dialogada: Lousa/Quadro branco e projetor multimídia. <br>  Lab. de Eletrônica, kit didático e software específico | [Slide](../../digitais/slides/SDIG02-ExpressoesLogicas.pdf) |
-|   3    | 27/02 | [Expressões lógicas e circuitos](../../digitais/Tecnologia/eletronicaDigital/sdig3-expressoes_logicas_circuitos.md) |  Lab. Informática e software específico |  [Slide](../../digitais/slides/SDIG02-ExpressoesLogicas.pdf) |
+|   2    | 20/02 | [Lógica Combinacional Básica](../../digitais/Tecnologia/eletronicaDigital/sdig2-portas_logicas.md)<br> - Portas lógicas:<br>    - Fundamentais (AND, OR, NOT);<br>	- Derivadas (NAND, NOR, XOR, XNOR);<br>	- Tabelas-verdade; | Exposição Dialogada: Lousa/Quadro branco e projetor multimídia | [Slide](../../digitais/slides/SDIG02-ElementosLogicos.pdf)|
+|   3    | 25/02 | [Expressões lógicas e circuitos](../../digitais/Tecnologia/eletronicaDigital/sdig3-expressoes_logicas_circuitos.md) | Exposição Dialogada: Lousa/Quadro branco e projetor multimídia. <br>  Lab. de Eletrônica, kit didático e software específico | [Slide](../../digitais/slides/SDIG03-ExpressoesLogicas.pdf) |
+|   3    | 27/02 |  |  Lab. Informática e software específico |  [Slide](../../digitais/slides/SDIG03-ExpressoesLogicas.pdf) |
 |   4    | 04/03 | - Otimização de circuitos através de simplificação de expressões lógicas<br>- Álgebra de Boole | Exposição dialogada e Prática orientada <br>Lab. Informática, software específico, matriz de contatos e componentes eletrônicos. |           |
-|   4    | 06/03 |                                    | Exposição dialogada e Prática orientada <br>Lab. Informática, software específico |  |
-|   5    | 11/03 | - Teorema de De Morgan             |             |                   |
-|   5    | 13/03 |                                    | Exposição dialogada e Prática orientada <br>Lab. Informática, software específico |  |
-|   6    | 18/03 | - [Mapa de Karnaugh](../../digitais/Tecnologia/eletronicaDigital/sdig4-mapa_de_karnaugh.md)                 |             |                   |
-|   6    | 20/03 |                                    | Exposição dialogada e Prática orientada <br>Lab. Informática, software específico |  |
+|   4    | 06/03 | - Simuladores: Tinkercad e SimulIDE | Exposição dialogada e Prática orientada <br>Lab. Informática, software específico |  |
+|   5    | 11/03 | - Lab. Montagem de circuito combinacional  | Exposição dialogada e Prática orientada; <br> Materiais: Matriz de contatos, Fonte de alimentação ajustável, Multímetro, CIs (7804,7808, 7886), resistor e LED |   |
+|   5    | 13/03 | [Expressões lógicas e circuitos](../../digitais/Tecnologia/eletronicaDigital/sdig3-expressoes_logicas_circuitos.md) <br> - Teorema de De Morgan             | Exposição dialogada e Prática orientada <br> Sala de aula |  |
+|   6    | 18/03 | - Lab. Montagem de circuito combinacional  | Exposição dialogada e Prática orientada; <br> Materiais: Matriz de contatos, Fonte de alimentação ajustável, Multímetro, CIs (7804,7808, 7886), resistor e LED |                   |
+|   6    | 20/03 | - [Mapa de Karnaugh](../../digitais/Tecnologia/eletronicaDigital/sdig4-mapa_de_karnaugh.md)  | Exposição dialogada e Prática orientada <br>Sala de aula |  |
 |   7    | 25/03 | - Somadores e subtratores          |             |                   |
 |   7    | 27/03 |                                    | Exposição dialogada e Prática orientada <br>Lab. Informática, software específico |  |
 |   8    | 01/04 | - Comparadores                     |             |                   |
