@@ -1,5 +1,5 @@
 ---
-title: 3 - Display 7 segmentos
+title: 4. Display 7 segmentos
 icon: fontawesome/solid/7
 author:
  - José W. R. Pereira

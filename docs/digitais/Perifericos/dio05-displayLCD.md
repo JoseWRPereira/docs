@@ -1,5 +1,5 @@
 ---
-title: 04 - Display de Cristal Líquido
+title: 5. Display de Cristal Líquido
 icon: fontawesome/solid/tv
 author:
  - José W. R. Pereira

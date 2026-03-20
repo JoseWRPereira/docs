@@ -1,5 +1,5 @@
 ---
-title: 05 - Teclado Matricial 
+title: 6. Teclado Matricial 
 icon: fontawesome/solid/keyboard
 author:
  - José W. R. Pereira

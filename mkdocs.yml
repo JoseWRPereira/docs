@@ -94,9 +94,10 @@ nav:
           - Digital I/O:
               - digitais/Perifericos/dio01-led.md
               - digitais/Perifericos/dio02-button.md
-              - digitais/Perifericos/dio03-display7seg.md
-              - digitais/Perifericos/dio04-displayLCD.md
-              - digitais/Perifericos/dio05-teclado.md
+              - digitais/Perifericos/dio03-rele.md
+              - digitais/Perifericos/dio04-display7seg.md
+              - digitais/Perifericos/dio05-displayLCD.md
+              - digitais/Perifericos/dio06-teclado.md
       - Placa de Circuito Impresso:
           - Tecnologia:
               - digitais/PCI/Tecnologia/1-PCI.md
