@@ -12,7 +12,7 @@ tags:
 
 # 
 
-# Mapa de Karnaugh
+# [Mapa de Karnaugh](../../slides/SDIG04-MapaK.pdf)
 
 O Mapa de Karnaugh (ou Mapa K) simplifica expressões de **mintermos** — representadas na forma de **Soma de Produtos (SOP)** — através de um método gráfico que identifica padrões de adjacência lógica para eliminar variáveis redundantes. Enquanto a simplificação por álgebra booleana exige manipulações matemáticas complexas, o Mapa K permite visualizar essas reduções diretamente da tabela-verdade.
 
@@ -74,9 +74,72 @@ Segue exemplo de simplificação usando mapa de Karnaugh com quatro variáveis p
 
 ![](img/mapaK-disp7seg_a.png)
 
+---
+
+# Exercícios
+
+
+1) Simplificação de Mintermos (3 Variáveis)
+
+Dada a expressão booleana abaixo, preencha o Mapa de Karnaugh de três variáveis ($A, B, C$) e determine a expressão simplificada final. 
+Lembre-se de que a organização das células deve seguir o **Código Gray** (00, 01, 11, 10).
+
+$S = \bar{A}\bar{B}C + \bar{A}BC + A\bar{B}C + ABC + AB\bar{C}$
 
 
 ---
+
+2) Conversão de Tabela-Verdade para Mapa K (3 Variáveis)
+
+A partir da tabela-verdade fornecida, monte o Mapa de Karnaugh e obtenha a função lógica simplificada.
+
+| A | B | C | S |
+| :--- | :--- | :--- | :--- |
+| 0 | 0 | 0 | 0 |
+| 0 | 0 | 1 | 1 |
+| 0 | 1 | 0 | 1 |
+| 0 | 1 | 1 | 0 |
+| 1 | 0 | 0 | 0 |
+| 1 | 0 | 1 | 1 |
+| 1 | 1 | 0 | 1 |
+| 1 | 1 | 1 | 1 |
+
+
+---
+
+3) Otimização de Sistema com 4 Variáveis
+
+Projete a lógica simplificada para um sistema de quatro variáveis ($A, B, C, D$) onde a saída assume valor lógico 1 para os seguintes mintermos:
+
+**Mintermos (m):** $\sum m(0, 1, 2, 4, 5, 6, 8, 9, 10, 12, 13, 14)$
+
+---
+
+4) Uso de Condições "Don't Care" (X)
+
+Em projetos de hardware, como decodificadores de BCD para sete segmentos, algumas combinações de entrada nunca ocorrem ou são irrelevantes. Utilize o Mapa K de quatro variáveis ($P, Q, R, S$) para simplificar a função abaixo, tratando os "X" como 1 sempre que ajudarem a expandir um laço.
+
+*   **Segmento C: Mintermos (1):** $m_0, m_1, m_3, m_4, m_5, m_6, m_7, m_8, m_9$
+*   **Don't Cares (X):** $m_{10}, m_{11}, m_{12}, m_{13}, m_{14}, m_{15}$
+
+---
+
+5) Ainda usando condições "Don't Care" (X)
+
+Da mesma forma que o exercício anterior, defina os mintermos (1) para os segmentos do conversor (BCD para 7 segmentos) e utilizando o Mapa K de quatro variáveis ($P, Q, R, S$), simplifique as funções:
+
+*   **Segmento b: Mintermos (1):** 
+*   **Segmento d: Mintermos (1):** 
+*   **Segmento e: Mintermos (1):** 
+*   **Segmento f: Mintermos (1):** 
+*   **Segmento g: Mintermos (1):** 
+
+Para todos use: 
+
+*   **Don't Cares (X):** $m_{10}, m_{11}, m_{12}, m_{13}, m_{14}, m_{15}$
+
+---
+
 
 # Referências e complementos
 

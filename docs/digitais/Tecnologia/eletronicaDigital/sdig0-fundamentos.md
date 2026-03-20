@@ -9,7 +9,7 @@ tags:
 
 
 
-# [Sistemas Digitais](../../slides/SDIG00-Apresentacao.pdf)
+# [Sistemas Digitais](../../slides/SDIG01-Apresentacao.pdf)
 
 Um sistema digital pode ser definido como um **conjunto de componentes eletrônicos interconectados projetado para processar informações sob uma forma discreta**. Ao contrário dos sistemas analógicos, que lidam com funções e sinais contínuos, os sistemas digitais operam através de pulsos ou intervalos predeterminados, tratando um conjunto finito de valores. Essa estrutura lógica é baseada no sistema de numeração binário, no qual as quantidades são representadas por _bits_ (0 e 1) que simbolizam estados opostos. Fisicamente, esses estados lógicos correspondem à presença ou à ausência de tensão elétrica em elementos específicos do circuito.
 
