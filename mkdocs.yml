@@ -48,6 +48,8 @@ nav:
               - digitais/Tecnologia/eletronicaDigital/sdig6-somador_subtrator.md
               - digitais/Tecnologia/eletronicaDigital/sdig7-comparador.md
               - digitais/Tecnologia/eletronicaDigital/sdig8-mux_demux.md
+              - digitais/Tecnologia/eletronicaDigital/sdiglab-oscilador.md
+              
           - Microcontroladores:
               - digitais/Tecnologia/mcu/mcu1-embarcados.md
               - digitais/Tecnologia/mcu/mcu2-microcontroladores.md

@@ -24,10 +24,10 @@ tags:
 |   4    | 06/03 | - Simuladores: Tinkercad e SimulIDE | Exposição dialogada e Prática orientada <br>Lab. Informática, software específico |  |
 |   5    | 11/03 | - Lab. Montagem de circuito combinacional  | Exposição dialogada e Prática orientada; <br> Materiais: Matriz de contatos, Fonte de alimentação ajustável, Multímetro, CIs (7804,7808, 7886), resistor e LED |   |
 |   5    | 13/03 | [Expressões lógicas e circuitos](../../digitais/Tecnologia/eletronicaDigital/sdig3-expressoes_logicas_circuitos.md) <br> - Teorema de De Morgan             | Exposição dialogada e Prática orientada <br> Sala de aula |  |
-|   6    | 18/03 | - Lab. Montagem de circuito combinacional  | Exposição dialogada e Prática orientada; <br> Materiais: Matriz de contatos, Fonte de alimentação ajustável, Multímetro, CIs (7804,7808, 7886), resistor e LED |                   |
+|   6    | 18/03 | - Lab. Montagem de circuito combinacional  | Exposição dialogada e Prática orientada; <br> Materiais: Matriz de contatos, Fonte de alimentação ajustável, Multímetro, CIs (7404,7408, 7486), resistor e LED |                   |
 |   6    | 20/03 | - [Mapa de Karnaugh](../../digitais/Tecnologia/eletronicaDigital/sdig4-mapa_de_karnaugh.md)  | Exposição dialogada e Prática orientada <br>Sala de aula |  |
-|   7    | 25/03 | - Somadores e subtratores          |             |                   |
-|   7    | 27/03 |                                    | Exposição dialogada e Prática orientada <br>Lab. Informática, software específico |  |
+|   7    | 25/03 | - Lab. Montagem de circuito oscilador | Exposição dialogada e Prática orientada; <br> Materiais: Matriz de contatos, Fonte de alimentação ajustável, Multímetro, CIs (7414 ou 74132, 7474), capacitores (100nF cerâmico, 1uF, 10uF eletrolítico), resistores (560K e 150R) e LEDs  | [Oscilador Astável](../../digitais/Tecnologia/eletronicaDigital/sdiglab-oscilador.md)  |
+|   7    | 27/03 | - Somadores e subtratores          | Exposição dialogada e Prática orientada <br>Lab. Informática, software específico |  |
 |   8    | 01/04 | - Comparadores                     |             |                   |
 |   8    | 08/04 | - Decodificadores                  | Exposição dialogada e Prática orientada <br>Lab. Informática, software específico |  |
 |   9    | 10/04 |                                    |             |                   |
