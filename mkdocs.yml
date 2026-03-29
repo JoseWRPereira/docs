@@ -167,6 +167,7 @@ nav:
               - automacao/sitap/clp/sa4-projeto_controle_nivel.md
               - automacao/sitap/clp/sa5-projeto_partida_estrela_triangulo.md
               - automacao/sitap/clp/sa6-projeto_semaforo.md
+              - automacao/sitap/clp/sa7-projeto_outros_tempos.md
 
   - Ciência de Dados:
       - index_dados.md

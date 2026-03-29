@@ -12,6 +12,8 @@ tags:
 
 # Plano de aulas
 
+- [Calendário Escolar](https://slt.ifsp.edu.br/index.php/calendario-escolar)
+
 | Semana | Data  | Conteúdo Planejado | Metodologia de Ensino e Recursos | Material de apoio |
 | :----: | :---: |:------------------ | :------------------------------- |:-----------------:|
 |   1    | 06/02 | Atividade Complementar - Palestra Científica de início de semestre - Além do Prompt: Comoa Inteligência Artificial está redefinindo o aprender a aprender - Prof. Damione - IFSP Salto| Palestra | |

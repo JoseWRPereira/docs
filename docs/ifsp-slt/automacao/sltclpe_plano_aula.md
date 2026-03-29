@@ -12,6 +12,7 @@ tags:
 
 # Plano de aulas
 
+- [Calendário Escolar](https://slt.ifsp.edu.br/index.php/calendario-escolar)
 
 | Semana | Data  | Conteúdo Planejado | Metodologia de Ensino e Recursos  | Material de Apoio |
 | :----: | :---: | :----------------- | :-------------------------------- |:-----------------:|
