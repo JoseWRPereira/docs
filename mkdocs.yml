@@ -44,8 +44,8 @@ nav:
               - digitais/Tecnologia/eletronicaDigital/sdig2-portas_logicas.md
               - digitais/Tecnologia/eletronicaDigital/sdig3-expressoes_logicas_circuitos.md
               - digitais/Tecnologia/eletronicaDigital/sdig4-mapa_de_karnaugh.md
-              - digitais/Tecnologia/eletronicaDigital/sdig5-decodificadores.md
-              - digitais/Tecnologia/eletronicaDigital/sdig6-somador_subtrator.md
+              - digitais/Tecnologia/eletronicaDigital/sdig5-somador_subtrator.md
+              - digitais/Tecnologia/eletronicaDigital/sdig6-decodificadores.md
               - digitais/Tecnologia/eletronicaDigital/sdig7-comparador.md
               - digitais/Tecnologia/eletronicaDigital/sdig8-mux_demux.md
               - digitais/Tecnologia/eletronicaDigital/sdiglab-oscilador.md
@@ -129,6 +129,10 @@ nav:
               - automacao/clp/tecnologia/06-bordas.md
               - automacao/clp/tecnologia/07-temporizadores.md
               - automacao/clp/tecnologia/08-contadores.md
+              - automacao/clp/tecnologia/09-analogicas.md
+              - automacao/clp/tecnologia/10-blocos_funcionais.md
+              - automacao/clp/tecnologia/11-bf_personal.md
+              - automacao/clp/tecnologia/12-funcoes.md
           - Redes Industriais:
               - automacao/redes/tecnologia/01-redes_conceito.md
               - automacao/redes/tecnologia/02-classificacao_arquiteturas.md

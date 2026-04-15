@@ -1,5 +1,5 @@
 ---
-title: 0101 - Decodificadores
+title: 0110 - Decodificadores
 icon: fontawesome/brands/hive
 author: José W. R. Pereira
 tags: 

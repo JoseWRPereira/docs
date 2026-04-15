@@ -1,5 +1,5 @@
 ---
-title: 0110 - Somador e Subtrator
+title: 0101 - Somador e Subtrator
 icon: fontawesome/solid/plus-minus
 author: José W. R. Pereira
 tags: 
@@ -34,6 +34,92 @@ Na prática da arquitetura de computadores, é comum otimizar o hardware utiliza
 Existem ainda circuitos **Somadores/Subtratores Duais**, que utilizam portas XOR como inversores controlados: quando o sinal de controle é 1, o circuito atua como subtrator (complementando a entrada); quando é 0, atua como um simples somador. Esses circuitos integrados, como a série 74LS283, são amplamente utilizados para manipulação de dados em sistemas digitais.
 
 ---
+
+# Laboratório 1: Meio somador
+
+1) Criando um novo projeto no Quartus:
+
+![Quartus_NewProjectWizard](img/quartus-newProjectWizard.png)
+
+2) Criando e selecionando diretório e nome do projeto:
+
+![Quartus_Name](img/quartus-nameProject.png)
+
+3) Selecionar placa de desenvolvimento e finalizar criação do projeto:
+
+Selecione:
+
+- aba `Board`
+- Family: `Cyclone V`
+- Development Kit: `DE1-SoC board`
+- Selecione a única opção e em seguida `Next`
+
+![Quartus_Board](img/quartus-board.png)
+
+4) Projeto criado:
+
+![projetoHalfAdder](img/quartus-projetoHalfAdder.png)
+
+---
+
+5) Criando um novo Diagrama de Blocos / Esquemático
+
+![](img/quartus-newBlockDiagram.png)
+
+6) Área de criação de esquemático
+
+![](img/quartus-projetoHalfAdder_bd.png)
+
+
+---
+
+7) Criando circuito de teste para a Simulação
+
+![](img/quartus-esquematico.png)
+
+8) Após a criação de um circuito simples de teste, salvar o arquivo com o **mesmo nome do projeto**
+
+![](img/quartus-esquematico-projeto_teste.png)
+
+9) Compilar a montagem do esquemático clicando em `Analysis & Synthesis`
+
+![](img/quartus-esquematico-projeto_compilation.png)
+
+
+10) Criando arquivo de simulação VWF (*Vector Waveform File*)
+
+![](img/quartus-newVWF.png)
+
+11) 
+
+![](img/quartus-VWF-setEndTime.png)
+
+12) 
+
+![](img/quartus-VWF-listNodes.png)
+
+13)
+
+![](img/quartus-VWF-setInputs.png)
+
+14) Ajustando diretiva de simulação
+
+- Em `Simulation` selecione `Simulation Settings`
+- Edite o ModelSim Script (Functional Simulation): trocando a diretiva `-novopt` por `-voptargs="+acc"`
+
+![](img/quartus-VWF-simsettings.png)
+
+
+15) Salvando a simulação de forma de onda
+
+![](img/quartus-VWF-saveWaveform.png)
+
+
+
+
+---
+
+
 
 
 ---
