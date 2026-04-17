@@ -68,6 +68,8 @@ Selecione:
 
 6) Área de criação de esquemático
 
+Use as ferramentas indicadas para construir o circuito, incluindo as portas e os terminais. 
+
 ![](img/quartus-projetoHalfAdder_bd.png)
 
 
@@ -75,30 +77,37 @@ Selecione:
 
 7) Criando circuito de teste para a Simulação
 
+Note que portas como `and` e `or`, devem ser descritas com o número de terminais de entradas: `and2`, `and3`, `or2`, `or3`, etc.
+
 ![](img/quartus-esquematico.png)
+
+Para conectar os terminais, clique com o botão esquerdo no ponto de origem e arraste até o terminal ou nó de destino, soltando o clique do mouse. 
 
 8) Após a criação de um circuito simples de teste, salvar o arquivo com o **mesmo nome do projeto**
 
 ![](img/quartus-esquematico-projeto_teste.png)
 
-9) Compilar a montagem do esquemático clicando em `Analysis & Synthesis`
+9) Compilar a montagem do esquemático clicando em `Analysis & Synthesis` e aguardar o fim da compilação.
 
 ![](img/quartus-esquematico-projeto_compilation.png)
 
+Havendo algum erro, **leia** a mensagem de erro gerada, pois é um bom indicativo para a sua correção.
 
 10) Criando arquivo de simulação VWF (*Vector Waveform File*)
 
 ![](img/quartus-newVWF.png)
 
-11) 
+11) Definindo um valor de tempo final para a simulação
 
 ![](img/quartus-VWF-setEndTime.png)
 
-12) 
+12) Incluindo os pontos de acesso ao circuito, entradas e saídas. 
 
 ![](img/quartus-VWF-listNodes.png)
 
-13)
+13) Configurar estímulos nos terminais de entrada. 
+
+Para produzir um conjunto de combinações igual aos da tabela verdade, a primeira entrada é configurada como o bit menos significativo, e possui a menor base de tempo. A partir dela, as demais são ajustadas para o dobro do período em relação à entrada adjacente/anteior. 
 
 ![](img/quartus-VWF-setInputs.png)
 
@@ -114,7 +123,32 @@ Selecione:
 
 ![](img/quartus-VWF-saveWaveform.png)
 
+16) Resultado da simulação
 
+![](img/quartus-VWF-waveform.png)
+
+---
+
+17) Crie um componente `halfadder.bdf`
+
+- Crie um novo diagrama de blocos
+- Construa o circuito do meio somador (*half adder*)
+- Salve com o nome `halfadder.bdf`
+- Compile em `Analysis & Synthesis`
+
+
+![](img/quartus-component-halfadder.png)
+
+
+- Exporte o circuito como um componente clicando em: `File`, `Create / Update` e `Create Symbol Files for Current File`
+
+18) Insira o novo componente `halfadder` no esquemático principal do projeto `addsub4.bdf`
+
+![](img/quartus-newComponent.png)
+
+19) Circuito e forma de onda do `halfadder`
+
+![](img/quartus-halfadder-waveform.png)
 
 
 ---
