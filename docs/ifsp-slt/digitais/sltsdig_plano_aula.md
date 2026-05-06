@@ -39,7 +39,7 @@ tags:
 |   11   | 24/04 | - Flip-flop tipo D                 |             |                   |
 |   11   | 25/04 |                                    | - IFSol     |                   |
 |   12   | 29/04 | - Sinal de _clock_                 |             |                   |
-|   12   | 06/05 | - Registradores de deslocamento    | Exposição dialogada e Prática orientada <br>Lab. Informática, software específico |  |
+|   12   | 06/05 | - [Lab. BCD p/ 7 segmentos](../../digitais/Tecnologia/eletronicaDigital/sdiglab6-decodificadores.md) <br> <br> - Registradores de deslocamento    | Exposição dialogada e Prática orientada <br>Lab. Informática, software específico |  |
 |   13   | 08/05 |                                    |             |                   |
 |   13   | 13/05 | - Contadores                       | Exposição dialogada e Prática orientada <br>Lab. Informática, software específico |  |
 |   14   | 15/05 | - Contadores Assíncronos           |             |                   |
