@@ -41,7 +41,7 @@ tags:
 |   12   | 29/04 | - Sinal de _clock_                 |             |                   |
 |   12   | 06/05 | - [Lab. BCD p/ 7 segmentos](../../digitais/Tecnologia/eletronicaDigital/sdiglab6-decodificadores.md) <br> <br> - Registradores de deslocamento    | Exposição dialogada e Prática orientada <br>Lab. Informática, software específico |  |
 |   13   | 08/05 |                                    |             |                   |
-|   13   | 13/05 | - Contadores                       | Exposição dialogada e Prática orientada <br>Lab. Informática, software específico |  |
+|   13   | 13/05 | - [SAF1: Circuitos combinacionais](https://forms.gle/QophPfquN9jJuRcy5) <br> - Contadores                       | Exposição dialogada e Prática orientada <br>Lab. Informática, software específico |  |
 |   14   | 15/05 | - Contadores Assíncronos           |             |                   |
 |   14   | 20/05 |                                    | Exposição dialogada e Prática orientada <br>Lab. Informática, software específico |  |
 |   15   | 22/05 | - Contadores Síncronos             |             |                   |
