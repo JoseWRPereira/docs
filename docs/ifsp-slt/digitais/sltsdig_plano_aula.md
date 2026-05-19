@@ -43,7 +43,7 @@ tags:
 |   13   | 08/05 |                                    |             |                   |
 |   13   | 13/05 | - [SAF1: Circuitos combinacionais](https://forms.gle/QophPfquN9jJuRcy5) <br> - Contadores                       | Exposição dialogada e Prática orientada <br>Lab. Informática, software específico |  |
 |   14   | 15/05 | - Contadores Assíncronos           |             |                   |
-|   14   | 20/05 |                                    | Exposição dialogada e Prática orientada <br>Lab. Informática, software específico |  |
+|   14   | 20/05 | - [SAS1: Circuitos combinacionais](https://forms.gle/AydXiDsDKQo4BAS9A) | Exposição dialogada e Prática orientada <br>Lab. Informática, software específico |  |
 |   15   | 22/05 | - Contadores Síncronos             |             |                   |
 |   15   | 27/05 |                                    | Exposição dialogada e Prática orientada <br>Lab. Informática, software específico |  |
 |   16   | 29/05 | - Contadores Síncronos             |             |                   |
