@@ -166,6 +166,8 @@ nav:
               - automacao/clp/altus_tb131/lab08-entradas_saidas_analogicas.md
               - automacao/clp/altus_tb131/lab09-bloco_funcional.md
               - automacao/clp/altus_tb131/lab10-funcao.md
+              - automacao/clp/altus_tb131/lab11-ihm_display_var.md
+              - automacao/clp/altus_tb131/lab12-ihm_edita_var.md
       - Situações de Aprendizagem:
           - CLP:
               - automacao/sitap/clp/sa1-operacoes_logicas.md
