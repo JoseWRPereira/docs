@@ -48,6 +48,7 @@ O ponto de partida é o **latch RS**, um dispositivo definido tecnicamente como 
 *   **Latch com portas NOR:** Utiliza entradas ativas em nível alto ($S$ e $R$).
 
 **Estados de Operação:**
+
 1.  **SET (Ajustar):** Leva a saída $Q$ para 1.
 2.  **RESET (Limpar):** Leva a saída $Q$ para 0.
 3.  **HOLD (Retenção):** As entradas retornam ao estado de repouso e o latch "lembra" o último valor armazenado.
@@ -58,9 +59,11 @@ O ponto de partida é o **latch RS**, um dispositivo definido tecnicamente como 
 
 
 ### 2. O Latch D (Transparente)
+
 O latch RS apresenta dois problemas: a existência de um estado proibido e a sensibilidade constante às entradas. Para resolver isso, criou-se o **latch D** (de *Data*), que utiliza um inversor para garantir que as entradas $S$ e $R$ nunca sejam ativadas ao mesmo tempo.
 
 Este dispositivo introduz uma entrada de habilitação (**Enable - EN** ou $G$):
+
 *   **Modo Transparente:** Quando $EN=1$, a saída $Q$ segue exatamente a entrada $D$.
 *   **Modo de Retenção:** Quando $EN=0$, a saída é "congelada" e ignora qualquer mudança em $D$ até que $EN$ volte a ser 1.
 
