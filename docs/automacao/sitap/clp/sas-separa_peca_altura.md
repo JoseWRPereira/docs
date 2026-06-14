@@ -85,19 +85,14 @@ END_VAR
 
 ---
 
-# 2 Planejamento do produto final, ferramentas, materiais e processo.
+# 2 Solução
 
-Definir como será feita a entrega: 
-simulador, montagem de protótipo, montagem de circuito em painel ou PCI, etc, 
-assim como listar os materiais e ferramentas em função do tipo de entrega. 
-Por fim o planejamento do processo, em que deve ficar explicito como, 
-utilizando os materiais listados e manipulando da ferramentas, 
-chega-se ao produto final, com um encadeamento lógico das tarefas que compoem o processo.
-
-
-# 3. Solução
-
-Produto ou processo que atinge o objetivo proposto, através da execução de seu planejamento e satisfação dos seus requisitos.
+- A entrega da solução deve acontecer em duas etapas:
+	- Apresentação do funcionamento ao professor;
+	- Entrega de programa no formato `.pdf` através do seguinte [endereço eletrônicos](https://forms.gle/6G8Q2jGoPpQSEQ5y6) ;
+- Pode ser realizada a atividade avaliativa de forma individual, em dupla, trio ou no máximo, quarteto;
+- O período de realização da atividade e entrega sem estar de recuperação é: 15, 19 e 22/06;
+- Qualquer finalização e entrega após o dia 22/06 será considerado em processo de recuperação até o dia 29/06.
 
 ---
 
