@@ -180,6 +180,7 @@ nav:
               - automacao/sitap/clp/sa6-projeto_semaforo.md
               - automacao/sitap/clp/sa7-projeto_outros_tempos.md
               - automacao/sitap/clp/sa8-projeto_outras_contagens.md
+              - automacao/sitap/clp/sas-separa_peca_altura.md
 
   - Ciência de Dados:
       - index_dados.md
