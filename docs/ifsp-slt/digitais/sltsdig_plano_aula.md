@@ -52,7 +52,7 @@ tags:
 |   17   | 12/06 |                                    |             |                   |
 |   18   | 17/06 |  - Conversores D/A                 | Exposição dialogada e Prática orientada <br>Lab. Informática, software específico |  |
 |   18   | 19/06 | Fundamentos de lógica reconfigurável e VHDL. Estudo do artigo: Z. Xin-Li and W. Hong-Ying, "The Application of Digital Electronics in Networking Communication," 2016 Eighth International Conference on Measuring Technology and Mechatronics Automation (ICMTMA), Macau, China, 2016, pp. 684-687, doi: 10.1109/ICMTMA.2016.168. |             |                   |
-|   19   | 24/06 | Avaliação                          |             |                   |
+|   19   | 24/06 | [Avaliação](https://forms.gle/RFua6EzDoL9jEFM97)                          |             |                   |
 |   19   | 26/06 |                                    |             |                   |
 
 
