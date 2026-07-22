@@ -132,7 +132,7 @@ TANENBAUM, Andrew S.; WETHERALL, David J. **Redes de computadores**. 5. ed. São
 ---
 
 
-## Pós Ref 0 - Estudo de caso
+## Pós-Ref 0 - Estudo de caso
 
 Às 03:14 da madrugada, as sirenes da Usina Termoelétrica Alfa romperam o silêncio do turno de contingência, anunciando o desligamento de emergência do Setor 4. A sala de controle virou um caos de luzes vermelhas. O supervisor jurava que o sistema supervisório mostrava a temperatura do reator perfeitamente estável nos $65^\circ\text{C}$ minutos antes da trava de segurança ser acionada. No entanto, ao examinarem a caldeira fisicamente, a medição mecânica de backup revelava que o calor havia ultrapassado os limites críticos, sem que nenhum alarme de alta temperatura tivesse sido disparado na tela do operador.
 
@@ -144,7 +144,7 @@ Examinando o trajeto do cabo de rede que interligava o sensor ao painel central,
 
 ---
 
-## Pós Ref 1 - Material Complementar
+## Pós-Ref 1 - Material Complementar
 
 | #   | Material | Assuntos |
 |:---:|:--------:|:--------:|
@@ -159,7 +159,7 @@ Examinando o trajeto do cabo de rede que interligava o sensor ao painel central,
 
 ---
 
-## Pós Ref 2 - Recomendação de leitura
+## Pós-Ref 2 - Recomendação de leitura
 
 | Índice | Título do artigo | Link de acesso  | Conteúdos abordados |
 | :----: | ---------------- | --------------- | ------------------- |
@@ -170,6 +170,54 @@ Examinando o trajeto do cabo de rede que interligava o sensor ao painel central,
 |    5   | **Industry 4.0: A Step Towards Achieving the SDGs? A Critical Literature Review** | [Springer (artigo)](https://link.springer.com/article/10.1007/s43621-021-00030-1) | Evolução da Indústria 4.0; transformação digital; impacto das tecnologias industriais; sustentabilidade; manufatura inteligente; integração entre tecnologias digitais e objetivos de desenvolvimento sustentável. ([Springer][3])       |
 
 ---
+
+## Pós-Ref 3 - Perguntas mediadoras
+
+<!--Sobre o Modelo ISO/OSI e Abstração-->
+
+1) Por que na indústria focamos tanto nas camadas 1 (Física), 2 (Enlace) e 7 (Aplicação) em vez das sete camadas completas? 
+<!-- > Redes industriais frequentemente utilizam uma arquitetura simplificada (Communication Stack) para reduzir a latência e garantir o determinismo-->
+
+
+2) Como uma falha na Camada 1 (Física) pode ser interpretada erroneamente como um erro de software na Camada 7 (Aplicação)? 
+<!-- > Esta pergunta conecta o "Mistério do Ruído Eletromagnético", onde um problema físico de ruído impede a atualização de dados no supervisório.-->
+
+<!--2. Sobre o Determinismo e Redes de Campo-->
+
+3) O que diferencia, na prática, uma "Rede de Manufatura" de uma "Rede de Processo"? 
+<!-- > Questionar as prioridades: alta velocidade e pacotes pequenos (Manufatura/Profinet) versus continuidade e segurança intrínseca em ambientes agressivos (Processo/Profibus PA).-->
+
+
+4) O que é "determinismo temporal" e por que ele é irrelevante em uma rede de escritório (TI), mas crítico em uma linha de montagem (TA)? 
+<!-- > É vital entender que no chão de fábrica uma mensagem deve chegar em um tempo máximo conhecido para evitar acidentes ou paradas de produção.-->
+
+<!--3. Investigação da Situação-Problema (O Caso da Caldeira Cega)-->
+
+5) No caso da caldeira, por que o supervisório manteve a leitura em 65∘C em vez de mostrar um erro ou alarme de desconexão quando a temperatura subiu? 
+<!-- > Questão central para entender o comportamento de tags de comunicação que deixam de receber atualizações.-->
+
+
+6) Qual seria o impacto de configurar a taxa de atualização (polling) do supervisório para um tempo extremamente baixo, como 10 milissegundos? 
+<!-- > Observe o impacto no tráfego da rede e no processamento do CLP.-->
+
+<!--4. Sobre Integridade e Diagnóstico (Camada de Enlace)-->
+
+7) O que acontece com o dado de temperatura se a Camada de Enlace descarta um quadro (frame) devido a um erro de CRC? 
+<!-- > A camada de enlace descarta frames corrompidos, e se não houver retransmissão, a informação de controle é perdida.-->
+
+
+8) Como o uso de cabos blindados e conectores robustos (como M12) previne erros de comunicação lógica? 
+<!-- > Ligação dos aspectos físicos à imunidade contra ruídos eletromagnéticos de motores de grande porte.-->
+
+<!--5. Convergência e Segurança (TI vs. TA)-->
+
+9) Por que um switch comercial de escritório não deve ser usado no chão de fábrica pesado? 
+<!-- > Questionar a falta de priorização de mensagens críticas de emergência em equipamentos não industriais.-->
+
+
+10) Como garantimos que os dados da fábrica cheguem à camada de gestão sem expor o CLP a riscos cibernéticos da rede administrativa? 
+<!-- > Introduz o conceito de isolamento e segurança em redes industriais.-->
+
 
 ---
 
