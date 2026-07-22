@@ -10,15 +10,21 @@ nav:
       - IFSP-Salto:
           - index_ifsp_slt.md
           - 2026:
+              - SLTTRISS:
+                  - ifsp-slt/automacao/sltriss_ementa.md
+                  - ifsp-slt/automacao/sltriss_plano_aula.md
+              - SLTINTA:
+                  - ifsp-slt/dados/sltinta_ementa.md
+                  - ifsp-slt/dados/sltinta_plano_aula.md
+              - SLTMCMP:
+                  - ifsp-slt/digitais/sltmcmp_ementa.md
+                  - ifsp-slt/digitais/sltmcmp_plano_aula.md
               - SLTSDIG:
                   - ifsp-slt/digitais/sltsdig_ementa.md
                   - ifsp-slt/digitais/sltsdig_plano_aula.md
               - SLTCLPE:
                   - ifsp-slt/automacao/sltclpe_ementa.md
                   - ifsp-slt/automacao/sltclpe_plano_aula.md
-              - SLTMCMP:
-                  - ifsp-slt/digitais/sltmcmp_ementa.md
-                  - ifsp-slt/digitais/sltmcmp_plano_aula.md
           - 2025:
               - SDPE8:
                   - ifsp-slt/sdpe8.md
@@ -138,19 +144,21 @@ nav:
               - automacao/clp/tecnologia/10-blocos_funcionais.md
               - automacao/clp/tecnologia/11-bf_personal.md
               - automacao/clp/tecnologia/12-funcoes.md
-          - Redes Industriais:
-              - automacao/redes/tecnologia/01-redes_conceito.md
-              - automacao/redes/tecnologia/02-classificacao_arquiteturas.md
-              - automacao/redes/tecnologia/03-dimensionamento.md
-              - automacao/redes/tecnologia/04-modelo_osi_iso.md
-              - automacao/redes/tecnologia/05-meio_fisico.md
-              - automacao/redes/tecnologia/06-protocolos_comunicacao.md
-              - automacao/redes/tecnologia/07-wireless.md
-              - automacao/redes/tecnologia/08-iiot.md
-          - SCADA:
-              - automacao/scada/tecnologia/01-conceito.md
-              - automacao/scada/tecnologia/02-scada_br.md
-              - automacao/scada/tecnologia/03-scada_br_lab.md
+          - Redes Industriais e Sistemas Supervisórios:
+              - automacao/redes/riss01-intro_redes_industriais.md
+#          - Redes Industriais:
+#              - automacao/redes/tecnologia/01-redes_conceito.md
+#              - automacao/redes/tecnologia/02-classificacao_arquiteturas.md
+#              - automacao/redes/tecnologia/03-dimensionamento.md
+#              - automacao/redes/tecnologia/04-modelo_osi_iso.md
+#              - automacao/redes/tecnologia/05-meio_fisico.md
+#              - automacao/redes/tecnologia/06-protocolos_comunicacao.md
+#              - automacao/redes/tecnologia/07-wireless.md
+#              - automacao/redes/tecnologia/08-iiot.md
+#          - SCADA:
+#              - automacao/scada/tecnologia/01-conceito.md
+#              - automacao/scada/tecnologia/02-scada_br.md
+#              - automacao/scada/tecnologia/03-scada_br_lab.md
       #      - Pneumática:
       #          - Simulação:
       #              - automacao/pneumatica/fluidsim/01-simulacao.md
