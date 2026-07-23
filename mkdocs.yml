@@ -211,7 +211,7 @@ nav:
   #              - dados/ml/ml08-fuzzy.md
           - Machine Learning:
               - dados/ml/inta01-intro_conceitos_iniciais.md
-              - dados/ml/am02-intro.md
+#              - dados/ml/am02-intro.md
           - Situações de Aprendizagem:
               - dados/sitap/sa01-siderurgica.md
   - Projetos:
