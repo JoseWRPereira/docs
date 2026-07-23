@@ -7,8 +7,7 @@ tags:
  - Ciência de Dados
  - Inteligência Artificial
  - Aprendizado de Máquina
- - Lógica Fuzzy
- - Lógica Paraconsistente
+ - Machine Learning
 ---
 
 # Ciência de Dados e a Indústria 4.0
@@ -106,7 +105,7 @@ tecnologias contemporâneas.
 ---
 
 
-## Aulas TAA
+<!--## Aulas TAA
 
 
 | Aula |Título | Conteúdo  | Material complementar |
@@ -115,7 +114,7 @@ tecnologias contemporâneas.
 | 1 | [Indústria 4.0](dados/slides/Aula01-Industria4_0.pdf) | - Revoluções Industriais <br> - Pilares tecnológicos | 1. [Ind4.0 - Manufatura avançada](https://www.industria40.ind.br/) <br> 2. [Código Fonte TV - CEO TROCA TODO TIME DE DEVS POR INTELIGÊNCIA ARTIFICIAL.](https://youtu.be/evVaZeysQKo?si=4Ee1ZUB_Bt8y1-4U) <br> 3. [9 PILARES TECNOLÓGICOS DA INDÚSTRIA 4.0 - OPENCADD](https://www.opencadd.com.br/blog/9-pilares-da-industria-4-0) <br> 4. [Transformação Digital na Indústria 4.0 - Fluxo](https://fluxoconsultoria.poli.ufrj.br/blog/industria4/) <br> 5. [A história da inteligência artificial - TecMundo](https://www.tecmundo.com.br/mercado/135413-historia-inteligencia-artificial-video.htm) |
 | 2 | [Inteligência Artificial](dados/slides/Aula02-InteligenciaArtificial.pdf) | - Inteligência Artificial <br> - Machine Learning <br> - Redes Neurais | 1. [Artificial Intelligence Coined at Dartmouth](https://home.dartmouth.edu/about/artificial-intelligence-ai-coined-dartmouth) <br> 2. [Qual é a Diferença entre Inteligência Artificial, Machine Learning e Deep Learning? 10 de março de 2021 por Michael Copeland - Blog NVIDIA)](https://blog.nvidia.com.br/blog/qual-e-a-diferenca-entre-inteligencia-artificial-machine-learning-e-deep-learning/) <br> 3. [A história da inteligência artificial - TecMundo](https://www.tecmundo.com.br/mercado/135413-historia-inteligencia-artificial-video.htm) <br> 4. [O que é aprendizado de máquina (ML)? - IBM](https://www.ibm.com/br-pt/topics/machine-learning) <br> 5. [A Friendly Introduction to [Deep] Neural Networks - August 23, 2021 - Kathrin Melcher - KNIME](https://www.knime.com/blog/a-friendly-introduction-to-deep-neural-networks) |
 | 3 | [Ciência de Dados](dados/slides/Aula03-CienciadeDados.pdf) | - Análise de dados <br> - Tipos de Análise de dados <br> - Análise Descritiva <br> - Análise Diagnóstica <br> - Análise Preditiva <br> - Análise Prescritiva | 1. [Kaggle - Forecasting Future Passengers w/ PyCaret](https://www.kaggle.com/code/caesarmario/forecasting-future-passengers-w-pycaret) <br> 2. [Esses são os 5 PASSOS para fazer uma ANÁLISE DE DADOS - Comunidade DS](https://youtu.be/-zHK3e45cI8?si=mk_jM-flgaAbkbJq) <br> 3. [Data Viking - Odemir Depieri Jr](https://www.dataviking.com.br/post/tipos-de-analise-de-dados) |
-
+-->
 
 
 ---

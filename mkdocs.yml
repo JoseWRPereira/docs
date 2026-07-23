@@ -192,23 +192,26 @@ nav:
 
   - Ciência de Dados:
       - index_dados.md
-      - Dados:
-          - Análise de Dados:
-              - dados/ad/ad00-analise_de_dados.md
-              - dados/ad/ad01-ambiente_desen.md
-              - dados/ml/ml02-ml.md
-              - dados/ml/ml03-matriz_confusao.md
-              - dados/ml/ml04-knn.md
-              - dados/ml/ml05-regressao_linear.md
-              - dados/ml/ml06-k_means.md
-              - dados/ml/ml07-rede_neural.md
-          - Machine Learning:
-              - dados/ml/am01-ia_ml_dl.md
-              - dados/ml/am02-intro.md
-              - dados/ml/am03-fundamento_classificacao.md
-              - dados/ml/inta00-intro.md
-              - dados/ml/inta01-conceitos.md
+      - Inteligência Artificial:
+#          - Análise de Dados:
+#              - dados/ad/ad00-analise_de_dados.md
+#              - dados/ad/ad01-ambiente_desen.md
+#              - dados/ml/ml02-ml.md
+#              - dados/ml/ml03-matriz_confusao.md
+#              - dados/ml/ml04-knn.md
+#              - dados/ml/ml05-regressao_linear.md
+#              - dados/ml/ml06-k_means.md
+#              - dados/ml/ml07-rede_neural.md
+#          - Machine Learning:
+#              - dados/ml/am01-ia_ml_dl.md
+#              - dados/ml/am02-intro.md
+#              - dados/ml/am03-fundamento_classificacao.md
+#              - dados/ml/inta00-intro.md
+#              - dados/ml/inta01-conceitos.md
   #              - dados/ml/ml08-fuzzy.md
+          - Machine Learning:
+              - dados/ml/inta01-intro_conceitos_iniciais.md
+              - dados/ml/am02-intro.md
           - Situações de Aprendizagem:
               - dados/sitap/sa01-siderurgica.md
   - Projetos:
