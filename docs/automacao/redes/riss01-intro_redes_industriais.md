@@ -106,15 +106,11 @@ Com a convergência TI/TA, a segurança tornou-se crítica. O planejamento prev�
 
 ---
 
-## Referências
+# Referências
 
 ALBUQUERQUE, Pedro Urbano Braga de; ALEXANDRIA, Alzuir Ripardo de. **Redes industriais**: aplicações em sistemas digitais de controle distribuído. 2. ed. São Paulo: Ensino Profissional, 2009.
 
 ALTUS. **Protocolos de comunicação**: o que são e quais os principais padrões utilizados na indústria. [S. l.]: Altus. E-book.
-
-ASSOCIAÇÃO BRASILEIRA DE NORMAS TÉCNICAS. **ABNT NBR 14724**: informação e documentação: trabalhos acadêmicos: apresentação. 4. ed. Rio de Janeiro: ABNT, 2024.
-
-ASSOCIAÇÃO BRASILEIRA DE NORMAS TÉCNICAS. **ABNT NBR 6023**: informação e documentação: referências: elaboração. Rio de Janeiro: ABNT, 2018.
 
 COELHO, Marcelo Saraiva. **Redes de comunicação industrial**: padrões industriais. [S. l.: s. n.], 2009. Apostila.
 
@@ -132,7 +128,7 @@ TANENBAUM, Andrew S.; WETHERALL, David J. **Redes de computadores**. 5. ed. São
 ---
 
 
-## Pós-Ref 0 - Estudo de caso
+# Pós-Ref 0 - Estudo de caso
 
 Às 03:14 da madrugada, as sirenes da Usina Termoelétrica Alfa romperam o silêncio do turno de contingência, anunciando o desligamento de emergência do Setor 4. A sala de controle virou um caos de luzes vermelhas. O supervisor jurava que o sistema supervisório mostrava a temperatura do reator perfeitamente estável nos $65^\circ\text{C}$ minutos antes da trava de segurança ser acionada. No entanto, ao examinarem a caldeira fisicamente, a medição mecânica de backup revelava que o calor havia ultrapassado os limites críticos, sem que nenhum alarme de alta temperatura tivesse sido disparado na tela do operador.
 
@@ -144,7 +140,7 @@ Examinando o trajeto do cabo de rede que interligava o sensor ao painel central,
 
 ---
 
-## Pós-Ref 1 - Material Complementar
+# Pós-Ref 1 - Material Complementar
 
 | #   | Material | Assuntos |
 |:---:|:--------:|:--------:|
@@ -159,7 +155,7 @@ Examinando o trajeto do cabo de rede que interligava o sensor ao painel central,
 
 ---
 
-## Pós-Ref 2 - Recomendação de leitura
+# Pós-Ref 2 - Recomendação de leitura
 
 | Índice | Título do artigo | Link de acesso  | Conteúdos abordados |
 | :----: | ---------------- | --------------- | ------------------- |
@@ -171,7 +167,7 @@ Examinando o trajeto do cabo de rede que interligava o sensor ao painel central,
 
 ---
 
-## Pós-Ref 3 - Perguntas mediadoras
+# Pós-Ref 3 - Perguntas mediadoras
 
 <!--Sobre o Modelo ISO/OSI e Abstração-->
 
