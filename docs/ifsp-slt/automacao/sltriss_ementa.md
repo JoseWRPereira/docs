@@ -23,7 +23,8 @@ tags:
 | Abordagem metodológica | Teórico/Prática |
 | Laboratório | B100 / D108 |
 | Pré-requisitos (sugeridos) |  |
-| Horário | Segunda-feira (B100): 08:50 - 10:30 <br> Quarta-feira (B100): 07:00 - 08:40 |
+| Horário de aula | Quarta-feira (B100): 08:50 - 12:20 |
+| Horário de atendimento | Quarta-feira (B100): 07:00 - 08:00 |
 | Avaliação do ensino/aprendizagem | - AL: Atividades em laboratório <br> - APL: Avaliação Prática de Laboratório <br> - Média final = 0,5.AL + 0,5.APL| 
 
 ---

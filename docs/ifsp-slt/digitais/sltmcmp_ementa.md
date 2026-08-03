@@ -23,7 +23,8 @@ tags:
 | Abordagem metodológica | Teórico/Prática |
 | Laboratório | B100 |
 | Pré-requisitos (sugeridos) |  |
-| Horário | T1: Sexta-feira: 19:00 - 20:40 (B100) <br> T2: Sexta-feira: 20:55 - 22:35 (B100) |
+| Horário de aula | T1: Sexta-feira: 19:00 - 20:40 (B100) <br> T2: Sexta-feira: 20:55 - 22:35 (B100) |
+| Horário de atendimento | Sexta-feira (B104): 18:00 - 19:00 |
 | Avaliação do ensino/aprendizagem | - AP: Atividades Prática <br> Média final = (AP1 + AP2 + AP3 + AP4)/4 | 
 
 ---

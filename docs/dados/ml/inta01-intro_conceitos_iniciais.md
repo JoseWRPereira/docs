@@ -210,13 +210,15 @@ As principais bibliotecas para o fluxo de trabalho de ML são:
 
 ### Exemplo com situação-problema
 
-> Você foi contratado como Engenheiro de IA por uma grande planta siderúrgica que opera 24 horas por dia. O principal ativo da fábrica é uma estação de usinagem CNC de alto desempenho. Recentemente, a quebra inesperada do cabeçote de corte dessa máquina causou uma parada na linha de produção que durou 36 horas, gerando um prejuízo estimado em R$ 150.000,00 entre peças de reposição urgentes, ociosidade da equipe e multas por atraso na entrega dos produtos aos clientes.
+> Você foi contratado como Engenheiro de IA para compor a equipe de desenvolvimento de uma grande planta siderúrgica que opera 24 horas por dia. O principal ativo da fábrica é uma estação de usinagem CNC de alto desempenho. Recentemente, a quebra inesperada do cabeçote de corte dessa máquina causou uma parada na linha de produção que durou 36 horas, gerando um prejuízo estimado em R$ 150.000,00 entre peças de reposição urgentes, ociosidade da equipe e multas por atraso na entrega dos produtos aos clientes.
 
-> A gerência de manutenção possui sensores que medem variáveis físicas da máquina a cada segundo, mas atualmente esses dados são apenas visualizados em telas isoladas e descartados. O seu desafio no semestre é interligar essa telemetria e criar um sistema inteligente capaz de prever uma falha mecânica com antecedência, permitindo que a equipe agende o reparo durante uma pausa planejada de produção.
+> A gerência de manutenção possui sensores que medem variáveis físicas da máquina a cada segundo, mas atualmente esses dados são apenas visualizados em telas isoladas e descartados. O seu desafio no semestre é interligar essa telemetria e **criar um sistema inteligente capaz de prever uma falha mecânica com antecedência**, permitindo que a equipe agende o reparo durante uma pausa planejada de produção.
 
 
 
 Nesta situação-problema da planta siderúrgica, o desafio é transformar um cenário de manutenção corretiva — que resultou em um prejuízo de **R$ 150.000,00** — em uma estratégia de **Manutenção Preditiva (PdM)** baseada em Aprendizado de Máquina (ML) (ENCOPEL ROLAMENTOS, 2020; BOUSDEKIS et al., 2019). Abaixo, os conceitos fundamentais de ML são exemplificados e inter-relacionados dentro desse contexto:
+
+A metodologia CRISP-DM (*Cross Industry Standard Process for Data Mining*), que organiza o projeto em um ciclo de seis etapas focado em transformar dados brutos em decisões inteligentes de negócio
 
 ### 1. Entendimento do Negócio e dos Dados (CRISP-DM)
 O ciclo se inicia com a metodologia **CRISP-DM**: 
@@ -243,6 +245,9 @@ Na siderúrgica, o custo de um "Falso Negativo" (não prever a falha) é altíss
 
 ### 6. Direcionamento: Da Predição à Prescrição
 Ao interligar a telemetria, o sistema evolui da análise isolada para uma visão global. O objetivo final é a **Manutenção Prescritiva**, onde o software não apenas avisa "o cabeçote vai falhar em 10 horas", mas prescreve a ação: "reduza a velocidade de corte em 20% para estender a vida útil até a pausa planejada do próximo turno" (ENCOPEL ROLAMENTOS, 2020; BOUSDEKIS et al., 2019).
+
+
+![CRISP-DM](img/inta-crisp-dm.png)
 
 ---
 
