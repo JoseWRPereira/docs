@@ -251,8 +251,78 @@ TANENBAUM, Andrew S.; WETHERALL, David J. **Redes de computadores**. 5. ed. São
 # Pós-Ref 0 - Práticas de Laboratório
 
 - Configuração de um ambiente simulado ou real de CLP (Ex: CODESYS ou CLP físico), realizando a declaração de variáveis de leitura (Sensores) e escrita (Atuadores).
-    
+
+
+## Objetivo
+
+Monte uma rede ponto a ponto utilizando dois Controladores sendo um operando como Cliente e o outro como Servidor, através de uma rede do tipo RS-485 e protocolo MODBUS RTU. 
+
+Implemente no dispositivo `Servidor` uma aplicação de uma partida Estrela-Triângulo e no dispositivo `Cliente` uma interface homem-máquina.
         
+![](../clp/altus_tb131/img/riss-lab1-clp_modbus_p2p.png)
+
+- Servidor:
+    - Ligar;
+    - Desligar;
+    - K1 (Comum), K2 (Estrela) e K3 (Triângulo);
+    - Entrada analógica - 0 a 100.
+
+- Cliente:
+    - IHM - Ligar;
+    - IHM - Desligar;
+    - IHM - Visualizar estado do motor (Parado, Partindo, Rodando);
+    - IHM - Visualizar variável analógica (0 a 100).
+
+
+---
+
+## Configuração da porta de comunicação (COM2)
+
+Parâmetros disponívels:
+
+- Velocidade - Baud Rate (bps – bits por segundo): `1200`, `2400`, `4800`, `9600`, `19200`, `38400`, `57600`, **`115200`**;
+- Paridade: **`Sem paridade`**, `Ímpar`, `Par`, `Sempre 1`, `Sempre 0`;
+- Stop bits: **`1 Stop Bit`**, `2 Stop Bits`;
+- Sinais de Modem: **`Sem RTS/CTS`**, `Com RTS/CTS`, `Com RTS sem CTS`, `RTS sempre ligado`;
+- Delay: **`5`** a `1000` ms.
+
+![](../clp/altus_tb131/img/com-configGerais.png)
+
+Para habilitar a porta de comunicação como Servidor Modbus, substitua o elemento existente por `MODBUS Escravo`.
+
+![](../clp/altus_tb131/img/com-subst_MBEscravo.png)
+
+O único parâmetro a ser configurado é o número do Servidor, no campo `Endereço`:
+
+- **1 a 247**: Faixa de endereços válidos e exclusivos para identificar cada equipamento individualmente na rede.
+- **0 (Zero)**: Endereço reservado para Broadcast, utilizado quando o Cliente envia um comando para todos os servidores simultaneamente (os dispositivos executam a instrução, mas não enviam resposta).
+- **248 a 255**: Faixa de endereços reservados para finalidades internas ou especiais.
+
+![](../clp/altus_tb131/img/com-MBEscravo.png)
+
+Para habilitar a porta de comunicação como Cliente Modbus, substitua o elemento existente por `MODBUS Mestre`.
+
+
+![](../clp/altus_tb131/img/com-subst_MBMestre.png)
+
+Parâmetros do MODBUS Servidor:
+
+- **Time-out(ms)**: Tempo que o Cliente aguarda a resposta do Servidor;
+- **Retentativas**: Quantidade de vezes que o Cliente irá transmitir a solicitação no caso em que o Servidor não responde. 
+
+![](../clp/altus_tb131/img/com-MBMestre.png)
+
+Uma mensagem no protocolo MODBUS é chamada de relação MODBUS, que executa uma função MODBUS. É possível criar 16 relações para cada porta de comunicação, totalizando 32 mensagens possíveis. 
+
+![](../clp/altus_tb131/img/com-addRelacaoMB.png)
+
+As relações são tratadas de forma sequencial, conforme são inseridas à arvore de relações.
+
+Os parâmetros de configuração das relações(Funções MODBUS) são: 
+
+![](../clp/altus_tb131/img/com-MBMestre-read.png)
+
+![](../clp/altus_tb131/img/com-MBMestre-write.png)
 
 
 
@@ -262,11 +332,11 @@ TANENBAUM, Andrew S.; WETHERALL, David J. **Redes de computadores**. 5. ed. São
 
 | #   | Material | Assuntos |
 |:---:|:--------:|:--------:|
-| _Vídeo:_ "Introdução ao CODESYS: Configurando I/Os e Variáveis" (Tutoriais práticos passo a passo no YouTube).
+| 1   | [Manual de Utilização DU350 / DU351](https://www.altus.com.br/wp-content/uploads/2024/11/manual_de_utilizacao_serie_duo.pdf) | Configuração de periféricos do CLP DUO da Altus|
 
 
 ---
-
+<!--
 # Pós-Ref 2 - Recomendação de leitura
 
 | Índice | Título do artigo | Link de acesso  | Conteúdos abordados |
@@ -274,8 +344,8 @@ TANENBAUM, Andrew S.; WETHERALL, David J. **Redes de computadores**. 5. ed. São
  _Artigo:_ "Análise comparativa de topologias de rede em ambientes de alta interferência eletromagnética".
 
 ---
-
-# Pós-Ref 3 - Perguntas mediadoras
+-->
+# Pós-Ref 2 - Perguntas mediadoras
 
 1) Qual a função técnica dos resistores de terminação em barramentos RS-485 ou PROFIBUS?
 <!-- Os resistores de terminação servem para o casamento de impedância da linha, evitando a reflexão do sinal elétrico nas extremidades do cabo. Sem eles, o sinal refletido retorna e causa interferência destrutiva, resultando em erros de CRC e queda na confiabilidade da rede. -->
