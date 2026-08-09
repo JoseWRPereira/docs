@@ -238,6 +238,11 @@ schema = pa.DataFrameSchema(
 
 ```
 
+```python
+schema.validate(df)
+```
+
+
 
 ## 2. Identificando Registros Nulos (Missing Values)
 
