@@ -46,6 +46,68 @@ Os principais aspectos dessas ferramentas são:
 
 ---
 
+## 5. Passo a Passo do Início ao Fim da Sessão
+
+Início da Aula / Sessão de Trabalho
+
+**Verifique se o Git está instalado**: Abra o terminal (Git Bash, Prompt de Comando ou Terminal do VS Code) e digite:
+
+``` Bash
+git --version
+```
+
+**Configure seu usuário temporário**: Essas configurações serão apagadas ao reiniciar, então você precisará fazer a cada sessão:
+
+``` Bash
+# Define nome de usuário global
+git config --global user.name "Seu Nome"
+
+# Define e-mail global, o mesmo usado no github
+git config --global user.email "seu.email@exemplo.com"
+```
+
+
+**Clone o seu repositório**: Escolha uma pasta temporária para trabalhar (ex: Área de Trabalho ou pasta Documentos):
+
+``` Bash
+# Clona o repositório de projeto do github para o diretório local atual
+git clone https://github.com/seu-usuario/seu-repositorio.git
+
+# Acessa o repositório do projeto clonado
+cd seu-repositorio
+```
+
+**Durante o Trabalho**: Faça o commit com frequência à medida que concluir pequenas partes das tarefas:
+    
+``` Bash
+# Verifica o status das alterações e arquivos rastreados
+git status
+
+# Adiciona todos os arquivos modificados ao Staging area
+git add .
+
+# Registra as modificações com uma mensagem descritiva
+git commit -m "Descrição das alterações realizadas"
+```
+
+**Antes de Encerrar a Sessão** e/ou desligar o Computador: **Passo Crítico!**
+
+Antes de sair ou do computador reiniciar, envie obrigatoriamente todas as alterações para o GitHub, fazendo o *Push* das alterações:
+
+``` Bash
+# Envia alterações para o repositório remoto (github)
+git push origin main
+```
+
+Substitua main pelo nome da sua branch, se estiver usando outra, como master ou dev.
+
+Autenticação: Ao dar o git push, o GitHub solicitará autenticação. Você pode autenticar via navegador ou fornecendo um Personal Access Token (PAT) em vez da sua senha tradicional.
+
+Verificação no navegador: Acesse github.com pelo navegador do computador ou do celular e confirme se os seus novos commits e arquivos realmente aparecem no repositório.
+
+
+---
+
 # Referências
 
 1. MARWEDEL, Peter. **Embedded System Design: Embedded Systems Foundations of Cyber-Physical Systems, and the Internet of Things.** 4. ed. Dortmund: Springer Nature, 2021.
