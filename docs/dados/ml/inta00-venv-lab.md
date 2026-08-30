@@ -53,7 +53,14 @@ python3 -m venv venv_sltinta
 2) Carregando o ambiente virtual
 
 ``` python
+# GNU/Linux (Debian)
 source venv_sltinta/bin/activate
+
+# Windows (PowerShell)
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
+
+.\venv_sltinta\Scripts\activate
+
 ```
 
 3.0) Instalando bibliotecas básicas

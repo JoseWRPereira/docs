@@ -212,8 +212,10 @@ nav:
   #              - dados/ml/ml08-fuzzy.md
           - Machine Learning:
               - dados/ml/inta01-intro_conceitos_iniciais.md
+              - dados/ml/inta02-infra_borda.md
               - dados/ml/inta00-venv-lab.md
               - dados/ml/inta01-intro_conceitos_iniciais-lab.md
+              - dados/ml/inta02-infra_borda-lab.md
 #              - dados/ml/am02-intro.md
           - Situações de Aprendizagem:
               - dados/sitap/sa01-siderurgica.md
