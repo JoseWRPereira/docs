@@ -147,6 +147,7 @@ nav:
           - Redes Industriais e Sistemas Supervisórios:
               - automacao/redes/riss01-intro_redes_industriais.md
               - automacao/redes/riss02-topologia_meioFisico_memCLP.md
+              - automacao/redes/riss03-supervisorio.md
 #          - Redes Industriais:
 #              - automacao/redes/tecnologia/01-redes_conceito.md
 #              - automacao/redes/tecnologia/02-classificacao_arquiteturas.md

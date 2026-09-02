@@ -10,7 +10,7 @@ tags:
  - SLTINTA
 ---
 
-SLTINTA - [Ementa](../../ifsp-slt/dados/sltinta_ementa.md) - [Plano de Aula](../../ifsp-slt/dados/sltinta_plano_aula.md) - [Slide da aula](../../dados/slides/SLTINTA-01-intro_conceitos_iniciais.pdf)
+SLTINTA - [Ementa](../../ifsp-slt/dados/sltinta_ementa.md) - [Plano de Aula](../../ifsp-slt/dados/sltinta_plano_aula.md)
 
 ---
 
