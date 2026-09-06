@@ -220,7 +220,7 @@ nav:
 #              - dados/ml/am02-intro.md
           - Situações de Aprendizagem:
               - dados/sitap/sa01-siderurgica.md
-  - Projetos:
+  - Gestão:
       - index_gestao.md
       - gestao/git.md
 
