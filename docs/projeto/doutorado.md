@@ -8,7 +8,18 @@ tags:
  - Unicamp
 ---
 
+**"Co-Design de Arquiteturas de Hardware e Algoritmos de TinyML para Inferência e Aprendizado Adaptativo em Dispositivos de Borda Restritos"**
 
+---
+
+### Resumo
+
+A pesquisa propõe o desenvolvimento de um *framework* de **Co-Design Hardware-Software** focado na integração entre modelos matemáticos de Aprendizado de Máquina (*TinyML*) e arquiteturas de microcontroladores de baixo consumo energético (com foco em **RISC-V** e ecossistemas comerciais de borda).
+
+O trabalho investiga métodos de quantização adaptativa, poda de redes neurais e otimização do uso de memória SRAM combinados a extensões de instruções personalizadas no processador. O objetivo principal é viabilizar a execução de inferências e o aprendizado local em dispositivos IoT de extrema borda (*Extreme Edge*), reduzindo o consumo de energia por operação sem comprometer a acurácia dos modelos em aplicações como sensoriamento inteligente e manutenção preditiva industrial.
+
+
+---
 
 ## 0. Resumo Cronológico de Bordo (48 Créditos Totalizados)
 
