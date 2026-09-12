@@ -1,6 +1,6 @@
 ---
 title: Lab01 - Introdução ao Aprendizado de Máquina
-icon: fontawesome/solid/book
+icon: fontawesome/solid/chart-line
 author:
  - José W. R. Pereira
 tags:

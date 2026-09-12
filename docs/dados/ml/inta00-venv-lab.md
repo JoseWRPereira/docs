@@ -1,6 +1,6 @@
 ---
 title: Lab00 - Virtual Environment
-icon: fontawesome/solid/flask
+icon: fontawesome/solid/chart-line
 author:
  - José W. R. Pereira
 tags:

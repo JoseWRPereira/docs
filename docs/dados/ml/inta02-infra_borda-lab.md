@@ -1,6 +1,6 @@
 ---
 title: Lab02 - Infraestrutura de borda
-icon: fontawesome/solid/border-top-left
+icon: fontawesome/solid/chart-line
 author:
  - José W. R. Pereira
 tags:

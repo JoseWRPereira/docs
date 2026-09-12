@@ -1,6 +1,6 @@
 ---
 title: 02 - Infraestrutura de borda
-icon: fontawesome/solid/border-top-left
+icon: fontawesome/solid/book
 author:
  - José W. R. Pereira
 tags:
@@ -17,19 +17,22 @@ SLTINTA - [Ementa](../../ifsp-slt/dados/sltinta_ementa.md) - [Plano de Aula](../
 
 #
 
-#
-
-## Infraestrutura de Borda e Ingestão de Dados
+# Infraestrutura de Borda e Ingestão de Dados
 
 A estruturação da **Infraestrutura de Borda e Engenharia de Ingestão de Dados**, estabelecendo a base física e lógica necessária para capturar a telemetria da planta siderúrgica e enviá-la ao ecossistema analítico sem perda de informação. 
 
+Podemos dividir essa infraestrutura em três grandes pilares:
+
+1. Arquitetura de Dispositivos de Borda (Sistemas Embarcados com Recursos Restritos)
+2. Conversão Analógico-Digital (ADC) e Calibração Física de Sensores
+3. Serialização e Protocolos de Ingestão de Dados (UART, JSON, MQTT e SQLite)
 
 <!--No contexto do **Caminho 2 (Arduino Uno + Gateway Python via USB/Serial)**, a ementa de engenharia é desmembrada em **três pilares teóricos** fundamentais:-->
 
 ---
 
 
-### Pilar 1: Arquitetura de Dispositivos de Borda (Sistemas Embarcados com Recursos Restritos)
+## Pilar 1: Arquitetura de Dispositivos de Borda (Sistemas Embarcados com Recursos Restritos)
 
 Os melhores microcontroladores (MCUs) para aplicações de computação de borda (especialmente voltados para **TinyML**) variam de acordo com as restrições de consumo de energia, custo, poder de processamento e interfaces de sensores necessárias para o projeto. 
 
@@ -106,7 +109,7 @@ Embora o **Arduino Mega seja completamente inviável** por sua arquitetura de 8 
 
 ---
 
-### Pilar 2: Conversão Analógico-Digital (ADC) e Calibração Física de Sensores
+## Pilar 2: Conversão Analógico-Digital (ADC) e Calibração Física de Sensores
 
 Os fenômenos dinâmicos da máquina CNC (vibração mecânica e aquecimento do cabeçote) são medidos por transdutores que geram sinais elétricos analógicos de tensão contínua. O pilar do ADC estuda o mapeamento matemático desses níveis elétricos para o domínio digital discretizado:
 
@@ -122,14 +125,14 @@ Os fenômenos dinâmicos da máquina CNC (vibração mecânica e aquecimento do 
 
 ---
 
-### Pilar 3: Serialização e Protocolos de Ingestão de Dados (UART, JSON, MQTT e SQLite)
+## Pilar 3: Serialização e Protocolos de Ingestão de Dados (UART, JSON, MQTT e SQLite)
 
 A escolha entre formatos de serialização de dados tem papéis fundamentais em  diferentes etapas de um projeto de dados e inteligência artificial, e depende das restrições e objetivos do sistema. 
 
 Os formatos mais usados e os motivos de sua adoção são apresentados abaixo.
 
 
-#### 1. JSON (JavaScript Object Notation)
+### 1. JSON (*JavaScript Object Notation*)
 
 O JSON é o formato mais utilizado para a **transmissão de dados em tempo real, APIs e arquiteturas de IoT (computação de borda)**. Por exemplo, o microcontrolador ESP32 realiza a leitura de dados brutos e os serializa em um objeto JSON contendo as chaves `temperatura`, `vibracao` e `rpm` antes de transmiti-los via MQTT.
 
@@ -171,7 +174,7 @@ As amostras lógicas que utilizaremos são:
 
 ---
 
-#### 2. CSV (Comma-Separated Values)
+### 2. CSV (*Comma-Separated Values*)
 
 O CSV é o formato soberano na **fase de análise exploratória, armazenamento de datasets tabulares e treinamento de modelos de Aprendizado de Máquina**.
 
@@ -191,7 +194,7 @@ temperatura,vibracao,rpm,falha
 
 ---
 
-#### 3. TFRecord e Protocol Buffers (O formato de alta performance)
+### 3. TFRecord e Protocol Buffers (O formato de alta performance)
 
 Para além do JSON e CSV, quando o volume de dados na IA escala significativamente (como em pipelines de Deep Learning), utiliza-se o formato **TFRecord** (baseado em *Protocol Buffers* ou *protobufs* do Google).
 
