@@ -563,8 +563,8 @@ class DashboardSupervisorio(tk.Tk):
 4. Implemente um diálogo `Toplevel` novo que exiba um resumo estatístico (mínimo, máximo, média) do histórico atual de cada variável.
 
 ---
-<!-- 
-# CAPÍTULO 2 — Aquisição de Dados e Implementação do Protocolo Modbus RTU
+
+# 2 — Aquisição de Dados e Implementação do Protocolo Modbus RTU
 
 ## 2.1 Do sensor ao dado supervisionado
 
@@ -582,13 +582,15 @@ Este capítulo constrói cada uma dessas etapas, culminando na implementação c
 O Arduino Uno tem um ADC (conversor analógico-digital) de 10 bits: qualquer tensão entre 0V e 5V é convertida em um número inteiro entre 0 e 1023.
 
 ```cpp
-void setup() {
+void setup() 
+{
   Serial.begin(9600);
 }
 
-void loop() {
-  int leituraBruta = analogRead(A0);          // 0 a 1023
-  float tensao = leituraBruta * (5.0 / 1023.0);  // converte para Volts
+void loop() 
+{
+  int leituraBruta = analogRead(A0);              // 0 a 1023
+  float tensao = leituraBruta * (5.0 / 1023.0);   // converte para Volts
   Serial.println(tensao);
   delay(500);
 }
@@ -599,40 +601,45 @@ Isso já resolve a aquisição, mas gera dois problemas que motivam tudo que vem
 1. **Ruído do ADC**: uma leitura isolada pode variar bastante entre uma amostra e outra, mesmo com o sinal físico estável.
 2. **Unidade errada**: o programa supervisório não quer "tensão", quer "mm/s de vibração" ou "°C de temperatura".
 
+
 ### Filtragem simples por média
 
 ```cpp
-float lerMediaAnalogica(uint8_t pino, uint8_t nAmostras) {
+float lerMediaAnalogica(uint8_t pino, uint8_t nAmostras) 
+{
   long soma = 0;
-  for (uint8_t i = 0; i < nAmostras; i++) {
+  for (uint8_t i = 0; i < nAmostras; i++) 
+  {
     soma += analogRead(pino);
     delayMicroseconds(200);
   }
-  return (float)soma / nAmostras;
+  return( (float)soma / nAmostras );
 }
 ```
 
 Fazer a média de 8 leituras rápidas e consecutivas reduz o efeito de ruído aleatório de alta frequência — é a mesma função `lerMediaAnalogica()` usada no firmware final.
 
+
 ### Escala linear (regra de três)
 
 ```cpp
-float escalar(float leituraADC, float minEng, float maxEng) {
+float escalar(float leituraADC, float minEng, float maxEng) 
+{
   float tensao = (leituraADC / 1023.0) * 5.0;
-  float proporcao = tensao / 5.0;             // 0.0 a 1.0
+  float proporcao = tensao / 5.0;                   // 0.0 a 1.0
   return minEng + proporcao * (maxEng - minEng);
 }
 ```
 
 Se um acelerômetro de vibração entrega 0–5V para uma faixa física de 0–20 mm/s, basta chamar `escalar(leitura, 0.0, 20.0)`. Essa é a mesma lógica usada para os três sensores do projeto (vibração, temperatura, rotação), cada um com seus próprios limites `CAL_..._MIN`/`CAL_..._MAX`.
 
-> **Variação 1:** experimente uma calibração não-linear (por exemplo, um termopar tipo K exige compensação de junta fria e uma curva não perfeitamente linear). Nesse caso, `escalar()` precisaria ser substituída por uma tabela de consulta ou um polinômio de calibração — fica como exercício para quem for usar sensores reais em bancada.
+> **Variação 1:** experimente uma calibração não-linear (por exemplo, um termopar tipo K exige compensação de junta fria e uma curva não perfeitamente linear). Nesse caso, `escalar()` precisaria ser substituída por uma tabela de consulta ou um polinômio de calibração — fica como exercício para quando for usar sensores reais em bancada.
 
 ---
 
 ## 2.3 Por que não bastava "imprimir os números"? Motivando um protocolo estruturado
 
-A primeira versão deste projeto (antes da introdução do Modbus) enviava os dados assim, direto pela serial:
+Uma primeira versão deste projeto, antes da introdução do Modbus, enviava os dados direto pela serial:
 
 ```
 V:4.32,T:187.65,R:1450.20,F:1,N:1
@@ -651,7 +658,7 @@ Esses são exatamente os problemas que um protocolo industrial como o **Modbus**
 
 ## 2.4 Fundamentos do Modbus RTU
 
-Modbus é um protocolo **mestre-escravo** (também chamado cliente-servidor): existe um dispositivo mestre (nosso dashboard em Python) que sempre inicia a comunicação, e um ou mais escravos (nosso Arduino) que só respondem quando questionados.
+Modbus é um protocolo **cliente-servidor** (também chamado mestre-escravo): existe um dispositivo mestre (nosso dashboard em Python) que sempre inicia a comunicação, e um ou mais escravos (nosso Arduino) que só respondem quando questionados.
 
 ### Estrutura de um quadro Modbus RTU
 
@@ -688,13 +695,14 @@ O Modbus organiza a memória do escravo em quatro áreas, cada uma com um propó
 | 0x0F | Write Multiple Coils | N Coils |
 | 0x10 | Write Multiple Registers | N Holding Registers |
 
+
 ### O mapa de memória definido para a caldeira
 
 Antes de escrever qualquer código, é preciso **decidir e documentar** o mapa de memória — ele precisa ser idêntico nos dois lados (mestre e escravo), porque não existe nenhuma negociação automática de significado no Modbus: o endereço 0 só "significa" vibração porque nós decidimos isso.
 
 ```
 COILS (R/W)              0: Saída digital 1 (reservada)     1: Saída digital 2 (reservada)
-DISCRETE INPUTS (R)      0: Chama do queimador              1: Nível de água
+DISCRETE INPUTS (R)      0: Temperatura do motor            1: Nível de lubrificante
 INPUT REGISTERS (R)      0: Vibração ×100    1: Temperatura ×100    2: Rotação ×10
 HOLDING REGISTERS (R/W)  0-1: Limites vibração (alerta/crítico) ×100
                          2-3: Limites temperatura (alerta/crítico) ×100
@@ -726,15 +734,21 @@ def crc16_modbus(dados: bytes) -> int:
 O mesmo algoritmo, em C++ para o Arduino, usa exatamente a mesma lógica bit a bit:
 
 ```cpp
-uint16_t calcularCRC16(const uint8_t *dados, uint8_t tamanho) {
+uint16_t calcularCRC16(const uint8_t *dados, uint8_t tamanho) 
+{
   uint16_t crc = 0xFFFF;
-  for (uint8_t pos = 0; pos < tamanho; pos++) {
+  for (uint8_t pos = 0; pos < tamanho; pos++) 
+  {
     crc ^= (uint16_t)dados[pos];
-    for (uint8_t i = 8; i != 0; i--) {
-      if (crc & 0x0001) {
+    for (uint8_t i = 8; i != 0; i--) 
+    {
+      if (crc & 0x0001) 
+      {
         crc >>= 1;
         crc ^= 0xA001;
-      } else {
+      } 
+      else 
+      {
         crc >>= 1;
       }
     }
@@ -743,7 +757,7 @@ uint16_t calcularCRC16(const uint8_t *dados, uint8_t tamanho) {
 }
 ```
 
-**Por que isso importa pedagogicamente:** implementar o CRC "na mão" (em vez de usar uma biblioteca pronta) deixa claro que não há mágica — é só aritmética binária determinística, e qualquer implementação correta em qualquer linguagem vai produzir exatamente o mesmo número para a mesma sequência de bytes. É esse valor compartilhado que permite ao mestre e ao escravo "confiarem" um no outro sem trocarem senhas ou handshakes complexos.
+**Por que isso importa pedagogicamente:** o CRC é só aritmética binária determinística, e qualquer implementação correta em qualquer linguagem vai produzir exatamente o mesmo número para a mesma sequência de bytes. É esse valor compartilhado que permite ao mestre e ao escravo "confiarem" um no outro sem trocarem senhas ou handshakes complexos.
 
 > **Variação 2:** calcule manualmente (ou com o código acima) o CRC de `bytes([0x01, 0x03, 0x00, 0x00, 0x00, 0x06])` e verifique que bate com o valor usado nos testes do projeto. Depois, altere um único byte e observe como o CRC resultante muda completamente — essa "propriedade de avalanche" é o que torna o CRC eficaz para detectar erros.
 
@@ -767,7 +781,7 @@ uint16_t registrosEntrada[NUM_INPUT_REGISTERS] = { 0, 0, 0 };
 uint16_t registrosHolding[NUM_HOLDING_REGISTERS] = { 700, 1200, 45000, 52000, 26000, 28500 };
 ```
 
-Cada uma dessas quatro áreas do mapa Modbus (seção 2.4) vira, na prática, apenas um **array na memória do microcontrolador**. Todo o protocolo, no fundo, é sobre ler e escrever posições nesses arrays de forma padronizada.
+Cada uma dessas quatro áreas do mapa Modbus vira, na prática, apenas um **array na memória do microcontrolador**. Todo o protocolo, no fundo, é sobre ler e escrever posições nesses arrays de forma padronizada.
 
 ### Passo B — Recepção não bloqueante do quadro
 
@@ -780,16 +794,22 @@ uint8_t idxBuffer = 0;
 unsigned long ultimoByteRecebido = 0;
 const unsigned long TIMEOUT_ENTRE_BYTES_US = 3000;  // 3 ms de silêncio = fim de quadro
 
-void loop() {
-  while (Serial.available()) {
-    if (idxBuffer < MAX_FRAME) {
+void loop() 
+{
+  while (Serial.available()) 
+  {
+    if (idxBuffer < MAX_FRAME) 
+    {
       bufferRecepcao[idxBuffer++] = Serial.read();
-    } else {
+    } 
+    else 
+    {
       Serial.read();  // descarta excedente
     }
     ultimoByteRecebido = micros();
   }
-  if (idxBuffer > 0 && (micros() - ultimoByteRecebido) > TIMEOUT_ENTRE_BYTES_US) {
+  if (idxBuffer > 0 && (micros() - ultimoByteRecebido) > TIMEOUT_ENTRE_BYTES_US) 
+  {
     processarFrame(bufferRecepcao, idxBuffer);
     idxBuffer = 0;
   }
@@ -802,7 +822,8 @@ void loop() {
 ### Passo C — Validação do quadro recebido
 
 ```cpp
-void processarFrame(uint8_t *quadro, uint8_t tamanho) {
+void processarFrame(uint8_t *quadro, uint8_t tamanho) 
+{
   if (tamanho < 4) return;
 
   uint16_t crcRecebido = quadro[tamanho - 2] | (quadro[tamanho - 1] << 8);
@@ -828,11 +849,13 @@ As quatro funções de leitura seguem exatamente a mesma lógica — por isso o 
 
 ```cpp
 void tratarLeituraBits(uint8_t *quadro, uint8_t tamanho, bool *mapaBits,
-                        uint8_t numBitsDisponiveis, uint8_t funcao) {
+                        uint8_t numBitsDisponiveis, uint8_t funcao) 
+{
   uint16_t enderecoInicial = (quadro[2] << 8) | quadro[3];
   uint16_t quantidade      = (quadro[4] << 8) | quadro[5];
 
-  if ((uint32_t)enderecoInicial + quantidade > numBitsDisponiveis) {
+  if ((uint32_t)enderecoInicial + quantidade > numBitsDisponiveis) 
+  {
     enviarExcecao(funcao, 0x02);  // endereço de dado ilegal
     return;
   }
@@ -845,8 +868,10 @@ void tratarLeituraBits(uint8_t *quadro, uint8_t tamanho, bool *mapaBits,
   resposta[3] = 0;
   resposta[4] = 0;
 
-  for (uint16_t i = 0; i < quantidade; i++) {
-    if (mapaBits[enderecoInicial + i]) {
+  for (uint16_t i = 0; i < quantidade; i++) 
+  {
+    if (mapaBits[enderecoInicial + i]) 
+    {
       resposta[3 + (i / 8)] |= (1 << (i % 8));
     }
   }
@@ -863,7 +888,8 @@ Chamando essa mesma função com `coils` (função 0x01) ou com `entradasDiscret
 Uma particularidade elegante do Modbus: quando a escrita de um único valor é bem-sucedida, **a resposta é idêntica ao pedido**. Isso permite uma implementação extremamente simples:
 
 ```cpp
-void tratarEscritaBitUnico(uint8_t *quadro, uint8_t tamanho) {
+void tratarEscritaBitUnico(uint8_t *quadro, uint8_t tamanho) 
+{
   uint16_t endereco = (quadro[2] << 8) | quadro[3];
   uint16_t valor    = (quadro[4] << 8) | quadro[5];
 
@@ -883,17 +909,20 @@ Como o quadro recebido já passou pela validação de CRC (Passo C), reenviá-lo
 Diferente da escrita única, a resposta de uma escrita múltipla **não ecoa os dados**, apenas confirma o endereço inicial e a quantidade escrita (o mestre já sabe quais valores mandou, não precisa que o escravo os repita):
 
 ```cpp
-void tratarEscritaRegistrosMultiplos(uint8_t *quadro, uint8_t tamanho) {
+void tratarEscritaRegistrosMultiplos(uint8_t *quadro, uint8_t tamanho) 
+{
   uint16_t enderecoInicial = (quadro[2] << 8) | quadro[3];
   uint16_t quantidade      = (quadro[4] << 8) | quadro[5];
   uint8_t  byteCount       = quadro[6];
 
-  if ((uint32_t)enderecoInicial + quantidade > NUM_HOLDING_REGISTERS) {
+  if ((uint32_t)enderecoInicial + quantidade > NUM_HOLDING_REGISTERS) 
+  {
     enviarExcecao(0x10, 0x02);
     return;
   }
 
-  for (uint16_t i = 0; i < quantidade; i++) {
+  for (uint16_t i = 0; i < quantidade; i++) 
+  {
     uint16_t valor = (quadro[7 + i * 2] << 8) | quadro[7 + i * 2 + 1];
     registrosHolding[enderecoInicial + i] = valor;
   }
@@ -910,7 +939,8 @@ void tratarEscritaRegistrosMultiplos(uint8_t *quadro, uint8_t tamanho) {
 Quando um pedido é inválido (endereço fora da faixa, função não suportada, tamanho de dados incorreto), o Modbus define um formato de resposta padronizado:
 
 ```cpp
-void enviarExcecao(uint8_t funcao, uint8_t codigoExcecao) {
+void enviarExcecao(uint8_t funcao, uint8_t codigoExcecao) 
+{
   uint8_t resposta[3];
   resposta[0] = MODBUS_SLAVE_ID;
   resposta[1] = funcao | 0x80;   // o bit mais significativo marcado indica "isto é uma exceção"
@@ -919,14 +949,15 @@ void enviarExcecao(uint8_t funcao, uint8_t codigoExcecao) {
 }
 ```
 
-O truque `funcao | 0x80` é como o mestre reconhece, só de olhar o segundo byte da resposta, que algo deu errado — sem precisar interpretar o resto do quadro para descobrir.
+O mecanismo `funcao | 0x80` é como o mestre reconhece, só de olhar o segundo byte da resposta, que algo deu errado — sem precisar interpretar o resto do quadro para descobrir.
 
 ### Passo H — Ligando os sensores ao mapa de memória
 
 Finalmente, uma função separada (chamada periodicamente, independente da chegada de pedidos Modbus) é responsável por atualizar o mapa de memória com os valores físicos mais recentes:
 
 ```cpp
-void atualizarRegistros() {
+void atualizarRegistros() 
+{
   float vibracao = escalar(lerMediaAnalogica(PIN_VIBRACAO), CAL_VIB_MIN_MMS, CAL_VIB_MAX_MMS);
   float temperatura = escalar(lerMediaAnalogica(PIN_TEMPERATURA), CAL_TEMP_MIN_C, CAL_TEMP_MAX_C);
   float rotacao = escalar(lerMediaAnalogica(PIN_ROTACAO), CAL_RPM_MIN, CAL_RPM_MAX);
@@ -940,7 +971,7 @@ void atualizarRegistros() {
 }
 ```
 
-Note a separação de responsabilidades: o Modbus **não sabe nada sobre sensores** — ele só lê e escreve posições de memória. É esta função que faz a ponte entre o "mundo físico" (Capítulo 2, seção 2.2) e o "mundo do protocolo" (o resto deste capítulo). Essa separação é o que torna o firmware fácil de estender: adicionar um quarto sensor não muda uma linha do código Modbus, só acrescenta uma posição no array `registrosEntrada` e uma linha em `atualizarRegistros()`.
+Note a separação de responsabilidades: o Modbus **não sabe nada sobre sensores** — ele só lê e escreve posições de memória. É esta função que faz a ponte entre o "mundo físico" e o "mundo do protocolo". Essa separação é o que torna o firmware fácil de estender: adicionar um quarto sensor não muda uma linha do código Modbus, só acrescenta uma posição no array `registrosEntrada` e uma linha em `atualizarRegistros()`.
 
 ---
 
@@ -1031,7 +1062,7 @@ O `with self._lock:` garante que, mesmo que duas threads chamem métodos da mesm
 
 ## 2.8 Integrando o mestre Modbus ao pipeline de aquisição do dashboard
 
-Reaproveitando o padrão de thread + fila do Capítulo 1 (seção 1.8), a classe `LeitorModbusRTU` conecta o `ModbusRTUMaster` ao restante do dashboard:
+Reaproveitando o padrão de thread + fila do (cap 1 seção 1.8), a classe `LeitorModbusRTU` conecta o `ModbusRTUMaster` ao restante do dashboard:
 
 ```python
 class LeitorModbusRTU(FonteDadosBase):
@@ -1054,11 +1085,11 @@ class LeitorModbusRTU(FonteDadosBase):
             time.sleep(0.3)
 ```
 
-Note a simetria perfeita: o firmware multiplica por 100/10 antes de guardar no `registrosEntrada`; o mestre divide pelos mesmos fatores ao receber. Essa "combinação de chaves" entre os dois lados — o mapa de endereços e os fatores de escala — é o **contrato** que faz o protocolo funcionar, e é por isso que ele precisa estar documentado (seção 2.4) e idêntico nos dois arquivos.
+Note a simetria perfeita: o firmware multiplica por 100/10 antes de guardar no `registrosEntrada`; o mestre divide pelos mesmos fatores ao receber. Essa "combinação de chaves" entre os dois lados — o mapa de endereços e os fatores de escala — é o **contrato** que faz o protocolo funcionar, e é por isso que ele precisa estar documentado e idêntico nos dois arquivos.
 
 ### Do dado bruto ao dado tratado
 
-A partir daqui, o pipeline de tratamento é o mesmo apresentado no Capítulo 1: os dicionários que chegam pela fila alimentam `CanalDados.adicionar()`, que mantém:
+A partir daqui, o pipeline de tratamento é o mesmo já apresentado: os dicionários que chegam pela fila alimentam `CanalDados.adicionar()`, que mantém:
 
 - **Valor atual** (`self.valor_atual`);
 - **Histórico limitado** (`deque(maxlen=TAMANHO_HISTORICO)`) para os gráficos;
@@ -1093,22 +1124,21 @@ Essa técnica (chamada de *mock* ou *dublê de teste*) permite testar cada uma d
 
 ### Exercícios propostos (Capítulo 2)
 
-1. Adicione um quarto Input Register (por exemplo, "pressão de vapor") no firmware e no dashboard, seguindo os mesmos passos apresentados: array → `atualizarRegistros()` → `QTD_INPUT_REGISTERS` → conversão de escala no `LeitorModbusRTU`.
+1. Adicione um quarto Input Register (por exemplo, "pressão de óleo") no firmware e no dashboard, seguindo os mesmos passos apresentados: array → `atualizarRegistros()` → `QTD_INPUT_REGISTERS` → conversão de escala no `LeitorModbusRTU`.
 2. Implemente, no dashboard, um botão que leia os 6 Holding Registers do Arduino ao conectar (função 0x03) e **pré-preencha** os limites de alarme locais com os valores vindos do equipamento, em vez de usar os valores padrão do código Python.
 3. Escreva um pequeno programa Python (fora do dashboard) que force um erro de CRC de propósito (altere um byte do quadro antes de enviar) e observe como o Arduino reage (dica: ele simplesmente ignora o quadro corrompido — não deveria travar nem responder incorretamente).
 4. Discuta em grupo: quais seriam as mudanças necessárias para migrar este projeto de um link serial ponto-a-ponto (USB) para um barramento RS-485 real, com múltiplos escravos? (Dica: pesquise sobre transceptores RS-485 half-duplex e o papel do pino *driver enable*.)
 
 ---
 
-## Referência final
+## Referência 
 
-Os dois arquivos completos e comentados que resultam da aplicação de tudo o que foi apresentado neste material são:
+Os arquivos foram gerados com auxílio de Claude.IA e refatorados para atender às demandas pedagógicas da situação problema proposta.
 
 - `dashboard_supervisorio.py` — aplicação completa em Python (Tkinter + Matplotlib + cliente Modbus RTU)
-- `aquisicao_caldeira_modbus.ino` — firmware completo do Arduino Uno (escravo Modbus RTU)
+- `borda.ino` — firmware completo do Arduino Uno (escravo Modbus RTU)
 
-Recomenda-se que os alunos leiam esses dois arquivos de cima a baixo depois de estudar este material, identificando cada trecho com a seção correspondente aqui apresentada.
- -->
+ 
 
 ---
 
