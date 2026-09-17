@@ -19,7 +19,7 @@ tags:
 | Semana | Data  | Conteúdo Planejado | Metodologia de Ensino e Recursos |
 | :----: | :---: | :-------- | :---------------------------------------- |
 |   1    | 27/07 | [Introdução ao Aprendizado de Máquina](../../dados/ml/inta01-intro_conceitos_iniciais.md) [(slides)](../../dados/slides/SLTINTA-01-intro_conceitos_iniciais.pdf) <br>Fundamentos, IoT e Classificação Clássica<br> Definição do escopo de manutenção preditiva e [análise exploratória do _dataset_.](../../dados/ml/inta01-intro_conceitos_iniciais-lab.md) [(slides)](../../dados/slides/SLTINTA-01-intro_conceitos_iniciais-lab.pdf)  | Exposição Dialogada: Lousa/Quadro branco e projetor multimídia.  <br>Prática Orientada: Laboratório com computador. |
-|   2    | 03/08 | Configuração da infraestrutura de borda.<br>Aquisição e serialização de dados em formato JSON. | Exposição Dialogada.<br>Prática Orientada.      |
+|   2    | 03/08 | [Configuração da infraestrutura de borda](../../dados/ml/inta02-infra_borda.md) -  [Laboratório](../../dados/ml/inta02-infra_borda-lab.md) <br> Aquisição e serialização de dados em formato JSON.  | Exposição Dialogada.<br>Prática Orientada.      |
 |   3    | 10/08 | Protocolo de comunicação industrial MQTT para transmissão de dados. | Exposição Dialogada.<br>Prática Orientada. |
 |   4    | 17/08 | _Gateway_ para captura de dados do _Broker_ e persistência em banco de dados. | Exposição Dialogada.<br>Prática Orientada. |
 |   5    | 24/08 | Aplicação de Máquinas de Vetores de Suporte (SVM) com diferentes kernels para classificação de falhas. | Exposição Dialogada.<br>Prática Orientada. |

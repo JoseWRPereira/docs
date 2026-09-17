@@ -36,8 +36,7 @@ tags:
 |   17   | 18/11 | Virtualização com Docker e criação de Dashboards em Python (Streamlit).                                                                                                                                                                                                                       | Exposição Dialogada.<br>Prática Orientada.                                                                |
 |   18   | 25/11 | Integração Final da Arquitetura IIoT Desacoplada.<br>Segurança : Artigo: Lima, P.M., Alves, M.V.S., Carvalho, L.K. et al. Security Against Communication Network Attacks of Cyber-Physical Systems. J Control Autom Electr Syst 30, 125–135 (2019). https://doi.org/10.1007/s40313-018-0420-9 | Exposição Dialogada.<br>                                                                                  |
 |   19   | 02/12 | Entrega Final: Ecossistema Completo.                                                                                                                                                                                                                                                          | Exposição Dialogada.<br>Prática Orientada.                                                                |
-|   20   | 09/12 |                                                                                                                                                                                                                                                                                               |                                                                                                           |
-
+|   20   | 09/12 |     |  |
 
 
 ---
