@@ -1,5 +1,5 @@
 ---
-title: 05 - ML Clássico e Fronteiras de Decisão
+title: 05 - ML Clássico - Fronteiras de Decisão
 icon: fontawesome/solid/book
 author:
  - José W. R. Pereira

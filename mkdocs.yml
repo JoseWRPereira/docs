@@ -220,6 +220,8 @@ nav:
               - dados/ml/inta01-intro_conceitos_iniciais-lab.md
               - dados/ml/inta02-infra_borda-lab.md
               - dados/ml/inta05-MLClassico-FronteirasDecisao-lab.md
+              - dados/ml/inta06-MLClassico-ArvoreDecisao-lab.md
+              - dados/ml/inta07-MLClassico-FlorestaAleatoria-lab.md
 #              - dados/ml/am02-intro.md
           - Situações de Aprendizagem:
               - dados/sitap/sa01-siderurgica.md
