@@ -15,7 +15,8 @@ SLTINTA - [Ementa](../../ifsp-slt/dados/sltinta_ementa.md) - [Plano de Aula](../
 ---
 
 #
-# Roteiro Teórico e Guia de Engenharia — Semana 7: Florestas Aleatórias (*Random Forest*), *Ensemble Learning* e Diagnóstico Preditivo Industrial
+
+# Florestas Aleatórias (*Random Forest*), *Ensemble Learning* e Diagnóstico Preditivo Industrial
 
 ---
 
@@ -26,6 +27,7 @@ Na manutenção preditiva em ambientes de manufatura avançada e siderurgia (Ind
 Para resolver esse dilema entre interpretabilidade e desempenho preditivo, a engenharia de machine learning recorre ao paradigma de **Ensemble Learning (Aprendizado por Comitê)**. O algoritmo **Random Forest (Floresta Aleatória)**, desenvolvido por Leo Breiman e Adele Cutler, constrói centenas de árvores de decisão individuais de forma assíncrona e combina suas predições por meio de votação democrática.
 
 No chão de fábrica, essa abordagem traz benefícios práticos diretos:
+
 1. **Redução Drástica de Alarmes Falsos:** Ao calcular a média ou o consenso de um comitê de árvores, o efeito do ruído isolado de sensores individuais é neutralizado, reduzindo substancialmente os Falsos Positivos.
 2. **Alta Robustez e Estabilidade:** O modelo mantém elevado desempenho em dados não lineares e ruidosos sem exigir padronização de escala (`StandardScaler`).
 3. **Priorização de Ativos e Sensores:** Embora perca a visualização direta de um fluxograma único, a floresta gera o vetor de **Importância dos Atributos (`feature_importances_`)**, revelando matematicamente à gerência quais sensores (como Torque ou Desgaste da Ferramenta) controlam o risco de quebra mecânica.
@@ -37,15 +39,19 @@ No chão de fábrica, essa abordagem traz benefícios práticos diretos:
 ### Meta 1: Configuração e Treinamento do `RandomForestClassifier`
 
 #### A. O Princípio do *Bagging* (*Bootstrap Aggregating*)
+
 A base do Random Forest fundamenta-se no algoritmo de **Bagging**, proposto por Breiman em 1996. Dado um conjunto de treinamento com \\(N\\) amostras, o algoritmo gera \\(K\\) diferentes subconjuntos de dados realizando amostragem aleatória com reposição (*Bootstrap*). Cada árvore do comitê é treinada sobre um subconjunto *bootstrap* individual. Em média, cada amostra *bootstrap* contém aproximadamente \\(63{,}2\%\\) das amostras originais, enquanto os \\(36{,}8\%\\) restantes constituem o conjunto **Out-Of-Bag (OOB)**.
 
 #### B. Sorteio Aleatório de Atributos (*Feature Subspacing*)
+
 Se todas as árvores avaliassem o conjunto completo de variáveis, um sensor dominante (por exemplo, Torque) seria escolhido no nó raiz de praticamente todas as árvores, tornando o comitê altamente correlacionado. Para decorrelacionar os estimadores base, o Random Forest introduz uma segunda camada de aleatoriedade: a cada nó de cada árvore, o algoritmo sorteia aleatoriamente apenas um subconjunto de \\(m\\) atributos. Para problemas de classificação binária, o padrão utilizado no Scikit-Learn é:
 \\[m = \sqrt{p}\\]
 onde \\(p\\) representa a quantidade total de sensores/variáveis de entrada.
 
 #### C. Algoritmo do Random Forest em 4 Etapas
+
 O fluxo de treinamento e inferência do algoritmo segue as quatro etapas clássicas:
+
 1. **Amostragem:** Extrai-se uma amostra *bootstrap* aleatória de tamanho \\(N\\) do conjunto de treino.
 2. **Crescimento da Árvore:** Constrói-se uma árvore de decisão a partir da amostra *bootstrap*. Em cada nó, sorteia-se \\(m = \sqrt{p}\\) atributos sem reposição e seleciona-se o melhor corte que maximiza o Ganho de Informação / redução da Impureza de Gini.
 3. **Repetição:** Repete-se os passos 1 e 2 para \\(K\\) árvores (definidas pelo parâmetro `n_estimators`).
@@ -56,6 +62,7 @@ O fluxo de treinamento e inferência do algoritmo segue as quatro etapas clássi
 ### Meta 2: Extração do Vetor de Relevância de Atributos (`feature_importances_`)
 
 #### A. Decréscimo Médio da Impureza de Gini (*Mean Decrease Impurity - MDI*)
+
 Embora a floresta aleatória não possa ser representada em um único gráfico simples, ela fornece uma medida quantitativa rigorosa da relevância de cada sensor. A **Importância de Gini** mede a contribuição acumulada de cada variável \\(x_j\\) para a redução da impureza em todos os nós \\(t\\) onde \\(x_j\\) foi utilizado para realizar um corte, ponderada pela proporção de amostras que atingiram esses nós, calculada sobre todas as \\(K\\) árvores da floresta:
 
 \\[\text{Importância}(x_j) = \frac{1}{K} \sum_{k=1}^{K} \sum_{t \in T_k \text{ usa } x_j} \Delta I(t, x_j)\\]
@@ -63,6 +70,7 @@ Embora a floresta aleatória não possa ser representada em um único gráfico s
 onde \\(\Delta I(t, x_j) = w_t I(t) - w_{esq} I(t_{esq}) - w_{dir} I(t_{dir})\\) é a redução da impureza de Gini no nó \\(t\\).
 
 #### B. Nuances e Atributos Correlacionados
+
 Quando dois ou mais sensores apresentam forte correlação física (por exemplo, Rotação e Torque), o Random Forest pode dividir a importância entre eles ou atribuir maior peso ao primeiro sorteado na divisão dos nós. Para fins de predição puramente preditiva, essa característica não compromete a acurácia do modelo.
 
 ---
@@ -105,6 +113,7 @@ rf_model = RandomForestClassifier(
 ```
 
 #### Detalhamento Técnico dos Parâmetros:
+
 1. **`n_estimators`:** Define a quantidade de árvores no comitê. Aumentar o número de árvores reduz a variância sem provocar *overfitting*, porém estabiliza a partir de determinado ponto (ex.: 100 a 300 árvores). Valores exagerados (como 5.000 árvores) apenas consomem memória RAM e tornam a inferência lenta sem ganho estatístico relevante.
 2. **`max_features='sqrt'`:** É o principal mecanismo de decorrelação das árvores. Ao limitar a busca do melhor corte a apenas \\(\sqrt{p}\\) variáveis aleatórias por nó, força a floresta a explorar combinações secundárias de sensores.
 3. **`oob_score=True` (Validação *Out-Of-Bag*):** Como cada árvore é treinada em cerca de \\(63{,}2\%\\) dos dados, as amostras não utilizadas (\\(36{,}8\%\\) restantes) funcionam como um conjunto de teste contínuo "gratuito". O `oob_score_` estima a capacidade de generalização do modelo sem necessidade de validação cruzada adicional.
@@ -245,6 +254,3 @@ RASCHKA, Sebastian. **Python Machine Learning**. Birmingham: Packt Publishing, 2
 
 SANTOS, R.; FERREIRA, L. et al. Imbalanced Data Treatment in Predictive Maintenance Machine Learning Models. **Applied Sciences**, v. 11, n. 18, p. 8542, 2021. DOI: https://doi.org/10.3390/app11188542.
 
-***
-
-💡 **Quer dar sequência preparando o roteiro equivalente para a Semana 8, sobre Redução de Dimensionalidade com PCA (Análise de Componentes Principais)?**

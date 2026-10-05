@@ -63,9 +63,9 @@ O desafio é evoluir para o paradigma de **Ensemble Learning (Aprendizado por Co
 
 ---
 
-## ⚠️ **Pontos de Atenção na Aula**
+## ⚠️ **Pontos de Atenção**
 
-1. **Troca da Visualização Direta pelo Ganho de Desempenho:** Diferente da Árvore de Decisão, uma floresta com 100 árvores não pode ser desenhada em um único fluxograma simples. O professor deve orientar os alunos de que a explicabilidade visual direta dá lugar ao ranking de `feature_importances_` em troca de um ganho expressivo em precisão.
+1. **Troca da Visualização Direta pelo Ganho de Desempenho:** Diferente da Árvore de Decisão, uma floresta com 100 árvores não pode ser desenhada em um único fluxograma simples. A explicabilidade visual direta dá lugar ao ranking de `feature_importances_` em troca de um ganho expressivo em precisão.
 2. **Dimensionamento de `n_estimators`:** Aumentar excessivamente o número de árvores (ex.: 5.000 árvores) não melhora indefinidamente o desempenho, apenas eleva o consumo de memória RAM e torna o modelo mais lento para futuras integrações em dashboards.
 
 
@@ -277,9 +277,9 @@ MATRIZ DE CONFUSÃO:
 
 | Modelo / Algoritmo | Acurácia Geral | Recall (Falha) | Precisão (Falha) | F1-Score (Falha) | Falsos Positivos (Alarmes Falsos) |
 | :--- | :---: | :---: | :---: | :---: | :---: |
-| **SVM Kernel Linear (Semana 5)** | 81,5% | 88,0% | 11,0% | 0,19 | 547 |
-| **Árvore de Decisão Podada (Semana 6)** | 84,0% | 90,6% | 18,0% | 0,29 | 455 |
-| **Random Forest Ensemble (Semana 7)** | **97,0%** | **82,2%** | **51,5%** | **0,65** | **83** |
+| **SVM Kernel Linear** | 81,5% | 88,0% | 11,0% | 0,19 | 547 |
+| **Árvore de Decisão Podada** | 84,0% | 90,6% | 18,0% | 0,29 | 455 |
+| **Random Forest Ensemble** | **97,0%** | **82,2%** | **51,5%** | **0,65** | **83** |
 
 
 **Conclusão:** 

@@ -285,7 +285,7 @@ print("MATRIZ DE CONFUSÃO:")
 print(cm)
 print(f"\n  - Falsos Negativos (Falhas Não Detectadas): {cm}")
 print(f"  - Falsos Positivos (Alarmes Falso de Inspeção): {cm}")
-print(f"  - Recall da Classe de Falha: {cm / (cm + cm):.2%}")
+print(f"  - Recall da Classe de Falha: {float(cm[1, 1] / (cm[1, 0] + cm[1, 1])):.2%}")
 ```
 
 ```text
@@ -315,6 +315,7 @@ MATRIZ DE CONFUSÃO:
 ## 7 Explicabilidade — Leitura de Regras ("Caixa-Branca") e Importância de Atributos
 
 Esta célula cumpre o requisito de transparência exigido pela equipe de manutenção.
+
 1. **`export_text`**: Exibe o fluxograma lógico em formato textual de regras *IF-THEN*.
 2. **`feature_importances_`**: Extrai o ranking dos sensores mais críticos na redução da Impureza de Gini.
 

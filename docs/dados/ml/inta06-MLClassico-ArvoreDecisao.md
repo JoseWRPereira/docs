@@ -18,7 +18,7 @@ SLTINTA - [Ementa](../../ifsp-slt/dados/sltinta_ementa.md) - [Plano de Aula](../
 
 #
 
-# Roteiro Teórico e Guia de Engenharia — Semana 7: Árvores de Decisão, *Ensemble Learning* e Diagnóstico Industrial com Graphviz
+# Árvores de Decisão, *Ensemble Learning* e Diagnóstico Industrial com Graphviz
 
 ---
 
@@ -31,6 +31,7 @@ No chão de fábrica, variáveis físicas de telemetria — tais como **Temperat
 Embora algoritmos matemáticos complexos como o **SVM (Support Vector Machines)** ofereçam boa capacidade de generalização, eles sofrem forte rejeição por parte das equipes de manutenção de campo por funcionarem como "caixas-pretas". Se um sistema dispara um alarme e paralisa uma linha de montagem sem explicar a causa física, os engenheiros não confiam no diagnóstico.
 
 É nesse cenário que a **Árvore de Decisão** e os modelos de comitê (**Random Forest**) tornam-se indispensáveis:
+
 1. **Transparência e Explicabilidade ("Caixa-Branca"):** Mapeiam o conhecimento em regras lógicas condicionais do tipo `SE... ENTÃO...`, facilmente auditáveis por operadores humanos.
 2. **Sem Necessidade de Escalonamento:** Ao contrário do SVM ou de Redes Neurais, não exigem padronização de escala (`StandardScaler`), pois realizam cortes ortogonais nos valores brutos dos sensores.
 3. **Identificação de Sensores Críticos:** Permitem extrair o ranking de relevância das variáveis (`feature_importances_`), revelando à gerência qual parâmetro físico acelera a degradação mecânica.
@@ -55,15 +56,19 @@ onde \\(D_p\\) é o conjunto de dados no nó pai, \\(N_p\\) é o número total d
    \\[I_H(t) = - \sum_{c=1}^{C} p(c|t) \log_2 p(c|t)\\]
 
 #### B. A Armadilha do *Overfitting* e a Poda (*Pruning*)
+
 Se o crescimento da árvore não for restringido (`max_depth=None`), o algoritmo continuará criando divisões até que todas as folhas sejam "puras" (\\(I_G = 0\\)). Em dados ruidosos de sensores, isso faz a árvore memorizar oscilações temporárias (atingindo \\(100\%\\) de acerto no treino, mas falhando miseravelmente nos dados de teste). 
 
 Para garantir a generalização estatística, aplica-se a **Poda Prévia (*Pre-Pruning*)**, controlando hiperparâmetros como:
+
 * `max_depth`: Limita a profundidade máxima da estrutura.
 * `min_samples_split`: Exige uma quantidade mínima de amostras para autorizar uma nova divisão.
 * `min_samples_leaf`: Garante que cada nó folha contenha um número mínimo de leituras.
 
 #### C. Transição para o *Ensemble Learning* (Random Forest)
+
 Para superar a perda de precisão provocada pela poda excessiva em árvores individuais, utiliza-se o **Random Forest (Floresta Aleatória)**. O algoritmo combina centenas de árvores independentes por meio de duas camadas de aleatoriedade:
+
 1. **Bagging (*Bootstrap Aggregating*):** Cada árvore é treinada em um subconjunto de dados gerado por amostragem aleatória com reposição (*Bootstrap*).
 2. **Sorteio de Atributos (*Feature Subspacing*):** Em cada nó de cada árvore, o algoritmo sorteia aleatoriamente apenas \\(m = \sqrt{p}\\) atributos (onde \\(p\\) é o total de sensores) para buscar o melhor corte.
 
@@ -76,6 +81,7 @@ A decisão final de risco de falha é tomada por **votação de maioria** (ou m�
 A aceitação de um modelo inteligente no chão de fábrica exige que o fluxo de decisão possa ser auditado. A visualização gráfica traduz equações matemáticas abstratas em um fluxograma inteligível. 
 
 Nessa estrutura de grafo direcionado:
+
 * **Nós de Decisão (Retângulos):** Exibem a variável do sensor avaliada, o teste condicional (\\(\le t\\)), o valor da impureza de Gini no nó, a quantidade total de amostras que atingiram o nó (`samples`) e a distribuição de amostras por classe (`value`).
 * **Arestas (Ramos):** Representam a resposta booleana ao teste (`True` à esquerda, `False` à direita).
 * **Nós Folha (Terminais):** Indicam o diagnóstico final (*Operação Normal* vs. *Risco de Falha*) e a distribuição de certeza associada.
@@ -161,6 +167,7 @@ edge [fontname="helvetica"] ;
 ```
 
 #### Elementos da Linguagem DOT:
+
 1. **`digraph Tree { ... }`:** Declara um **Grafo Direcionado** (*Directed Graph*) denominado `Tree`.
 2. **Definições Globais de Nós (`node [...]`):** Define a geometria das caixas (`shape=box`), estilo de preenchimento (`style="filled, rounded"`) e a tipografia.
 3. **Declaração de Nós (`0 [label=...]`):** Cada nó recebe um identificador numérico único e um atributo `label` contendo o texto formatado com quebras de linha (`\n`).
@@ -250,7 +257,7 @@ import graphviz
 url = "https://archive.ics.uci.edu/static/public/601/ai4i+2020+predictive+maintenance+dataset.zip"
 csv_path = "./dataset/ai4i2020.csv"
 
-# Prevenção contra falta de conexão: gera dados sintéticos caso o arquivo não exista
+# Prevenção contra falta de conexão: gera dados sintéticos fidedignos caso o arquivo não exista
 if not os.path.exists(csv_path):
     os.makedirs("./dataset", exist_ok=True)
     np.random.seed(42)
@@ -262,7 +269,7 @@ if not os.path.exists(csv_path):
         'Torque [Nm]': np.random.normal(40, 10, n),
         'Tool wear [min]': np.random.randint(0, 240, n),
         'Type': np.random.choice(['L', 'M', 'H'], n),
-        'Machine failure': np.random.choice(, n, p=[0.966, 0.034])
+        'Machine failure': np.random.choice([0, 1], n, p=[0.966, 0.034])
     })
 else:
     df = pd.read_csv(csv_path)
@@ -310,10 +317,177 @@ dot_data = export_graphviz(
 
 # Compilação e visualização em linha
 graph = graphviz.Source(dot_data)
+os.makedirs("./out", exist_ok=True)
 graph.render("./out/arvore_diagnostico_industrial", format="png", cleanup=True)
 
 print("[OK] Fluxograma de decisão gerado e salvo em './out/arvore_diagnostico_industrial.png'!")
 ```
+
+---
+
+- [Graphviz online](https://dreampuf.github.io/GraphvizOnline/)
+
+
+## 5.1 Exemplo Prático de Código em Python (Pipeline feita com **`plot_tree` do Matplotlib/Scikit-Learn**)
+
+---
+
+```python
+import os
+import zipfile
+import urllib.request
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+
+from sklearn.model_selection import train_test_split
+from sklearn.tree import DecisionTreeClassifier, plot_tree, export_text
+from sklearn.metrics import classification_report, confusion_matrix
+
+# ==============================================================================
+# 1. PREPARAÇÃO DOS DIRETÓRIOS E CARGA DOS DADOS (AI4I 2020)
+# ==============================================================================
+os.makedirs("./out", exist_ok=True)
+os.makedirs("./dataset", exist_ok=True)
+
+csv_path = "./dataset/ai4i2020.csv"
+zip_path = "./dataset/ai4i_2020.zip"
+url = "https://archive.ics.uci.edu/static/public/601/ai4i+2020+predictive+maintenance+dataset.zip"
+
+if not os.path.exists(csv_path):
+    try:
+        print("[INFO] Baixando dataset AI4I 2020 da UCI...")
+        urllib.request.urlretrieve(url, zip_path)
+        with zipfile.ZipFile(zip_path, 'r') as zip_ref:
+            zip_ref.extractall("./dataset")
+        print("[OK] Dataset baixado e extraído com sucesso!")
+    except Exception as e:
+        print(f"[OFFLINE] Download indisponível ({e}). Gerando estrutura sintética fidedigna...")
+        np.random.seed(42)
+        n = 10000
+        df_synth = pd.DataFrame({
+            'UDI': range(1, n + 1),
+            'Product ID': [f"P{i:05d}" for i in range(1, n + 1)],
+            'Type': np.random.choice(['L', 'M', 'H'], n, p=[0.6, 0.3, 0.1]),
+            'Air temperature [K]': np.random.normal(300, 2, n),
+            'Process temperature [K]': np.random.normal(310, 1, n),
+            'Rotational speed [rpm]': np.random.normal(1500, 100, n),
+            'Torque [Nm]': np.random.normal(40, 10, n),
+            'Tool wear [min]': np.random.randint(0, 240, n),
+            'Machine failure': np.random.choice([0,1], n, p=[0.966, 0.034]),  # Sorteio correto
+            'TWF': 0, 'HDF': 0, 'PWF': 0, 'OSF': 0, 'RNF': 0
+        })
+        df_synth.to_csv(csv_path, index=False)
+
+df = pd.read_csv(csv_path)
+
+# ==============================================================================
+# 2. PRÉ-PROCESSAMENTO E REMOÇÃO DE TARGET LEAKAGE
+# ==============================================================================
+# Removemos identificadores e colunas que indicam falhas específicas já ocorridas
+cols_to_drop = ['UDI', 'Product ID', 'TWF', 'HDF', 'PWF', 'OSF', 'RNF']
+df_clean = df.drop(columns=[c for c in cols_to_drop if c in df.columns])
+
+# One-Hot Encoding para a variável categórica 'Type'
+df_encoded = pd.get_dummies(df_clean, columns=['Type'], drop_first=False)
+
+X = df_encoded.drop(columns=['Machine failure'])
+y = df_encoded['Machine failure']
+
+# ==============================================================================
+# 3. DIVISÃO ESTRATIFICADA (70% TREINO / 30% TESTE)
+# ==============================================================================
+X_train, X_test, y_train, y_test = train_test_split(
+    X, y, test_size=0.30, random_state=42, stratify=y
+)
+
+# ==============================================================================
+# 4. TREINAMENTO DA ÁRVORE DE DECISÃO PODADA (EVITANDO OVERFITTING)
+# ==============================================================================
+tree_model = DecisionTreeClassifier(
+    criterion='gini',
+    max_depth=3,               # Profundidade máxima podada para alta explicabilidade
+    min_samples_split=10,      # Mínimo de amostras para autorizar uma divisão
+    class_weight='balanced',   # Compensação para a classe minoritária de falha
+    random_state=42
+)
+tree_model.fit(X_train, y_train)
+
+# ==============================================================================
+# 5. AVALIAÇÃO DE DESEMPENHO NO CONJUNTO DE TESTES
+# ==============================================================================
+y_pred = tree_model.predict(X_test)
+
+print("=" * 60)
+print("RELATÓRIO DE DESEMPENHO INDUSTRIAL")
+print("=" * 60)
+print(classification_report(y_test, y_pred, target_names=["Normal (0)", "Falha (1)"]))
+
+print("MATRIZ DE CONFUSÃO:")
+print(confusion_matrix(y_test, y_pred))
+
+# ==============================================================================
+# 6. EXPLICABILIDADE: REGRAS EM TEXTO (IF-THEN)
+# ==============================================================================
+print("\n" + "=" * 60)
+print("FLUXOGRAMA LÓGICO DE TOMADA DE DECISÃO (TEXTO)")
+print("=" * 60)
+print(export_text(tree_model, feature_names=list(X.columns)))
+
+# ==============================================================================
+# 7. VISUALIZAÇÃO GRÁFICA 100% NATIVA (SKEALRN + MATPLOTLIB)
+# ==============================================================================
+plt.figure(figsize=(18, 9))
+plot_tree(
+    tree_model,
+    feature_names=X.columns,
+    class_names=["Normal", "Falha"],
+    filled=True,
+    rounded=True,
+    fontsize=10
+)
+plt.title("Fluxograma de Tomada de Decisão — Diagnóstico Industrial de Falhas", fontsize=14, fontweight='bold')
+plt.tight_layout()
+
+# Salva o arquivo de imagem e exibe no notebook
+plot_path = "./out/arvore_diagnostico_industrial.png"
+plt.savefig(plot_path, dpi=300, bbox_inches='tight')
+plt.show()
+
+print(f"\n[OK] Execução concluída! Imagem gerada e salva em: '{plot_path}'")
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ---
 
