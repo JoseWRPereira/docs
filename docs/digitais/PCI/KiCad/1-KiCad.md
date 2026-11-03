@@ -74,9 +74,12 @@ O **3D Viewer** é a ferramenta de **renderização 3D** integrada ao KiCad, que
 
 # Referências
 
+DESIGN GRAVEYARD. Learn KiCAD10 in 7 steps. YouTube, 2026. Disponível em: https://youtu.be/3NSjzMN1xyc?si=UprWNk5KrHIF_slo. Acesso em: 3 nov. 2026.
+
 KICAD. **Homepage**. Disponível em: https://www.kicad.org/. Acesso em: 24 fev. 2026.
 
 LIMA, Charles Borges de; VILLAÇA, Marco Valério Miorim. **AVR e Arduino**: Técnicas de Projeto. 2. ed. Florianópolis: Edição dos Autores, 2012.
 
 TAVARES, Rodrigo. **Curso de Projeto de PCB com KiCAD**. YouTube. [s. d.]. Playlist (26 vídeos). Disponível em: https://www.youtube.com/playlist?list=PL8kCnofYYWZrkhUis1svLGux1tjYNJy2Z. Acesso em: 24 fev. 2026.
+
 
