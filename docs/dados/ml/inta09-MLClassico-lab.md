@@ -123,6 +123,10 @@ Investigar problemas de alta dimensionalidade, tratamento de dados ausentes e re
 - Os componentes principais permitem visualizar alguma separação entre as classes?
 - A variância explicada pelo PCA é suficiente para preservar a informação relevante à classificação?
 
+**Apoio**
+
+- [ad-secom - GitLab](https://gitlab.com/JoseWRPereira/ad-secom)
+
 ### 4.3. Dataset 3 — APS Failure at Scania Trucks
 
 **Link:** https://archive.ics.uci.edu/dataset/421/aps+failure+at+scania+trucks
@@ -219,7 +223,7 @@ Explorar a classificação de condições de saúde de componentes mecânicos ut
 
 **Observação:** os arquivos exigem processamento e extração de atributos. Deve-se ter atenção especial à separação entre treinamento e teste para evitar que janelas provenientes da mesma medição apareçam nos dois conjuntos.
 
-### 4.6. Dataset 6 — NASA C-MAPSS: degradação de motores turbofan
+<!-- ### 4.6. Dataset 6 — NASA C-MAPSS: degradação de motores turbofan
 
 **Link:** https://www.nasa.gov/intelligent-systems-division/discovery-and-systems-health/pcoe/pcoe-data-set-repository/
 
@@ -250,7 +254,7 @@ Ampliar a atividade para dados temporais, investigando como as variáveis de sen
 - Quais diferenças existem entre classificar uma condição de falha e estimar o tempo restante até a falha?
 
 **Observação:** o C-MAPSS é originalmente orientado a trajetórias temporais e prognóstico. Para utilizá-lo em classificação, é necessário definir previamente as classes ou estados de degradação. Para a extensão de RUL, os modelos devem ser adaptados para regressão. A página oficial da NASA informa que a disponibilidade dos arquivos pode variar; caso o acesso direto não esteja disponível, consulte os recursos do repositório de dados de prognóstico da NASA.
-
+ -->
 ## 5. Condução dos experimentos
 
 Para permitir comparações consistentes, os procedimentos deverão seguir uma metodologia comum.
@@ -346,14 +350,15 @@ Para o PCA, registrar a variância explicada por componente e a variância expli
 
 Cada grupo deverá manter uma tabela de experimentos com, no mínimo, os seguintes campos:
 
-| Dataset | Modelo | Uso de PCA | Nº de componentes | Métrica principal | Resultado |
-|---|---|---|---|---|---|
-| Nome do dataset | SVM | Não | — | F1-score | Preencher |
-| Nome do dataset | SVM | Sim | Definir | F1-score | Preencher |
-| Nome do dataset | Árvore de decisão | Não | — | F1-score | Preencher |
-| Nome do dataset | Árvore de decisão | Sim | Definir | F1-score | Preencher |
-| Nome do dataset | Floresta aleatória | Não | — | F1-score | Preencher |
-| Nome do dataset | Floresta aleatória | Sim | Definir | F1-score | Preencher |
+
+| Dataset | Modelo | Uso de PCA | Métrica principal | Resultado - Acurácia, sensibilidade e precisão |
+|---|---|---|---|---|
+| Nome do dataset | SVM | Não | F1-score | Preencher |
+| Nome do dataset | SVM | Sim |  F1-score | Preencher |
+| Nome do dataset | Árvore de decisão | Não |  F1-score | Preencher |
+| Nome do dataset | Árvore de decisão | Sim |  F1-score | Preencher |
+| Nome do dataset | Floresta aleatória | Não | F1-score | Preencher |
+| Nome do dataset | Floresta aleatória | Sim | F1-score | Preencher |
 
 A tabela deverá ser complementada com os resultados das demais métricas, o tempo computacional, as configurações dos modelos e as observações relevantes.
 

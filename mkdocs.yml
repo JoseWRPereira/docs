@@ -226,6 +226,7 @@ nav:
               - dados/ml/inta06-MLClassico-ArvoreDecisao-lab.md
               - dados/ml/inta07-MLClassico-FlorestaAleatoria-lab.md
               - dados/ml/inta08-MLClassico-PCA-ReducaoDimensionalidade-lab.md
+              - dados/ml/inta09-MLClassico-lab.md
 #              - dados/ml/am02-intro.md
           - Situações de Aprendizagem:
               - dados/sitap/sa01-siderurgica.md
