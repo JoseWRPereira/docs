@@ -125,7 +125,7 @@ Investigar problemas de alta dimensionalidade, tratamento de dados ausentes e re
 
 **Apoio**
 
-- [ad-secom - GitLab](https://gitlab.com/JoseWRPereira/ad-secom)
+- [ad-secom - GitLab](https://github.com/JoseWRPereira/ad-secom)
 
 ### 4.3. Dataset 3 — APS Failure at Scania Trucks
 
