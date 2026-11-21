@@ -45,7 +45,7 @@ nav:
       - index_digitais.md
       - Tecnologia:
           - Eletrônica Digital:
-              - digitais/Tecnologia/eletronicaDigital/sdig0-fundamentos.md
+              - digitais/Tecnologia/eletronicaDigital/sdig1-fundamentos.md
               - digitais/Tecnologia/eletronicaDigital/sdig1-sistema_numeracao.md
               - digitais/Tecnologia/eletronicaDigital/sdig2-portas_logicas.md
               - digitais/Tecnologia/eletronicaDigital/sdig3-expressoes_logicas_circuitos.md
